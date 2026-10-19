@@ -1,6 +1,0 @@
-This is BibTeX, Version 0.99e (TeX Live 2026)
-The top-level auxiliary file: main_asce.aux
-The style file: ascelike-new.bst
-Database file #1: main_asce.bib
-Warning--empty journal in openindex2026
-(There was 1 warning)
