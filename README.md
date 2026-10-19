@@ -39,7 +39,7 @@ Behaviour when the background field is progressively occluded:
 
 Model checkpoints (11 files, 49 model states) and the large per-seed detail
 dumps are published as **Release assets** of `v1.0.0` rather than in the
-repository itself: `FCNTM_检查点_20261014.zip` and
+repository itself: `FCNTM_checkpoints_20261014.zip` and
 `FCNTM_release_details_20261016.zip`.
 
 ## Reproducing the paper's numbers
