@@ -38,9 +38,9 @@ Behaviour when the background field is progressively occluded:
 | `docs/figures/` | rendered figures and diagrams; the manuscript and submission files are not part of this repository |
 
 Model checkpoints (11 files, 49 model states) and the large per-seed detail
-dumps are published as **Release assets** rather than in the repository
-itself. Attach the checkpoint archive (`FCNTM_检查点_20261014.zip`) to the
-first GitHub Release.
+dumps are published as **Release assets** of `v1.0.0` rather than in the
+repository itself: `FCNTM_检查点_20261014.zip` and
+`FCNTM_release_details_20261016.zip`.
 
 ## Reproducing the paper's numbers
 
@@ -76,10 +76,9 @@ redistributing or reusing them.
 
 ## Licence
 
-No licence has been selected yet: `LICENSE` is a placeholder. The code and
-the archived experiment artifacts are (c) the authors; the corpus splits
-derive from third-party sources and remain subject to the licences of those
-sources.
+The code and the archived experiment artifacts are released under the MIT
+License (see `LICENSE`). The corpus splits derive from third-party sources and
+remain subject to the licences of those sources.
 
 ## Citation
 
@@ -89,5 +88,5 @@ Citation information will be added once the paper is published.
 
 本仓库是论文投稿前的开源整理版：`code/` 为复现实验代码与结果产物，
 `docs/figures/` 为渲染好的图表；论文与投稿文件不随本仓库发布，
-模型检查点通过 Release 附件发布。发布前请替换 `LICENSE`，
-并在论文录用后补充引用信息。
+模型检查点与逐种子明细通过 Release 附件发布。代码采用 MIT 许可证
+（见 `LICENSE`）；论文录用后请补充引用信息。
