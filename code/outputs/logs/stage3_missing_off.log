@@ -1,0 +1,5 @@
+[github] field vocab cause=5173 item=3458
+   fielddrop_off seed 11 {'with_cause_CV': 0.6623, 'without_cause_CV': 0.412, 'cause_only_CV': 0.6589}
+   fielddrop_off seed 23 {'with_cause_CV': 0.6472, 'without_cause_CV': 0.4415, 'cause_only_CV': 0.6428}
+   fielddrop_off seed 37 {'with_cause_CV': 0.662, 'without_cause_CV': 0.4074, 'cause_only_CV': 0.6597}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_gate.csv

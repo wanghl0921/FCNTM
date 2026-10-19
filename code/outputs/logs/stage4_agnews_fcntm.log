@@ -1,0 +1,8 @@
+   FC-NTM seed 11 {'CV': 0.5596, 'NPMI': 0.0413, 'IRBO': 0.9961}
+   FC-NTM-cTFIDF seed 11 {'CV': 0.5375, 'NPMI': 0.1113, 'IRBO': 0.9817}
+   FC-NTM seed 23 {'CV': 0.533, 'NPMI': 0.0547, 'IRBO': 0.9968}
+   FC-NTM-cTFIDF seed 23 {'CV': 0.5741, 'NPMI': 0.1381, 'IRBO': 0.9843}
+   FC-NTM seed 37 {'CV': 0.548, 'NPMI': 0.0378, 'IRBO': 0.998}
+   FC-NTM-cTFIDF seed 37 {'CV': 0.5462, 'NPMI': 0.1253, 'IRBO': 0.9812}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs/agnews_gate_details.json
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs/codev_agnews_gate.csv

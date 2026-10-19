@@ -1,0 +1,9 @@
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun\civil_seed_extension_summary.csv
+corpus       comparison metric  n_seeds  n    mean     sd  ci_low  ci_high  positive  sign_p  wilcoxon_p
+ civil           ctfidf     CV       10 10  0.0487 0.0219  0.0330   0.0643        10   0.002       0.002
+ civil             beta     CV       10 10  0.0611 0.0196  0.0471   0.0752        10   0.002       0.002
+ civil occlusion_vs_BTM    rel       10 10 -0.0032 0.0012 -0.0040  -0.0023         0   0.002       0.002
+FC-NTM-cTFIDF: CV 0.629+-0.012 NPMI 0.154+-0.009 (n=10)
+BTM/ctfidf: CV 0.581+-0.022 NPMI 0.132+-0.019 (n=10)
+FC-NTM: CV 0.632+-0.010 NPMI 0.153+-0.012 (n=10)
+BTM/beta: CV 0.570+-0.019 NPMI 0.117+-0.014 (n=10)

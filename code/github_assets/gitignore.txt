@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pt
+*.resume.*
+_pagecheck/
+*.zip

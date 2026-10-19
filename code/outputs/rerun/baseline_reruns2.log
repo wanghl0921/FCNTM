@@ -1,0 +1,31 @@
+
+=== [07:40:31] benchmark rerun agnews ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u benchmark_public.py --dataset agnews --models CombinedTM,NeuralLDA,CTMLite --seeds 11,23,37 --k 30 --out rerun_main_baselines_agnews.csv --summary rerun_main_baselines_agnews_summary.csv
+train docs 6000 vocab 4724
+test docs 7600
+meta {'train_per_class': 1500, 'test_per_class': 1900, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 6000, 'source': 'AG News (official train/test CSVs)'}
+doc embeddings (6000, 384)
+resuming with 5 existing rows
+dropped 2 duplicated run rows
+resume: 2 of 9 runs already done
+skip CombinedTM 11
+skip CombinedTM 23
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150

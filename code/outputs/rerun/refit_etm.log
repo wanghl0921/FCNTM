@@ -1,0 +1,86 @@
+
+=== [20:04:51] ETM refit agnews ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u benchmark_public.py --dataset agnews --models ETM --seeds 11,23,37 --k 30 --no-resume --out rerun_etm_agnews_fixed.csv --summary rerun_etm_agnews_fixed_summary.csv
+train docs 6000 vocab 4724
+test docs 7600
+meta {'train_per_class': 1500, 'test_per_class': 1900, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 6000, 'source': 'AG News (official train/test CSVs)'}
+resume: 0 of 3 runs already done
+--- ETM (seed 11, topics 30, time 1022.6s) ---
+    0 court federal case internet judge former trial bill high million
+    1 inc buy oracle company billion peoplesoft million corp fund deal
+    2 talks nuclear iran minister korea united peace darfur nations prime
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5108, 'NPMI_n': 30.0, 'NPMI': 0.0941, 'UCI_n': 30.0, 'UCI': -0.9113, 'UMass_n': 30.0, 'UMass': -5.0146, 'EXCL': 0.4602, 'EXCL_KADJ': 0.4416, 'IRBO': 0.9819}
+--- ETM (seed 23, topics 30, time 980.6s) ---
+    0 drug company merck drugs disney study vioxx state friday food
+    1 fullquote stocks investor quickinfo aspx percent earnings profit ticker sales
+    2 oracle company peoplesoft inc buy billion corp million bid yukos
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5174, 'NPMI_n': 30.0, 'NPMI': 0.1003, 'UCI_n': 30.0, 'UCI': -0.7889, 'UMass_n': 30.0, 'UMass': -4.8966, 'EXCL': 0.4442, 'EXCL_KADJ': 0.425, 'IRBO': 0.9808}
+--- ETM (seed 37, topics 30, time 942.0s) ---
+    0 oil prices stocks profit york earnings quarter percent fullquote dollar
+    1 inc company fullquote buy billion peoplesoft million oracle corp deal
+    2 cup world open final win first round championship top title
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4899, 'NPMI_n': 30.0, 'NPMI': 0.0809, 'UCI_n': 30.0, 'UCI': -1.2522, 'UMass_n': 30.0, 'UMass': -5.4468, 'EXCL': 0.4674, 'EXCL_KADJ': 0.449, 'IRBO': 0.9841}
+model  K_target  topn readout  n_seeds  n_failed  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+  ETM        30    10  ctfidf        3         0              30.0 0.505988 0.014357   0.091769  0.009887 -0.984158 0.240092   -5.119362   0.289666   0.457253  0.011863        0.438537       0.012273   0.982254  0.001693
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_etm_agnews_fixed.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_etm_agnews_fixed_summary.csv
+=== [20:54:26] ETM refit agnews exit=0 ===
+
+=== [20:54:26] fair readout ETM agnews ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u fair_readout.py --corpus agnews --seeds 11,23,37 --k 30 --models ETM --out fair_readout_agnews_etm_fixed.csv
+[agnews] training ETM seed=11
+[agnews] training ETM seed=23
+[agnews] training ETM seed=37
+      source model  seed readout     CV   NPMI   UMass
+fair_readout   ETM    11    beta 0.5108 0.0941 -5.0146
+fair_readout   ETM    11  ctfidf 0.5090 0.0923 -6.6635
+fair_readout   ETM    23    beta 0.5174 0.1003 -4.8966
+fair_readout   ETM    23  ctfidf 0.5203 0.1025 -6.3444
+fair_readout   ETM    37    beta 0.4899 0.0809 -5.4468
+fair_readout   ETM    37  ctfidf 0.5045 0.0525 -7.3425
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\fair_readout_agnews_etm_fixed.csv
+=== [21:41:56] fair readout ETM agnews exit=0 ===
+  merged ETM rows into fair_readout_agnews_3seed.csv
+
+=== [21:41:56] ETM refit github ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u benchmark_public.py --dataset github --models ETM --seeds 11,23,37 --k 30 --no-resume --out rerun_etm_github_fixed.csv --summary rerun_etm_github_fixed_summary.csv
+train docs 6000 vocab 5175
+test docs 2000
+meta {'repos': ['duckdb', 'typescript', 'moby', 'redis'], 'per_repo_train': 1500, 'per_repo_test': 500, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 8000, 'source': 'open-index/open-github-issues (moby, TypeScript, duckdb, redis)'}
+resume: 0 of 3 runs already done
+--- ETM (seed 11, topics 30, time 936.9s) ---
+    0 redis server command cli aof file script set config rdb
+    1 duckdb appear data agree branch report master name client all
+    2 function array type functions map values value way return string
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.6827, 'NPMI_n': 30.0, 'NPMI': 0.2232, 'UCI_n': 30.0, 'UCI': 0.8554, 'UMass_n': 30.0, 'UMass': -2.0878, 'EXCL': 0.3867, 'EXCL_KADJ': 0.3655, 'IRBO': 0.9545}
+--- ETM (seed 23, topics 30, time 982.3s) ---
+    0 type typescript function string regression generic property object types any
+    1 duckdb data all agree report appear name client branch master
+    2 type types function some typescript all one way don definition
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.6584, 'NPMI_n': 30.0, 'NPMI': 0.2037, 'UCI_n': 30.0, 'UCI': 0.6333, 'UMass_n': 30.0, 'UMass': -2.1798, 'EXCL': 0.3891, 'EXCL_KADJ': 0.368, 'IRBO': 0.9532}
+--- ETM (seed 37, topics 30, time 969.5s) ---
+    0 redis test src error server line unit null deps tests
+    1 file parquet duckdb csv read files data database json query
+    2 all duckdb data linux python sets required distribution cpu client
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.6825, 'NPMI_n': 30.0, 'NPMI': 0.2132, 'UCI_n': 30.0, 'UCI': 0.7491, 'UMass_n': 30.0, 'UMass': -2.1436, 'EXCL': 0.3843, 'EXCL_KADJ': 0.3631, 'IRBO': 0.9571}
+model  K_target  topn readout  n_seeds  n_failed  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+  ETM        30    10  ctfidf        3         0              30.0 0.674535 0.013993   0.213371  0.009766  0.745942 0.111061    -2.13704   0.046328   0.386696  0.002365        0.365548       0.002446   0.954941  0.002008
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_etm_github_fixed.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_etm_github_fixed_summary.csv
+=== [22:30:58] ETM refit github exit=0 ===
+
+=== [22:30:58] fair readout ETM github ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u fair_readout.py --corpus github --seeds 11,23,37 --k 30 --models ETM --out fair_readout_github_etm_fixed.csv
+[github] training ETM seed=11
+[github] training ETM seed=23
+[github] training ETM seed=37
+      source model  seed readout     CV   NPMI   UMass
+fair_readout   ETM    11    beta 0.6827 0.2232 -2.0878
+fair_readout   ETM    11  ctfidf 0.7025 0.2478 -2.6865
+fair_readout   ETM    23    beta 0.6584 0.2037 -2.1798
+fair_readout   ETM    23  ctfidf 0.6735 0.2243 -2.9537
+fair_readout   ETM    37    beta 0.6825 0.2132 -2.1436
+fair_readout   ETM    37  ctfidf 0.6307 0.1879 -3.2361
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\fair_readout_github_etm_fixed.csv
+=== [23:25:33] fair readout ETM github exit=0 ===
+  merged ETM rows into fair_readout_github_3seed.csv
+
+[chain] ETM refit DONE

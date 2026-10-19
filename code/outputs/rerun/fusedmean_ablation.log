@@ -1,0 +1,7 @@
+   fused-mean seed 11 beta {'CV': 0.7229, 'NPMI': 0.2554}
+   fused-mean seed 11 cTFIDF {'CV': 0.729, 'NPMI': 0.283}
+   fused-mean seed 23 beta {'CV': 0.6917, 'NPMI': 0.2311}
+   fused-mean seed 23 cTFIDF {'CV': 0.7343, 'NPMI': 0.284}
+   fused-mean seed 37 beta {'CV': 0.7099, 'NPMI': 0.249}
+   fused-mean seed 37 cTFIDF {'CV': 0.7207, 'NPMI': 0.2574}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ablation_public_github_fusedmean.csv

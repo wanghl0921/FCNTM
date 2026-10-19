@@ -1,0 +1,76 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 1003, in save
+    _save(
+    ~~~~~^
+        obj,
+        ^^^^
+    ...<3 lines>...
+        _disable_byteorder_record,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 1312, in _save
+    zip_file.write_record(name, storage, num_bytes)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\benchmark_public.py", line 350, in main
+    rec = run_model(model, data, args.k, seed, word_emb, doc_ctx,
+                    topn=args.topn, readout=args.readout)
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\benchmark_public.py", line 143, in run_model
+    rec = NB.run_combinedtm(bow_csr, doc_ctx, train["vocab"], K, seed)
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\new_baselines.py", line 308, in run_combinedtm
+    model.fit(dataset, validation_dataset=val_dataset, verbose=False,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              patience=int(patience), delta=0.0,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              do_train_predictions=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\contextualized_topic_models\models\ctm.py", line 398, in fit
+    self.early_stopping(val_loss, self)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\contextualized_topic_models\utils\early_stopping\early_stopping.py", line 51, in __call__
+    self.save_checkpoint(val_loss, model)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\contextualized_topic_models\utils\early_stopping\early_stopping.py", line 59, in save_checkpoint
+    model.save(self.path)
+    ~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\contextualized_topic_models\models\ctm.py", line 655, in save
+    torch.save(
+    ~~~~~~~~~~^
+        {"state_dict": self.model.state_dict(), "dcue_dict": self.__dict__},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        file,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 1002, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 854, in __exit__
+    self.file_like.write_end_of_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: [enforce fail at inline_container.cc:672] . unexpected pos 38151552 vs 38151496
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\benchmark_public.py", line 370, in main
+    pd.DataFrame(rows).to_csv(out_csv, index=False, encoding="utf-8-sig")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 3976, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+OSError: [Errno 28] No space left on device
+OSError: object address  : 0

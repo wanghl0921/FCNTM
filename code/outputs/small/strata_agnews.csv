@@ -1,0 +1,9 @@
+﻿config,seed,stratum,n_docs,recall,precision
+recon2,11,low_predictability(互补),200,0.029703491008371836,0.030500000000000003
+recon2,11,high_predictability(冗余),200,0.02778277978583538,0.035
+recon2,23,low_predictability(互补),200,0.01889612397406515,0.018500000000000003
+recon2,23,high_predictability(冗余),200,0.022272970512982625,0.0275
+noxrec,11,low_predictability(互补),200,0.022885808745570405,0.0245
+noxrec,11,high_predictability(冗余),200,0.029059910034327858,0.034
+noxrec,23,low_predictability(互补),200,0.017381318138138625,0.019500000000000003
+noxrec,23,high_predictability(冗余),200,0.024408764686391214,0.033

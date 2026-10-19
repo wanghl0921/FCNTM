@@ -1,0 +1,1875 @@
+
+=== [07:44:35] benchmark rerun agnews ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u benchmark_public.py --dataset agnews --models CombinedTM,NeuralLDA,CTMLite --seeds 11,23,37 --k 30 --out rerun_main_baselines_agnews.csv --summary rerun_main_baselines_agnews_summary.csv
+train docs 6000 vocab 4724
+test docs 7600
+meta {'train_per_class': 1500, 'test_per_class': 1900, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 6000, 'source': 'AG News (official train/test CSVs)'}
+doc embeddings (6000, 384)
+resuming with 5 existing rows
+dropped 2 duplicated run rows
+resume: 2 of 9 runs already done
+skip CombinedTM 11
+skip CombinedTM 23
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 43 out of 150
+EarlyStopping counter: 44 out of 150
+EarlyStopping counter: 45 out of 150
+EarlyStopping counter: 46 out of 150
+EarlyStopping counter: 47 out of 150
+EarlyStopping counter: 48 out of 150
+EarlyStopping counter: 49 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 43 out of 150
+EarlyStopping counter: 44 out of 150
+EarlyStopping counter: 45 out of 150
+EarlyStopping counter: 46 out of 150
+EarlyStopping counter: 47 out of 150
+EarlyStopping counter: 48 out of 150
+EarlyStopping counter: 49 out of 150
+EarlyStopping counter: 50 out of 150
+EarlyStopping counter: 51 out of 150
+EarlyStopping counter: 52 out of 150
+EarlyStopping counter: 53 out of 150
+EarlyStopping counter: 54 out of 150
+EarlyStopping counter: 55 out of 150
+EarlyStopping counter: 56 out of 150
+EarlyStopping counter: 57 out of 150
+EarlyStopping counter: 58 out of 150
+EarlyStopping counter: 59 out of 150
+EarlyStopping counter: 60 out of 150
+EarlyStopping counter: 61 out of 150
+EarlyStopping counter: 62 out of 150
+EarlyStopping counter: 63 out of 150
+EarlyStopping counter: 64 out of 150
+EarlyStopping counter: 65 out of 150
+EarlyStopping counter: 66 out of 150
+EarlyStopping counter: 67 out of 150
+EarlyStopping counter: 68 out of 150
+EarlyStopping counter: 69 out of 150
+EarlyStopping counter: 70 out of 150
+EarlyStopping counter: 71 out of 150
+EarlyStopping counter: 72 out of 150
+EarlyStopping counter: 73 out of 150
+EarlyStopping counter: 74 out of 150
+EarlyStopping counter: 75 out of 150
+EarlyStopping counter: 76 out of 150
+EarlyStopping counter: 77 out of 150
+EarlyStopping counter: 78 out of 150
+EarlyStopping counter: 79 out of 150
+EarlyStopping counter: 80 out of 150
+EarlyStopping counter: 81 out of 150
+EarlyStopping counter: 82 out of 150
+EarlyStopping counter: 83 out of 150
+EarlyStopping counter: 84 out of 150
+EarlyStopping counter: 85 out of 150
+EarlyStopping counter: 86 out of 150
+EarlyStopping counter: 87 out of 150
+EarlyStopping counter: 88 out of 150
+EarlyStopping counter: 89 out of 150
+EarlyStopping counter: 90 out of 150
+EarlyStopping counter: 91 out of 150
+EarlyStopping counter: 92 out of 150
+EarlyStopping counter: 93 out of 150
+EarlyStopping counter: 94 out of 150
+EarlyStopping counter: 95 out of 150
+EarlyStopping counter: 96 out of 150
+EarlyStopping counter: 97 out of 150
+EarlyStopping counter: 98 out of 150
+EarlyStopping counter: 99 out of 150
+EarlyStopping counter: 100 out of 150
+EarlyStopping counter: 101 out of 150
+EarlyStopping counter: 102 out of 150
+EarlyStopping counter: 103 out of 150
+EarlyStopping counter: 104 out of 150
+EarlyStopping counter: 105 out of 150
+EarlyStopping counter: 106 out of 150
+EarlyStopping counter: 107 out of 150
+EarlyStopping counter: 108 out of 150
+EarlyStopping counter: 109 out of 150
+EarlyStopping counter: 110 out of 150
+EarlyStopping counter: 111 out of 150
+EarlyStopping counter: 112 out of 150
+EarlyStopping counter: 113 out of 150
+EarlyStopping counter: 114 out of 150
+EarlyStopping counter: 115 out of 150
+EarlyStopping counter: 116 out of 150
+EarlyStopping counter: 117 out of 150
+EarlyStopping counter: 118 out of 150
+EarlyStopping counter: 119 out of 150
+EarlyStopping counter: 120 out of 150
+EarlyStopping counter: 121 out of 150
+EarlyStopping counter: 122 out of 150
+EarlyStopping counter: 123 out of 150
+EarlyStopping counter: 124 out of 150
+EarlyStopping counter: 125 out of 150
+EarlyStopping counter: 126 out of 150
+EarlyStopping counter: 127 out of 150
+EarlyStopping counter: 128 out of 150
+EarlyStopping counter: 129 out of 150
+EarlyStopping counter: 130 out of 150
+EarlyStopping counter: 131 out of 150
+EarlyStopping counter: 132 out of 150
+EarlyStopping counter: 133 out of 150
+EarlyStopping counter: 134 out of 150
+EarlyStopping counter: 135 out of 150
+EarlyStopping counter: 136 out of 150
+EarlyStopping counter: 137 out of 150
+EarlyStopping counter: 138 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+--- CombinedTM (seed 37, topics 30, time 3639.7s) ---
+    0 sony memory lcd devices band portable video device hand electronics
+    1 third profit quarter earnings reported percent sees retailer mart net
+    2 olympic athens gold olympics formula michael greek sport racing grand
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4854, 'NPMI_n': 30.0, 'NPMI': -0.0123, 'UCI_n': 30.0, 'UCI': -4.4663, 'UMass_n': 30.0, 'UMass': -9.7879, 'EXCL': 0.2237, 'EXCL_KADJ': 0.197, 'IRBO': 0.9998}
+--- NeuralLDA (seed 11, topics 30, time 771.6s) ---
+    0 people killed police least near attack several injured killing bomb
+    1 company million research bid update billion profile quote california based
+    2 korea north talks states japan united nuclear south japanese nations
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5503, 'NPMI_n': 30.0, 'NPMI': 0.0789, 'UCI_n': 30.0, 'UCI': -1.9038, 'UMass_n': 30.0, 'UMass': -6.5846, 'EXCL': 0.0873, 'EXCL_KADJ': 0.0558, 'IRBO': 0.9985}
+--- NeuralLDA (seed 23, topics 30, time 765.7s) ---
+    0 president bush election presidential john kerry country campaign elections george
+    1 announced wireless phone ibm network communications sprint companies nextel services
+    2 cup title round open won set wins final ryder world
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5362, 'NPMI_n': 30.0, 'NPMI': 0.0802, 'UCI_n': 30.0, 'UCI': -1.8203, 'UMass_n': 30.0, 'UMass': -6.5373, 'EXCL': 0.0872, 'EXCL_KADJ': 0.0557, 'IRBO': 0.9997}
+--- NeuralLDA (seed 37, topics 30, time 751.2s) ---
+    0 york stocks profit third quarter fullquote ticker earnings percent investor
+    1 world gold wins top final williams title olympic men athens
+    2 court case charges trial accused prosecutors judge supreme alleged arrested
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4911, 'NPMI_n': 30.0, 'NPMI': 0.0544, 'UCI_n': 30.0, 'UCI': -2.0644, 'UMass_n': 30.0, 'UMass': -6.7214, 'EXCL': 0.0863, 'EXCL_KADJ': 0.0548, 'IRBO': 0.9985}
+  [CTMLite seed 11] epoch 1 loss 166.451 klw 0.0010
+  [CTMLite seed 11] epoch 2 loss 156.830 klw 0.0020
+  [CTMLite seed 11] epoch 3 loss 152.165 klw 0.0030
+  [CTMLite seed 11] epoch 4 loss 149.654 klw 0.0040
+  [CTMLite seed 11] epoch 5 loss 147.870 klw 0.0050
+  [CTMLite seed 11] epoch 25 loss 142.188 klw 0.0200
+  [CTMLite seed 11] epoch 50 loss 140.351 klw 0.0200
+  [CTMLite seed 11] epoch 75 loss 139.506 klw 0.0200
+  [CTMLite seed 11] epoch 100 loss 139.153 klw 0.0200
+  [CTMLite seed 11] epoch 125 loss 138.972 klw 0.0200
+  [CTMLite seed 11] epoch 150 loss 138.403 klw 0.0200
+  [CTMLite seed 11] epoch 175 loss 138.374 klw 0.0200
+  [CTMLite seed 11] epoch 200 loss 138.086 klw 0.0200
+  [CTMLite seed 11] epoch 225 loss 137.914 klw 0.0200
+  [CTMLite seed 11] epoch 250 loss 137.780 klw 0.0200
+  [CTMLite seed 11] epoch 275 loss 137.724 klw 0.0200
+  [CTMLite seed 11] epoch 300 loss 137.359 klw 0.0200
+  [CTMLite seed 11] epoch 325 loss 137.202 klw 0.0200
+  [CTMLite seed 11] epoch 350 loss 136.854 klw 0.0200
+  [CTMLite seed 11] epoch 375 loss 136.715 klw 0.0200
+  [CTMLite seed 11] epoch 400 loss 136.738 klw 0.0200
+  [CTMLite seed 11] epoch 425 loss 136.714 klw 0.0200
+  [CTMLite seed 11] epoch 450 loss 136.272 klw 0.0200
+  [CTMLite seed 11] epoch 475 loss 136.227 klw 0.0200
+  [CTMLite seed 11] epoch 500 loss 136.016 klw 0.0200
+  [CTMLite seed 11] epoch 525 loss 135.933 klw 0.0200
+  [CTMLite seed 11] epoch 550 loss 135.721 klw 0.0200
+  [CTMLite seed 11] epoch 575 loss 135.608 klw 0.0200
+  [CTMLite seed 11] epoch 600 loss 135.512 klw 0.0200
+  [CTMLite seed 11] epoch 625 loss 135.474 klw 0.0200
+  [CTMLite seed 11] epoch 650 loss 135.178 klw 0.0200
+  [CTMLite seed 11] epoch 675 loss 135.151 klw 0.0200
+  [CTMLite seed 11] epoch 700 loss 135.247 klw 0.0200
+--- CTMLite (seed 11, topics 30, time 1744.4s) ---
+    0 prime election minister president vote campaign presidential leader opposition party
+    1 two bomb india australian test australia six innings car seven
+    2 york yankees oil baseball sox series major prices hits pitcher
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4573, 'NPMI_n': 30.0, 'NPMI': -0.0004, 'UCI_n': 30.0, 'UCI': -3.2899, 'UMass_n': 30.0, 'UMass': -7.9901, 'EXCL': 0.0839, 'EXCL_KADJ': 0.0523, 'IRBO': 0.9983}
+  [CTMLite seed 23] epoch 1 loss 166.571 klw 0.0010
+  [CTMLite seed 23] epoch 2 loss 156.936 klw 0.0020
+  [CTMLite seed 23] epoch 3 loss 152.579 klw 0.0030
+  [CTMLite seed 23] epoch 4 loss 149.768 klw 0.0040
+  [CTMLite seed 23] epoch 5 loss 148.049 klw 0.0050
+  [CTMLite seed 23] epoch 25 loss 141.983 klw 0.0200
+  [CTMLite seed 23] epoch 50 loss 140.320 klw 0.0200
+  [CTMLite seed 23] epoch 75 loss 139.491 klw 0.0200
+  [CTMLite seed 23] epoch 100 loss 139.174 klw 0.0200
+  [CTMLite seed 23] epoch 125 loss 138.750 klw 0.0200
+  [CTMLite seed 23] epoch 150 loss 138.439 klw 0.0200
+  [CTMLite seed 23] epoch 175 loss 138.447 klw 0.0200
+  [CTMLite seed 23] epoch 200 loss 137.975 klw 0.0200
+  [CTMLite seed 23] epoch 225 loss 137.978 klw 0.0200
+  [CTMLite seed 23] epoch 250 loss 137.863 klw 0.0200
+--- CTMLite (seed 23, topics 30, time 598.9s) ---
+    0 police accused hostage militants killed terror terrorist terrorism abu suspected
+    1 russian athens olympic russia american moscow gold points eight olympics
+    2 profit loss quarter game third angeles york los reported percent
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4122, 'NPMI_n': 30.0, 'NPMI': -0.0123, 'UCI_n': 30.0, 'UCI': -3.5853, 'UMass_n': 30.0, 'UMass': -8.2387, 'EXCL': 0.0493, 'EXCL_KADJ': 0.0165, 'IRBO': 0.997}
+  [CTMLite seed 37] epoch 1 loss 166.574 klw 0.0010
+  [CTMLite seed 37] epoch 2 loss 157.350 klw 0.0020
+  [CTMLite seed 37] epoch 3 loss 152.780 klw 0.0030
+  [CTMLite seed 37] epoch 4 loss 149.996 klw 0.0040
+  [CTMLite seed 37] epoch 5 loss 148.183 klw 0.0050
+  [CTMLite seed 37] epoch 25 loss 142.419 klw 0.0200
+  [CTMLite seed 37] epoch 50 loss 140.464 klw 0.0200
+  [CTMLite seed 37] epoch 75 loss 139.790 klw 0.0200
+  [CTMLite seed 37] epoch 100 loss 139.005 klw 0.0200
+  [CTMLite seed 37] epoch 125 loss 138.944 klw 0.0200
+  [CTMLite seed 37] epoch 150 loss 138.527 klw 0.0200
+  [CTMLite seed 37] epoch 175 loss 138.373 klw 0.0200
+  [CTMLite seed 37] epoch 200 loss 138.100 klw 0.0200
+  [CTMLite seed 37] epoch 225 loss 137.936 klw 0.0200
+  [CTMLite seed 37] epoch 250 loss 137.637 klw 0.0200
+  [CTMLite seed 37] epoch 275 loss 137.330 klw 0.0200
+  [CTMLite seed 37] epoch 300 loss 137.320 klw 0.0200
+  [CTMLite seed 37] epoch 325 loss 137.202 klw 0.0200
+  [CTMLite seed 37] epoch 350 loss 136.905 klw 0.0200
+  [CTMLite seed 37] epoch 375 loss 136.797 klw 0.0200
+  [CTMLite seed 37] epoch 400 loss 136.859 klw 0.0200
+  [CTMLite seed 37] epoch 425 loss 136.395 klw 0.0200
+  [CTMLite seed 37] epoch 450 loss 136.442 klw 0.0200
+  [CTMLite seed 37] epoch 475 loss 136.009 klw 0.0200
+  [CTMLite seed 37] epoch 500 loss 136.056 klw 0.0200
+  [CTMLite seed 37] epoch 525 loss 135.736 klw 0.0200
+  [CTMLite seed 37] epoch 550 loss 135.865 klw 0.0200
+  [CTMLite seed 37] epoch 575 loss 135.535 klw 0.0200
+  [CTMLite seed 37] epoch 600 loss 135.444 klw 0.0200
+  [CTMLite seed 37] epoch 625 loss 135.460 klw 0.0200
+  [CTMLite seed 37] epoch 650 loss 135.554 klw 0.0200
+  [CTMLite seed 37] epoch 675 loss 135.158 klw 0.0200
+  [CTMLite seed 37] epoch 700 loss 135.135 klw 0.0200
+--- CTMLite (seed 37, topics 30, time 1573.4s) ---
+    0 gold olympic trial athens court olympics bryant appeal williams merger
+    1 million first australia second championship pay ltd australian update zealand
+    2 phone mobile phones wireless speed technology communications cell devices nokia
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4245, 'NPMI_n': 30.0, 'NPMI': -0.0313, 'UCI_n': 30.0, 'UCI': -4.0541, 'UMass_n': 30.0, 'UMass': -8.7768, 'EXCL': 0.0852, 'EXCL_KADJ': 0.0536, 'IRBO': 0.9984}
+     model  K_target  topn readout  n_seeds  n_failed  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+CombinedTM        30    10  ctfidf        3         1              30.0 0.513328 0.044752   0.052620  0.064098 -3.095872 1.296316   -8.198353   1.464936   0.176190  0.041186        0.147783       0.042606   0.999838  0.000035
+ NeuralLDA        30    10  ctfidf        3         0              30.0 0.525889 0.030934   0.071146  0.014547 -1.929492 0.124044   -6.614411   0.095588   0.086910  0.000562        0.055425       0.000581   0.998923  0.000701
+   CTMLite        30    10  ctfidf        3         0              30.0 0.431358 0.023280  -0.014676  0.015582 -3.643066 0.385378   -8.335212   0.402099   0.072767  0.020375        0.040793       0.021077   0.997931  0.000769
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_agnews.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_agnews_summary.csv
+=== [10:29:23] benchmark rerun agnews exit=0 ===
+
+=== [10:29:23] merge agnews rows ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u merge_benchmark_rows.py C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_runs_agnews.csv C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_agnews.csv --summary C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_summary_agnews.csv
+skip incomplete/failed row: CombinedTM seed 37
+27 -> 27 rows; summary -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_summary_agnews.csv
+     model  K_target  topn readout  n_seeds  n_failed  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+ NeuralLDA        30  10.0  ctfidf        3         0              30.0 0.525889 0.030934   0.071146  0.014547 -1.929492 0.124044   -6.614411   0.095588   0.086910  0.000562        0.055425       0.000581   0.998923  0.000701
+   CTMLite        30  10.0  ctfidf        3         0              30.0 0.431358 0.023280  -0.014676  0.015582 -3.643066 0.385378   -8.335212   0.402099   0.072767  0.020375        0.040793       0.021077   0.997931  0.000769
+CombinedTM        30  10.0  ctfidf        3         0              30.0 0.513328 0.044752   0.052620  0.064098 -3.095872 1.296316   -8.198353   1.464936   0.176190  0.041186        0.147783       0.042606   0.999838  0.000035
+=== [10:29:36] merge agnews rows exit=0 ===
+
+=== [10:29:36] benchmark rerun github ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u benchmark_public.py --dataset github --models CombinedTM,NeuralLDA,CTMLite --seeds 11,23,37 --k 30 --out rerun_main_baselines_github.csv --summary rerun_main_baselines_github_summary.csv
+train docs 6000 vocab 5175
+test docs 2000
+meta {'repos': ['duckdb', 'typescript', 'moby', 'redis'], 'per_repo_train': 1500, 'per_repo_test': 500, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 8000, 'source': 'open-index/open-github-issues (moby, TypeScript, duckdb, redis)'}
+doc embeddings (6000, 384)
+resume: 0 of 9 runs already done
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 43 out of 150
+EarlyStopping counter: 44 out of 150
+EarlyStopping counter: 45 out of 150
+EarlyStopping counter: 46 out of 150
+EarlyStopping counter: 47 out of 150
+EarlyStopping counter: 48 out of 150
+EarlyStopping counter: 49 out of 150
+EarlyStopping counter: 50 out of 150
+EarlyStopping counter: 51 out of 150
+EarlyStopping counter: 52 out of 150
+EarlyStopping counter: 53 out of 150
+EarlyStopping counter: 54 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 43 out of 150
+EarlyStopping counter: 44 out of 150
+EarlyStopping counter: 45 out of 150
+EarlyStopping counter: 46 out of 150
+EarlyStopping counter: 47 out of 150
+EarlyStopping counter: 48 out of 150
+EarlyStopping counter: 49 out of 150
+EarlyStopping counter: 50 out of 150
+EarlyStopping counter: 51 out of 150
+EarlyStopping counter: 52 out of 150
+EarlyStopping counter: 53 out of 150
+EarlyStopping counter: 54 out of 150
+EarlyStopping counter: 55 out of 150
+EarlyStopping counter: 56 out of 150
+EarlyStopping counter: 57 out of 150
+EarlyStopping counter: 58 out of 150
+EarlyStopping counter: 59 out of 150
+EarlyStopping counter: 60 out of 150
+EarlyStopping counter: 61 out of 150
+EarlyStopping counter: 62 out of 150
+EarlyStopping counter: 63 out of 150
+EarlyStopping counter: 64 out of 150
+EarlyStopping counter: 65 out of 150
+EarlyStopping counter: 66 out of 150
+EarlyStopping counter: 67 out of 150
+EarlyStopping counter: 68 out of 150
+EarlyStopping counter: 69 out of 150
+EarlyStopping counter: 70 out of 150
+EarlyStopping counter: 71 out of 150
+EarlyStopping counter: 72 out of 150
+EarlyStopping counter: 73 out of 150
+EarlyStopping counter: 74 out of 150
+EarlyStopping counter: 75 out of 150
+EarlyStopping counter: 76 out of 150
+EarlyStopping counter: 77 out of 150
+EarlyStopping counter: 78 out of 150
+EarlyStopping counter: 79 out of 150
+EarlyStopping counter: 80 out of 150
+EarlyStopping counter: 81 out of 150
+EarlyStopping counter: 82 out of 150
+EarlyStopping counter: 83 out of 150
+EarlyStopping counter: 84 out of 150
+EarlyStopping counter: 85 out of 150
+EarlyStopping counter: 86 out of 150
+EarlyStopping counter: 87 out of 150
+EarlyStopping counter: 88 out of 150
+EarlyStopping counter: 89 out of 150
+EarlyStopping counter: 90 out of 150
+EarlyStopping counter: 91 out of 150
+EarlyStopping counter: 92 out of 150
+EarlyStopping counter: 93 out of 150
+EarlyStopping counter: 94 out of 150
+EarlyStopping counter: 95 out of 150
+EarlyStopping counter: 96 out of 150
+EarlyStopping counter: 97 out of 150
+EarlyStopping counter: 98 out of 150
+EarlyStopping counter: 99 out of 150
+EarlyStopping counter: 100 out of 150
+EarlyStopping counter: 101 out of 150
+EarlyStopping counter: 102 out of 150
+EarlyStopping counter: 103 out of 150
+EarlyStopping counter: 104 out of 150
+EarlyStopping counter: 105 out of 150
+EarlyStopping counter: 106 out of 150
+EarlyStopping counter: 107 out of 150
+EarlyStopping counter: 108 out of 150
+EarlyStopping counter: 109 out of 150
+EarlyStopping counter: 110 out of 150
+EarlyStopping counter: 111 out of 150
+EarlyStopping counter: 112 out of 150
+EarlyStopping counter: 113 out of 150
+EarlyStopping counter: 114 out of 150
+EarlyStopping counter: 115 out of 150
+EarlyStopping counter: 116 out of 150
+EarlyStopping counter: 117 out of 150
+EarlyStopping counter: 118 out of 150
+EarlyStopping counter: 119 out of 150
+EarlyStopping counter: 120 out of 150
+EarlyStopping counter: 121 out of 150
+EarlyStopping counter: 122 out of 150
+EarlyStopping counter: 123 out of 150
+EarlyStopping counter: 124 out of 150
+EarlyStopping counter: 125 out of 150
+EarlyStopping counter: 126 out of 150
+EarlyStopping counter: 127 out of 150
+EarlyStopping counter: 128 out of 150
+EarlyStopping counter: 129 out of 150
+EarlyStopping counter: 130 out of 150
+EarlyStopping counter: 131 out of 150
+EarlyStopping counter: 132 out of 150
+EarlyStopping counter: 133 out of 150
+EarlyStopping counter: 134 out of 150
+EarlyStopping counter: 135 out of 150
+EarlyStopping counter: 136 out of 150
+EarlyStopping counter: 137 out of 150
+EarlyStopping counter: 138 out of 150
+EarlyStopping counter: 139 out of 150
+EarlyStopping counter: 140 out of 150
+EarlyStopping counter: 141 out of 150
+EarlyStopping counter: 142 out of 150
+EarlyStopping counter: 143 out of 150
+EarlyStopping counter: 144 out of 150
+EarlyStopping counter: 145 out of 150
+EarlyStopping counter: 146 out of 150
+EarlyStopping counter: 147 out of 150
+EarlyStopping counter: 148 out of 150
+EarlyStopping counter: 149 out of 150
+EarlyStopping counter: 150 out of 150
+Early stopping
+--- CombinedTM (seed 11, topics 30, time 1423.9s) ---
+    0 container config service error ctx volume create network time cgroup
+    1 docs documentation nice enable experimental rules configure label page compression
+    2 data git client commit space arch host pool ubuntu driver
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.6649, 'NPMI_n': 30.0, 'NPMI': 0.2279, 'UCI_n': 30.0, 'UCI': -0.168, 'UMass_n': 30.0, 'UMass': -3.667, 'EXCL': 0.072, 'EXCL_KADJ': 0.04, 'IRBO': 0.9885}
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 43 out of 150
+EarlyStopping counter: 44 out of 150
+EarlyStopping counter: 45 out of 150
+EarlyStopping counter: 46 out of 150
+EarlyStopping counter: 47 out of 150
+EarlyStopping counter: 48 out of 150
+EarlyStopping counter: 49 out of 150
+EarlyStopping counter: 50 out of 150
+EarlyStopping counter: 51 out of 150
+EarlyStopping counter: 52 out of 150
+EarlyStopping counter: 53 out of 150
+EarlyStopping counter: 54 out of 150
+EarlyStopping counter: 55 out of 150
+EarlyStopping counter: 56 out of 150
+EarlyStopping counter: 57 out of 150
+EarlyStopping counter: 58 out of 150
+EarlyStopping counter: 59 out of 150
+EarlyStopping counter: 60 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 43 out of 150
+EarlyStopping counter: 44 out of 150
+EarlyStopping counter: 45 out of 150
+EarlyStopping counter: 46 out of 150
+EarlyStopping counter: 47 out of 150
+EarlyStopping counter: 48 out of 150
+EarlyStopping counter: 49 out of 150
+EarlyStopping counter: 50 out of 150
+EarlyStopping counter: 51 out of 150
+EarlyStopping counter: 52 out of 150
+EarlyStopping counter: 53 out of 150
+EarlyStopping counter: 54 out of 150
+EarlyStopping counter: 55 out of 150
+EarlyStopping counter: 56 out of 150
+EarlyStopping counter: 57 out of 150
+EarlyStopping counter: 58 out of 150
+EarlyStopping counter: 59 out of 150
+EarlyStopping counter: 60 out of 150
+EarlyStopping counter: 61 out of 150
+EarlyStopping counter: 62 out of 150
+EarlyStopping counter: 63 out of 150
+EarlyStopping counter: 64 out of 150
+EarlyStopping counter: 65 out of 150
+EarlyStopping counter: 66 out of 150
+EarlyStopping counter: 67 out of 150
+EarlyStopping counter: 68 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 43 out of 150
+EarlyStopping counter: 44 out of 150
+EarlyStopping counter: 45 out of 150
+EarlyStopping counter: 46 out of 150
+EarlyStopping counter: 47 out of 150
+EarlyStopping counter: 48 out of 150
+EarlyStopping counter: 49 out of 150
+EarlyStopping counter: 50 out of 150
+EarlyStopping counter: 51 out of 150
+EarlyStopping counter: 52 out of 150
+EarlyStopping counter: 53 out of 150
+EarlyStopping counter: 54 out of 150
+EarlyStopping counter: 55 out of 150
+EarlyStopping counter: 56 out of 150
+EarlyStopping counter: 57 out of 150
+EarlyStopping counter: 58 out of 150
+EarlyStopping counter: 59 out of 150
+EarlyStopping counter: 60 out of 150
+EarlyStopping counter: 61 out of 150
+EarlyStopping counter: 62 out of 150
+EarlyStopping counter: 63 out of 150
+EarlyStopping counter: 64 out of 150
+EarlyStopping counter: 65 out of 150
+EarlyStopping counter: 66 out of 150
+EarlyStopping counter: 67 out of 150
+EarlyStopping counter: 68 out of 150
+EarlyStopping counter: 69 out of 150
+EarlyStopping counter: 70 out of 150
+EarlyStopping counter: 71 out of 150
+EarlyStopping counter: 72 out of 150
+EarlyStopping counter: 73 out of 150
+EarlyStopping counter: 74 out of 150
+EarlyStopping counter: 75 out of 150
+EarlyStopping counter: 76 out of 150
+EarlyStopping counter: 77 out of 150
+EarlyStopping counter: 78 out of 150
+EarlyStopping counter: 79 out of 150
+EarlyStopping counter: 80 out of 150
+EarlyStopping counter: 81 out of 150
+EarlyStopping counter: 82 out of 150
+EarlyStopping counter: 83 out of 150
+EarlyStopping counter: 84 out of 150
+EarlyStopping counter: 85 out of 150
+EarlyStopping counter: 86 out of 150
+EarlyStopping counter: 87 out of 150
+EarlyStopping counter: 88 out of 150
+EarlyStopping counter: 89 out of 150
+EarlyStopping counter: 90 out of 150
+EarlyStopping counter: 91 out of 150
+EarlyStopping counter: 92 out of 150
+EarlyStopping counter: 93 out of 150
+EarlyStopping counter: 94 out of 150
+EarlyStopping counter: 95 out of 150
+EarlyStopping counter: 96 out of 150
+EarlyStopping counter: 97 out of 150
+EarlyStopping counter: 98 out of 150
+EarlyStopping counter: 99 out of 150
+EarlyStopping counter: 100 out of 150
+EarlyStopping counter: 101 out of 150
+EarlyStopping counter: 102 out of 150
+EarlyStopping counter: 103 out of 150
+EarlyStopping counter: 104 out of 150
+EarlyStopping counter: 105 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 43 out of 150
+EarlyStopping counter: 44 out of 150
+EarlyStopping counter: 45 out of 150
+EarlyStopping counter: 46 out of 150
+EarlyStopping counter: 47 out of 150
+EarlyStopping counter: 48 out of 150
+EarlyStopping counter: 49 out of 150
+EarlyStopping counter: 50 out of 150
+EarlyStopping counter: 51 out of 150
+EarlyStopping counter: 52 out of 150
+EarlyStopping counter: 53 out of 150
+EarlyStopping counter: 54 out of 150
+EarlyStopping counter: 55 out of 150
+EarlyStopping counter: 56 out of 150
+EarlyStopping counter: 57 out of 150
+EarlyStopping counter: 58 out of 150
+EarlyStopping counter: 59 out of 150
+EarlyStopping counter: 60 out of 150
+EarlyStopping counter: 61 out of 150
+EarlyStopping counter: 62 out of 150
+EarlyStopping counter: 63 out of 150
+EarlyStopping counter: 64 out of 150
+EarlyStopping counter: 65 out of 150
+EarlyStopping counter: 66 out of 150
+EarlyStopping counter: 67 out of 150
+EarlyStopping counter: 68 out of 150
+EarlyStopping counter: 69 out of 150
+EarlyStopping counter: 70 out of 150
+EarlyStopping counter: 71 out of 150
+EarlyStopping counter: 72 out of 150
+EarlyStopping counter: 73 out of 150
+EarlyStopping counter: 74 out of 150
+EarlyStopping counter: 75 out of 150
+EarlyStopping counter: 76 out of 150
+EarlyStopping counter: 77 out of 150
+EarlyStopping counter: 78 out of 150
+EarlyStopping counter: 79 out of 150
+EarlyStopping counter: 80 out of 150
+EarlyStopping counter: 81 out of 150
+EarlyStopping counter: 82 out of 150
+EarlyStopping counter: 83 out of 150
+EarlyStopping counter: 84 out of 150
+EarlyStopping counter: 85 out of 150
+EarlyStopping counter: 86 out of 150
+EarlyStopping counter: 87 out of 150
+EarlyStopping counter: 88 out of 150
+EarlyStopping counter: 89 out of 150
+EarlyStopping counter: 90 out of 150
+EarlyStopping counter: 91 out of 150
+EarlyStopping counter: 92 out of 150
+EarlyStopping counter: 93 out of 150
+EarlyStopping counter: 94 out of 150
+EarlyStopping counter: 95 out of 150
+EarlyStopping counter: 96 out of 150
+EarlyStopping counter: 97 out of 150
+EarlyStopping counter: 98 out of 150
+EarlyStopping counter: 99 out of 150
+EarlyStopping counter: 100 out of 150
+EarlyStopping counter: 101 out of 150
+EarlyStopping counter: 102 out of 150
+EarlyStopping counter: 103 out of 150
+EarlyStopping counter: 104 out of 150
+EarlyStopping counter: 105 out of 150
+EarlyStopping counter: 106 out of 150
+EarlyStopping counter: 107 out of 150
+EarlyStopping counter: 108 out of 150
+EarlyStopping counter: 109 out of 150
+EarlyStopping counter: 110 out of 150
+EarlyStopping counter: 111 out of 150
+EarlyStopping counter: 112 out of 150
+EarlyStopping counter: 113 out of 150
+EarlyStopping counter: 114 out of 150
+EarlyStopping counter: 115 out of 150
+EarlyStopping counter: 116 out of 150
+EarlyStopping counter: 117 out of 150
+EarlyStopping counter: 118 out of 150
+EarlyStopping counter: 119 out of 150
+EarlyStopping counter: 120 out of 150
+EarlyStopping counter: 121 out of 150
+EarlyStopping counter: 122 out of 150
+EarlyStopping counter: 123 out of 150
+EarlyStopping counter: 124 out of 150
+EarlyStopping counter: 125 out of 150
+EarlyStopping counter: 126 out of 150
+EarlyStopping counter: 127 out of 150
+EarlyStopping counter: 128 out of 150
+EarlyStopping counter: 129 out of 150
+EarlyStopping counter: 130 out of 150
+EarlyStopping counter: 131 out of 150
+EarlyStopping counter: 132 out of 150
+EarlyStopping counter: 133 out of 150
+EarlyStopping counter: 134 out of 150
+EarlyStopping counter: 135 out of 150
+EarlyStopping counter: 136 out of 150
+EarlyStopping counter: 137 out of 150
+EarlyStopping counter: 138 out of 150
+EarlyStopping counter: 139 out of 150
+EarlyStopping counter: 140 out of 150
+EarlyStopping counter: 141 out of 150
+EarlyStopping counter: 142 out of 150
+EarlyStopping counter: 143 out of 150
+EarlyStopping counter: 144 out of 150
+EarlyStopping counter: 145 out of 150
+EarlyStopping counter: 146 out of 150
+EarlyStopping counter: 147 out of 150
+EarlyStopping counter: 148 out of 150
+EarlyStopping counter: 149 out of 150
+EarlyStopping counter: 150 out of 150
+Early stopping
+--- CombinedTM (seed 23, topics 30, time 2458.6s) ---
+    0 required architecture distribution all sets reproducing nightly hardware response recommend
+    1 all index hnsw function doc one src null construct thread
+    2 javascript syntax existing runtime suggestion breaking change implemented rest based
+    {'n_topics': 30.0, 'CV_n': 27.0, 'CV': 0.5961, 'NPMI_n': 27.0, 'NPMI': 0.154, 'UCI_n': 27.0, 'UCI': -0.9963, 'UMass_n': 30.0, 'UMass': -5.0959, 'EXCL': 0.0868, 'EXCL_KADJ': 0.0553, 'IRBO': 0.9861}
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 43 out of 150
+EarlyStopping counter: 44 out of 150
+EarlyStopping counter: 45 out of 150
+EarlyStopping counter: 46 out of 150
+EarlyStopping counter: 47 out of 150
+EarlyStopping counter: 48 out of 150
+EarlyStopping counter: 49 out of 150
+EarlyStopping counter: 50 out of 150
+EarlyStopping counter: 51 out of 150
+EarlyStopping counter: 52 out of 150
+EarlyStopping counter: 53 out of 150
+EarlyStopping counter: 54 out of 150
+EarlyStopping counter: 55 out of 150
+EarlyStopping counter: 56 out of 150
+EarlyStopping counter: 57 out of 150
+EarlyStopping counter: 58 out of 150
+EarlyStopping counter: 59 out of 150
+EarlyStopping counter: 60 out of 150
+EarlyStopping counter: 61 out of 150
+EarlyStopping counter: 62 out of 150
+EarlyStopping counter: 63 out of 150
+EarlyStopping counter: 64 out of 150
+EarlyStopping counter: 65 out of 150
+EarlyStopping counter: 66 out of 150
+EarlyStopping counter: 67 out of 150
+EarlyStopping counter: 68 out of 150
+EarlyStopping counter: 69 out of 150
+EarlyStopping counter: 70 out of 150
+EarlyStopping counter: 71 out of 150
+EarlyStopping counter: 72 out of 150
+EarlyStopping counter: 73 out of 150
+EarlyStopping counter: 74 out of 150
+EarlyStopping counter: 75 out of 150
+EarlyStopping counter: 76 out of 150
+EarlyStopping counter: 77 out of 150
+EarlyStopping counter: 78 out of 150
+EarlyStopping counter: 79 out of 150
+EarlyStopping counter: 80 out of 150
+EarlyStopping counter: 81 out of 150
+EarlyStopping counter: 82 out of 150
+EarlyStopping counter: 83 out of 150
+EarlyStopping counter: 84 out of 150
+EarlyStopping counter: 85 out of 150
+EarlyStopping counter: 86 out of 150
+EarlyStopping counter: 87 out of 150
+EarlyStopping counter: 88 out of 150
+EarlyStopping counter: 89 out of 150
+EarlyStopping counter: 90 out of 150
+EarlyStopping counter: 91 out of 150
+EarlyStopping counter: 92 out of 150
+EarlyStopping counter: 93 out of 150
+EarlyStopping counter: 94 out of 150
+EarlyStopping counter: 95 out of 150
+EarlyStopping counter: 96 out of 150
+EarlyStopping counter: 97 out of 150
+EarlyStopping counter: 1 out of 150
+EarlyStopping counter: 2 out of 150
+EarlyStopping counter: 3 out of 150
+EarlyStopping counter: 4 out of 150
+EarlyStopping counter: 5 out of 150
+EarlyStopping counter: 6 out of 150
+EarlyStopping counter: 7 out of 150
+EarlyStopping counter: 8 out of 150
+EarlyStopping counter: 9 out of 150
+EarlyStopping counter: 10 out of 150
+EarlyStopping counter: 11 out of 150
+EarlyStopping counter: 12 out of 150
+EarlyStopping counter: 13 out of 150
+EarlyStopping counter: 14 out of 150
+EarlyStopping counter: 15 out of 150
+EarlyStopping counter: 16 out of 150
+EarlyStopping counter: 17 out of 150
+EarlyStopping counter: 18 out of 150
+EarlyStopping counter: 19 out of 150
+EarlyStopping counter: 20 out of 150
+EarlyStopping counter: 21 out of 150
+EarlyStopping counter: 22 out of 150
+EarlyStopping counter: 23 out of 150
+EarlyStopping counter: 24 out of 150
+EarlyStopping counter: 25 out of 150
+EarlyStopping counter: 26 out of 150
+EarlyStopping counter: 27 out of 150
+EarlyStopping counter: 28 out of 150
+EarlyStopping counter: 29 out of 150
+EarlyStopping counter: 30 out of 150
+EarlyStopping counter: 31 out of 150
+EarlyStopping counter: 32 out of 150
+EarlyStopping counter: 33 out of 150
+EarlyStopping counter: 34 out of 150
+EarlyStopping counter: 35 out of 150
+EarlyStopping counter: 36 out of 150
+EarlyStopping counter: 37 out of 150
+EarlyStopping counter: 38 out of 150
+EarlyStopping counter: 39 out of 150
+EarlyStopping counter: 40 out of 150
+EarlyStopping counter: 41 out of 150
+EarlyStopping counter: 42 out of 150
+EarlyStopping counter: 43 out of 150
+EarlyStopping counter: 44 out of 150
+EarlyStopping counter: 45 out of 150
+EarlyStopping counter: 46 out of 150
+EarlyStopping counter: 47 out of 150
+EarlyStopping counter: 48 out of 150
+EarlyStopping counter: 49 out of 150
+EarlyStopping counter: 50 out of 150
+EarlyStopping counter: 51 out of 150
+EarlyStopping counter: 52 out of 150
+EarlyStopping counter: 53 out of 150
+EarlyStopping counter: 54 out of 150
+EarlyStopping counter: 55 out of 150
+EarlyStopping counter: 56 out of 150
+EarlyStopping counter: 57 out of 150
+EarlyStopping counter: 58 out of 150
+EarlyStopping counter: 59 out of 150
+EarlyStopping counter: 60 out of 150
+EarlyStopping counter: 61 out of 150
+EarlyStopping counter: 62 out of 150
+EarlyStopping counter: 63 out of 150
+EarlyStopping counter: 64 out of 150
+EarlyStopping counter: 65 out of 150
+EarlyStopping counter: 66 out of 150
+EarlyStopping counter: 67 out of 150
+EarlyStopping counter: 68 out of 150
+EarlyStopping counter: 69 out of 150
+EarlyStopping counter: 70 out of 150
+EarlyStopping counter: 71 out of 150
+EarlyStopping counter: 72 out of 150
+EarlyStopping counter: 73 out of 150
+EarlyStopping counter: 74 out of 150
+EarlyStopping counter: 75 out of 150
+EarlyStopping counter: 76 out of 150
+EarlyStopping counter: 77 out of 150
+EarlyStopping counter: 78 out of 150
+EarlyStopping counter: 79 out of 150
+EarlyStopping counter: 80 out of 150
+EarlyStopping counter: 81 out of 150
+EarlyStopping counter: 82 out of 150
+EarlyStopping counter: 83 out of 150
+EarlyStopping counter: 84 out of 150
+EarlyStopping counter: 85 out of 150
+EarlyStopping counter: 86 out of 150
+EarlyStopping counter: 87 out of 150
+EarlyStopping counter: 88 out of 150
+EarlyStopping counter: 89 out of 150
+EarlyStopping counter: 90 out of 150
+EarlyStopping counter: 91 out of 150
+EarlyStopping counter: 92 out of 150
+EarlyStopping counter: 93 out of 150
+EarlyStopping counter: 94 out of 150
+EarlyStopping counter: 95 out of 150
+EarlyStopping counter: 96 out of 150
+EarlyStopping counter: 97 out of 150
+EarlyStopping counter: 98 out of 150
+EarlyStopping counter: 99 out of 150
+EarlyStopping counter: 100 out of 150
+EarlyStopping counter: 101 out of 150
+EarlyStopping counter: 102 out of 150
+EarlyStopping counter: 103 out of 150
+EarlyStopping counter: 104 out of 150
+EarlyStopping counter: 105 out of 150
+EarlyStopping counter: 106 out of 150
+EarlyStopping counter: 107 out of 150
+EarlyStopping counter: 108 out of 150
+EarlyStopping counter: 109 out of 150
+EarlyStopping counter: 110 out of 150
+EarlyStopping counter: 111 out of 150
+EarlyStopping counter: 112 out of 150
+EarlyStopping counter: 113 out of 150
+EarlyStopping counter: 114 out of 150
+EarlyStopping counter: 115 out of 150
+EarlyStopping counter: 116 out of 150
+EarlyStopping counter: 117 out of 150
+EarlyStopping counter: 118 out of 150
+EarlyStopping counter: 119 out of 150
+EarlyStopping counter: 120 out of 150
+EarlyStopping counter: 121 out of 150
+EarlyStopping counter: 122 out of 150
+EarlyStopping counter: 123 out of 150
+EarlyStopping counter: 124 out of 150
+EarlyStopping counter: 125 out of 150
+EarlyStopping counter: 126 out of 150
+EarlyStopping counter: 127 out of 150
+EarlyStopping counter: 128 out of 150
+EarlyStopping counter: 129 out of 150
+EarlyStopping counter: 130 out of 150
+EarlyStopping counter: 131 out of 150
+EarlyStopping counter: 132 out of 150
+EarlyStopping counter: 133 out of 150
+EarlyStopping counter: 134 out of 150
+EarlyStopping counter: 135 out of 150
+EarlyStopping counter: 136 out of 150
+EarlyStopping counter: 137 out of 150
+EarlyStopping counter: 138 out of 150
+EarlyStopping counter: 139 out of 150
+EarlyStopping counter: 140 out of 150
+EarlyStopping counter: 141 out of 150
+EarlyStopping counter: 142 out of 150
+EarlyStopping counter: 143 out of 150
+EarlyStopping counter: 144 out of 150
+EarlyStopping counter: 145 out of 150
+EarlyStopping counter: 146 out of 150
+EarlyStopping counter: 147 out of 150
+EarlyStopping counter: 148 out of 150
+EarlyStopping counter: 149 out of 150
+EarlyStopping counter: 150 out of 150
+Early stopping
+--- CombinedTM (seed 37, topics 30, time 1982.8s) ---
+    0 type regression function assignable conditional inferred variable array strictnullchecks parameter
+    1 name memory qbuf evalsha ping multi events ffc test free
+    2 container host some now first run one problem volumes probe
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5992, 'NPMI_n': 30.0, 'NPMI': 0.1079, 'UCI_n': 30.0, 'UCI': -1.8196, 'UMass_n': 30.0, 'UMass': -5.7087, 'EXCL': 0.0766, 'EXCL_KADJ': 0.0448, 'IRBO': 0.9854}
+--- NeuralLDA (seed 11, topics 30, time 919.8s) ---
+    0 linux region preparing data src server utils apr ffc local
+    1 name evalsha free qbuf events redis idle multi flags ping
+    2 typescript feature javascript module change existing import syntax option runtime
+    {'n_topics': 30.0, 'CV_n': 29.0, 'CV': 0.5845, 'NPMI_n': 29.0, 'NPMI': 0.1172, 'UCI_n': 29.0, 'UCI': -1.3569, 'UMass_n': 30.0, 'UMass': -5.0153, 'EXCL': 0.0759, 'EXCL_KADJ': 0.044, 'IRBO': 0.9956}
+--- NeuralLDA (seed 23, topics 30, time 910.2s) ---
+    0 server redis info call eca hgetall aab sadd time start
+    1 all sets distribution architecture reproducing nightly required column hardware recommend
+    2 master cluster redis node slave cli nodes sentinel connected lib
+    {'n_topics': 30.0, 'CV_n': 29.0, 'CV': 0.5711, 'NPMI_n': 29.0, 'NPMI': 0.1093, 'UCI_n': 29.0, 'UCI': -1.5493, 'UMass_n': 30.0, 'UMass': -5.0914, 'EXCL': 0.0768, 'EXCL_KADJ': 0.0449, 'IRBO': 0.994}
+--- NeuralLDA (seed 37, topics 30, time 915.2s) ---
+    0 type boolean assignable union function cast regression conditional true line
+    1 values array functions documentation way api currently proposal general don
+    2 file files csv read parquet reading folder json auto header
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5811, 'NPMI_n': 30.0, 'NPMI': 0.0931, 'UCI_n': 30.0, 'UCI': -1.9909, 'UMass_n': 30.0, 'UMass': -5.5201, 'EXCL': 0.0712, 'EXCL_KADJ': 0.0392, 'IRBO': 0.9941}
+  [CTMLite seed 11] epoch 1 loss 659.757 klw 0.0010
+  [CTMLite seed 11] epoch 2 loss 605.257 klw 0.0020
+  [CTMLite seed 11] epoch 3 loss 584.779 klw 0.0030
+  [CTMLite seed 11] epoch 4 loss 574.453 klw 0.0040
+  [CTMLite seed 11] epoch 5 loss 565.216 klw 0.0050
+  [CTMLite seed 11] epoch 25 loss 542.917 klw 0.0200
+  [CTMLite seed 11] epoch 50 loss 530.920 klw 0.0200
+  [CTMLite seed 11] epoch 75 loss 534.371 klw 0.0200
+  [CTMLite seed 11] epoch 100 loss 526.787 klw 0.0200
+  [CTMLite seed 11] epoch 125 loss 523.206 klw 0.0200
+  [CTMLite seed 11] epoch 150 loss 523.579 klw 0.0200
+  [CTMLite seed 11] epoch 175 loss 521.106 klw 0.0200
+--- CTMLite (seed 11, topics 30, time 665.3s) ---
+    0 sentinel port tls host registry pass cert access acl default
+    1 value inner column join int read columns query json values
+    2 table select query statement appear clause branch column alias insert
+    {'n_topics': 30.0, 'CV_n': 29.0, 'CV': 0.6185, 'NPMI_n': 29.0, 'NPMI': 0.1649, 'UCI_n': 29.0, 'UCI': -0.1443, 'UMass_n': 30.0, 'UMass': -4.2154, 'EXCL': 0.0416, 'EXCL_KADJ': 0.0085, 'IRBO': 0.9884}
+  [CTMLite seed 23] epoch 1 loss 659.408 klw 0.0010
+  [CTMLite seed 23] epoch 2 loss 612.833 klw 0.0020
+  [CTMLite seed 23] epoch 3 loss 591.061 klw 0.0030
+  [CTMLite seed 23] epoch 4 loss 586.966 klw 0.0040
+  [CTMLite seed 23] epoch 5 loss 570.429 klw 0.0050
+  [CTMLite seed 23] epoch 25 loss 542.904 klw 0.0200
+  [CTMLite seed 23] epoch 50 loss 536.634 klw 0.0200
+  [CTMLite seed 23] epoch 75 loss 536.166 klw 0.0200
+  [CTMLite seed 23] epoch 100 loss 531.022 klw 0.0200
+  [CTMLite seed 23] epoch 125 loss 523.924 klw 0.0200
+  [CTMLite seed 23] epoch 150 loss 532.842 klw 0.0200
+  [CTMLite seed 23] epoch 175 loss 527.862 klw 0.0200
+  [CTMLite seed 23] epoch 200 loss 526.736 klw 0.0200
+--- CTMLite (seed 23, topics 30, time 641.8s) ---
+    0 command commands keys event maxmemory set key lua tracking volatile
+    1 type types function typescript javascript feature change object different cases
+    2 details aws physical virtualbox etc important occasionally deem description compose
+    {'n_topics': 30.0, 'CV_n': 28.0, 'CV': 0.5803, 'NPMI_n': 28.0, 'NPMI': 0.1302, 'UCI_n': 28.0, 'UCI': -1.0713, 'UMass_n': 30.0, 'UMass': -5.1242, 'EXCL': 0.0427, 'EXCL_KADJ': 0.0097, 'IRBO': 0.9874}
+  [CTMLite seed 37] epoch 1 loss 648.586 klw 0.0010
+  [CTMLite seed 37] epoch 2 loss 597.116 klw 0.0020
+  [CTMLite seed 37] epoch 3 loss 585.032 klw 0.0030
+  [CTMLite seed 37] epoch 4 loss 579.885 klw 0.0040
+  [CTMLite seed 37] epoch 5 loss 579.434 klw 0.0050
+  [CTMLite seed 37] epoch 25 loss 541.069 klw 0.0200
+  [CTMLite seed 37] epoch 50 loss 532.120 klw 0.0200
+  [CTMLite seed 37] epoch 75 loss 525.380 klw 0.0200
+  [CTMLite seed 37] epoch 100 loss 528.415 klw 0.0200
+  [CTMLite seed 37] epoch 125 loss 518.265 klw 0.0200
+  [CTMLite seed 37] epoch 150 loss 522.929 klw 0.0200
+  [CTMLite seed 37] epoch 175 loss 523.592 klw 0.0200
+  [CTMLite seed 37] epoch 200 loss 520.987 klw 0.0200
+  [CTMLite seed 37] epoch 225 loss 523.145 klw 0.0200
+  [CTMLite seed 37] epoch 250 loss 522.628 klw 0.0200
+  [CTMLite seed 37] epoch 275 loss 525.886 klw 0.0200
+--- CTMLite (seed 37, topics 30, time 928.8s) ---
+    0 image images pull ubuntu dockerfile tag cache feb registry ago
+    1 duplicate prefix unused comes transparent numbers comparing derived factory initialization
+    2 file csv parquet read json files reading auto open database
+    {'n_topics': 30.0, 'CV_n': 27.0, 'CV': 0.5555, 'NPMI_n': 27.0, 'NPMI': 0.0928, 'UCI_n': 27.0, 'UCI': -1.6726, 'UMass_n': 30.0, 'UMass': -5.9957, 'EXCL': 0.0478, 'EXCL_KADJ': 0.015, 'IRBO': 0.9919}
+     model  K_target  topn readout  n_seeds  n_failed  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+CombinedTM        30    10  ctfidf        3         0              30.0 0.620061 0.038838   0.163273  0.060561 -0.994625 0.825817   -4.823860   1.047672   0.078463  0.007615        0.046686       0.007877   0.986644  0.001621
+ NeuralLDA        30    10  ctfidf        3         0              30.0 0.578920 0.006962   0.106558  0.012283 -1.632361 0.325099   -5.208912   0.272192   0.074609  0.002994        0.042698       0.003098   0.994564  0.000932
+   CTMLite        30    10  ctfidf        3         0              30.0 0.584773 0.031725   0.129299  0.036064 -0.962756 0.769908   -5.111750   0.890242   0.044030  0.003314        0.011065       0.003428   0.989198  0.002356
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_github.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_github_summary.csv
+=== [13:32:35] benchmark rerun github exit=0 ===
+
+=== [13:32:35] merge github rows ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u merge_benchmark_rows.py C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_runs_githubtrain6000_test2000.csv C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_github.csv --summary C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_summary_github.csv
+27 -> 27 rows; summary -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_summary_github.csv
+     model  K_target  topn readout  n_seeds  n_failed  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+ NeuralLDA        30  10.0  ctfidf        3         0              30.0 0.578920 0.006962   0.106558  0.012283 -1.632361 0.325099   -5.208912   0.272192   0.074609  0.002994        0.042698       0.003098   0.994564  0.000932
+   CTMLite        30  10.0  ctfidf        3         0              30.0 0.584773 0.031725   0.129299  0.036064 -0.962756 0.769908   -5.111750   0.890242   0.044030  0.003314        0.011065       0.003428   0.989198  0.002356
+CombinedTM        30  10.0  ctfidf        3         0              30.0 0.620061 0.038838   0.163273  0.060561 -0.994625 0.825817   -4.823860   1.047672   0.078463  0.007615        0.046686       0.007877   0.986644  0.001621
+=== [13:32:48] merge github rows exit=0 ===

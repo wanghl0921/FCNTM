@@ -1,0 +1,4 @@
+   FC-NTM seed 11 {'CV': 0.6956, 'NPMI': 0.1862, 'IRBO': 0.9887}
+   FC-NTM-cTFIDF seed 11 {'CV': 0.6682, 'NPMI': 0.2091, 'IRBO': 0.8785}
+   FC-NTM seed 23 {'CV': 0.6713, 'NPMI': 0.2039, 'IRBO': 0.9888}
+   FC-NTM-cTFIDF seed 23 {'CV': 0.699, 'NPMI': 0.2304, 'IRBO': 0.8921}

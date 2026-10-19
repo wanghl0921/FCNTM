@@ -1,0 +1,30 @@
+
+=== [15:20:01] core ablations github ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_ablation_public.py --dataset github --seeds 11,23,37 --k 30 --lr 5e-4 --configs no-cross,no-consistency,no-mask,no-fielddrop --max-epochs 700 --resume --out ablation_public_github_core.csv
+resume: 0 row(s) on disk, 0 complete (config, seed) pair(s)
+   no-cross seed 11 beta {'CV': 0.7045, 'NPMI': 0.2381}
+   no-cross seed 11 cTFIDF {'CV': 0.7222, 'NPMI': 0.2746}
+   no-cross seed 23 beta {'CV': 0.7452, 'NPMI': 0.2627}
+   no-cross seed 23 cTFIDF {'CV': 0.7415, 'NPMI': 0.2908}
+   no-cross seed 37 beta {'CV': 0.7159, 'NPMI': 0.2476}
+   no-cross seed 37 cTFIDF {'CV': 0.7011, 'NPMI': 0.2581}
+   no-consistency seed 11 beta {'CV': 0.7137, 'NPMI': 0.2502}
+   no-consistency seed 11 cTFIDF {'CV': 0.7342, 'NPMI': 0.2854}
+   no-consistency seed 23 beta {'CV': 0.6781, 'NPMI': 0.2249}
+   no-consistency seed 23 cTFIDF {'CV': 0.7428, 'NPMI': 0.293}
+   no-consistency seed 37 beta {'CV': 0.7088, 'NPMI': 0.2502}
+   no-consistency seed 37 cTFIDF {'CV': 0.7143, 'NPMI': 0.2547}
+   no-mask seed 11 beta {'CV': 0.6939, 'NPMI': 0.2276}
+   no-mask seed 11 cTFIDF {'CV': 0.7419, 'NPMI': 0.278}
+   no-mask seed 23 beta {'CV': 0.7127, 'NPMI': 0.2361}
+   no-mask seed 23 cTFIDF {'CV': 0.7228, 'NPMI': 0.2602}
+   no-mask seed 37 beta {'CV': 0.6602, 'NPMI': 0.2036}
+   no-mask seed 37 cTFIDF {'CV': 0.7032, 'NPMI': 0.2453}
+   no-fielddrop seed 11 beta {'CV': 0.6751, 'NPMI': 0.2027}
+   no-fielddrop seed 11 cTFIDF {'CV': 0.7361, 'NPMI': 0.2829}
+   no-fielddrop seed 23 beta {'CV': 0.6961, 'NPMI': 0.2417}
+   no-fielddrop seed 23 cTFIDF {'CV': 0.7087, 'NPMI': 0.255}
+   no-fielddrop seed 37 beta {'CV': 0.6633, 'NPMI': 0.1905}
+   no-fielddrop seed 37 cTFIDF {'CV': 0.6709, 'NPMI': 0.2341}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ablation_public_github_core.csv
+=== [04:09:28] core ablations github exit=0 ===

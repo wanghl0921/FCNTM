@@ -1,0 +1,287 @@
+[chain] external baseline chain finished; taking over
+
+=== [13:34:24] baselines (free 3.64 GB) ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u finish_baseline_reruns.py
+
+=== [13:34:25] benchmark rerun agnews ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u benchmark_public.py --dataset agnews --models CombinedTM,NeuralLDA,CTMLite --seeds 11,23,37 --k 30 --out rerun_main_baselines_agnews.csv --summary rerun_main_baselines_agnews_summary.csv
+train docs 6000 vocab 4724
+test docs 7600
+meta {'train_per_class': 1500, 'test_per_class': 1900, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 6000, 'source': 'AG News (official train/test CSVs)'}
+doc embeddings (6000, 384)
+resuming with 10 existing rows
+dropped 1 duplicated run rows
+resume: 9 of 9 runs already done
+skip CombinedTM 11
+skip CombinedTM 23
+skip CombinedTM 37
+skip NeuralLDA 11
+skip NeuralLDA 23
+skip NeuralLDA 37
+skip CTMLite 11
+skip CTMLite 23
+skip CTMLite 37
+     model  K_target  topn readout  n_seeds  n_failed  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+CombinedTM        30    10  ctfidf        3         0              30.0 0.513328 0.044752   0.052620  0.064098 -3.095872 1.296316   -8.198353   1.464936   0.176190  0.041186        0.147783       0.042606   0.999838  0.000035
+ NeuralLDA        30    10  ctfidf        3         0              30.0 0.525889 0.030934   0.071146  0.014547 -1.929492 0.124044   -6.614411   0.095588   0.086910  0.000562        0.055425       0.000581   0.998923  0.000701
+   CTMLite        30    10  ctfidf        3         0              30.0 0.431358 0.023280  -0.014676  0.015582 -3.643066 0.385378   -8.335212   0.402099   0.072767  0.020375        0.040793       0.021077   0.997931  0.000769
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_agnews.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_agnews_summary.csv
+=== [13:34:41] benchmark rerun agnews exit=0 ===
+
+=== [13:34:41] merge agnews rows ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u merge_benchmark_rows.py C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_runs_agnews.csv C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_agnews.csv --summary C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_summary_agnews.csv
+skip incomplete/failed row: CombinedTM seed 37
+27 -> 27 rows; summary -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_summary_agnews.csv
+     model  K_target  topn readout  n_seeds  n_failed  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+ NeuralLDA        30  10.0  ctfidf        3         0              30.0 0.525889 0.030934   0.071146  0.014547 -1.929492 0.124044   -6.614411   0.095588   0.086910  0.000562        0.055425       0.000581   0.998923  0.000701
+   CTMLite        30  10.0  ctfidf        3         0              30.0 0.431358 0.023280  -0.014676  0.015582 -3.643066 0.385378   -8.335212   0.402099   0.072767  0.020375        0.040793       0.021077   0.997931  0.000769
+CombinedTM        30  10.0  ctfidf        3         0              30.0 0.513328 0.044752   0.052620  0.064098 -3.095872 1.296316   -8.198353   1.464936   0.176190  0.041186        0.147783       0.042606   0.999838  0.000035
+=== [13:34:54] merge agnews rows exit=0 ===
+
+=== [13:34:54] benchmark rerun github ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u benchmark_public.py --dataset github --models CombinedTM,NeuralLDA,CTMLite --seeds 11,23,37 --k 30 --out rerun_main_baselines_github.csv --summary rerun_main_baselines_github_summary.csv
+train docs 6000 vocab 5175
+test docs 2000
+meta {'repos': ['duckdb', 'typescript', 'moby', 'redis'], 'per_repo_train': 1500, 'per_repo_test': 500, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 8000, 'source': 'open-index/open-github-issues (moby, TypeScript, duckdb, redis)'}
+doc embeddings (6000, 384)
+resuming with 9 existing rows
+resume: 9 of 9 runs already done
+skip CombinedTM 11
+skip CombinedTM 23
+skip CombinedTM 37
+skip NeuralLDA 11
+skip NeuralLDA 23
+skip NeuralLDA 37
+skip CTMLite 11
+skip CTMLite 23
+skip CTMLite 37
+     model  K_target  topn readout  n_seeds  n_failed  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+CombinedTM        30    10  ctfidf        3         0              30.0 0.620061 0.038838   0.163273  0.060561 -0.994625 0.825817   -4.823860   1.047672   0.078463  0.007615        0.046686       0.007877   0.986644  0.001621
+ NeuralLDA        30    10  ctfidf        3         0              30.0 0.578920 0.006962   0.106558  0.012283 -1.632361 0.325099   -5.208912   0.272192   0.074609  0.002994        0.042698       0.003098   0.994564  0.000932
+   CTMLite        30    10  ctfidf        3         0              30.0 0.584773 0.031725   0.129299  0.036064 -0.962756 0.769908   -5.111750   0.890242   0.044030  0.003314        0.011065       0.003428   0.989198  0.002356
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_github.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_github_summary.csv
+=== [13:35:16] benchmark rerun github exit=0 ===
+
+=== [13:35:16] merge github rows ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u merge_benchmark_rows.py C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_runs_githubtrain6000_test2000.csv C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_main_baselines_github.csv --summary C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_summary_github.csv
+27 -> 27 rows; summary -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_summary_github.csv
+     model  K_target  topn readout  n_seeds  n_failed  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+ NeuralLDA        30  10.0  ctfidf        3         0              30.0 0.578920 0.006962   0.106558  0.012283 -1.632361 0.325099   -5.208912   0.272192   0.074609  0.002994        0.042698       0.003098   0.994564  0.000932
+   CTMLite        30  10.0  ctfidf        3         0              30.0 0.584773 0.031725   0.129299  0.036064 -0.962756 0.769908   -5.111750   0.890242   0.044030  0.003314        0.011065       0.003428   0.989198  0.002356
+CombinedTM        30  10.0  ctfidf        3         0              30.0 0.620061 0.038838   0.163273  0.060561 -0.994625 0.825817   -4.823860   1.047672   0.078463  0.007615        0.046686       0.007877   0.986644  0.001621
+=== [13:35:30] merge github rows exit=0 ===
+=== [13:35:30] baselines exit=0 (free 3.64 GB) ===
+
+=== [13:35:30] agnews fielddrop_off (free 3.64 GB) ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_public_missing_field.py --dataset agnews --seeds 11,23,37 --settings fielddrop_off --dump-state outputs/agnews_fielddrop_off.pt --resume-every 50
+[agnews] field vocab cause=4681 item=3829
+[agnews] test docs=7600 with background field=7599
+existing rows in public_missing_field_occlusion.csv : 7
+    [train] epoch 1 loss 456.699 klw 0.0025
+    [train] epoch 2 loss 450.872 klw 0.0050
+    [train] epoch 3 loss 450.235 klw 0.0075
+    [train] epoch 4 loss 449.162 klw 0.0100
+    [train] epoch 5 loss 448.354 klw 0.0125
+    [train] epoch 25 loss 445.764 klw 0.0500
+    [train] epoch 50 loss 428.867 klw 0.0500
+    [train] epoch 75 loss 422.438 klw 0.0500
+    [train] epoch 100 loss 416.479 klw 0.0500
+    [train] epoch 125 loss 412.496 klw 0.0500
+    [train] epoch 150 loss 410.055 klw 0.0500
+    [train] epoch 175 loss 407.410 klw 0.0500
+    [train] epoch 200 loss 405.657 klw 0.0500
+    [train] epoch 225 loss 404.004 klw 0.0500
+    [train] epoch 250 loss 401.911 klw 0.0500
+    [train] epoch 275 loss 400.738 klw 0.0500
+    [train] epoch 300 loss 399.794 klw 0.0500
+    [train] epoch 325 loss 398.702 klw 0.0500
+    [train] epoch 350 loss 397.761 klw 0.0500
+    [train] epoch 375 loss 396.514 klw 0.0500
+    [train] epoch 400 loss 395.791 klw 0.0500
+    [train] epoch 425 loss 396.065 klw 0.0500
+    [train] epoch 450 loss 394.702 klw 0.0500
+    [train] epoch 475 loss 393.871 klw 0.0500
+    [train] epoch 500 loss 393.579 klw 0.0500
+    [train] epoch 525 loss 392.385 klw 0.0500
+    [train] epoch 550 loss 393.071 klw 0.0500
+    [train] epoch 575 loss 391.573 klw 0.0500
+    [train] epoch 600 loss 390.922 klw 0.0500
+    [train] epoch 625 loss 391.044 klw 0.0500
+    [train] epoch 650 loss 390.101 klw 0.0500
+    [train] epoch 675 loss 389.912 klw 0.0500
+    [train] epoch 700 loss 389.637 klw 0.0500
+   fielddrop_off seed 11 {'full_CV': 0.557732, 'occ_CV': 0.552823, 'delta_CV': 0.004909, 'delta_NLL_token': 0.259635, 'top1_agreement': 0.512173}
+    [train] epoch 1 loss 457.080 klw 0.0025
+    [train] epoch 2 loss 451.084 klw 0.0050
+    [train] epoch 3 loss 449.822 klw 0.0075
+    [train] epoch 4 loss 449.085 klw 0.0100
+    [train] epoch 5 loss 448.334 klw 0.0125
+    [train] epoch 25 loss 445.351 klw 0.0500
+    [train] epoch 50 loss 429.504 klw 0.0500
+    [train] epoch 75 loss 426.327 klw 0.0500
+    [train] epoch 100 loss 421.763 klw 0.0500
+    [train] epoch 125 loss 416.570 klw 0.0500
+    [train] epoch 150 loss 412.946 klw 0.0500
+    [train] epoch 175 loss 409.855 klw 0.0500
+    [train] epoch 200 loss 407.471 klw 0.0500
+    [train] epoch 225 loss 405.271 klw 0.0500
+    [train] epoch 250 loss 403.278 klw 0.0500
+    [train] epoch 275 loss 401.768 klw 0.0500
+    [train] epoch 300 loss 400.627 klw 0.0500
+    [train] epoch 325 loss 398.948 klw 0.0500
+    [train] epoch 350 loss 398.513 klw 0.0500
+    [train] epoch 375 loss 397.318 klw 0.0500
+    [train] epoch 400 loss 396.591 klw 0.0500
+    [train] epoch 425 loss 395.497 klw 0.0500
+    [train] epoch 450 loss 394.552 klw 0.0500
+    [train] epoch 475 loss 394.247 klw 0.0500
+    [train] epoch 500 loss 393.791 klw 0.0500
+    [train] epoch 525 loss 392.777 klw 0.0500
+    [train] epoch 550 loss 392.173 klw 0.0500
+    [train] epoch 575 loss 391.874 klw 0.0500
+    [train] epoch 600 loss 391.424 klw 0.0500
+    [train] epoch 625 loss 390.347 klw 0.0500
+    [train] epoch 650 loss 390.537 klw 0.0500
+    [train] epoch 675 loss 389.493 klw 0.0500
+    [train] epoch 700 loss 389.750 klw 0.0500
+   fielddrop_off seed 23 {'full_CV': 0.609319, 'occ_CV': 0.600506, 'delta_CV': 0.008813, 'delta_NLL_token': 0.266308, 'top1_agreement': 0.487169}
+    [train] epoch 1 loss 456.785 klw 0.0025
+    [train] epoch 2 loss 450.789 klw 0.0050
+    [train] epoch 3 loss 449.438 klw 0.0075
+    [train] epoch 4 loss 448.651 klw 0.0100
+    [train] epoch 5 loss 447.713 klw 0.0125
+    [train] epoch 25 loss 445.771 klw 0.0500
+    [train] epoch 50 loss 428.739 klw 0.0500
+    [train] epoch 75 loss 419.328 klw 0.0500
+    [train] epoch 100 loss 415.023 klw 0.0500
+    [train] epoch 125 loss 411.840 klw 0.0500
+    [train] epoch 150 loss 409.268 klw 0.0500
+    [train] epoch 175 loss 406.890 klw 0.0500
+    [train] epoch 200 loss 405.586 klw 0.0500
+    [train] epoch 225 loss 403.102 klw 0.0500
+    [train] epoch 250 loss 401.673 klw 0.0500
+    [train] epoch 275 loss 401.045 klw 0.0500
+    [train] epoch 300 loss 399.785 klw 0.0500
+    [train] epoch 325 loss 398.663 klw 0.0500
+    [train] epoch 350 loss 397.874 klw 0.0500
+    [train] epoch 375 loss 397.290 klw 0.0500
+    [train] epoch 400 loss 395.598 klw 0.0500
+    [train] epoch 425 loss 395.747 klw 0.0500
+    [train] epoch 450 loss 394.596 klw 0.0500
+    [train] epoch 475 loss 393.388 klw 0.0500
+    [train] epoch 500 loss 392.976 klw 0.0500
+    [train] epoch 525 loss 392.739 klw 0.0500
+    [train] epoch 550 loss 392.375 klw 0.0500
+    [train] epoch 575 loss 391.986 klw 0.0500
+    [train] epoch 600 loss 391.528 klw 0.0500
+    [train] epoch 625 loss 390.698 klw 0.0500
+    [train] epoch 650 loss 390.234 klw 0.0500
+    [train] epoch 675 loss 389.565 klw 0.0500
+    [train] epoch 700 loss 389.322 klw 0.0500
+   fielddrop_off seed 37 {'full_CV': 0.60008, 'occ_CV': 0.592865, 'delta_CV': 0.007215, 'delta_NLL_token': 0.28199, 'top1_agreement': 0.493486}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_occlusion.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_fieldview.csv
+=== [17:53:04] agnews fielddrop_off exit=0 (free 3.49 GB) ===
+
+=== [17:53:04] fair_readout agnews (free 3.49 GB) ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u fair_readout.py --corpus agnews --seeds 11,23,37 --k 30 --models ETM,ProdLDA,CTMLite,LDA,NMF --out fair_readout_agnews_3seed.csv
+[agnews] training ETM seed=11
+[agnews] training ProdLDA seed=11
+[agnews] training CTMLite seed=11
+[agnews] training LDA seed=11
+[agnews] training NMF seed=11
+[agnews] training ETM seed=23
+[agnews] training ProdLDA seed=23
+[agnews] training CTMLite seed=23
+[agnews] training LDA seed=23
+[agnews] training NMF seed=23
+[agnews] training ETM seed=37
+[agnews] training ProdLDA seed=37
+[agnews] training CTMLite seed=37
+[agnews] training LDA seed=37
+[agnews] training NMF seed=37
+      source   model  seed readout     CV    NPMI   UMass
+fair_readout     ETM    11    beta 0.5108  0.0941 -5.0146
+fair_readout     ETM    11  ctfidf 0.5090  0.0923 -6.6635
+fair_readout ProdLDA    11    beta 0.5503  0.0789 -6.5846
+fair_readout ProdLDA    11  ctfidf 0.5316  0.1112 -4.0203
+fair_readout CTMLite    11    beta 0.4573 -0.0004 -7.9901
+fair_readout CTMLite    11  ctfidf 0.4628  0.0714 -4.8147
+fair_readout     LDA    11    beta 0.4318 -0.0454 -8.1208
+fair_readout     LDA    11  ctfidf 0.4514  0.0080 -7.7874
+fair_readout     NMF    11    beta 0.4959  0.0693 -6.0489
+fair_readout     NMF    11  ctfidf 0.5323  0.1200 -6.1553
+fair_readout     ETM    23    beta 0.5302  0.1008 -5.1969
+fair_readout     ETM    23  ctfidf 0.5379  0.1036 -6.4266
+fair_readout ProdLDA    23    beta 0.5362  0.0802 -6.5373
+fair_readout ProdLDA    23  ctfidf 0.5690  0.1355 -3.7975
+fair_readout CTMLite    23    beta 0.4122 -0.0123 -8.2387
+fair_readout CTMLite    23  ctfidf 0.4584  0.0587 -5.4160
+fair_readout     LDA    23    beta 0.4242 -0.0790 -8.9525
+fair_readout     LDA    23  ctfidf 0.4426  0.0208 -7.4079
+fair_readout     NMF    23    beta 0.4783  0.0564 -6.1360
+fair_readout     NMF    23  ctfidf 0.5244  0.1141 -5.9714
+fair_readout     ETM    37    beta 0.5076  0.0943 -5.2977
+fair_readout     ETM    37  ctfidf 0.5377  0.1039 -6.1594
+fair_readout ProdLDA    37    beta 0.4911  0.0544 -6.7214
+fair_readout ProdLDA    37  ctfidf 0.5318  0.1275 -3.9052
+fair_readout CTMLite    37    beta 0.4245 -0.0313 -8.7768
+fair_readout CTMLite    37  ctfidf 0.4452  0.0550 -4.8562
+fair_readout     LDA    37    beta 0.4061 -0.0747 -8.7887
+fair_readout     LDA    37  ctfidf 0.4585  0.0026 -7.7998
+fair_readout     NMF    37    beta 0.5080  0.0825 -5.7023
+fair_readout     NMF    37  ctfidf 0.5466  0.1222 -6.3725
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\fair_readout_agnews_3seed.csv
+=== [20:45:58] fair_readout agnews exit=0 (free 3.48 GB) ===
+
+=== [20:45:58] fair_readout github (free 3.48 GB) ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u fair_readout.py --corpus github --seeds 11,23,37 --k 30 --models ETM,ProdLDA,CTMLite,LDA,NMF --out fair_readout_github_3seed.csv
+[github] training ETM seed=11
+[github] training ProdLDA seed=11
+[github] training CTMLite seed=11
+[github] training LDA seed=11
+[github] training NMF seed=11
+[github] training ETM seed=23
+[github] training ProdLDA seed=23
+[github] training CTMLite seed=23
+[github] training LDA seed=23
+[github] training NMF seed=23
+[github] training ETM seed=37
+[github] training ProdLDA seed=37
+[github] training CTMLite seed=37
+[github] training LDA seed=37
+[github] training NMF seed=37
+      source   model  seed readout     CV   NPMI   UMass
+fair_readout     ETM    11    beta 0.6827 0.2232 -2.0878
+fair_readout     ETM    11  ctfidf 0.7025 0.2478 -2.6865
+fair_readout ProdLDA    11    beta 0.5845 0.1172 -5.0153
+fair_readout ProdLDA    11  ctfidf 0.6609 0.2029 -2.2825
+fair_readout CTMLite    11    beta 0.6185 0.1649 -4.2154
+fair_readout CTMLite    11  ctfidf 0.7064 0.2480 -1.8666
+fair_readout     LDA    11    beta 0.5442 0.0595 -4.4232
+fair_readout     LDA    11  ctfidf 0.5863 0.1617 -3.3862
+fair_readout     NMF    11    beta 0.6156 0.1641 -3.2372
+fair_readout     NMF    11  ctfidf 0.5801 0.1319 -4.4389
+fair_readout     ETM    23    beta 0.6787 0.2088 -2.3972
+fair_readout     ETM    23  ctfidf 0.6718 0.2276 -3.4290
+fair_readout ProdLDA    23    beta 0.5711 0.1093 -5.0914
+fair_readout ProdLDA    23  ctfidf 0.6693 0.2231 -2.2163
+fair_readout CTMLite    23    beta 0.5803 0.1302 -5.1242
+fair_readout CTMLite    23  ctfidf 0.6638 0.2042 -2.3406
+fair_readout     LDA    23    beta 0.5575 0.0922 -3.8495
+fair_readout     LDA    23  ctfidf 0.6423 0.2287 -2.5811
+fair_readout     NMF    23    beta 0.6085 0.1599 -3.2946
+fair_readout     NMF    23  ctfidf 0.5821 0.1354 -4.4276
+fair_readout     ETM    37    beta 0.6830 0.2204 -2.2335
+fair_readout     ETM    37  ctfidf 0.6585 0.2166 -3.1817
+fair_readout ProdLDA    37    beta 0.5811 0.0931 -5.5201
+fair_readout ProdLDA    37  ctfidf 0.6669 0.2196 -2.1954
+fair_readout CTMLite    37    beta 0.5555 0.0928 -5.9957
+fair_readout CTMLite    37  ctfidf 0.6556 0.1954 -2.4441
+fair_readout     LDA    37    beta 0.5353 0.0708 -4.3433
+fair_readout     LDA    37  ctfidf 0.6134 0.1892 -2.7769
+fair_readout     NMF    37    beta 0.6178 0.1668 -3.2559
+fair_readout     NMF    37  ctfidf 0.5911 0.1426 -4.2882
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\fair_readout_github_3seed.csv
+=== [23:35:42] fair_readout github exit=0 (free 3.47 GB) ===
+
+[chain] ALL DONE

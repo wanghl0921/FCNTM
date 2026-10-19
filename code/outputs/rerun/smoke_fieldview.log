@@ -1,0 +1,12 @@
+[github LDA seed 11] background: CV 0.5408 NPMI 0.0583 (n=30.0)
+[github LDA seed 11] summary: CV 0.4687 NPMI -0.3739 (n=20.0)
+
+saved C:\Users\ADMINI~1\AppData\Local\Temp\2\fieldview_smoke_t5d11kmx\baseline_fieldview.csv
+view           background  summary
+dataset model                     
+github  LDA        0.5408   0.4687
+return code: 0
+rows: 2
+sidecar exists: True
+dataset model          eval_id           fit_id
+ github   LDA fec678296154bcf5 ee0943685be294b3

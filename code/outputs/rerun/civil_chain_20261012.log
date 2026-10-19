@@ -1,0 +1,48 @@
+[19:38:41] === civil chain start ===
+[19:38:41] waiting for PIDs [11424, 16276]
+[19:38:41] still running: [11424, 16276]
+[19:43:23] === civil chain start ===
+[19:43:23] waiting for PIDs [11424]
+[19:43:23] still running: [11424]
+[19:53:25] still running: [11424]
+[20:03:26] still running: [11424]
+[20:13:27] still running: [11424]
+[20:23:29] still running: [11424]
+[20:33:30] still running: [11424]
+[20:43:32] still running: [11424]
+[20:53:33] still running: [11424]
+[21:03:34] still running: [11424]
+[21:13:36] still running: [11424]
+[21:23:37] still running: [11424]
+[21:33:39] still running: [11424]
+[21:43:40] still running: [11424]
+[21:53:42] still running: [11424]
+[22:03:43] still running: [11424]
+[22:13:44] still running: [11424]
+[22:22:45] all waited jobs finished
+[22:22:52] FC-NTM extension incomplete (extension outputs missing; not continuing); training it now
+[22:22:52] === fcntm_ext_training: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_fcntm_train.py --corpus civil --seeds 53,71,89,101,113,127,139 --k 30 --fusion gate --fusion-norm balanced --fusion-weight 0.5 --field-dropout 0.5 --max-epochs 700 --lr 5e-4 --recover-nan --resume-every 50 --out outputs/rerun/fcntm_civil_seed53plus.csv --dump-details outputs/rerun/fcntm_civil_seed53plus_details.json --dump-state outputs/rerun/fcntm_main_state_civil.pt
+[08:05:40] === fcntm_ext_training exit=0
+[08:05:45] extension outputs verified for all 7 new seeds
+[08:05:48] stamped fit identities into the state: 7 records
+[08:05:48] === fcntm_occlusion_ext: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u extend_seeds_fcntm_occlusion.py --corpora civil
+[08:07:31] === fcntm_occlusion_ext exit=0
+[08:07:32] === btm_rerun: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u extend_seeds_btm.py --corpora civil --seeds 53,71,89,101,113,127,139
+[08:45:13] === btm_rerun exit=0
+[08:45:13] === lda_occlusion_ext: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u extend_seeds_lda_occlusion.py --corpora civil
+[09:21:34] === lda_occlusion_ext exit=0
+[09:21:34] === concat_control: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_concat_control.py --corpora github,agnews,civil --seeds 11,23,37 --k 30
+[15:39:04] === concat_control exit=0
+[15:39:04] === fair_readout_civil: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u fair_readout.py --corpus civil --seeds 11,23,37 --k 30 --models BTM,ETM,ProdLDA,CTMLite,LDA,NMF --out fair_readout_civil_3seed.csv
+[20:02:29] === fair_readout_civil exit=0
+[20:02:29] === benchmark_civil: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u benchmark_public.py --dataset civil --models BERTopic,Top2Vec,CombinedTM --seeds 11,23,37 --k 30 --topn 10 --readout ctfidf --out rerun_main_baselines_civil.csv --summary rerun_main_baselines_civil_summary.csv
+[23:10:54] === benchmark_civil exit=0
+[23:10:54] === title_archival: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u civil_title_archival.py --seeds 11,23,37 --top-labels 15
+[01:24:16] === title_archival exit=0
+[01:24:16] === make_civil_table: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u make_civil_table.py
+[01:24:18] === make_civil_table exit=0
+[01:24:18] === summarize_civil_extension: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u summarize_civil_extension.py
+[01:24:36] === summarize_civil_extension exit=0
+[01:24:36] === verify_newseed_archives: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u verify_newseed_archives.py --corpora civil,github,agnews
+[01:48:31] === verify_newseed_archives exit=0
+[01:48:31] === civil chain DONE ===

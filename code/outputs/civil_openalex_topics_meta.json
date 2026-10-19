@@ -1,0 +1,11 @@
+{
+  "dataset": "civil_openalex_topics",
+  "source": "OpenAlex primary topics (external automatic classifier labels, not expert ground truth)",
+  "fetched": "2026-10-12",
+  "records": 8000,
+  "records_without_topic": 142,
+  "csv": "outputs/civil_openalex_topics.csv",
+  "csv_sha256": "4e2f075217e7b4bcc7ba2c93d7fd5ed6a9af5a1a4daf8fcc73d2b4e1d4e9be23",
+  "columns": ["openalex_id", "topic", "topic_id", "subfield", "field", "score"],
+  "note": "Frozen snapshot used by civil_title_archival.py. OpenAlex topic assignments can change over time, so the archived snapshot is shipped with the delivery instead of being refetched."
+}

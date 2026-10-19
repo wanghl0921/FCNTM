@@ -1,0 +1,70 @@
+[supervise] attempt 1/15: python -u run_public_missing_field.py --dataset github --seeds 11 --settings fielddrop_on,fielddrop_off --dump-state outputs/github_missing_state.pt --resume-every 25
+[github] field vocab cause=5173 item=3458
+[github] test docs=2000 with background field=2000
+    [resume] continuing from epoch 200
+[supervise] attempt 1 exited with 1
+[supervise] attempt 2/15: python -u run_public_missing_field.py --dataset github --seeds 11 --settings fielddrop_on,fielddrop_off --dump-state outputs/github_missing_state.pt --resume-every 25
+[github] field vocab cause=5173 item=3458
+[github] test docs=2000 with background field=2000
+    [resume] continuing from epoch 200
+    [train] epoch 225 loss 1624.403 klw 0.0500
+    [train] epoch 250 loss 1629.813 klw 0.0500
+    [train] epoch 275 loss 1630.715 klw 0.0500
+    [train] epoch 300 loss 1620.734 klw 0.0500
+    [train] epoch 325 loss 1624.577 klw 0.0500
+    [train] epoch 350 loss 1609.688 klw 0.0500
+    [train] epoch 375 loss 1626.900 klw 0.0500
+    [train] epoch 400 loss 1604.198 klw 0.0500
+    [train] epoch 425 loss 1611.889 klw 0.0500
+    [train] epoch 450 loss 1615.327 klw 0.0500
+    [train] epoch 475 loss 1601.997 klw 0.0500
+    [train] epoch 500 loss 1593.075 klw 0.0500
+    [train] epoch 525 loss 1615.732 klw 0.0500
+    [train] epoch 550 loss 1588.408 klw 0.0500
+    [train] epoch 575 loss 1610.237 klw 0.0500
+    [train] epoch 600 loss 1593.414 klw 0.0500
+    [train] epoch 625 loss 1586.257 klw 0.0500
+    [train] epoch 650 loss 1584.171 klw 0.0500
+[supervise] attempt 2 exited with 3221225477
+[supervise] attempt 3/15: python -u run_public_missing_field.py --dataset github --seeds 11 --settings fielddrop_on,fielddrop_off --dump-state outputs/github_missing_state.pt --resume-every 25
+[github] field vocab cause=5173 item=3458
+[github] test docs=2000 with background field=2000
+    [resume] continuing from epoch 650
+    [train] epoch 675 loss 1575.472 klw 0.0500
+   fielddrop_on seed 11 {'full_CV': 0.719317, 'occ_CV': 0.721637, 'delta_CV': -0.00232, 'delta_NLL_token': 0.266912, 'top1_agreement': 0.358}
+    [train] epoch 1 loss 1956.087 klw 0.0025
+    [train] epoch 2 loss 1930.441 klw 0.0050
+    [train] epoch 3 loss 1917.162 klw 0.0075
+    [train] epoch 4 loss 1907.201 klw 0.0100
+    [train] epoch 5 loss 1907.123 klw 0.0125
+    [train] epoch 25 loss 1747.501 klw 0.0500
+    [train] epoch 50 loss 1693.567 klw 0.0500
+    [train] epoch 75 loss 1676.618 klw 0.0500
+    [train] epoch 100 loss 1638.417 klw 0.0500
+    [train] epoch 125 loss 1617.906 klw 0.0500
+    [train] epoch 150 loss 1608.972 klw 0.0500
+    [train] epoch 175 loss 1609.240 klw 0.0500
+    [train] epoch 200 loss 1596.847 klw 0.0500
+    [train] epoch 225 loss 1594.828 klw 0.0500
+    [train] epoch 250 loss 1593.008 klw 0.0500
+    [train] epoch 275 loss 1578.001 klw 0.0500
+    [train] epoch 300 loss 1581.259 klw 0.0500
+    [train] epoch 325 loss 1583.283 klw 0.0500
+    [train] epoch 350 loss 1580.091 klw 0.0500
+    [train] epoch 375 loss 1572.211 klw 0.0500
+    [train] epoch 400 loss 1575.213 klw 0.0500
+    [train] epoch 425 loss 1588.169 klw 0.0500
+    [train] epoch 450 loss 1570.321 klw 0.0500
+    [train] epoch 475 loss 1558.075 klw 0.0500
+    [train] epoch 500 loss 1566.479 klw 0.0500
+    [train] epoch 525 loss 1593.361 klw 0.0500
+    [train] epoch 550 loss 1563.771 klw 0.0500
+    [train] epoch 575 loss 1561.740 klw 0.0500
+    [train] epoch 600 loss 1569.735 klw 0.0500
+    [train] epoch 625 loss 1565.340 klw 0.0500
+    [train] epoch 650 loss 1550.581 klw 0.0500
+    [train] epoch 675 loss 1558.265 klw 0.0500
+    [train] epoch 700 loss 1557.778 klw 0.0500
+   fielddrop_off seed 11 {'full_CV': 0.736075, 'occ_CV': 0.740154, 'delta_CV': -0.004079, 'delta_NLL_token': 0.307975, 'top1_agreement': 0.359}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_occlusion.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_fieldview.csv
+[supervise] attempt 3 exited with 0

@@ -1,0 +1,30 @@
+
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe results_manifest.py
+wrote RESULTS_MANIFEST.json + RESULTS_MANIFEST.md (178 artifacts)
+
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe results_manifest.py --verify
+[verify] drift=0 missing=0 new=0 (manifest RESULTS_MANIFEST.json)
+
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe check_paper_numbers.py
+paper-vs-artifact number check on main.tex
+tab:agnews / tab:github (main results)
+tab:fair (read-out comparison)
+prose percentages
+redundancy table (held-out measures + BTM gaps)
+tab:fieldview (field-restricted read-out)
+table (field-view baselines)
+tab:occl-robust (partial occlusion, seed 11)
+tab:occl-cross (cross-corpus occlusion)
+table (field-ratio ladder)
+table (long-document control)
+table (occlusion controls)
+table (field-dropout control)
+table (beta read-out sensitivity)
+table (10-seed paired comparison)
+tab:fusion (fusion ablation)
+tab:core-ablation (core-mechanism ablation)
+tab:weight (fusion weight sweep)
+tab:occlusion (whole-field occlusion)
+development-free re-scoring table
+
+all 777 printed numbers match their artifacts

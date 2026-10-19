@@ -1,0 +1,5 @@
+﻿config,seed,readout,recall,precision
+recon2,11,item_only,0.044669405918338886,0.1375
+recon2,23,item_only,0.05500960421143919,0.16
+noxrec,11,item_only,0.016952626346262947,0.049
+noxrec,23,item_only,0.026855580207096705,0.0825

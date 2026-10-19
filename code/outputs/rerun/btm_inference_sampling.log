@@ -1,0 +1,57 @@
+  [github seed 11] BTM fitted in 1586s
+    read-outs identical to the stored ones: True
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=6.6301 agree=0.837
+  BTM rate=0.5 hidden_NLL=6.6394 agree=0.757
+  BTM rate=0.75 hidden_NLL=6.6702 agree=0.636
+  BTM rate=1 hidden_NLL=6.9717 agree=0.448
+    -> BTM curve refreshed in occlusion_robustness_github_seed11.csv
+  [github seed 23] BTM fitted in 1643s
+    read-outs identical to the stored ones: True
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=6.6310 agree=0.821
+  BTM rate=0.5 hidden_NLL=6.6371 agree=0.755
+  BTM rate=0.75 hidden_NLL=6.6723 agree=0.642
+  BTM rate=1 hidden_NLL=6.9796 agree=0.435
+    -> BTM curve refreshed in occlusion_robustness_github_seed23.csv
+  [github seed 37] BTM fitted in 1740s
+    read-outs identical to the stored ones: True
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=6.6323 agree=0.822
+  BTM rate=0.5 hidden_NLL=6.6236 agree=0.751
+  BTM rate=0.75 hidden_NLL=6.6634 agree=0.625
+  BTM rate=1 hidden_NLL=6.9790 agree=0.432
+    -> BTM curve refreshed in occlusion_robustness_github_seed37.csv
+  [agnews seed 11] BTM fitted in 1453s
+    read-outs identical to the stored ones: True
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.1402 agree=0.861
+  BTM rate=0.5 hidden_NLL=7.1512 agree=0.786
+  BTM rate=0.75 hidden_NLL=7.1943 agree=0.695
+  BTM rate=1 hidden_NLL=7.4461 agree=0.562
+    -> BTM curve refreshed in occlusion_robustness_agnews_seed11.csv
+  [agnews seed 23] BTM fitted in 1396s
+    read-outs identical to the stored ones: True
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.1219 agree=0.856
+  BTM rate=0.5 hidden_NLL=7.1416 agree=0.779
+  BTM rate=0.75 hidden_NLL=7.1918 agree=0.689
+  BTM rate=1 hidden_NLL=7.4418 agree=0.541
+    -> BTM curve refreshed in occlusion_robustness_agnews_seed23.csv
+  [agnews seed 37] BTM fitted in 1436s
+    read-outs identical to the stored ones: True
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.1364 agree=0.854
+  BTM rate=0.5 hidden_NLL=7.1490 agree=0.780
+  BTM rate=0.75 hidden_NLL=7.1964 agree=0.697
+  BTM rate=1 hidden_NLL=7.4479 agree=0.562
+    -> BTM curve refreshed in occlusion_robustness_agnews_seed37.csv
+corpus  seed  readouts_unchanged  nll_100
+github    11                True 6.971660
+github    23                True 6.979633
+github    37                True 6.978965
+agnews    11                True 7.446141
+agnews    23                True 7.441819
+agnews    37                True 7.447948
+
+[chain] BTM inference-sampling re-score DONE

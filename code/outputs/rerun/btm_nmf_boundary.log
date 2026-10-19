@@ -1,0 +1,89 @@
+  [github seed 11] BTM fitted in 1571s, 865901 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=6.6303 agree=0.827
+  BTM rate=0.5 hidden_NLL=6.6392 agree=0.747
+  BTM rate=0.75 hidden_NLL=6.6704 agree=0.628
+  BTM rate=1 hidden_NLL=6.9717 agree=0.445
+    -> BTM occlusion rows written to occlusion_robustness_github_seed11.csv
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9722 agree=0.903
+  NMF rate=0.5 hidden_NLL=7.1690 agree=0.830
+  NMF rate=0.75 hidden_NLL=7.5611 agree=0.726
+  NMF rate=1 hidden_NLL=10.2548 agree=0.469
+    -> NMF occlusion rows refreshed in occlusion_robustness_github_seed11.csv
+  [github seed 23] BTM fitted in 1472s, 865901 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=6.6306 agree=0.818
+  BTM rate=0.5 hidden_NLL=6.6374 agree=0.754
+  BTM rate=0.75 hidden_NLL=6.6725 agree=0.646
+  BTM rate=1 hidden_NLL=6.9796 agree=0.444
+    -> BTM occlusion rows written to occlusion_robustness_github_seed23.csv
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9614 agree=0.886
+  NMF rate=0.5 hidden_NLL=7.1425 agree=0.814
+  NMF rate=0.75 hidden_NLL=7.5135 agree=0.718
+  NMF rate=1 hidden_NLL=10.1915 agree=0.464
+    -> NMF occlusion rows refreshed in occlusion_robustness_github_seed23.csv
+  [github seed 37] BTM fitted in 1493s, 865901 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=6.6331 agree=0.818
+  BTM rate=0.5 hidden_NLL=6.6234 agree=0.740
+  BTM rate=0.75 hidden_NLL=6.6629 agree=0.622
+  BTM rate=1 hidden_NLL=6.9790 agree=0.433
+    -> BTM occlusion rows written to occlusion_robustness_github_seed37.csv
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9487 agree=0.886
+  NMF rate=0.5 hidden_NLL=7.0900 agree=0.817
+  NMF rate=0.75 hidden_NLL=7.5339 agree=0.728
+  NMF rate=1 hidden_NLL=10.2588 agree=0.467
+    -> NMF occlusion rows refreshed in occlusion_robustness_github_seed37.csv
+  fair_readout_github_3seed.csv / rerun_btm_github_readouts.csv updated
+  [agnews seed 11] BTM fitted in 1249s, 746053 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.1403 agree=0.862
+  BTM rate=0.5 hidden_NLL=7.1512 agree=0.787
+  BTM rate=0.75 hidden_NLL=7.1943 agree=0.696
+  BTM rate=1 hidden_NLL=7.4461 agree=0.562
+    -> BTM occlusion rows written to occlusion_robustness_agnews_seed11.csv
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.6582 agree=0.824
+  NMF rate=0.5 hidden_NLL=10.3060 agree=0.731
+  NMF rate=0.75 hidden_NLL=11.3177 agree=0.645
+  NMF rate=1 hidden_NLL=13.5841 agree=0.540
+    -> NMF occlusion rows refreshed in occlusion_robustness_agnews_seed11.csv
+  [agnews seed 23] BTM fitted in 1240s, 746053 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.1218 agree=0.859
+  BTM rate=0.5 hidden_NLL=7.1415 agree=0.782
+  BTM rate=0.75 hidden_NLL=7.1918 agree=0.690
+  BTM rate=1 hidden_NLL=7.4418 agree=0.543
+    -> BTM occlusion rows written to occlusion_robustness_agnews_seed23.csv
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.8753 agree=0.826
+  NMF rate=0.5 hidden_NLL=10.5892 agree=0.741
+  NMF rate=0.75 hidden_NLL=11.6892 agree=0.649
+  NMF rate=1 hidden_NLL=13.8882 agree=0.546
+    -> NMF occlusion rows refreshed in occlusion_robustness_agnews_seed23.csv
+  [agnews seed 37] BTM fitted in 1236s, 746053 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.1364 agree=0.856
+  BTM rate=0.5 hidden_NLL=7.1490 agree=0.780
+  BTM rate=0.75 hidden_NLL=7.1964 agree=0.695
+  BTM rate=1 hidden_NLL=7.4479 agree=0.562
+    -> BTM occlusion rows written to occlusion_robustness_agnews_seed37.csv
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.4605 agree=0.831
+  NMF rate=0.5 hidden_NLL=10.1435 agree=0.751
+  NMF rate=0.75 hidden_NLL=11.1500 agree=0.658
+  NMF rate=1 hidden_NLL=13.3610 agree=0.553
+    -> NMF occlusion rows refreshed in occlusion_robustness_agnews_seed37.csv
+  fair_readout_agnews_3seed.csv / rerun_btm_agnews_readouts.csv updated
+corpus  seed  0.0  0.25  0.5  0.75  1.0
+github    11    0     0    0     0    1
+github    23    0     0    0     0    1
+github    37    0     0    0     0    1
+agnews    11    0     0    0     0   98
+agnews    23    0     0    0     0   98
+agnews    37    0     0    0     0   98
+
+[chain] BTM/NMF boundary re-scoring DONE

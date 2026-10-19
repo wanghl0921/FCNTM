@@ -1,0 +1,11 @@
+Set-Location : 找不到路径“C:\Users\Administrator\Downloads\FCNTM瀹屾
+暣浠ｇ爜”，因为该路径不存在。
+所在位置 C:\Users\Administrator\Downloads\FCNTM完整代码\run_all_publi
+c2.ps1:3 字符: 1
++ Set-Location $root
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Admini...ads 
+   \FCNTM瀹屾暣浠ｇ爜:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Comm 
+   ands.SetLocationCommand
+ 

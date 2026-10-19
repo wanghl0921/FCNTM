@@ -1,0 +1,28 @@
+{
+ "id": "2773097acbdcf3b9",
+ "payload": {
+  "script": "occlusion_robustness.main",
+  "corpus": "civil",
+  "seed": 37,
+  "k": 30,
+  "models": [
+   "BTM",
+   "ETM",
+   "FC-NTM",
+   "LDA",
+   "NMF",
+   "ProdLDA"
+  ],
+  "rates": [
+   0.0,
+   0.25,
+   0.5,
+   0.75,
+   1.0
+  ],
+  "fcntm_state": "00711cfc23df6ae5",
+  "code": "379c459bb6f7e876",
+  "data": "8ecbbae90251c588",
+  "fields": "0566c9118a2bd5b6"
+ }
+}

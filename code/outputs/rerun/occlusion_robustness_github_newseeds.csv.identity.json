@@ -1,0 +1,32 @@
+{
+ "id": "95d447e79febe854",
+ "payload": {
+  "script": "newseeds_occlusion",
+  "corpus": "github",
+  "seeds": [
+   53,
+   71,
+   89,
+   101,
+   113,
+   127,
+   139
+  ],
+  "k": 30,
+  "code": "dcffbbe402c6c094",
+  "vocab_digest": "b3b3b0b3cd0a8e8e",
+  "data": "9bd4087ee9926980",
+  "fields": "1f61a7b33c7f39a4",
+  "test_data": "cf967bbf696756fd",
+  "test_fields": "591527f20052effd",
+  "rates": [
+   0.0,
+   0.25,
+   0.5,
+   0.75,
+   1.0
+  ],
+  "mask": "doc_rng_seed_plus7",
+  "state_digest": "c6f4f58b9f55ac7d"
+ }
+}

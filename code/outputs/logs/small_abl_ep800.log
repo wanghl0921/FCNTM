@@ -1,0 +1,10 @@
+[github] train=1000 test=400 vocab=2682 K=20 seeds=11,23
+  full seed=11 beta CV=0.567 NPMI=0.139
+  full seed=11 cTFIDF CV=0.454 NPMI=0.104
+  full seed=23 beta CV=0.499 NPMI=0.005
+  full seed=23 cTFIDF CV=0.435 NPMI=0.086
+  no-cross seed=11 beta CV=0.481 NPMI=0.090
+  no-cross seed=11 cTFIDF CV=0.468 NPMI=0.133
+  no-cross seed=23 beta CV=0.564 NPMI=-0.213
+  no-cross seed=23 cTFIDF CV=0.427 NPMI=0.087
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\ablation_github_ep800.csv

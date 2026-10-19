@@ -1,0 +1,13 @@
+﻿variant,abstract_words,field_ratio,readout,config,n_seeds,full_CV,CV_mean_abl,delta_CV,delta_CV_positive
+full,0,11.29,beta,no-cross,3,0.6328,0.6104,-0.0223,0
+full,0,11.29,beta,no-mask,3,0.6328,0.6232,-0.0096,1
+full,0,11.29,cTFIDF,no-cross,3,0.6356,0.6168,-0.0187,0
+full,0,11.29,cTFIDF,no-mask,3,0.6356,0.6241,-0.0115,0
+abs60,60,3.99,beta,no-cross,3,0.5953,0.6014,0.006,3
+abs60,60,3.99,beta,no-mask,3,0.5953,0.5936,-0.0017,2
+abs60,60,3.99,cTFIDF,no-cross,3,0.6446,0.6452,0.0005,1
+abs60,60,3.99,cTFIDF,no-mask,3,0.6446,0.6277,-0.0169,0
+abs30,30,2.02,beta,no-cross,3,0.534,0.5279,-0.0061,1
+abs30,30,2.02,beta,no-mask,3,0.534,0.5068,-0.0271,0
+abs30,30,2.02,cTFIDF,no-cross,3,0.6057,0.5824,-0.0233,0
+abs30,30,2.02,cTFIDF,no-mask,3,0.6057,0.5811,-0.0246,0

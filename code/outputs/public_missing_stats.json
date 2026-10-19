@@ -1,0 +1,55 @@
+{
+  "min_body_tokens": 8,
+  "per_repo": [
+    {
+      "repo": "duckdb",
+      "all_rows": 19108,
+      "issues_no_pr": 6929,
+      "empty_body": 83,
+      "too_short": 295,
+      "no_title": 0,
+      "usable": 6551,
+      "missing_rate": 0.0546
+    },
+    {
+      "repo": "typescript",
+      "all_rows": 62281,
+      "issues_no_pr": 43119,
+      "empty_body": 73,
+      "too_short": 4094,
+      "no_title": 0,
+      "usable": 38952,
+      "missing_rate": 0.0966
+    },
+    {
+      "repo": "moby",
+      "all_rows": 51773,
+      "issues_no_pr": 23481,
+      "empty_body": 172,
+      "too_short": 1638,
+      "no_title": 1,
+      "usable": 21671,
+      "missing_rate": 0.0771
+    },
+    {
+      "repo": "redis",
+      "all_rows": 14823,
+      "issues_no_pr": 6980,
+      "empty_body": 109,
+      "too_short": 646,
+      "no_title": 0,
+      "usable": 6225,
+      "missing_rate": 0.1082
+    }
+  ],
+  "totals": {
+    "issues": 80509,
+    "empty_body": 437,
+    "too_short_body": 6673,
+    "no_title": 1
+  },
+  "natural_missing_rate": 0.08831310785129613,
+  "body_token_mean": 65.6517118761836,
+  "body_token_median": 39.0,
+  "title_token_mean": 5.959182005204431
+}

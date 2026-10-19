@@ -1,0 +1,22 @@
+  [github seed 11] BTM fitted in 1682s, 865901 biterms
+    readout=beta   CV=0.6991 NPMI=0.2178
+    readout=ctfidf CV=0.6831 NPMI=0.2205
+  [github seed 23] BTM fitted in 1735s, 865901 biterms
+    readout=beta   CV=0.7216 NPMI=0.2380
+    readout=ctfidf CV=0.7202 NPMI=0.2533
+  [github seed 37] BTM fitted in 1745s, 865901 biterms
+    readout=beta   CV=0.7167 NPMI=0.2405
+    readout=ctfidf CV=0.6957 NPMI=0.2316
+  saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_btm_github_readouts.csv
+  [agnews seed 11] BTM fitted in 1401s, 746053 biterms
+    readout=beta   CV=0.6050 NPMI=0.1593
+    readout=ctfidf CV=0.5852 NPMI=0.1485
+  [agnews seed 23] BTM fitted in 1402s, 746053 biterms
+    readout=beta   CV=0.6073 NPMI=0.1690
+    readout=ctfidf CV=0.6025 NPMI=0.1873
+  [agnews seed 37] BTM fitted in 1469s, 746053 biterms
+    readout=beta   CV=0.5873 NPMI=0.1639
+    readout=ctfidf CV=0.5910 NPMI=0.1698
+  saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_btm_agnews_readouts.csv
+
+[chain] BTM read-out topic lists DONE

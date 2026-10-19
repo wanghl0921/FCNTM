@@ -1,0 +1,5 @@
+﻿corpus,model,seed,K_used,neighbours,sim_field,weight,readout,best_epoch,seconds,CV,NPMI,UCI,UMass,EXCL_KADJ,IRBO
+private-change-order,FC-NTM,11,30,0,item,sim,beta,1620,294.47,0.448057,-0.025337,-6.349414,-10.981174,0.019439,0.99677
+private-change-order,FC-NTM,11,30,0,item,sim,cTFIDF,1620,294.47,0.44372,-0.02536,-6.091613,-10.413039,0.193227,0.987339
+private-change-order,FC-NTM-Pseudo,11,30,5,item,sim,beta,1610,309.25,0.442836,-0.038859,-6.478154,-10.913542,0.021249,0.9956
+private-change-order,FC-NTM-Pseudo,11,30,5,item,sim,cTFIDF,1610,309.25,0.436519,-0.004487,-5.727714,-9.757981,0.180939,0.980034

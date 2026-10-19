@@ -1,0 +1,4 @@
+﻿dataset,setting,seed,K,with_cause_CV,with_cause_NPMI,with_cause_UMass,without_cause_CV,without_cause_NPMI,without_cause_UMass,cause_only_CV,cause_only_NPMI,seconds
+agnews,fielddrop_on,11,30,0.559593,0.041253,-7.401776,0.423275,-0.346578,-17.221045,0.548054,0.025913,7.74
+agnews,fielddrop_on,23,30,0.532964,0.054729,-7.389664,0.428371,-0.326613,-16.790605,0.52252,0.041843,7.9
+agnews,fielddrop_on,37,30,0.547996,0.037776,-7.465928,0.428037,-0.341146,-17.152738,0.54003,0.029959,8.46

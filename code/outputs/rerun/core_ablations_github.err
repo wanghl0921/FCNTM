@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\run_core_ablations.py", line 160, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\run_core_ablations.py", line 153, in main
+    print("\ncore-mechanism ablations (difference = ablation \u2212 full model)")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2212' in position 50: illegal multibyte sequence

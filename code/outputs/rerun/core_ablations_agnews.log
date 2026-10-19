@@ -1,0 +1,26 @@
+
+=== [08:03:16] core ablations agnews ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_ablation_public.py --dataset agnews --seeds 11,23,37 --k 30 --lr 5e-4 --configs no-cross,no-consistency,no-mask,no-fielddrop --max-epochs 700 --resume --out ablation_public_agnews_core.csv
+   no-cross seed 11 beta {'CV': 0.5968, 'NPMI': 0.1329}
+   no-cross seed 11 cTFIDF {'CV': 0.6095, 'NPMI': 0.1686}
+   no-cross seed 23 beta {'CV': 0.5461, 'NPMI': 0.102}
+   no-cross seed 23 cTFIDF {'CV': 0.5773, 'NPMI': 0.1496}
+   no-cross seed 37 beta {'CV': 0.5817, 'NPMI': 0.1206}
+   no-cross seed 37 cTFIDF {'CV': 0.5847, 'NPMI': 0.1561}
+   no-consistency seed 11 beta {'CV': 0.5844, 'NPMI': 0.1436}
+   no-consistency seed 11 cTFIDF {'CV': 0.6222, 'NPMI': 0.1812}
+   no-consistency seed 23 beta {'CV': 0.6098, 'NPMI': 0.1539}
+   no-consistency seed 23 cTFIDF {'CV': 0.5979, 'NPMI': 0.1661}
+   no-consistency seed 37 beta {'CV': 0.5703, 'NPMI': 0.1196}
+   no-consistency seed 37 cTFIDF {'CV': 0.6118, 'NPMI': 0.1624}
+   no-mask seed 11 beta {'CV': 0.5817, 'NPMI': 0.1263}
+   no-mask seed 11 cTFIDF {'CV': 0.5824, 'NPMI': 0.1587}
+   no-mask seed 23 beta {'CV': 0.5478, 'NPMI': 0.098}
+   no-mask seed 23 cTFIDF {'CV': 0.5563, 'NPMI': 0.141}
+   no-mask seed 37 beta {'CV': 0.5487, 'NPMI': 0.1029}
+   no-mask seed 37 cTFIDF {'CV': 0.5675, 'NPMI': 0.1417}
+   no-fielddrop seed 11 beta {'CV': 0.5665, 'NPMI': 0.1211}
+   no-fielddrop seed 11 cTFIDF {'CV': 0.5577, 'NPMI': 0.134}
+=== [21:16:17] core ablations agnews exit=3221225477 ===
+
+[chain] agnews stopped with exit=3221225477; the rows already written to outputs/ablation_public_agnews_core.csv are kept — rerun this script (it resumes) after freeing memory.

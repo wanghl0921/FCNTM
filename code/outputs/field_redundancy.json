@@ -1,0 +1,24 @@
+{
+  "github": {
+    "ridge_R2_sm2bg": 0.25091778592100544,
+    "ridge_R2_bg2sm": 0.20876177882510658,
+    "ridge_R2_mean": 0.22983978237305602,
+    "cca_sq_mean": 0.30570537143686705,
+    "cca_sq_n": 32,
+    "control_copy_cca": 1.0,
+    "control_copy_ridge": 0.9971022760729392,
+    "control_shuffled_cca": 0.0002586224586366355,
+    "control_shuffled_ridge": -0.008930436058464108
+  },
+  "agnews": {
+    "ridge_R2_sm2bg": 0.16113386910730404,
+    "ridge_R2_bg2sm": 0.15453863730579923,
+    "ridge_R2_mean": 0.15783625320655165,
+    "cca_sq_mean": 0.2454869106532977,
+    "cca_sq_n": 32,
+    "control_copy_cca": 1.0,
+    "control_copy_ridge": 0.9926563528249881,
+    "control_shuffled_cca": 7.991959782603236e-05,
+    "control_shuffled_ridge": -0.008781996112338888
+  }
+}

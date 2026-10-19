@@ -1,0 +1,12 @@
+docs=577 with=292 without=285
+  fusedrec     seed=11 item_recall=0.102 CV_all=0.538 CV_with=0.587 CV_without=0.442 best_ep=924 (220s)
+  fusedrec_fd15 seed=11 item_recall=0.063 CV_all=0.535 CV_with=0.612 CV_without=0.273 best_ep=1128 (258s)
+  fusedrec     seed=23 item_recall=0.151 CV_all=0.450 CV_with=0.479 CV_without=0.289 best_ep=604 (141s)
+  fusedrec_fd15 seed=23 item_recall=0.128 CV_all=0.504 CV_with=0.535 CV_without=0.371 best_ep=579 (134s)
+  fusedrec     seed=37 item_recall=0.152 CV_all=0.538 CV_with=0.555 CV_without=0.519 best_ep=581 (133s)
+  fusedrec_fd15 seed=37 item_recall=0.123 CV_all=0.426 CV_with=0.463 CV_without=0.398 best_ep=550 (127s)
+  fusedrec     seed=53 item_recall=0.089 CV_all=0.495 CV_with=0.529 CV_without=0.468 best_ep=384 (101s)
+  fusedrec_fd15 seed=53 item_recall=0.153 CV_all=0.491 CV_with=0.490 CV_without=0.491 best_ep=485 (115s)
+  fusedrec     seed=71 item_recall=0.061 CV_all=0.540 CV_with=0.548 CV_without=0.460 best_ep=470 (114s)
+  fusedrec_fd15 seed=71 item_recall=0.073 CV_all=0.533 CV_with=0.542 CV_without=0.570 best_ep=579 (133s)
+saved outputs/variant_screen_fused.csv

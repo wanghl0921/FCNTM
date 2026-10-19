@@ -1,0 +1,41 @@
+{
+ "started_utc": "2026-10-12T01:30:08+00:00",
+ "tmp": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\2\\fieldview_regen_jhhgiod6",
+ "runs": [
+  {
+   "tag": "github+agnews LDA/NMF/BTM",
+   "rc": 0,
+   "seconds": 1011.5
+  },
+  {
+   "tag": "ProdLDA all corpora",
+   "rc": 0,
+   "seconds": 101.5
+  },
+  {
+   "tag": "civil LDA/NMF/BTM (refit)",
+   "rc": 0,
+   "seconds": 5718.2
+  }
+ ],
+ "comparison": {
+  "unmatched_keys": 0,
+  "max_delta": 0.0,
+  "per_column": {
+   "n_topics": 0.0,
+   "CV": 0.0,
+   "CV_n": 0.0,
+   "NPMI": 0.0,
+   "NPMI_n": 0.0
+  },
+  "rows_old": 72,
+  "rows_new": 72
+ },
+ "new_columns": [
+  "eval_id",
+  "fit_id"
+ ],
+ "replaced": true,
+ "backup": "backup_baseline_fieldview_pre_identity.csv",
+ "finished_utc": "2026-10-12T03:24:00+00:00"
+}

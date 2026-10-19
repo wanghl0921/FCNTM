@@ -1,0 +1,16 @@
+﻿model,rate,hidden_NLL,n_docs,agreement,mean_js,corpus,seed
+Constant-unigram,0.0,,0,1.0,0.0,civil,11
+Constant-unigram,0.25,7.870365525194061,2000,1.0,0.0,civil,11
+Constant-unigram,0.5,7.878326627155515,2000,1.0,0.0,civil,11
+Constant-unigram,0.75,7.8763101691544835,2000,1.0,0.0,civil,11
+Constant-unigram,1.0,7.8753230789670505,2000,1.0,0.0,civil,11
+Constant-unigram,0.0,,0,1.0,0.0,civil,23
+Constant-unigram,0.25,7.87690704194289,2000,1.0,0.0,civil,23
+Constant-unigram,0.5,7.8765555970283305,2000,1.0,0.0,civil,23
+Constant-unigram,0.75,7.876136676441579,2000,1.0,0.0,civil,23
+Constant-unigram,1.0,7.8753230789670505,2000,1.0,0.0,civil,23
+Constant-unigram,0.0,,0,1.0,0.0,civil,37
+Constant-unigram,0.25,7.87743051078003,2000,1.0,0.0,civil,37
+Constant-unigram,0.5,7.873154652665097,2000,1.0,0.0,civil,37
+Constant-unigram,0.75,7.87380374332981,2000,1.0,0.0,civil,37
+Constant-unigram,1.0,7.8753230789670505,2000,1.0,0.0,civil,37

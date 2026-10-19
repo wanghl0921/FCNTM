@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\run_fcntm_train.py", line 226, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\run_fcntm_train.py", line 191, in main
+    data = PGH.load_github(1500, 500)
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\public_data_github.py", line 285, in load_github
+    "train": _build_corpus(train_df, dictionary, vocab, need_bow=need_train_bow),
+             ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\public_data_github.py", line 205, in _build_corpus
+    item_bow = np.zeros_like(reason_bow)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\_core\numeric.py", line 161, in zeros_like
+    res = empty_like(
+        a, dtype=dtype, order=order, subok=subok, shape=shape, device=device
+    )
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 118. MiB for an array with shape (6000, 5175) and data type float32

@@ -1,0 +1,19 @@
+corpus: Civil and Structural Engineering + Building and Construction
+records: 12,238
+title words      : mean 12.0  median 12  min 4  max 29
+abstract words   : mean 168.7  median 164  min 60  max 399
+abstract/title   : mean 15.2  median 13.9   (GitHub 12.9 / AG News 3.9)
+years            : 2000--2023
+top venues       :
+      741  Advances in Civil Engineering
+      688  DOAJ (DOAJ: Directory of Open Access Journals)
+      659  Advances in Materials Science and Engineering
+      658  Key engineering materials
+      520  Shock and Vibration
+      482  MATEC Web of Conferences
+      409  IEEE Access
+      350  Advanced materials research
+      340  E3S Web of Conferences
+      332  Zenodo (CERN European Organization for Nuclear Research)
+vocabulary (raw) : 52,537 types, 2,211,702 tokens
+top 40 tokens    : the, of, and, in, to, is, for, with, on, this, that, by, are, as, was, concrete, were, results, an, from, be, model, strength, using, study, at, it, used, which, analysis, method, can, paper, based, has, properties, different, system, data, design

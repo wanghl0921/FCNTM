@@ -1,0 +1,10 @@
+[github] train=1000 test=400 vocab=2682 K=20 seeds=11,23
+  strata recon2 seed=11 low_predictability(互补) n=200 recall=0.0402 precision=0.1215
+  strata recon2 seed=11 high_predictability(冗余) n=200 recall=0.0491 precision=0.1535
+  strata recon2 seed=23 low_predictability(互补) n=200 recall=0.0467 precision=0.1275
+  strata recon2 seed=23 high_predictability(冗余) n=200 recall=0.0634 precision=0.1925
+  strata noxrec seed=11 low_predictability(互补) n=200 recall=0.0209 precision=0.0485
+  strata noxrec seed=11 high_predictability(冗余) n=200 recall=0.0130 precision=0.0495
+  strata noxrec seed=23 low_predictability(互补) n=200 recall=0.0316 precision=0.0885
+  strata noxrec seed=23 high_predictability(冗余) n=200 recall=0.0221 precision=0.0765
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\strata_github.csv

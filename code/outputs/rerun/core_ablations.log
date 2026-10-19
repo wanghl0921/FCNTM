@@ -1,0 +1,4 @@
+
+=== [14:48:14] core ablations github ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_ablation_public.py --dataset github --seeds 11,23,37 --k 30 --lr 5e-4 --configs no-cross,no-consistency,no-mask,no-fielddrop --max-epochs 700 --out ablation_public_github_core.csv
+=== [14:50:35] core ablations github exit=1 ===

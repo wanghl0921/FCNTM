@@ -1,0 +1,56 @@
+[civil] training BTM seed=11
+[civil] training ETM seed=11
+[civil] training ProdLDA seed=11
+[civil] training CTMLite seed=11
+[civil] training LDA seed=11
+[civil] training NMF seed=11
+[civil] training BTM seed=23
+[civil] training ETM seed=23
+[civil] training ProdLDA seed=23
+[civil] training CTMLite seed=23
+[civil] training LDA seed=23
+[civil] training NMF seed=23
+[civil] training BTM seed=37
+[civil] training ETM seed=37
+[civil] training ProdLDA seed=37
+[civil] training CTMLite seed=37
+[civil] training LDA seed=37
+[civil] training NMF seed=37
+      source   model  seed readout     CV   NPMI   UMass  EXCL_KADJ   IRBO
+fair_readout     BTM    11    beta 0.5850 0.1243 -2.1615     0.2748 0.9416
+fair_readout     BTM    11  ctfidf 0.5779 0.1265 -2.6948     0.1449 0.9132
+fair_readout     ETM    11    beta 0.5681 0.1112 -2.7548     0.3638 0.9580
+fair_readout     ETM    11  ctfidf 0.5892 0.1274 -3.4161     0.2948 0.9738
+fair_readout ProdLDA    11    beta 0.5872 0.1353 -3.4739     0.0527 0.9986
+fair_readout ProdLDA    11  ctfidf 0.5248 0.0962 -2.2204     0.0714 0.8903
+fair_readout CTMLite    11    beta 0.5014 0.0673 -4.3101     0.0085 0.9941
+fair_readout CTMLite    11  ctfidf 0.5132 0.0813 -2.8884     0.0839 0.9056
+fair_readout     LDA    11    beta 0.5487 0.0644 -4.1851     0.5955 0.9864
+fair_readout     LDA    11  ctfidf 0.5842 0.1071 -3.5763     0.1900 0.9663
+fair_readout     NMF    11    beta 0.5971 0.1383 -2.7202     0.5494 0.9834
+fair_readout     NMF    11  ctfidf 0.6130 0.1497 -3.0483     0.2716 0.9729
+fair_readout     BTM    23    beta 0.5724 0.1210 -2.0624     0.2569 0.9390
+fair_readout     BTM    23  ctfidf 0.5746 0.1247 -2.4546     0.1308 0.8979
+fair_readout     ETM    23    beta 0.5825 0.1211 -2.8091     0.3819 0.9663
+fair_readout     ETM    23  ctfidf 0.6035 0.1328 -3.4530     0.2757 0.9732
+fair_readout ProdLDA    23    beta 0.5546 0.1048 -4.0945     0.0491 0.9990
+fair_readout ProdLDA    23  ctfidf 0.5501 0.1100 -2.2378     0.0759 0.8994
+fair_readout CTMLite    23    beta 0.5546 0.1174 -3.4751     0.0116 0.9948
+fair_readout CTMLite    23  ctfidf 0.5336 0.1013 -2.6010     0.0865 0.9009
+fair_readout     LDA    23    beta 0.5490 0.0271 -5.3823     0.6151 0.9859
+fair_readout     LDA    23  ctfidf 0.5703 0.1021 -3.9078     0.1901 0.9664
+fair_readout     NMF    23    beta 0.5899 0.1272 -2.8765     0.5583 0.9852
+fair_readout     NMF    23  ctfidf 0.6020 0.1420 -3.0025     0.2536 0.9722
+fair_readout     BTM    37    beta 0.5924 0.1382 -2.3084     0.3185 0.9529
+fair_readout     BTM    37  ctfidf 0.6178 0.1671 -2.3648     0.1929 0.9251
+fair_readout     ETM    37    beta 0.5913 0.1245 -2.6809     0.3907 0.9643
+fair_readout     ETM    37  ctfidf 0.6176 0.1425 -3.4370     0.3216 0.9799
+fair_readout ProdLDA    37    beta 0.5996 0.1348 -3.9443     0.0508 0.9986
+fair_readout ProdLDA    37  ctfidf 0.5608 0.1185 -2.0318     0.0776 0.9013
+fair_readout CTMLite    37    beta 0.5522 0.1080 -3.7722     0.0201 0.9965
+fair_readout CTMLite    37  ctfidf 0.5422 0.0992 -2.1416     0.0670 0.8871
+fair_readout     LDA    37    beta 0.5634 0.0753 -4.2938     0.5942 0.9881
+fair_readout     LDA    37  ctfidf 0.5705 0.1057 -3.4042     0.1690 0.9598
+fair_readout     NMF    37    beta 0.6069 0.1383 -2.9808     0.5691 0.9847
+fair_readout     NMF    37  ctfidf 0.6053 0.1356 -3.0689     0.2449 0.9702
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\fair_readout_civil_3seed.csv

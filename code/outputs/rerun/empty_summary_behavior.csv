@@ -1,0 +1,3 @@
+﻿corpus,seed,n_empty_summary_test,max_abs_diff_vs_background_only,mean_abs_diff_vs_background_only,argmax_changed
+github,11,1,0.11493170261383057,0.11493170261383057,0
+agnews,11,98,0.2609543204307556,0.0744452103972435,3

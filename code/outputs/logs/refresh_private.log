@@ -1,0 +1,43 @@
+=== [1/3] FC-NTM-Emb (M3E unnormalised, temperature 0.35) ===
+biterms: 28781 pairs, vocab=880, docs=577
+embeddings: (880, 768) mean_norm=20.021 temperature=0.35
+  FC-NTM-Emb bw=0.0 seed=11 beta   CV=0.526 NPMI=+0.095 UMass=-9.21 EXCLk=0.706
+  FC-NTM-Emb bw=0.0 seed=11 cTFIDF CV=0.491 NPMI=+0.061 UMass=-8.92 EXCLk=0.273
+  FC-NTM-Emb bw=0.0 seed=23 beta   CV=0.517 NPMI=+0.058 UMass=-9.64 EXCLk=0.689
+  FC-NTM-Emb bw=0.0 seed=23 cTFIDF CV=0.489 NPMI=+0.063 UMass=-8.89 EXCLk=0.287
+  FC-NTM-Emb bw=0.0 seed=37 beta   CV=0.533 NPMI=+0.095 UMass=-9.35 EXCLk=0.725
+  FC-NTM-Emb bw=0.0 seed=37 cTFIDF CV=0.561 NPMI=+0.124 UMass=-7.83 EXCLk=0.305
+  FC-NTM-Emb bw=0.0 seed=53 beta   CV=0.542 NPMI=+0.041 UMass=-9.87 EXCLk=0.598
+  FC-NTM-Emb bw=0.0 seed=53 cTFIDF CV=0.501 NPMI=+0.097 UMass=-7.38 EXCLk=0.205
+  FC-NTM-Emb bw=0.0 seed=71 beta   CV=0.587 NPMI=+0.078 UMass=-9.43 EXCLk=0.702
+  FC-NTM-Emb bw=0.0 seed=71 cTFIDF CV=0.488 NPMI=+0.052 UMass=-8.79 EXCLk=0.268
+saved outputs/refresh_private_emb.csv
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\biterm_private_embedding_k30_details.json
+=== [2/3] FC-NTM-Emb (normalised, temperature 1.0) ===
+biterms: 28781 pairs, vocab=880, docs=577
+embeddings: (880, 768) mean_norm=1.000 temperature=1.0
+  FC-NTM-Emb bw=0.0 seed=11 beta   CV=0.420 NPMI=-0.165 UMass=-12.43 EXCLk=0.354
+  FC-NTM-Emb bw=0.0 seed=11 cTFIDF CV=0.358 NPMI=-0.052 UMass=-9.35 EXCLk=0.244
+  FC-NTM-Emb bw=0.0 seed=23 beta   CV=0.429 NPMI=-0.087 UMass=-11.48 EXCLk=0.506
+  FC-NTM-Emb bw=0.0 seed=23 cTFIDF CV=0.436 NPMI=-0.005 UMass=-9.77 EXCLk=0.329
+  FC-NTM-Emb bw=0.0 seed=37 beta   CV=0.493 NPMI=-0.045 UMass=-11.05 EXCLk=0.531
+  FC-NTM-Emb bw=0.0 seed=37 cTFIDF CV=0.480 NPMI=+0.044 UMass=-9.69 EXCLk=0.389
+  FC-NTM-Emb bw=0.0 seed=53 beta   CV=0.492 NPMI=-0.012 UMass=-9.86 EXCLk=0.530
+  FC-NTM-Emb bw=0.0 seed=53 cTFIDF CV=0.481 NPMI=+0.025 UMass=-9.48 EXCLk=0.365
+  FC-NTM-Emb bw=0.0 seed=71 beta   CV=0.473 NPMI=-0.071 UMass=-11.29 EXCLk=0.491
+  FC-NTM-Emb bw=0.0 seed=71 cTFIDF CV=0.459 NPMI=+0.009 UMass=-9.39 EXCLk=0.307
+saved outputs/refresh_private_emb_norm.csv
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\biterm_private_embedding_k30_details.json
+=== [3/3] FC-NTM linear + cTFIDF ===
+   FC-NTM seed 11 {'CV': 0.4496, 'NPMI': -0.0482, 'IRBO': 0.9985}
+   FC-NTM-cTFIDF seed 11 {'CV': 0.4745, 'NPMI': 0.0186, 'IRBO': 0.989}
+   FC-NTM seed 23 {'CV': 0.4814, 'NPMI': 0.0016, 'IRBO': 0.9968}
+   FC-NTM-cTFIDF seed 23 {'CV': 0.4698, 'NPMI': 0.0341, 'IRBO': 0.9897}
+   FC-NTM seed 37 {'CV': 0.4011, 'NPMI': -0.057, 'IRBO': 0.9978}
+   FC-NTM-cTFIDF seed 37 {'CV': 0.456, 'NPMI': -0.0135, 'IRBO': 0.9874}
+   FC-NTM seed 53 {'CV': 0.4829, 'NPMI': 0.0575, 'IRBO': 0.9989}
+   FC-NTM-cTFIDF seed 53 {'CV': 0.5022, 'NPMI': 0.0597, 'IRBO': 0.9898}
+   FC-NTM seed 71 {'CV': 0.3801, 'NPMI': -0.0487, 'IRBO': 0.9986}
+   FC-NTM-cTFIDF seed 71 {'CV': 0.4487, 'NPMI': -0.0122, 'IRBO': 0.9902}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs/refresh_private_linear.csv
+=== ALL PRIVATE REFRESH RUNS DONE ===

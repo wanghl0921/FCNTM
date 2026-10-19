@@ -1,0 +1,12 @@
+{
+ "kind": "partitioned",
+ "config": "c319fb94a7d0a6ef",
+ "partitions": {
+  "civil|fielddrop_on|11": "a51837920e17f9a2",
+  "civil|fielddrop_on|23": "2da47d8310290206",
+  "civil|fielddrop_on|37": "81af8f2fa69dc95e",
+  "civil|fielddrop_off|11": "bfe82926b4b9a72d",
+  "civil|fielddrop_off|23": "92d1df046ae44d69",
+  "civil|fielddrop_off|37": "d9beec8029f52470"
+ }
+}

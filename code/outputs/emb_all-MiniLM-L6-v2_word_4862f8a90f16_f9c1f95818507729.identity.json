@@ -1,0 +1,17 @@
+{
+ "identity": {
+  "encoder": {
+   "algo": "tokwin-v2",
+   "model": "sentence-transformers/all-MiniLM-L6-v2",
+   "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+   "max_length": 128,
+   "kind": "word",
+   "pooling": "truncated-mean"
+  },
+  "n_items": 7685
+ },
+ "shape": [
+  7685,
+  384
+ ]
+}

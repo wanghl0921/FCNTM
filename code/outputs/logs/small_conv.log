@@ -1,0 +1,5 @@
+[github] train=1000 test=400 vocab=2682 K=20 seeds=11,23
+  seed 11 fitted in 500s (fcntm best_epoch=694)
+  seed 23 fitted in 534s (fcntm best_epoch=800)
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\main_github_ep800.csv
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\fieldview_github_ep800.csv

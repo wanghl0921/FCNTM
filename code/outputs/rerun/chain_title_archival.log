@@ -1,0 +1,56 @@
+label set: 15 topics; test coverage 0.428 (857 / 2000 records)
+label counts (train):
+label
+Concrete and Cement Materials Research             436
+Structural Behavior of Reinforced Concrete         243
+Asphalt Pavement Performance Evaluation            237
+Structural Health Monitoring Techniques            235
+Innovative concrete reinforcement materials        208
+Seismic Performance and Analysis                   192
+Vibration Control and Rheological Fluids           182
+Geotechnical Engineering and Soil Stabilization    139
+BIM and Construction Integration                   131
+Concrete Corrosion and Durability                  112
+Building Energy and Comfort Optimization           106
+Anaerobic Digestion and Biogas Production          103
+Structural Load-Bearing Analysis                   101
+Wood Treatment and Properties                       98
+Geotechnical Engineering and Soil Mechanics         97
+  FC-NTM seed 11 title-only: acc 0.6628 macroF1 0.6236
+  FC-NTM seed 11 full-field: acc 0.7165 macroF1 0.6710
+  Concat seed 11 title-only: acc 0.6453 macroF1 0.5874
+  LDA seed 11 title-only: acc 0.5449 macroF1 0.4694
+  BTM seed 11 title-only: acc 0.5986 macroF1 0.5007
+  TFIDF-LR seed 11: acc 0.8098
+  FC-NTM seed 23 title-only: acc 0.6616 macroF1 0.6359
+  FC-NTM seed 23 full-field: acc 0.7363 macroF1 0.7098
+  Concat seed 23 title-only: acc 0.6814 macroF1 0.6454
+  LDA seed 23 title-only: acc 0.5624 macroF1 0.5082
+  BTM seed 23 title-only: acc 0.6138 macroF1 0.5768
+  TFIDF-LR seed 23: acc 0.8098
+  FC-NTM seed 37 title-only: acc 0.6686 macroF1 0.6116
+  FC-NTM seed 37 full-field: acc 0.7048 macroF1 0.6467
+  Concat seed 37 title-only: acc 0.6359 macroF1 0.5925
+  LDA seed 37 title-only: acc 0.4877 macroF1 0.3961
+  BTM seed 37 title-only: acc 0.5869 macroF1 0.5063
+  TFIDF-LR seed 37: acc 0.8098
+   model  seed    setting  accuracy  macro_f1  coverage  n_eval
+  FC-NTM    11 title_only    0.6628    0.6236    0.4285     857
+  FC-NTM    11 full_field    0.7165    0.6710    0.4285     857
+  Concat    11 title_only    0.6453    0.5874    0.4285     857
+     LDA    11 title_only    0.5449    0.4694    0.4285     857
+     BTM    11 title_only    0.5986    0.5007    0.4285     857
+TFIDF-LR    11 title_only    0.8098    0.8047    0.4285     857
+  FC-NTM    23 title_only    0.6616    0.6359    0.4285     857
+  FC-NTM    23 full_field    0.7363    0.7098    0.4285     857
+  Concat    23 title_only    0.6814    0.6454    0.4285     857
+     LDA    23 title_only    0.5624    0.5082    0.4285     857
+     BTM    23 title_only    0.6138    0.5768    0.4285     857
+TFIDF-LR    23 title_only    0.8098    0.8047    0.4285     857
+  FC-NTM    37 title_only    0.6686    0.6116    0.4285     857
+  FC-NTM    37 full_field    0.7048    0.6467    0.4285     857
+  Concat    37 title_only    0.6359    0.5925    0.4285     857
+     LDA    37 title_only    0.4877    0.3961    0.4285     857
+     BTM    37 title_only    0.5869    0.5063    0.4285     857
+TFIDF-LR    37 title_only    0.8098    0.8047    0.4285     857
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun\civil_title_archival.csv

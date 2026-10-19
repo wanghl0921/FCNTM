@@ -1,0 +1,42 @@
+
+=== [14:42:16] core ablations civil ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_ablation_public.py --dataset civil --seeds 11,23,37 --k 30 --lr 5e-4 --configs no-cross,no-consistency,no-mask,no-fielddrop --max-epochs 700 --resume --out ablation_public_civil_core.csv
+   no-cross seed 11 beta {'CV': 0.6127, 'NPMI': 0.1296}
+   no-cross seed 11 cTFIDF {'CV': 0.6121, 'NPMI': 0.1385}
+   no-cross seed 23 beta {'CV': 0.6098, 'NPMI': 0.1396}
+   no-cross seed 23 cTFIDF {'CV': 0.6106, 'NPMI': 0.1379}
+   no-cross seed 37 beta {'CV': 0.6088, 'NPMI': 0.1399}
+   no-cross seed 37 cTFIDF {'CV': 0.6279, 'NPMI': 0.1586}
+   no-consistency seed 11 beta {'CV': 0.615, 'NPMI': 0.1288}
+   no-consistency seed 11 cTFIDF {'CV': 0.6198, 'NPMI': 0.147}
+   no-consistency seed 23 beta {'CV': 0.6425, 'NPMI': 0.1636}
+   no-consistency seed 23 cTFIDF {'CV': 0.6373, 'NPMI': 0.1605}
+   no-consistency seed 37 beta {'CV': 0.6432, 'NPMI': 0.1645}
+   no-consistency seed 37 cTFIDF {'CV': 0.6441, 'NPMI': 0.1657}
+   no-mask seed 11 beta {'CV': 0.6177, 'NPMI': 0.1506}
+   no-mask seed 11 cTFIDF {'CV': 0.6138, 'NPMI': 0.1438}
+   no-mask seed 23 beta {'CV': 0.6222, 'NPMI': 0.1474}
+   no-mask seed 23 cTFIDF {'CV': 0.6302, 'NPMI': 0.1507}
+   no-mask seed 37 beta {'CV': 0.6297, 'NPMI': 0.1505}
+   no-mask seed 37 cTFIDF {'CV': 0.6283, 'NPMI': 0.1549}
+   no-fielddrop seed 11 beta {'CV': 0.6459, 'NPMI': 0.163}
+   no-fielddrop seed 11 cTFIDF {'CV': 0.5974, 'NPMI': 0.1301}
+   no-fielddrop seed 23 beta {'CV': 0.6337, 'NPMI': 0.1534}
+   no-fielddrop seed 23 cTFIDF {'CV': 0.5934, 'NPMI': 0.1262}
+   no-fielddrop seed 37 beta {'CV': 0.6214, 'NPMI': 0.152}
+   no-fielddrop seed 37 cTFIDF {'CV': 0.6151, 'NPMI': 0.1512}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ablation_public_civil_core.csv
+=== [11:49:08] core ablations civil exit=0 ===
+
+core-mechanism ablations (difference = ablation - full model)
+corpus         config readout  n_seeds  CV_mean  CV_sd  NPMI_mean  NPMI_sd  delta_CV_mean  delta_CV_positive  delta_NPMI_mean  delta_NPMI_positive
+ civil no-consistency    beta        3   0.6336 0.0161     0.1523   0.0204         0.0008                  2          -0.0014                    1
+ civil no-consistency  cTFIDF        3   0.6337 0.0125     0.1577   0.0097        -0.0019                  0          -0.0013                    1
+ civil       no-cross    beta        3   0.6104 0.0021     0.1364   0.0059        -0.0223                  0          -0.0173                    1
+ civil       no-cross  cTFIDF        3   0.6168 0.0096     0.1450   0.0118        -0.0187                  0          -0.0140                    0
+ civil   no-fielddrop    beta        3   0.6337 0.0123     0.1561   0.0060         0.0009                  1           0.0024                    1
+ civil   no-fielddrop  cTFIDF        3   0.6019 0.0115     0.1358   0.0135        -0.0336                  0          -0.0231                    0
+ civil        no-mask    beta        3   0.6232 0.0060     0.1495   0.0018        -0.0096                  1          -0.0042                    1
+ civil        no-mask  cTFIDF        3   0.6241 0.0090     0.1498   0.0056        -0.0115                  0          -0.0092                    0
+
+[chain] core ablations DONE

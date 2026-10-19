@@ -1,0 +1,44 @@
+  [civil seed 53] BTM fitted in 1782s (899802 biterms)
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.3745 agree=0.804
+  BTM rate=0.5 hidden_NLL=7.3825 agree=0.746
+  BTM rate=0.75 hidden_NLL=7.3836 agree=0.675
+  BTM rate=1 hidden_NLL=7.4402 agree=0.538
+  [civil seed 71] BTM fitted in 1769s (899802 biterms)
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.3994 agree=0.812
+  BTM rate=0.5 hidden_NLL=7.3966 agree=0.785
+  BTM rate=0.75 hidden_NLL=7.3938 agree=0.716
+  BTM rate=1 hidden_NLL=7.4502 agree=0.561
+  [civil seed 89] BTM fitted in 1681s (899802 biterms)
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.3866 agree=0.809
+  BTM rate=0.5 hidden_NLL=7.3897 agree=0.780
+  BTM rate=0.75 hidden_NLL=7.3867 agree=0.716
+  BTM rate=1 hidden_NLL=7.4394 agree=0.579
+  [civil seed 101] BTM fitted in 1694s (899802 biterms)
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.3830 agree=0.812
+  BTM rate=0.5 hidden_NLL=7.3918 agree=0.773
+  BTM rate=0.75 hidden_NLL=7.3856 agree=0.717
+  BTM rate=1 hidden_NLL=7.4367 agree=0.582
+  [civil seed 113] BTM fitted in 1775s (899802 biterms)
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.3839 agree=0.804
+  BTM rate=0.5 hidden_NLL=7.3854 agree=0.767
+  BTM rate=0.75 hidden_NLL=7.3878 agree=0.703
+  BTM rate=1 hidden_NLL=7.4375 agree=0.568
+  [civil seed 127] BTM fitted in 1742s (899802 biterms)
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.3582 agree=0.801
+  BTM rate=0.5 hidden_NLL=7.3667 agree=0.768
+  BTM rate=0.75 hidden_NLL=7.3714 agree=0.705
+  BTM rate=1 hidden_NLL=7.4220 agree=0.557
+  [civil seed 139] BTM fitted in 1614s (899802 biterms)
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.3992 agree=0.812
+  BTM rate=0.5 hidden_NLL=7.3953 agree=0.785
+  BTM rate=0.75 hidden_NLL=7.3895 agree=0.726
+  BTM rate=1 hidden_NLL=7.4410 agree=0.582
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun\fair_readout_civil_newseeds.csv
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_newseeds.csv

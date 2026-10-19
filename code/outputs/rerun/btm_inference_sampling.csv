@@ -1,0 +1,7 @@
+﻿corpus,seed,readouts_unchanged,nll_100
+github,11,True,6.97165962917646
+github,23,True,6.979632962931944
+github,37,True,6.978965185890813
+agnews,11,True,7.446140933596857
+agnews,23,True,7.441819078527087
+agnews,37,True,7.447948315708835

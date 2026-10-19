@@ -1,0 +1,50 @@
+{
+  "github": {
+    "train": {
+      "split": "train",
+      "n_docs": 6000,
+      "mean_bg_len": 70.78483333333334,
+      "mean_sm_len": 5.506833333333334,
+      "jaccard": 0.11349342965304951,
+      "bg_novelty": 0.8771176953131433,
+      "sm_novelty": 0.3679636350248192,
+      "bg_novelty_token": 0.8261527048280531,
+      "sm_novelty_token": 0.36377052198962034,
+      "js_divergence": 0.2116918590713048,
+      "bg_vocab_also_in_sm": 0.6680842837811715,
+      "sm_vocab_also_in_bg": 0.9994216310005783
+    }
+  },
+  "agnews": {
+    "train": {
+      "split": "train",
+      "n_docs": 6000,
+      "mean_bg_len": 15.476333333333333,
+      "mean_sm_len": 3.9976666666666665,
+      "jaccard": 0.11813325270279139,
+      "bg_novelty": 0.867898481277199,
+      "sm_novelty": 0.5276957190957191,
+      "bg_novelty_token": 0.8617831992455753,
+      "sm_novelty_token": 0.5276304413179413,
+      "js_divergence": 0.1869443379051359,
+      "bg_vocab_also_in_sm": 0.8088015381328776,
+      "sm_vocab_also_in_bg": 0.9887699138156176
+    }
+  },
+  "civil": {
+    "train": {
+      "split": "train",
+      "n_docs": 6000,
+      "mean_bg_len": 89.83466666666666,
+      "mean_sm_len": 7.9545,
+      "jaccard": 0.10312028136083097,
+      "bg_novelty": 0.8940663341132423,
+      "sm_novelty": 0.21741179078274664,
+      "bg_novelty_token": 0.8031078811292501,
+      "sm_novelty_token": 0.21562164328691028,
+      "js_divergence": 0.17006863366169292,
+      "bg_vocab_also_in_sm": 0.622852680895367,
+      "sm_vocab_also_in_bg": 0.9997911008982662
+    }
+  }
+}

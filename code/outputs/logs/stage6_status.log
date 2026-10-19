@@ -1,0 +1,14 @@
+﻿=== stage6 started ===
+[2026-09-12 07:29:34] START stage6_agnews_bertopic
+[2026-09-12 07:32:30] END stage6_agnews_bertopic exit=0
+[2026-09-12 07:32:30] START stage6_agnews_top2vec
+[2026-09-12 07:36:51] END stage6_agnews_top2vec exit=0
+[2026-09-12 07:36:51] START stage6_github_bertopic
+[2026-09-12 07:39:59] END stage6_github_bertopic exit=1
+[2026-09-12 07:39:59] START stage6_github_top2vec
+[2026-09-12 07:52:27] END stage6_github_top2vec exit=0
+[2026-09-12 07:52:27] START stage6_merge
+[2026-09-12 07:52:38] END stage6_merge exit=1
+[2026-09-12 07:52:38] START stage6_merge_github
+[2026-09-12 07:52:48] END stage6_merge_github exit=1
+[2026-09-12 07:52:48] ALL DONE

@@ -1,0 +1,56 @@
+label set: 15 topics; test coverage 0.428 (857 / 2000 records)
+label counts (train):
+label
+Concrete and Cement Materials Research             436
+Structural Behavior of Reinforced Concrete         243
+Asphalt Pavement Performance Evaluation            237
+Structural Health Monitoring Techniques            235
+Innovative concrete reinforcement materials        208
+Seismic Performance and Analysis                   192
+Vibration Control and Rheological Fluids           182
+Geotechnical Engineering and Soil Stabilization    139
+BIM and Construction Integration                   131
+Concrete Corrosion and Durability                  112
+Building Energy and Comfort Optimization           106
+Anaerobic Digestion and Biogas Production          103
+Structural Load-Bearing Analysis                   101
+Wood Treatment and Properties                       98
+Geotechnical Engineering and Soil Mechanics         97
+  FC-NTM seed 11 title-only: acc 0.6628 macroF1 0.6236 fallback 0
+  FC-NTM seed 11 full-field: acc 0.7165 macroF1 0.6710
+  Concat seed 11 title-only: acc 0.6488 macroF1 0.5925 fallback 0
+  LDA seed 11 title-only: acc 0.5449 macroF1 0.4694 fallback 0
+  BTM seed 11 title-only: acc 0.5986 macroF1 0.5015 fallback 1
+  TFIDF-LR seed 11: acc 0.8098
+  FC-NTM seed 23 title-only: acc 0.6616 macroF1 0.6382 fallback 3
+  FC-NTM seed 23 full-field: acc 0.7363 macroF1 0.7098
+  Concat seed 23 title-only: acc 0.6441 macroF1 0.5966 fallback 0
+  LDA seed 23 title-only: acc 0.5624 macroF1 0.5082 fallback 0
+  BTM seed 23 title-only: acc 0.6138 macroF1 0.5777 fallback 1
+  TFIDF-LR seed 23: acc 0.8098
+  FC-NTM seed 37 title-only: acc 0.6686 macroF1 0.6116 fallback 0
+  FC-NTM seed 37 full-field: acc 0.7048 macroF1 0.6467
+  Concat seed 37 title-only: acc 0.6663 macroF1 0.6542 fallback 0
+  LDA seed 37 title-only: acc 0.4877 macroF1 0.3961 fallback 0
+  BTM seed 37 title-only: acc 0.5869 macroF1 0.5063 fallback 0
+  TFIDF-LR seed 37: acc 0.8098
+   model  seed    setting  accuracy  macro_f1  coverage  n_eval  mapping_fallback
+  FC-NTM    11 title_only    0.6628    0.6236    0.4285     857               0.0
+  FC-NTM    11 full_field    0.7165    0.6710    0.4285     857               0.0
+  Concat    11 title_only    0.6488    0.5925    0.4285     857               0.0
+     LDA    11 title_only    0.5449    0.4694    0.4285     857               0.0
+     BTM    11 title_only    0.5986    0.5015    0.4285     857               1.0
+TFIDF-LR    11 title_only    0.8098    0.8047    0.4285     857               NaN
+  FC-NTM    23 title_only    0.6616    0.6382    0.4285     857               3.0
+  FC-NTM    23 full_field    0.7363    0.7098    0.4285     857               0.0
+  Concat    23 title_only    0.6441    0.5966    0.4285     857               0.0
+     LDA    23 title_only    0.5624    0.5082    0.4285     857               0.0
+     BTM    23 title_only    0.6138    0.5777    0.4285     857               1.0
+TFIDF-LR    23 title_only    0.8098    0.8047    0.4285     857               NaN
+  FC-NTM    37 title_only    0.6686    0.6116    0.4285     857               0.0
+  FC-NTM    37 full_field    0.7048    0.6467    0.4285     857               0.0
+  Concat    37 title_only    0.6663    0.6542    0.4285     857               0.0
+     LDA    37 title_only    0.4877    0.3961    0.4285     857               0.0
+     BTM    37 title_only    0.5869    0.5063    0.4285     857               0.0
+TFIDF-LR    37 title_only    0.8098    0.8047    0.4285     857               NaN
+saved C:\Users\Administrator\Downloads\_pkgverify_20261015\pkg_verify_civil_title_archival.csv

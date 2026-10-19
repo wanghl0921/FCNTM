@@ -1,0 +1,36 @@
+{
+ "id": "13f5b977a3560aed",
+ "payload": {
+  "script": "run_ablation_public.main",
+  "dataset": "civil",
+  "abstract_words": 30,
+  "k": 30,
+  "lr": 0.0005,
+  "max_epochs": 700,
+  "seeds": [
+   11,
+   23,
+   37
+  ],
+  "configs": [
+   "full",
+   "no-cross",
+   "no-mask"
+  ],
+  "full_config": {
+   "consistency_weight": 0.5,
+   "cross_reconstruction": true,
+   "cause_dropout": 0.3,
+   "item_dropout": 0.4,
+   "exclusivity_weight": 0.0,
+   "field_dropout": 0.5,
+   "fusion_mode": "gate",
+   "fused_recon": true,
+   "fused_recon_norm": "balanced",
+   "fused_recon_weight": 0.5
+  },
+  "code": "fa4a00a47624123e",
+  "data": "d46f58101ee82c2c",
+  "fields": "434934c03c4c33cb"
+ }
+}

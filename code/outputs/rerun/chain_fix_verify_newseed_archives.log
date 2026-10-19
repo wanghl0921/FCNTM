@@ -1,0 +1,60 @@
+[github] re-scoring anchor seed 53
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=7.7301 agree=0.844
+  FC-NTM rate=0.5 hidden_NLL=7.7455 agree=0.729
+  FC-NTM rate=0.75 hidden_NLL=7.8234 agree=0.573
+  FC-NTM rate=1 hidden_NLL=7.9746 agree=0.347
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=6.6271 agree=0.810
+  BTM rate=0.5 hidden_NLL=6.6327 agree=0.754
+  BTM rate=0.75 hidden_NLL=6.6715 agree=0.624
+  BTM rate=1 hidden_NLL=6.9864 agree=0.406
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.7902 agree=0.864
+  LDA rate=0.5 hidden_NLL=6.8644 agree=0.769
+  LDA rate=0.75 hidden_NLL=6.9553 agree=0.693
+  LDA rate=1 hidden_NLL=7.3232 agree=0.408
+  github occlusion seed 53: 15 rows, max |delta| = 9.714e-17
+  github fair read-out seed 53: 2 rows, max |delta| = 8.327e-17
+  pinned occlusion_robustness_github_newseeds.csv (105 rows)
+  pinned fair_readout_github_newseeds.csv (14 rows)
+[agnews] re-scoring anchor seed 53
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=7.6957 agree=0.811
+  FC-NTM rate=0.5 hidden_NLL=7.7373 agree=0.684
+  FC-NTM rate=0.75 hidden_NLL=7.8246 agree=0.516
+  FC-NTM rate=1 hidden_NLL=7.8438 agree=0.512
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.1361 agree=0.860
+  BTM rate=0.5 hidden_NLL=7.1463 agree=0.790
+  BTM rate=0.75 hidden_NLL=7.1876 agree=0.707
+  BTM rate=1 hidden_NLL=7.4388 agree=0.547
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.8451 agree=0.729
+  LDA rate=0.5 hidden_NLL=7.8863 agree=0.625
+  LDA rate=0.75 hidden_NLL=7.9058 agree=0.522
+  LDA rate=1 hidden_NLL=7.8817 agree=0.432
+  agnews occlusion seed 53: 15 rows, max |delta| = 9.021e-17
+  agnews fair read-out seed 53: 2 rows, max |delta| = 5.551e-17
+  pinned occlusion_robustness_agnews_newseeds.csv (105 rows)
+  pinned fair_readout_agnews_newseeds.csv (14 rows)
+[civil] re-scoring anchor seed 53
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.0730 agree=0.896
+  FC-NTM rate=0.5 hidden_NLL=8.0909 agree=0.837
+  FC-NTM rate=0.75 hidden_NLL=8.1149 agree=0.731
+  FC-NTM rate=1 hidden_NLL=8.1663 agree=0.644
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.3745 agree=0.804
+  BTM rate=0.5 hidden_NLL=7.3825 agree=0.746
+  BTM rate=0.75 hidden_NLL=7.3836 agree=0.675
+  BTM rate=1 hidden_NLL=7.4402 agree=0.538
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.3718 agree=0.883
+  LDA rate=0.5 hidden_NLL=7.4238 agree=0.800
+  LDA rate=0.75 hidden_NLL=7.4946 agree=0.719
+  LDA rate=1 hidden_NLL=7.6522 agree=0.563
+  civil occlusion seed 53: 15 rows, max |delta| = 8.717e-17
+  civil fair read-out seed 53: 2 rows, max |delta| = 5.551e-17
+  pinned occlusion_robustness_civil_newseeds.csv (105 rows)
+  pinned fair_readout_civil_newseeds.csv (14 rows)

@@ -1,0 +1,46 @@
+  [github seed 11] BTM fitted in 1639s, 865901 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=6.6303 agree=0.828
+  BTM rate=0.5 hidden_NLL=6.6392 agree=0.747
+  BTM rate=0.75 hidden_NLL=6.6704 agree=0.629
+  BTM rate=1 hidden_NLL=7.3172 agree=0.445
+    -> occlusion rows written to occlusion_robustness_github_seed11.csv
+  [github seed 23] BTM fitted in 1606s, 865901 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=6.6306 agree=0.818
+  BTM rate=0.5 hidden_NLL=6.6374 agree=0.755
+  BTM rate=0.75 hidden_NLL=6.6725 agree=0.646
+  BTM rate=1 hidden_NLL=7.3251 agree=0.443
+    -> occlusion rows written to occlusion_robustness_github_seed23.csv
+  [github seed 37] BTM fitted in 1630s, 865901 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=6.6332 agree=0.818
+  BTM rate=0.5 hidden_NLL=6.6234 agree=0.740
+  BTM rate=0.75 hidden_NLL=6.6629 agree=0.622
+  BTM rate=1 hidden_NLL=7.3245 agree=0.431
+    -> occlusion rows written to occlusion_robustness_github_seed37.csv
+  fair_readout fair_readout_github_3seed.csv: BTM rows written
+  [agnews seed 11] BTM fitted in 1338s, 746053 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.1403 agree=0.862
+  BTM rate=0.5 hidden_NLL=7.1564 agree=0.787
+  BTM rate=0.75 hidden_NLL=7.2047 agree=0.696
+  BTM rate=1 hidden_NLL=8.9430 agree=0.551
+    -> occlusion rows written to occlusion_robustness_agnews_seed11.csv
+  [agnews seed 23] BTM fitted in 1327s, 746053 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.1218 agree=0.858
+  BTM rate=0.5 hidden_NLL=7.1468 agree=0.782
+  BTM rate=0.75 hidden_NLL=7.2022 agree=0.690
+  BTM rate=1 hidden_NLL=8.9386 agree=0.544
+    -> occlusion rows written to occlusion_robustness_agnews_seed23.csv
+  [agnews seed 37] BTM fitted in 1452s, 746053 biterms
+  BTM rate=0 hidden_NLL=nan agree=1.000
+  BTM rate=0.25 hidden_NLL=7.1364 agree=0.856
+  BTM rate=0.5 hidden_NLL=7.1544 agree=0.780
+  BTM rate=0.75 hidden_NLL=7.2070 agree=0.695
+  BTM rate=1 hidden_NLL=8.9448 agree=0.554
+    -> occlusion rows written to occlusion_robustness_agnews_seed37.csv
+  fair_readout fair_readout_agnews_3seed.csv: BTM rows written
+
+[chain] BTM document-topic DONE

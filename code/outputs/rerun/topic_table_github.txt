@@ -1,0 +1,66 @@
+% github seed=11 K=30 best_epoch=343
+% topic & summary-side core words & background-side core words
+T01 [typescript, mass=0.042] & type typescript function types string regression error property generic assignable & type typescript function types string regression error property generic assignable \\
+%   full cTF-IDF read-out: type typescript function types string regression error property generic assignable
+T02 [duckdb, mass=0.083] & duckdb all data python client linux sets error query table & duckdb all data python client linux sets error query table \\
+%   full cTF-IDF read-out: duckdb all data python client linux sets error query table
+T03 [redis, mass=0.071] & redis master cluster slave sentinel node command failover nodes server & redis master cluster slave sentinel node command failover nodes server \\
+%   full cTF-IDF read-out: redis master cluster slave sentinel node command failover nodes server
+T04 [redis, mass=0.018] & redis master slave sentinel cluster command server node error set & redis master slave sentinel cluster command server node error set \\
+%   full cTF-IDF read-out: redis master slave sentinel cluster command server node error set
+T05 [typescript, mass=0.052] & type typescript javascript types suggestion change existing runtime feature syntax & type typescript javascript types suggestion wouldn change existing runtime feature \\
+%   full cTF-IDF read-out: type typescript javascript types suggestion wouldn change existing runtime feature
+T06 [redis, mass=0.020] & idle addr sub flags cmd multi age events free redis & qbuf usec psub oll obl idle addr sub flags cmd \\
+%   full cTF-IDF read-out: qbuf usec psub oll obl idle addr sub flags cmd
+T07 [duckdb, mass=0.072] & duckdb all data python linux nightly client sets distribution architecture & duckdb all data python linux nightly client reproducing sets distribution \\
+%   full cTF-IDF read-out: duckdb all data python linux nightly client reproducing sets distribution
+T08 [typescript, mass=0.002] & error redis type docker duckdb all typescript file data command & error redis type docker duckdb all typescript file data command \\
+%   full cTF-IDF read-out: error redis type docker duckdb all typescript file data command
+T09 [duckdb, mass=0.072] & duckdb all data query table error python client appear value & duckdb all data query table error python client appear value \\
+%   full cTF-IDF read-out: duckdb all data query table error python client appear value
+T10 [typescript, mass=0.026] & type typescript error types function property regression any dev class & type typescript error types function property regression any dev class \\
+%   full cTF-IDF read-out: type typescript error types function property regression any dev class
+T11 [redis, mass=0.028] & redis memory master server aof slave cluster rdb calls bytes & redis memory master server aof slave cluster usec rdb calls \\
+%   full cTF-IDF read-out: redis memory master server aof slave cluster usec rdb calls
+T12 [typescript, mass=0.047] & type function typescript error string types duckdb value all array & type function typescript error string types duckdb value all array \\
+%   full cTF-IDF read-out: type function typescript error string types duckdb value all array
+T13 [redis, mass=0.004] & redis error type docker typescript command all duckdb file any & redis error type docker typescript command all duckdb file any \\
+%   full cTF-IDF read-out: redis error type docker typescript command all duckdb file any
+T14 [typescript, mass=0.003] & error redis type duckdb docker all typescript data command file & error redis type duckdb docker all typescript data command file \\
+%   full cTF-IDF read-out: error redis type duckdb docker all typescript data command file
+T15 [moby, mass=0.057] & docker container image info run service etc running description physical & docker container image info run service etc running description physical \\
+%   full cTF-IDF read-out: docker container image info run service etc running description physical
+T16 [moby, mass=0.016] & docker image container error run command redis info running typescript & docker image container error run command redis info running typescript \\
+%   full cTF-IDF read-out: docker image container error run command redis info running typescript
+T17 [redis, mass=0.007] & idle addr sub age flags cmd free multi events name & qbuf psub obl oll idle addr sub omem age flags \\
+%   full cTF-IDF read-out: qbuf psub obl oll idle addr sub omem age flags
+T18 [typescript, mass=0.008] & redis type error docker typescript command fix all any following & redis type error docker typescript command fix all any following \\
+%   full cTF-IDF read-out: redis type error docker typescript command fix all any following
+T19 [redis, mass=0.003] & error redis docker type all typescript duckdb command file data & error redis docker type all typescript duckdb command file data \\
+%   full cTF-IDF read-out: error redis docker type all typescript duckdb command file data
+T20 [redis, mass=0.035] & redis command error master cluster key crash line set some & redis command error master cluster key crash line set some \\
+%   full cTF-IDF read-out: redis command error master cluster key crash line set some
+T21 [moby, mass=0.098] & docker container run info network service swarm containers image host & docker container run info network service swarm containers image host \\
+%   full cTF-IDF read-out: docker container run info network service swarm containers image host
+T22 [moby, mass=0.049] & docker container driver src local pkg root network usr syscall & docker container driver src local pkg root network usr syscall \\
+%   full cTF-IDF read-out: docker container driver src local pkg root network usr syscall
+T23 [typescript, mass=0.002] & error type redis duckdb docker all typescript data file command & error type redis duckdb docker all typescript data file command \\
+%   full cTF-IDF read-out: error type redis duckdb docker all typescript data file command
+T24 [typescript, mass=0.016] & outcome interesting detected dev errors changes type typescript servererrors repos & outcome interesting detected dev errors changes visited analyzed type typescript \\
+%   full cTF-IDF read-out: outcome interesting detected dev errors changes visited analyzed type typescript
+T25 [moby, mass=0.009] & docker error image container typescript redis run command fix type & docker error image container typescript redis run command fix type \\
+%   full cTF-IDF read-out: docker error image container typescript redis run command fix type
+T26 [redis, mass=0.004] & redis error type typescript docker all command duckdb data any & redis error type typescript docker all command duckdb data any \\
+%   full cTF-IDF read-out: redis error type typescript docker all command duckdb data any
+T27 [redis, mass=0.003] & error redis type docker duckdb all typescript command data file & error redis type docker duckdb all typescript command data file \\
+%   full cTF-IDF read-out: error redis type docker duckdb all typescript command data file
+T28 [redis, mass=0.016] & redis error command key duckdb crash type all value data & redis error command key duckdb crash type all value data \\
+%   full cTF-IDF read-out: redis error command key duckdb crash type all value data
+T29 [typescript, mass=0.079] & docker file error redis node all container command files some & docker file error redis node all container command files some \\
+%   full cTF-IDF read-out: docker file error redis node all container command files some
+T30 [typescript, mass=0.055] & typescript type file types module import files error project function & typescript type file types module import files error project function \\
+%   full cTF-IDF read-out: typescript type file types module import files error project function
+
+saved C:\Users\Administrator\Downloads\FCNTM��������\outputs\topic_table_github_seed11_rows.tex (\input-able rows)
+
+saved C:\Users\Administrator\Downloads\FCNTM��������\outputs\topic_table_github_seed11.tex

@@ -1,0 +1,91 @@
+=== LDA extension start 2026-10-11T09:13:59 ===
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.7902 agree=0.864
+  LDA rate=0.5 hidden_NLL=6.8644 agree=0.769
+  LDA rate=0.75 hidden_NLL=6.9553 agree=0.693
+  LDA rate=1 hidden_NLL=7.3232 agree=0.408
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.8228 agree=0.851
+  LDA rate=0.5 hidden_NLL=6.8723 agree=0.789
+  LDA rate=0.75 hidden_NLL=6.9693 agree=0.682
+  LDA rate=1 hidden_NLL=7.3495 agree=0.402
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.8451 agree=0.860
+  LDA rate=0.5 hidden_NLL=6.8867 agree=0.793
+  LDA rate=0.75 hidden_NLL=6.9805 agree=0.693
+  LDA rate=1 hidden_NLL=7.3231 agree=0.435
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.8083 agree=0.869
+  LDA rate=0.5 hidden_NLL=6.8566 agree=0.774
+  LDA rate=0.75 hidden_NLL=6.9523 agree=0.677
+  LDA rate=1 hidden_NLL=7.3054 agree=0.413
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.8312 agree=0.843
+  LDA rate=0.5 hidden_NLL=6.8692 agree=0.758
+  LDA rate=0.75 hidden_NLL=6.9814 agree=0.649
+  LDA rate=1 hidden_NLL=7.3504 agree=0.404
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.7910 agree=0.852
+  LDA rate=0.5 hidden_NLL=6.8532 agree=0.781
+  LDA rate=0.75 hidden_NLL=6.9617 agree=0.673
+  LDA rate=1 hidden_NLL=7.3345 agree=0.405
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.8074 agree=0.865
+  LDA rate=0.5 hidden_NLL=6.8631 agree=0.779
+  LDA rate=0.75 hidden_NLL=6.9580 agree=0.675
+  LDA rate=1 hidden_NLL=7.3281 agree=0.424
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_newseeds.csv
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.8451 agree=0.729
+  LDA rate=0.5 hidden_NLL=7.8863 agree=0.625
+  LDA rate=0.75 hidden_NLL=7.9058 agree=0.522
+  LDA rate=1 hidden_NLL=7.8817 agree=0.432
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.8618 agree=0.744
+  LDA rate=0.5 hidden_NLL=7.8904 agree=0.619
+  LDA rate=0.75 hidden_NLL=7.9146 agree=0.526
+  LDA rate=1 hidden_NLL=7.8825 agree=0.449
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.8328 agree=0.741
+  LDA rate=0.5 hidden_NLL=7.8798 agree=0.623
+  LDA rate=0.75 hidden_NLL=7.9008 agree=0.516
+  LDA rate=1 hidden_NLL=7.8849 agree=0.440
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.7957 agree=0.740
+  LDA rate=0.5 hidden_NLL=7.8489 agree=0.627
+  LDA rate=0.75 hidden_NLL=7.8909 agree=0.536
+  LDA rate=1 hidden_NLL=7.8562 agree=0.450
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.8152 agree=0.749
+  LDA rate=0.5 hidden_NLL=7.8722 agree=0.628
+  LDA rate=0.75 hidden_NLL=7.8976 agree=0.533
+  LDA rate=1 hidden_NLL=7.8787 agree=0.446
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.8179 agree=0.744
+  LDA rate=0.5 hidden_NLL=7.8488 agree=0.623
+  LDA rate=0.75 hidden_NLL=7.8775 agree=0.529
+  LDA rate=1 hidden_NLL=7.8603 agree=0.441
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.8294 agree=0.734
+  LDA rate=0.5 hidden_NLL=7.8593 agree=0.610
+  LDA rate=0.75 hidden_NLL=7.8970 agree=0.527
+  LDA rate=1 hidden_NLL=7.8761 agree=0.437
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_newseeds.csv
+=== LDA extension exit=0 2026-10-11T09:59:45 ===
+  best baseline per seed: {'BTM': 10}
+github: 10 seeds with FC-NTM and BTM curves
+  best baseline per seed: {'LDA': 10}
+agnews: 10 seeds with FC-NTM and BTM curves
+
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun\seed_extension_summary.csv
+corpus        comparison metric  n_seeds  n    mean     sd  ci_low  ci_high  positive  sign_p  wilcoxon_p
+github              main     CV       10 10  0.0276 0.0222  0.0118   0.0435         9  0.0215      0.0039
+github              beta     CV       10 10 -0.0143 0.0186 -0.0276  -0.0010         3  0.3438      0.0371
+github  occlusion_vs_BTM    rel       10 10  0.0240 0.0035  0.0215   0.0264        10  0.0020      0.0020
+github occlusion_vs_best    rel       10 10  0.0240 0.0035  0.0215   0.0264        10  0.0020      0.0020
+agnews              main     CV       10 10 -0.0087 0.0302 -0.0303   0.0129         3  0.3438      0.3750
+agnews              beta     CV       10 10 -0.0275 0.0269 -0.0467  -0.0082         1  0.0215      0.0039
+agnews  occlusion_vs_BTM    rel       10 10  0.0250 0.0014  0.0240   0.0260        10  0.0020      0.0020
+agnews occlusion_vs_best    rel       10 10 -0.0129 0.0019 -0.0143  -0.0115         0  0.0020      0.0020
+=== summary exit=0 2026-10-11T09:59:50 ===
+=== LDA chain end 2026-10-11T09:59:50 ===

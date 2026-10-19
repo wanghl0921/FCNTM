@@ -1,0 +1,122 @@
+
+==============================================================================
+1. corpus statistics recomputed from the stored splits
+==============================================================================
+
+AGNews
+  train n=6000 test n=7600 train vocab=4724 test vocab=4724
+  train: bg=15.4763 sm=3.9977 doc=19.4740
+  test: bg=14.9779 sm=3.8189 doc=18.7968
+  'build' in train vocab: True
+  'columnar' in train vocab: False
+  'vectorized' in train vocab: False
+  'compiler' in train vocab: False
+  'docker' in train vocab: False
+
+GitHubIssues-4repo
+  train n=6000 test n=2000 train vocab=5175 test vocab=5175
+  train: bg=70.7848 sm=5.5068 doc=76.2917
+  test: bg=78.0125 sm=5.4645 doc=83.4770
+  'build' in train vocab: False
+  'columnar' in train vocab: False
+  'vectorized' in train vocab: False
+  'compiler' in train vocab: True
+  'docker' in train vocab: True
+
+==============================================================================
+2. paper table values recomputed from the per-seed CSVs
+==============================================================================
+
+AGNews (27 rows)
+  rows with non-null error: 4 -> ['BERTopic', 'Top2Vec', 'Top2Vec', 'Top2Vec']
+  BTM            n=3 CV=0.601319+-0.031248 NPMI=0.161356+-0.016562 themes=[30, 30, 30]
+  CombinedTM     n=3 CV=0.553331+-0.008333 NPMI=0.107213+-0.005446 themes=[30, 30, 30]
+  NeuralLDA      n=3 CV=0.510452+-0.025239 NPMI=0.053536+-0.017460 themes=[30, 30, 30]
+  BERTopic       n=3 CV=0.488469+-0.022353 NPMI=0.035116+-0.025618 themes=[29, 29, 29]
+  ETM            n=3 CV=0.528835+-0.009437 NPMI=-0.426315+-0.004599 themes=[30, 30, 30]
+  LDA            n=3 CV=0.420681+-0.013205 NPMI=-0.066338+-0.018305 themes=[30, 30, 30]
+  NMF            n=3 CV=0.494082+-0.014928 NPMI=0.069431+-0.013050 themes=[30, 30, 30]
+  Top2Vec        n=3 CV=0.497675+-0.032336 NPMI=0.099225+-0.031083 themes=[2, 4, 2]
+
+GitHub (27 rows)
+  rows with non-null error: 0 -> []
+  BTM            n=3 CV=0.705896+-0.014364 NPMI=0.229708+-0.012849 themes=[30, 30, 30]
+  CombinedTM     n=3 CV=0.618456+-0.025609 NPMI=0.176168+-0.039943 themes=[30, 30, 30]
+  NeuralLDA      n=3 CV=0.591346+-0.038577 NPMI=0.123623+-0.047294 themes=[30, 30, 30]
+  BERTopic       n=3 CV=0.540443+-0.014899 NPMI=0.075966+-0.012261 themes=[29, 29, 29]
+  ETM            n=3 CV=0.502814+-0.007363 NPMI=-0.391226+-0.018064 themes=[30, 30, 30]
+  LDA            n=3 CV=0.545693+-0.011175 NPMI=0.074175+-0.016640 themes=[30, 30, 30]
+  NMF            n=3 CV=0.613991+-0.004848 NPMI=0.163584+-0.003492 themes=[30, 30, 30]
+  Top2Vec        n=3 CV=0.492823+-0.008715 NPMI=-0.008486+-0.013048 themes=[167, 152, 161]
+
+==============================================================================
+3. occlusion table numbers (GitHub)
+==============================================================================
+  dataset        setting  seed   K  with_cause_CV  with_cause_NPMI  with_cause_UMass  without_cause_CV  without_cause_NPMI  without_cause_UMass  cause_only_CV  cause_only_NPMI  seconds
+0  github   fielddrop_on    11  30       0.678961         0.123177         -8.142338          0.403189           -0.255968           -12.713432       0.680571         0.117302    17.14
+1  github   fielddrop_on    23  30       0.680214         0.183644         -5.659271          0.432188           -0.315037           -14.784356       0.670682         0.179524    19.64
+2  github   fielddrop_on    37  30       0.663830         0.188689         -5.406289          0.442333           -0.318887           -14.233821       0.670019         0.210707    18.79
+3  github  fielddrop_off    11  30       0.662328         0.192825         -3.213344          0.411956           -0.287478           -15.021925       0.658907         0.191950  3342.08
+4  github  fielddrop_off    23  30       0.647236         0.185342         -3.731625          0.441491           -0.334361           -15.989085       0.642755         0.186254  4132.07
+5  github  fielddrop_off    37  30       0.661969         0.207253         -3.327666          0.407428           -0.278354           -15.095972       0.659723         0.207713  2757.64
+
+==============================================================================
+5. tfidf() re-estimates IDF per split (representation mismatch)
+==============================================================================
+  train-style: [[1.0, 1.0, 0.0]]
+  test-style: [[1.0, 1.0, 0.0]]
+  same doc, but scored under a corpus where a/b are rare:
+    [[1.0, 1.0, 0.0]]
+    [[4.931826, 4.931826, 0.0]] <- row 0 of a corpus in which a/b are rare
+
+==============================================================================
+4. field_redundancy.measure() reproduced
+==============================================================================
+saved json: {
+  "github": {
+    "R2(sm->bg)": -0.3456758593316157,
+    "R2(bg->sm)": -0.018461202109942572,
+    "cca_mean_r2": 0.06911639917393123
+  },
+  "agnews": {
+    "R2(sm->bg)": 0.0775787788558496,
+    "R2(bg->sm)": 0.03547474281085933,
+    "cca_mean_r2": 0.12522717361922914
+  }
+}
+  recomputed github: {'R2(sm->bg)': -0.3456758593316157, 'R2(bg->sm)': -0.018461202109942572, 'cca_mean_r2': 0.06911639917393123}
+  recomputed agnews: {'R2(sm->bg)': 0.0775787788558496, 'R2(bg->sm)': 0.03547474281085933, 'cca_mean_r2': 0.12522717361922914}
+
+==============================================================================
+6. benchmark resume logic `if not r.get('error')`
+==============================================================================
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'K_target'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Downloads\FCNTM��������\_verify_review.py", line 175, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Administrator\Downloads\FCNTM��������\_verify_review.py", line 169, in main
+    check_benchmark_done_flag()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Administrator\Downloads\FCNTM��������\_verify_review.py", line 135, in check_benchmark_done_flag
+    print("  returned rows:", len(BP.summarize_rows(rows)))
+                                  ~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Administrator\Downloads\FCNTM��������\benchmark_public.py", line 145, in summarize_rows
+    row = {"model": model, "n_seeds": len(g), "K_target": int(g["K_target"].iloc[0])}
+                                                              ~^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'K_target'

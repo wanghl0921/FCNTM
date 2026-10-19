@@ -1,0 +1,7 @@
+   FC-NTM seed 11 {'CV': 0.6489, 'NPMI': 0.1881, 'IRBO': 0.9843}
+   FC-NTM-cTFIDF seed 11 {'CV': 0.6585, 'NPMI': 0.1962, 'IRBO': 0.8735}
+   FC-NTM seed 23 {'CV': 0.7024, 'NPMI': 0.2414, 'IRBO': 0.9844}
+   FC-NTM-cTFIDF seed 23 {'CV': 0.6713, 'NPMI': 0.2141, 'IRBO': 0.8661}
+   FC-NTM seed 37 {'CV': 0.6533, 'NPMI': 0.0942, 'IRBO': 0.9783}
+   FC-NTM-cTFIDF seed 37 {'CV': 0.6469, 'NPMI': 0.1954, 'IRBO': 0.8394}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs/codev_github_base.csv

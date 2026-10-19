@@ -1,0 +1,21 @@
+train docs 6000 vocab 5175
+test docs 2000
+meta {'repos': ['duckdb', 'typescript', 'moby', 'redis'], 'per_repo_train': 1500, 'per_repo_test': 1900, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 8000, 'source': 'open-index/open-github-issues (moby, TypeScript, duckdb, redis)'}
+--- Top2Vec (seed 11, topics 167, time 274.3s) ---
+    0 type regression assignable generic function inferred typescript string types conditional
+    1 tsconfig import project tsc modules module relative typescript files angular
+    2 javascript wouldn suggestion existing runtime syntax feature change checklist emitting
+    {'n_topics': 167.0, 'CV_n': 135.0, 'CV': 0.4848, 'NPMI_n': 135.0, 'NPMI': -0.0131, 'UCI_n': 135.0, 'UCI': -4.3568, 'UMass_n': 167.0, 'UMass': -9.9199, 'EXCL': 0.3411, 'EXCL_KADJ': 0.3371, 'IRBO': 0.9978}
+--- Top2Vec (seed 23, topics 152, time 188.7s) ---
+    0 type regression assignable undefined string typescript inferred types union array
+    1 sets reproducing distribution architecture all duckdb required hardware python recommend
+    2 swarm network service manager worker docker nodes task overlay containers
+    {'n_topics': 152.0, 'CV_n': 125.0, 'CV': 0.4915, 'NPMI_n': 125.0, 'NPMI': -0.0186, 'UCI_n': 125.0, 'UCI': -4.4431, 'UMass_n': 152.0, 'UMass': -9.587, 'EXCL': 0.3448, 'EXCL_KADJ': 0.3404, 'IRBO': 0.9976}
+--- Top2Vec (seed 37, topics 161, time 187.8s) ---
+    0 type assignable inferred regression union string generic types inference typescript
+    1 sets reproducing all distribution architecture recommend duckdb required hardware python
+    2 javascript wouldn suggestion existing runtime syntax feature change emitting checklist
+    {'n_topics': 161.0, 'CV_n': 138.0, 'CV': 0.5021, 'NPMI_n': 138.0, 'NPMI': 0.0062, 'UCI_n': 138.0, 'UCI': -3.999, 'UMass_n': 161.0, 'UMass': -9.4454, 'EXCL': 0.3373, 'EXCL_KADJ': 0.3331, 'IRBO': 0.9974}
+  model  n_seeds  K_target  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+Top2Vec        3        30             160.0 0.492823 0.008715  -0.008486  0.013048 -4.266296 0.235493    -9.65078   0.243611   0.341046  0.003743        0.336895       0.003649   0.997596  0.000176
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ro_github_top2vec.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ro_github_top2vec_summary.csv

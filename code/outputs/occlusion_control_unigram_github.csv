@@ -1,0 +1,16 @@
+﻿model,rate,hidden_NLL,n_docs,agreement,mean_js,corpus,seed
+Constant-unigram,0.0,,0,1.0,0.0,github,11
+Constant-unigram,0.25,7.385410509060366,2000,1.0,0.0,github,11
+Constant-unigram,0.5,7.380566241053987,2000,1.0,0.0,github,11
+Constant-unigram,0.75,7.377736025401559,2000,1.0,0.0,github,11
+Constant-unigram,1.0,7.381866099354756,2000,1.0,0.0,github,11
+Constant-unigram,0.0,,0,1.0,0.0,github,23
+Constant-unigram,0.25,7.384901379976592,2000,1.0,0.0,github,23
+Constant-unigram,0.5,7.381815846193863,2000,1.0,0.0,github,23
+Constant-unigram,0.75,7.382825680332166,2000,1.0,0.0,github,23
+Constant-unigram,1.0,7.381866099354756,2000,1.0,0.0,github,23
+Constant-unigram,0.0,,0,1.0,0.0,github,37
+Constant-unigram,0.25,7.3951881228447895,2000,1.0,0.0,github,37
+Constant-unigram,0.5,7.379142094071358,2000,1.0,0.0,github,37
+Constant-unigram,0.75,7.380938990988508,2000,1.0,0.0,github,37
+Constant-unigram,1.0,7.381866099354756,2000,1.0,0.0,github,37

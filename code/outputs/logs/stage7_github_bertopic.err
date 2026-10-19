@@ -1,0 +1,94 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\benchmark_public.py", line 261, in main
+    rec = run_model(model, data, args.k, seed, word_emb, doc_ctx,
+                    topn=args.topn, readout=args.readout)
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\benchmark_public.py", line 113, in run_model
+    rec = NB.run_bertopic(
+        train["doc_texts"],
+    ...<7 lines>...
+        readout=readout,
+    )
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\new_baselines.py", line 129, in run_bertopic
+    _, _ = model.fit_transform(docs_for_bow, embeddings=np.asarray(embeddings, dtype=np.float32))
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\bertopic\_bertopic.py", line 477, in fit_transform
+    umap_embeddings = self._reduce_dimensionality(embeddings, y)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\bertopic\_bertopic.py", line 3944, in _reduce_dimensionality
+    umap_embeddings = self.umap_model.fit_transform(embeddings, y=y)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\umap\umap_.py", line 2934, in fit_transform
+    self.fit(X, y, ensure_all_finite, **kwargs)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\umap\umap_.py", line 2635, in fit
+    ) = nearest_neighbors(
+        ~~~~~~~~~~~~~~~~~^
+        X[index],
+        ^^^^^^^^^
+    ...<8 lines>...
+        verbose=self.verbose,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\umap\umap_.py", line 331, in nearest_neighbors
+    knn_search_index = NNDescent(
+        X,
+    ...<10 lines>...
+        compressed=False,
+    )
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pynndescent\pynndescent_.py", line 1225, in __init__
+    self._neighbor_graph = nn_descent(
+                           ~~~~~~~~~~^
+        self._raw_data,
+        ^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        verbose=verbose,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+MemoryError: Allocation failed (probably too large).
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\benchmark_public.py", line 261, in main
+    rec = run_model(model, data, args.k, seed, word_emb, doc_ctx,
+                    topn=args.topn, readout=args.readout)
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\benchmark_public.py", line 113, in run_model
+    rec = NB.run_bertopic(
+        train["doc_texts"],
+    ...<7 lines>...
+        readout=readout,
+    )
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\new_baselines.py", line 129, in run_bertopic
+    _, _ = model.fit_transform(docs_for_bow, embeddings=np.asarray(embeddings, dtype=np.float32))
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\bertopic\_bertopic.py", line 477, in fit_transform
+    umap_embeddings = self._reduce_dimensionality(embeddings, y)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\bertopic\_bertopic.py", line 3944, in _reduce_dimensionality
+    umap_embeddings = self.umap_model.fit_transform(embeddings, y=y)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\umap\umap_.py", line 2934, in fit_transform
+    self.fit(X, y, ensure_all_finite, **kwargs)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\umap\umap_.py", line 2635, in fit
+    ) = nearest_neighbors(
+        ~~~~~~~~~~~~~~~~~^
+        X[index],
+        ^^^^^^^^^
+    ...<8 lines>...
+        verbose=self.verbose,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\umap\umap_.py", line 331, in nearest_neighbors
+    knn_search_index = NNDescent(
+        X,
+    ...<10 lines>...
+        compressed=False,
+    )
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pynndescent\pynndescent_.py", line 1225, in __init__
+    self._neighbor_graph = nn_descent(
+                           ~~~~~~~~~~^
+        self._raw_data,
+        ^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        verbose=verbose,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+MemoryError: Allocation failed (probably too large).

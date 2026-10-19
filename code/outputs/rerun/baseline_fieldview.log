@@ -1,0 +1,57 @@
+=== baseline fieldview chain start 2026-10-09T20:46:17 ===
+[civil BTM seed 11] background: CV 0.5872 NPMI 0.1284 (n=30.0)
+[civil BTM seed 11] summary: CV 0.3893 NPMI -0.1023 (n=27.0)
+[civil BTM seed 23] background: CV 0.5760 NPMI 0.1252 (n=30.0)
+[civil BTM seed 23] summary: CV 0.3729 NPMI -0.0898 (n=27.0)
+[civil BTM seed 37] background: CV 0.6033 NPMI 0.1430 (n=29.0)
+[civil BTM seed 37] summary: CV 0.3834 NPMI -0.1023 (n=26.0)
+
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\baseline_fieldview.csv
+view           background  summary
+dataset model                     
+agnews  BTM        0.5855   0.3994
+        LDA        0.4192   0.4862
+        NMF        0.4774   0.4439
+civil   BTM        0.5889   0.3819
+        LDA        0.5538   0.4148
+        NMF        0.5998   0.3981
+github  BTM        0.7101   0.3961
+        LDA        0.5428   0.4657
+        NMF        0.6093   0.4327
+=== BTM civil exit=0 2026-10-09T22:01:34 ===
+[github ProdLDA seed 11] background: CV 0.5799 NPMI 0.1156 (n=29.0)
+[github ProdLDA seed 11] summary: CV 0.4872 NPMI -0.3811 (n=15.0)
+[github ProdLDA seed 23] background: CV 0.5684 NPMI 0.1084 (n=29.0)
+[github ProdLDA seed 23] summary: CV 0.4872 NPMI -0.3654 (n=16.0)
+[github ProdLDA seed 37] background: CV 0.5771 NPMI 0.0914 (n=30.0)
+[github ProdLDA seed 37] summary: CV 0.4276 NPMI -0.3099 (n=13.0)
+[agnews ProdLDA seed 11] background: CV 0.5114 NPMI 0.0454 (n=30.0)
+[agnews ProdLDA seed 11] summary: CV 0.4345 NPMI -0.3478 (n=25.0)
+[agnews ProdLDA seed 23] background: CV 0.5222 NPMI 0.0585 (n=30.0)
+[agnews ProdLDA seed 23] summary: CV 0.4332 NPMI -0.3430 (n=27.0)
+[agnews ProdLDA seed 37] background: CV 0.4626 NPMI 0.0232 (n=30.0)
+[agnews ProdLDA seed 37] summary: CV 0.4466 NPMI -0.3650 (n=29.0)
+[civil ProdLDA seed 11] background: CV 0.5832 NPMI 0.1359 (n=30.0)
+[civil ProdLDA seed 11] summary: CV 0.4078 NPMI -0.2091 (n=23.0)
+[civil ProdLDA seed 23] background: CV 0.5480 NPMI 0.0979 (n=30.0)
+[civil ProdLDA seed 23] summary: CV 0.4179 NPMI -0.2032 (n=25.0)
+[civil ProdLDA seed 37] background: CV 0.5957 NPMI 0.1370 (n=29.0)
+[civil ProdLDA seed 37] summary: CV 0.4309 NPMI -0.1745 (n=23.0)
+
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\baseline_fieldview.csv
+view             background  summary
+dataset model                       
+agnews  BTM          0.5855   0.3994
+        LDA          0.4192   0.4862
+        NMF          0.4774   0.4439
+        ProdLDA      0.4987   0.4381
+civil   BTM          0.5889   0.3819
+        LDA          0.5538   0.4148
+        NMF          0.5998   0.3981
+        ProdLDA      0.5756   0.4188
+github  BTM          0.7101   0.3961
+        LDA          0.5428   0.4657
+        NMF          0.6093   0.4327
+        ProdLDA      0.5751   0.4674
+=== ProdLDA exit=0 2026-10-09T23:56:40 ===
+=== baseline fieldview chain end 2026-10-09T23:56:40 ===

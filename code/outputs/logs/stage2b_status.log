@@ -1,0 +1,9 @@
+﻿=== stage2b started ===
+[2026-09-11 08:12:16] python=C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe rowsdir=C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\logs
+[2026-09-11 08:12:16] START stage2b_base
+[2026-09-11 09:57:26] END stage2b_base exit=0
+[2026-09-11 09:57:26] base rows=6
+[2026-09-11 09:57:26] START stage2b_gate
+[2026-09-11 12:11:32] END stage2b_gate exit=0
+[2026-09-11 12:11:32] gate rows=6
+[2026-09-11 12:11:32] ALL DONE

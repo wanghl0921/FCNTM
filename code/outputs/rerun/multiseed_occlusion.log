@@ -1,0 +1,315 @@
+[supervise] attempt 1/5: python -u run_multiseed_occlusion.py
+
+=== [13:19:01] train FC-NTM state github seeds=['23', '37'] ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_public_missing_field.py --dataset github --seeds 23,37 --settings fielddrop_on --dump-state C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\github_missing_state.pt --resume-every 50 --reuse-state C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\github_missing_state.pt
+[github] field vocab cause=5173 item=3458
+[github] test docs=2000 with background field=2000
+loaded states for ['fielddrop_off:11', 'fielddrop_on:11']
+    [train] epoch 1 loss 1963.183 klw 0.0025
+    [train] epoch 2 loss 1945.844 klw 0.0050
+    [train] epoch 3 loss 1968.920 klw 0.0075
+    [train] epoch 4 loss 1958.210 klw 0.0100
+    [train] epoch 5 loss 1917.033 klw 0.0125
+    [train] epoch 25 loss 1778.144 klw 0.0500
+    [train] epoch 50 loss 1718.515 klw 0.0500
+    [train] epoch 75 loss 1695.361 klw 0.0500
+    [train] epoch 100 loss 1672.821 klw 0.0500
+    [train] epoch 125 loss 1657.058 klw 0.0500
+    [train] epoch 150 loss 1647.230 klw 0.0500
+    [train] epoch 175 loss 1653.811 klw 0.0500
+    [train] epoch 200 loss 1631.751 klw 0.0500
+    [train] epoch 225 loss 1644.801 klw 0.0500
+    [train] epoch 250 loss 1636.428 klw 0.0500
+    [train] epoch 275 loss 1629.237 klw 0.0500
+    [train] epoch 300 loss 1626.685 klw 0.0500
+    [train] epoch 325 loss 1627.890 klw 0.0500
+    [train] epoch 350 loss 1616.854 klw 0.0500
+    [train] epoch 375 loss 1657.219 klw 0.0500
+    [train] epoch 400 loss 1619.246 klw 0.0500
+    [train] epoch 425 loss 1606.766 klw 0.0500
+    [train] epoch 450 loss 1607.347 klw 0.0500
+    [train] epoch 475 loss 1593.885 klw 0.0500
+    [train] epoch 500 loss 1620.787 klw 0.0500
+    [train] epoch 525 loss 1601.267 klw 0.0500
+    [train] epoch 550 loss 1600.616 klw 0.0500
+    [train] epoch 575 loss 1593.979 klw 0.0500
+    [train] epoch 600 loss 1612.857 klw 0.0500
+    [train] epoch 625 loss 1591.334 klw 0.0500
+    [train] epoch 650 loss 1582.854 klw 0.0500
+    [train] epoch 675 loss 1595.400 klw 0.0500
+    [train] epoch 700 loss 1593.686 klw 0.0500
+   fielddrop_on seed 23 {'full_CV': 0.751483, 'occ_CV': 0.716869, 'delta_CV': 0.034614, 'delta_NLL_token': 0.225963, 'top1_agreement': 0.335}
+    [train] epoch 1 loss 1930.660 klw 0.0025
+    [train] epoch 2 loss 1905.206 klw 0.0050
+    [train] epoch 3 loss 1921.723 klw 0.0075
+    [train] epoch 4 loss 1893.144 klw 0.0100
+    [train] epoch 5 loss 1931.382 klw 0.0125
+    [train] epoch 25 loss 1769.749 klw 0.0500
+    [train] epoch 50 loss 1732.836 klw 0.0500
+    [train] epoch 75 loss 1690.468 klw 0.0500
+    [train] epoch 100 loss 1681.264 klw 0.0500
+    [train] epoch 125 loss 1662.425 klw 0.0500
+    [train] epoch 150 loss 1642.674 klw 0.0500
+    [train] epoch 175 loss 1655.787 klw 0.0500
+    [train] epoch 200 loss 1650.862 klw 0.0500
+    [train] epoch 225 loss 1627.689 klw 0.0500
+    [train] epoch 250 loss 1639.666 klw 0.0500
+    [train] epoch 275 loss 1625.233 klw 0.0500
+    [train] epoch 300 loss 1623.437 klw 0.0500
+    [train] epoch 325 loss 1653.809 klw 0.0500
+    [train] epoch 350 loss 1619.084 klw 0.0500
+    [train] epoch 375 loss 1616.053 klw 0.0500
+    [train] epoch 400 loss 1613.244 klw 0.0500
+    [train] epoch 425 loss 1616.145 klw 0.0500
+    [train] epoch 450 loss 1598.549 klw 0.0500
+    [train] epoch 475 loss 1619.247 klw 0.0500
+    [train] epoch 500 loss 1607.478 klw 0.0500
+    [train] epoch 525 loss 1595.110 klw 0.0500
+   fielddrop_on seed 37 {'full_CV': 0.708876, 'occ_CV': 0.712937, 'delta_CV': -0.004061, 'delta_NLL_token': 0.230052, 'top1_agreement': 0.342}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_occlusion.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_fieldview.csv
+=== [14:59:37] train FC-NTM state github seeds=['23', '37'] exit=0 ===
+
+=== [14:59:37] train FC-NTM state agnews seeds=['23', '37'] ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_public_missing_field.py --dataset agnews --seeds 23,37 --settings fielddrop_on --dump-state C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\agnews_missing_state.pt --resume-every 50 --reuse-state C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\agnews_missing_state.pt
+[agnews] field vocab cause=4681 item=3829
+[agnews] test docs=7600 with background field=7599
+loaded states for ['fielddrop_on:11']
+existing rows in public_missing_field_occlusion.csv : 2
+    [train] epoch 1 loss 458.676 klw 0.0025
+    [train] epoch 2 loss 452.774 klw 0.0050
+    [train] epoch 3 loss 450.867 klw 0.0075
+    [train] epoch 4 loss 449.734 klw 0.0100
+    [train] epoch 5 loss 448.723 klw 0.0125
+    [train] epoch 25 loss 446.491 klw 0.0500
+    [train] epoch 50 loss 435.500 klw 0.0500
+    [train] epoch 75 loss 427.937 klw 0.0500
+    [train] epoch 100 loss 422.015 klw 0.0500
+    [train] epoch 125 loss 419.389 klw 0.0500
+    [train] epoch 150 loss 417.407 klw 0.0500
+    [train] epoch 175 loss 415.668 klw 0.0500
+    [train] epoch 200 loss 414.128 klw 0.0500
+    [train] epoch 225 loss 412.372 klw 0.0500
+    [train] epoch 250 loss 410.676 klw 0.0500
+    [train] epoch 275 loss 409.107 klw 0.0500
+    [train] epoch 300 loss 407.246 klw 0.0500
+    [train] epoch 325 loss 406.286 klw 0.0500
+    [train] epoch 350 loss 405.445 klw 0.0500
+    [train] epoch 375 loss 403.746 klw 0.0500
+    [train] epoch 400 loss 402.955 klw 0.0500
+    [train] epoch 425 loss 402.406 klw 0.0500
+    [train] epoch 450 loss 401.893 klw 0.0500
+    [train] epoch 475 loss 400.052 klw 0.0500
+    [train] epoch 500 loss 400.146 klw 0.0500
+    [train] epoch 525 loss 400.101 klw 0.0500
+    [train] epoch 550 loss 399.044 klw 0.0500
+    [train] epoch 575 loss 398.535 klw 0.0500
+    [train] epoch 600 loss 398.289 klw 0.0500
+    [train] epoch 625 loss 398.212 klw 0.0500
+    [train] epoch 650 loss 396.856 klw 0.0500
+    [train] epoch 675 loss 397.567 klw 0.0500
+    [train] epoch 700 loss 396.769 klw 0.0500
+   fielddrop_on seed 23 {'full_CV': 0.602374, 'occ_CV': 0.58172, 'delta_CV': 0.020654, 'delta_NLL_token': 0.233541, 'top1_agreement': 0.517437}
+    [train] epoch 1 loss 457.522 klw 0.0025
+    [train] epoch 2 loss 451.793 klw 0.0050
+    [train] epoch 3 loss 449.675 klw 0.0075
+    [train] epoch 4 loss 449.104 klw 0.0100
+    [train] epoch 5 loss 448.641 klw 0.0125
+    [train] epoch 25 loss 446.387 klw 0.0500
+    [train] epoch 50 loss 433.363 klw 0.0500
+    [train] epoch 75 loss 426.449 klw 0.0500
+    [train] epoch 100 loss 422.691 klw 0.0500
+    [train] epoch 125 loss 420.749 klw 0.0500
+    [train] epoch 150 loss 418.504 klw 0.0500
+    [train] epoch 175 loss 417.058 klw 0.0500
+    [train] epoch 200 loss 414.846 klw 0.0500
+=== [16:06:20] train FC-NTM state agnews seeds=['23', '37'] exit=1 ===
+
+=== [16:06:20] occlusion curves github seed=23 ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u occlusion_robustness.py --corpus github --seed 23 --models FC-NTM,LDA,NMF,ProdLDA,ETM --rates 0,0.25,0.5,0.75,1.0 --fcntm-state C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\github_missing_state.pt --out occlusion_robustness_github_seed23.csv
+[github] FC-NTM
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=7.7156 agree=0.827
+  FC-NTM rate=0.5 hidden_NLL=7.7396 agree=0.721
+  FC-NTM rate=0.75 hidden_NLL=7.7937 agree=0.571
+  FC-NTM rate=1 hidden_NLL=7.9597 agree=0.358
+[github] LDA
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.8177 agree=0.855
+  LDA rate=0.5 hidden_NLL=6.8612 agree=0.779
+  LDA rate=0.75 hidden_NLL=6.9537 agree=0.662
+  LDA rate=1 hidden_NLL=7.3205 agree=0.434
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9805 agree=0.881
+  NMF rate=0.5 hidden_NLL=7.1620 agree=0.820
+  NMF rate=0.75 hidden_NLL=7.5351 agree=0.713
+  NMF rate=1 hidden_NLL=10.2220 agree=0.475
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5282 agree=0.826
+  ProdLDA rate=0.5 hidden_NLL=7.5574 agree=0.743
+  ProdLDA rate=0.75 hidden_NLL=7.6372 agree=0.629
+  ProdLDA rate=1 hidden_NLL=8.1254 agree=0.338
+[github] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=6.5895 agree=0.878
+  ETM rate=0.5 hidden_NLL=6.6217 agree=0.792
+  ETM rate=0.75 hidden_NLL=6.6955 agree=0.691
+  ETM rate=1 hidden_NLL=7.1878 agree=0.455
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+ FC-NTM  0.00         NaN       0     1.0000   0.0000
+ FC-NTM  0.25      7.7156    2000     0.8270   0.0062
+ FC-NTM  0.50      7.7396    2000     0.7210   0.0166
+ FC-NTM  0.75      7.7937    2000     0.5710   0.0433
+ FC-NTM  1.00      7.9597    2000     0.3580   0.0830
+    LDA  0.00         NaN       0     1.0000   0.0000
+    LDA  0.25      6.8177    2000     0.8550   0.0331
+    LDA  0.50      6.8612    2000     0.7795   0.0647
+    LDA  0.75      6.9537    2000     0.6625   0.1118
+    LDA  1.00      7.3205    2000     0.4340   0.2299
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      6.9805    2000     0.8810   0.0222
+    NMF  0.50      7.1620    2000     0.8195   0.0508
+    NMF  0.75      7.5351    2000     0.7125   0.0971
+    NMF  1.00     10.2220    2000     0.4750   0.2464
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5282    2000     0.8260   0.0073
+ProdLDA  0.50      7.5574    2000     0.7430   0.0192
+ProdLDA  0.75      7.6372    2000     0.6295   0.0438
+ProdLDA  1.00      8.1254    2000     0.3380   0.1552
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      6.5895    2000     0.8785   0.0129
+    ETM  0.50      6.6217    2000     0.7925   0.0333
+    ETM  0.75      6.6955    2000     0.6910   0.0740
+    ETM  1.00      7.1878    2000     0.4550   0.2371
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_robustness_github_seed23.csv
+=== [16:38:27] occlusion curves github seed=23 exit=0 ===
+
+=== [16:38:27] occlusion curves agnews seed=23 ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u occlusion_robustness.py --corpus agnews --seed 23 --models FC-NTM,LDA,NMF,ProdLDA,ETM --rates 0,0.25,0.5,0.75,1.0 --fcntm-state C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\agnews_missing_state.pt --out occlusion_robustness_agnews_seed23.csv
+[agnews] FC-NTM
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=7.6745 agree=0.809
+  FC-NTM rate=0.5 hidden_NLL=7.7190 agree=0.695
+  FC-NTM rate=0.75 hidden_NLL=7.8127 agree=0.533
+  FC-NTM rate=1 hidden_NLL=7.8262 agree=0.521
+[agnews] LDA
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.8226 agree=0.748
+  LDA rate=0.5 hidden_NLL=7.8707 agree=0.627
+  LDA rate=0.75 hidden_NLL=7.9041 agree=0.518
+  LDA rate=1 hidden_NLL=7.8698 agree=0.435
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.8860 agree=0.826
+  NMF rate=0.5 hidden_NLL=10.6001 agree=0.734
+  NMF rate=0.75 hidden_NLL=11.7004 agree=0.638
+  NMF rate=1 hidden_NLL=14.1517 agree=0.532
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6107 agree=0.810
+  ProdLDA rate=0.5 hidden_NLL=7.6464 agree=0.713
+  ProdLDA rate=0.75 hidden_NLL=7.6969 agree=0.606
+  ProdLDA rate=1 hidden_NLL=7.8014 agree=0.495
+[agnews] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.3093 agree=0.835
+  ETM rate=0.5 hidden_NLL=7.3957 agree=0.753
+  ETM rate=0.75 hidden_NLL=7.5174 agree=0.662
+  ETM rate=1 hidden_NLL=7.8403 agree=0.548
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+ FC-NTM  0.00         NaN       0     1.0000   0.0000
+ FC-NTM  0.25      7.6745    7593     0.8088   0.0072
+ FC-NTM  0.50      7.7190    7596     0.6951   0.0205
+ FC-NTM  0.75      7.8127    7599     0.5329   0.0525
+ FC-NTM  1.00      7.8262    7599     0.5207   0.0498
+    LDA  0.00         NaN       0     1.0000   0.0000
+    LDA  0.25      7.8226    7593     0.7484   0.0561
+    LDA  0.50      7.8707    7596     0.6267   0.1048
+    LDA  0.75      7.9041    7599     0.5184   0.1582
+    LDA  1.00      7.8698    7599     0.4354   0.2128
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      9.8860    7593     0.8262   0.0419
+    NMF  0.50     10.6001    7596     0.7336   0.0914
+    NMF  0.75     11.7004    7599     0.6379   0.1535
+    NMF  1.00     14.1517    7599     0.5324   0.2431
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.6107    7593     0.8099   0.0084
+ProdLDA  0.50      7.6464    7596     0.7130   0.0212
+ProdLDA  0.75      7.6969    7599     0.6057   0.0434
+ProdLDA  1.00      7.8014    7599     0.4949   0.0937
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.3093    7593     0.8354   0.0246
+    ETM  0.50      7.3957    7596     0.7526   0.0583
+    ETM  0.75      7.5174    7599     0.6622   0.1121
+    ETM  1.00      7.8403    7599     0.5476   0.2015
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_robustness_agnews_seed23.csv
+=== [17:49:31] occlusion curves agnews seed=23 exit=0 ===
+
+=== [17:49:31] occlusion curves github seed=37 ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u occlusion_robustness.py --corpus github --seed 37 --models FC-NTM,LDA,NMF,ProdLDA,ETM --rates 0,0.25,0.5,0.75,1.0 --fcntm-state C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\github_missing_state.pt --out occlusion_robustness_github_seed37.csv
+[github] FC-NTM
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=7.7446 agree=0.832
+  FC-NTM rate=0.5 hidden_NLL=7.7578 agree=0.713
+  FC-NTM rate=0.75 hidden_NLL=7.8209 agree=0.568
+  FC-NTM rate=1 hidden_NLL=7.9565 agree=0.342
+[github] LDA
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.8411 agree=0.875
+  LDA rate=0.5 hidden_NLL=6.8744 agree=0.788
+  LDA rate=0.75 hidden_NLL=6.9691 agree=0.694
+  LDA rate=1 hidden_NLL=7.3430 agree=0.418
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9639 agree=0.883
+  NMF rate=0.5 hidden_NLL=7.1087 agree=0.816
+  NMF rate=0.75 hidden_NLL=7.5538 agree=0.733
+  NMF rate=1 hidden_NLL=10.2873 agree=0.470
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5614 agree=0.839
+  ProdLDA rate=0.5 hidden_NLL=7.5882 agree=0.749
+  ProdLDA rate=0.75 hidden_NLL=7.6708 agree=0.635
+  ProdLDA rate=1 hidden_NLL=8.1948 agree=0.349
+[github] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=6.6329 agree=0.887
+  ETM rate=0.5 hidden_NLL=6.6286 agree=0.818
+  ETM rate=0.75 hidden_NLL=6.7018 agree=0.708
+  ETM rate=1 hidden_NLL=7.1980 agree=0.460
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+ FC-NTM  0.00         NaN       0     1.0000   0.0000
+ FC-NTM  0.25      7.7446    2000     0.8320   0.0059
+ FC-NTM  0.50      7.7578    2000     0.7125   0.0161
+ FC-NTM  0.75      7.8209    2000     0.5680   0.0435
+ FC-NTM  1.00      7.9565    2000     0.3420   0.0820
+    LDA  0.00         NaN       0     1.0000   0.0000
+    LDA  0.25      6.8411    2000     0.8755   0.0305
+    LDA  0.50      6.8744    2000     0.7880   0.0610
+    LDA  0.75      6.9691    2000     0.6940   0.1062
+    LDA  1.00      7.3430    2000     0.4180   0.2313
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      6.9639    2000     0.8830   0.0219
+    NMF  0.50      7.1087    2000     0.8155   0.0510
+    NMF  0.75      7.5538    2000     0.7325   0.0986
+    NMF  1.00     10.2873    2000     0.4700   0.2463
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5614    2000     0.8385   0.0077
+ProdLDA  0.50      7.5882    2000     0.7485   0.0193
+ProdLDA  0.75      7.6708    2000     0.6355   0.0437
+ProdLDA  1.00      8.1948    2000     0.3495   0.1592
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      6.6329    2000     0.8875   0.0136
+    ETM  0.50      6.6286    2000     0.8175   0.0341
+    ETM  0.75      6.7018    2000     0.7080   0.0763
+    ETM  1.00      7.1980    2000     0.4595   0.2391
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_robustness_github_seed37.csv
+=== [18:37:53] occlusion curves github seed=37 exit=0 ===
+
+=== [18:37:53] occlusion curves agnews seed=37 ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u occlusion_robustness.py --corpus agnews --seed 37 --models FC-NTM,LDA,NMF,ProdLDA,ETM --rates 0,0.25,0.5,0.75,1.0 --fcntm-state C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\agnews_missing_state.pt --out occlusion_robustness_agnews_seed37.csv
+[agnews] FC-NTM
+  "C:\\Users\\Administrator\\Downloads\\FCNTM完整代码\\outputs\\agnews_missing_state.pt has no trained state for seed 37 (available: ['fielddrop_on:11', 'fielddrop_on:23'])"
+=== [19:27:16] occlusion curves agnews seed=37 exit=2 ===
+[supervise] attempt 1 exited with 0

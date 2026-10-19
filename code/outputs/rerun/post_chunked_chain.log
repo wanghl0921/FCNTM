@@ -1,0 +1,198 @@
+=== post-chunked chain start 2026-10-07T21:34:09 ===
+fixed-ID ladder abs60: train_abs60.csv / test_abs60.csv (6000+2000 docs from the full split)
+  stored rows in ablation_civil_abs60.csv are not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); they cannot be skipped or reused
+  old rows moved to C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ablation_civil_abs60.unpinned.csv
+  no reused beta for seed 11; training
+   full seed 11 beta {'CV': 0.5818, 'NPMI': 0.127}
+   full seed 11 cTFIDF {'CV': 0.6295, 'NPMI': 0.1669}
+  no reused beta for seed 23; training
+   full seed 23 beta {'CV': 0.6036, 'NPMI': 0.1327}
+   full seed 23 cTFIDF {'CV': 0.6398, 'NPMI': 0.1722}
+  no reused beta for seed 37; training
+   full seed 37 beta {'CV': 0.6005, 'NPMI': 0.1284}
+   full seed 37 cTFIDF {'CV': 0.6645, 'NPMI': 0.1831}
+   no-cross seed 11 beta {'CV': 0.5968, 'NPMI': 0.1384}
+   no-cross seed 11 cTFIDF {'CV': 0.6568, 'NPMI': 0.1856}
+   no-cross seed 23 beta {'CV': 0.6041, 'NPMI': 0.1207}
+   no-cross seed 23 cTFIDF {'CV': 0.637, 'NPMI': 0.1606}
+   no-cross seed 37 beta {'CV': 0.6031, 'NPMI': 0.1346}
+   no-cross seed 37 cTFIDF {'CV': 0.6417, 'NPMI': 0.1732}
+   no-mask seed 11 beta {'CV': 0.5907, 'NPMI': 0.1329}
+   no-mask seed 11 cTFIDF {'CV': 0.6188, 'NPMI': 0.1555}
+   no-mask seed 23 beta {'CV': 0.5724, 'NPMI': 0.1144}
+   no-mask seed 23 cTFIDF {'CV': 0.6355, 'NPMI': 0.1621}
+   no-mask seed 37 beta {'CV': 0.6178, 'NPMI': 0.1469}
+   no-mask seed 37 cTFIDF {'CV': 0.6288, 'NPMI': 0.1644}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ablation_civil_abs60.csv
+=== abs60 exit=0 2026-10-08T08:54:47 ===
+  warning: train_full.csv: 7 abstracts have fewer than 10 tokens at 30 words; they are kept to preserve the fixed sample
+  warning: test_full.csv: 1 abstracts have fewer than 10 tokens at 30 words; they are kept to preserve the fixed sample
+fixed-ID ladder abs30: train_abs30.csv / test_abs30.csv (6000+2000 docs from the full split)
+  stored rows in ablation_civil_abs30.csv are not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); they cannot be skipped or reused
+  old rows moved to C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ablation_civil_abs30.unpinned.csv
+  no reused beta for seed 11; training
+   full seed 11 beta {'CV': 0.5349, 'NPMI': 0.0745}
+   full seed 11 cTFIDF {'CV': 0.5988, 'NPMI': 0.1515}
+  no reused beta for seed 23; training
+   full seed 23 beta {'CV': 0.5312, 'NPMI': 0.0853}
+   full seed 23 cTFIDF {'CV': 0.5998, 'NPMI': 0.1532}
+  no reused beta for seed 37; training
+   full seed 37 beta {'CV': 0.5358, 'NPMI': 0.0663}
+   full seed 37 cTFIDF {'CV': 0.6185, 'NPMI': 0.1625}
+   no-cross seed 11 beta {'CV': 0.519, 'NPMI': 0.0568}
+   no-cross seed 11 cTFIDF {'CV': 0.5755, 'NPMI': 0.1337}
+   no-cross seed 23 beta {'CV': 0.5134, 'NPMI': 0.0491}
+   no-cross seed 23 cTFIDF {'CV': 0.5658, 'NPMI': 0.132}
+   no-cross seed 37 beta {'CV': 0.5512, 'NPMI': 0.0705}
+   no-cross seed 37 cTFIDF {'CV': 0.6059, 'NPMI': 0.1533}
+   no-mask seed 11 beta {'CV': 0.4918, 'NPMI': 0.0241}
+   no-mask seed 11 cTFIDF {'CV': 0.5832, 'NPMI': 0.1302}
+   no-mask seed 23 beta {'CV': 0.5272, 'NPMI': 0.0451}
+   no-mask seed 23 cTFIDF {'CV': 0.5602, 'NPMI': 0.1115}
+   no-mask seed 37 beta {'CV': 0.5015, 'NPMI': 0.0371}
+   no-mask seed 37 cTFIDF {'CV': 0.5998, 'NPMI': 0.1446}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ablation_civil_abs30.csv
+=== abs30 exit=0 2026-10-08T21:09:15 ===
+fixed-ID ladder abs60: train_abs60.csv / test_abs60.csv (6000+2000 docs from the full split)
+  warning: train_full.csv: 7 abstracts have fewer than 10 tokens at 30 words; they are kept to preserve the fixed sample
+  warning: test_full.csv: 1 abstracts have fewer than 10 tokens at 30 words; they are kept to preserve the fixed sample
+fixed-ID ladder abs30: train_abs30.csv / test_abs30.csv (6000+2000 docs from the full split)
+
+字段不对称度阶梯（差 = 去掉该组件 − full，同种子配对）
+variant  abstract_words  field_ratio readout   config  n_seeds  full_CV  CV_mean_abl  delta_CV  delta_CV_positive
+   full               0        11.29    beta no-cross        3   0.6328       0.6104   -0.0223                  0
+   full               0        11.29    beta  no-mask        3   0.6328       0.6232   -0.0096                  1
+   full               0        11.29  cTFIDF no-cross        3   0.6356       0.6168   -0.0187                  0
+   full               0        11.29  cTFIDF  no-mask        3   0.6356       0.6241   -0.0115                  0
+  abs60              60         3.99    beta no-cross        3   0.5953       0.6014    0.0060                  3
+  abs60              60         3.99    beta  no-mask        3   0.5953       0.5936   -0.0017                  2
+  abs60              60         3.99  cTFIDF no-cross        3   0.6446       0.6452    0.0005                  1
+  abs60              60         3.99  cTFIDF  no-mask        3   0.6446       0.6277   -0.0169                  0
+  abs30              30         2.02    beta no-cross        3   0.5340       0.5279   -0.0061                  1
+  abs30              30         2.02    beta  no-mask        3   0.5340       0.5068   -0.0271                  0
+  abs30              30         2.02  cTFIDF no-cross        3   0.6057       0.5824   -0.0233                  0
+  abs30              30         2.02  cTFIDF  no-mask        3   0.6057       0.5811   -0.0246                  0
+=== ladder summary exit=0 2026-10-08T21:10:05 ===
+[github seed 11] FC-NTM-shuffled-item
+  FC-NTM-shuffled-item rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-shuffled-item rate=0.25 hidden_NLL=7.8208 agree=0.819
+  FC-NTM-shuffled-item rate=0.5 hidden_NLL=7.8437 agree=0.713
+  FC-NTM-shuffled-item rate=0.75 hidden_NLL=7.8999 agree=0.550
+  FC-NTM-shuffled-item rate=1 hidden_NLL=8.5558 agree=0.103
+[github seed 23] FC-NTM-shuffled-item
+  FC-NTM-shuffled-item rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-shuffled-item rate=0.25 hidden_NLL=7.8836 agree=0.831
+  FC-NTM-shuffled-item rate=0.5 hidden_NLL=7.9023 agree=0.723
+  FC-NTM-shuffled-item rate=0.75 hidden_NLL=7.9572 agree=0.549
+  FC-NTM-shuffled-item rate=1 hidden_NLL=8.5867 agree=0.115
+[github seed 37] FC-NTM-shuffled-item
+  FC-NTM-shuffled-item rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-shuffled-item rate=0.25 hidden_NLL=7.8487 agree=0.819
+  FC-NTM-shuffled-item rate=0.5 hidden_NLL=7.8652 agree=0.681
+  FC-NTM-shuffled-item rate=0.75 hidden_NLL=7.9309 agree=0.531
+  FC-NTM-shuffled-item rate=1 hidden_NLL=8.5593 agree=0.094
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_control_shuffled_github.csv
+  github: relative degradation 1.091236 +/- 0.002467 over 3 seeds
+[agnews seed 11] FC-NTM-shuffled-item
+  FC-NTM-shuffled-item rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-shuffled-item rate=0.25 hidden_NLL=7.8550 agree=0.778
+  FC-NTM-shuffled-item rate=0.5 hidden_NLL=7.8856 agree=0.660
+  FC-NTM-shuffled-item rate=0.75 hidden_NLL=7.9780 agree=0.480
+  FC-NTM-shuffled-item rate=1 hidden_NLL=8.6196 agree=0.213
+[agnews seed 23] FC-NTM-shuffled-item
+  FC-NTM-shuffled-item rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-shuffled-item rate=0.25 hidden_NLL=7.8701 agree=0.777
+  FC-NTM-shuffled-item rate=0.5 hidden_NLL=7.9093 agree=0.640
+  FC-NTM-shuffled-item rate=0.75 hidden_NLL=8.0110 agree=0.459
+  FC-NTM-shuffled-item rate=1 hidden_NLL=8.6283 agree=0.209
+[agnews seed 37] FC-NTM-shuffled-item
+  FC-NTM-shuffled-item rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-shuffled-item rate=0.25 hidden_NLL=7.8637 agree=0.782
+  FC-NTM-shuffled-item rate=0.5 hidden_NLL=7.9037 agree=0.644
+  FC-NTM-shuffled-item rate=0.75 hidden_NLL=8.0041 agree=0.469
+  FC-NTM-shuffled-item rate=1 hidden_NLL=8.6167 agree=0.216
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_control_shuffled_agnews.csv
+  agnews: relative degradation 1.096483 +/- 0.000805 over 3 seeds
+[civil seed 11] FC-NTM-shuffled-item
+  FC-NTM-shuffled-item rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-shuffled-item rate=0.25 hidden_NLL=8.3006 agree=0.886
+  FC-NTM-shuffled-item rate=0.5 hidden_NLL=8.3088 agree=0.808
+  FC-NTM-shuffled-item rate=0.75 hidden_NLL=8.3416 agree=0.694
+  FC-NTM-shuffled-item rate=1 hidden_NLL=9.0097 agree=0.235
+[civil seed 23] FC-NTM-shuffled-item
+  FC-NTM-shuffled-item rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-shuffled-item rate=0.25 hidden_NLL=8.2949 agree=0.881
+  FC-NTM-shuffled-item rate=0.5 hidden_NLL=8.3019 agree=0.808
+  FC-NTM-shuffled-item rate=0.75 hidden_NLL=8.3383 agree=0.677
+  FC-NTM-shuffled-item rate=1 hidden_NLL=8.9805 agree=0.234
+[civil seed 37] FC-NTM-shuffled-item
+  FC-NTM-shuffled-item rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-shuffled-item rate=0.25 hidden_NLL=8.2982 agree=0.885
+  FC-NTM-shuffled-item rate=0.5 hidden_NLL=8.3095 agree=0.815
+  FC-NTM-shuffled-item rate=0.75 hidden_NLL=8.3395 agree=0.695
+  FC-NTM-shuffled-item rate=1 hidden_NLL=9.0012 agree=0.232
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_control_shuffled_civil.csv
+  civil: relative degradation 1.084266 +/- 0.001443 over 3 seeds
+=== shuffled control exit=0 2026-10-08T21:13:13 ===
+[github seed 11] FC-NTM-fielddrop_off
+  FC-NTM-fielddrop_off rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-fielddrop_off rate=0.25 hidden_NLL=7.6720 agree=0.854
+  FC-NTM-fielddrop_off rate=0.5 hidden_NLL=7.6941 agree=0.753
+  FC-NTM-fielddrop_off rate=0.75 hidden_NLL=7.7575 agree=0.612
+  FC-NTM-fielddrop_off rate=1 hidden_NLL=7.9512 agree=0.359
+[github seed 23] FC-NTM-fielddrop_off
+  FC-NTM-fielddrop_off rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-fielddrop_off rate=0.25 hidden_NLL=7.7064 agree=0.840
+  FC-NTM-fielddrop_off rate=0.5 hidden_NLL=7.7266 agree=0.742
+  FC-NTM-fielddrop_off rate=0.75 hidden_NLL=7.7890 agree=0.576
+  FC-NTM-fielddrop_off rate=1 hidden_NLL=7.8761 agree=0.340
+[github seed 37] FC-NTM-fielddrop_off
+  FC-NTM-fielddrop_off rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-fielddrop_off rate=0.25 hidden_NLL=7.7008 agree=0.849
+  FC-NTM-fielddrop_off rate=0.5 hidden_NLL=7.7180 agree=0.745
+  FC-NTM-fielddrop_off rate=0.75 hidden_NLL=7.7883 agree=0.602
+  FC-NTM-fielddrop_off rate=1 hidden_NLL=7.8981 agree=0.340
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_control_fielddrop_off_github.csv
+  github: relative degradation 1.028011 +/- 0.007476 over 3 seeds
+[agnews seed 11] FC-NTM-fielddrop_off
+  FC-NTM-fielddrop_off rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-fielddrop_off rate=0.25 hidden_NLL=7.6633 agree=0.804
+  FC-NTM-fielddrop_off rate=0.5 hidden_NLL=7.6932 agree=0.686
+  FC-NTM-fielddrop_off rate=0.75 hidden_NLL=7.8002 agree=0.522
+  FC-NTM-fielddrop_off rate=1 hidden_NLL=7.7945 agree=0.512
+[agnews seed 23] FC-NTM-fielddrop_off
+  FC-NTM-fielddrop_off rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-fielddrop_off rate=0.25 hidden_NLL=7.6619 agree=0.800
+  FC-NTM-fielddrop_off rate=0.5 hidden_NLL=7.7138 agree=0.681
+  FC-NTM-fielddrop_off rate=0.75 hidden_NLL=7.8211 agree=0.509
+  FC-NTM-fielddrop_off rate=1 hidden_NLL=7.8217 agree=0.487
+[agnews seed 37] FC-NTM-fielddrop_off
+  FC-NTM-fielddrop_off rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-fielddrop_off rate=0.25 hidden_NLL=7.6590 agree=0.810
+  FC-NTM-fielddrop_off rate=0.5 hidden_NLL=7.7026 agree=0.686
+  FC-NTM-fielddrop_off rate=0.75 hidden_NLL=7.8129 agree=0.518
+  FC-NTM-fielddrop_off rate=1 hidden_NLL=7.8273 agree=0.494
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_control_fielddrop_off_agnews.csv
+  agnews: relative degradation 1.019979 +/- 0.002539 over 3 seeds
+[civil seed 11] FC-NTM-fielddrop_off
+  FC-NTM-fielddrop_off rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-fielddrop_off rate=0.25 hidden_NLL=8.0630 agree=0.907
+  FC-NTM-fielddrop_off rate=0.5 hidden_NLL=8.0707 agree=0.832
+  FC-NTM-fielddrop_off rate=0.75 hidden_NLL=8.1062 agree=0.725
+  FC-NTM-fielddrop_off rate=1 hidden_NLL=8.1674 agree=0.650
+[civil seed 23] FC-NTM-fielddrop_off
+  FC-NTM-fielddrop_off rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-fielddrop_off rate=0.25 hidden_NLL=8.0490 agree=0.913
+  FC-NTM-fielddrop_off rate=0.5 hidden_NLL=8.0574 agree=0.849
+  FC-NTM-fielddrop_off rate=0.75 hidden_NLL=8.0931 agree=0.741
+  FC-NTM-fielddrop_off rate=1 hidden_NLL=8.1444 agree=0.649
+[civil seed 37] FC-NTM-fielddrop_off
+  FC-NTM-fielddrop_off rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM-fielddrop_off rate=0.25 hidden_NLL=8.0577 agree=0.905
+  FC-NTM-fielddrop_off rate=0.5 hidden_NLL=8.0699 agree=0.833
+  FC-NTM-fielddrop_off rate=0.75 hidden_NLL=8.1003 agree=0.730
+  FC-NTM-fielddrop_off rate=1 hidden_NLL=8.1531 agree=0.626
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_control_fielddrop_off_civil.csv
+  civil: relative degradation 1.012211 +/- 0.000632 over 3 seeds
+=== fielddrop-off control exit=0 2026-10-08T21:16:10 ===
+=== post-chunked chain end 2026-10-08T21:16:10 ===

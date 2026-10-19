@@ -1,0 +1,17 @@
+[github] train=1000 test=400 vocab=2682 K=20 seeds=37 epochs=800
+  mean field lengths: cause=70.9 item=5.2
+  field weights if auto: (1.0369639104742832, 14.026707363601677)
+  base   seed=37 best_ep= 465 beta CV=0.556 NPMI=0.037 EX=0.004 | cTF CV=0.409 NPMI=0.079 | recall=0.044 prec=0.137 causeCV=0.487 (280s)
+  fused  seed=37 best_ep= 636 beta CV=0.547 NPMI=0.119 EX=0.006 | cTF CV=0.456 NPMI=0.107 | recall=0.074 prec=0.221 causeCV=0.506 (419s)
+  gate   seed=37 best_ep= 636 beta CV=0.545 NPMI=0.076 EX=0.006 | cTF CV=0.455 NPMI=0.106 | recall=0.074 prec=0.224 causeCV=0.516 (430s)
+  prior  seed=37 best_ep= 556 beta CV=0.505 NPMI=0.047 EX=0.005 | cTF CV=0.463 NPMI=0.112 | recall=0.061 prec=0.182 causeCV=0.464 (383s)
+saved outputs\variant_public.csv
+[agnews] train=1000 test=400 vocab=1914 K=20 seeds=11 epochs=800
+  mean field lengths: cause=13.1 item=3.2
+  field weights if auto: (1.1239700945987183, 4.533230769230769)
+  base   seed=11 best_ep= 761 beta CV=0.403 NPMI=-0.278 EX=0.006 | cTF CV=0.340 NPMI=-0.183 | recall=0.046 prec=0.054 causeCV=0.439 (297s)
+  fused  seed=11 best_ep= 786 beta CV=0.406 NPMI=-0.312 EX=0.007 | cTF CV=0.325 NPMI=-0.177 | recall=0.044 prec=0.053 causeCV=0.435 (339s)
+  prior  seed=11 best_ep= 786 beta CV=0.418 NPMI=-0.319 EX=0.007 | cTF CV=0.329 NPMI=-0.164 | recall=0.042 prec=0.049 causeCV=0.453 (338s)
+  autow  seed=11 best_ep= 771 beta CV=0.516 NPMI=-0.468 EX=0.007 | cTF CV=0.320 NPMI=-0.229 | recall=0.034 prec=0.041 causeCV=0.495 (289s)
+saved outputs\variant_public.csv
+stage C finished

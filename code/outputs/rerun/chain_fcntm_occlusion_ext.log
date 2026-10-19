@@ -1,0 +1,38 @@
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.0730 agree=0.896
+  FC-NTM rate=0.5 hidden_NLL=8.0909 agree=0.837
+  FC-NTM rate=0.75 hidden_NLL=8.1149 agree=0.731
+  FC-NTM rate=1 hidden_NLL=8.1663 agree=0.644
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.1006 agree=0.914
+  FC-NTM rate=0.5 hidden_NLL=8.1096 agree=0.852
+  FC-NTM rate=0.75 hidden_NLL=8.1405 agree=0.749
+  FC-NTM rate=1 hidden_NLL=8.1785 agree=0.658
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.0785 agree=0.908
+  FC-NTM rate=0.5 hidden_NLL=8.0928 agree=0.847
+  FC-NTM rate=0.75 hidden_NLL=8.1208 agree=0.748
+  FC-NTM rate=1 hidden_NLL=8.1753 agree=0.651
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.0823 agree=0.901
+  FC-NTM rate=0.5 hidden_NLL=8.0935 agree=0.843
+  FC-NTM rate=0.75 hidden_NLL=8.1205 agree=0.748
+  FC-NTM rate=1 hidden_NLL=8.1559 agree=0.665
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.0842 agree=0.913
+  FC-NTM rate=0.5 hidden_NLL=8.0961 agree=0.842
+  FC-NTM rate=0.75 hidden_NLL=8.1253 agree=0.741
+  FC-NTM rate=1 hidden_NLL=8.1683 agree=0.652
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.0734 agree=0.904
+  FC-NTM rate=0.5 hidden_NLL=8.0869 agree=0.825
+  FC-NTM rate=0.75 hidden_NLL=8.1186 agree=0.739
+  FC-NTM rate=1 hidden_NLL=8.1568 agree=0.664
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.0766 agree=0.903
+  FC-NTM rate=0.5 hidden_NLL=8.0806 agree=0.841
+  FC-NTM rate=0.75 hidden_NLL=8.1086 agree=0.727
+  FC-NTM rate=1 hidden_NLL=8.1622 agree=0.656
+  occlusion_robustness_civil_newseeds.csv is not pinned to this configuration (identity differs in: state_digest); archiving it
+  old rows moved to C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_newseeds.unpinned.csv
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_newseeds.csv

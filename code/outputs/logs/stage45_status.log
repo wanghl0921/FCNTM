@@ -1,0 +1,9 @@
+﻿=== stage4+5 started ===
+[2026-09-11 15:32:21] waiting for stage 3 to finish
+[2026-09-11 17:37:22] stage 3 finished
+[2026-09-11 17:37:52] START stage4_agnews_fcntm
+[2026-09-11 19:48:09] END stage4_agnews_fcntm exit=0
+[2026-09-11 19:48:09] agnews FC-NTM rows=6
+[2026-09-11 19:48:09] START stage5_agnews_baselines
+[2026-09-11 19:52:30] END stage5_agnews_baselines exit=1
+[2026-09-11 19:52:30] ALL DONE

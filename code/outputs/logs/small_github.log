@@ -1,0 +1,80 @@
+[github] train=1000 test=400 vocab=2682 K=20 seeds=11,23
+  seed 11 fitted in 280s (fcntm best_epoch=250)
+  seed 23 fitted in 263s (fcntm best_epoch=207)
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\main_github.csv
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\fieldview_github.csv
+  mask=0.0 fdrop=0.5 seed=11 beta CV=0.491 item_CV=0.485
+  mask=0.0 fdrop=0.5 seed=11 cTFIDF CV=0.419 item_CV=0.526
+  mask=0.0 fdrop=0.0 seed=11 beta CV=0.479 item_CV=0.600
+  mask=0.0 fdrop=0.0 seed=11 cTFIDF CV=0.400 item_CV=0.522
+  mask=0.0 seed=11 LDA CV=0.485 item_CV=0.521
+  mask=0.0 seed=11 BTM CV=0.446 item_CV=0.466
+  mask=0.0 fdrop=0.5 seed=23 beta CV=0.552 item_CV=nan
+  mask=0.0 fdrop=0.5 seed=23 cTFIDF CV=0.377 item_CV=0.513
+  mask=0.0 fdrop=0.0 seed=23 beta CV=0.542 item_CV=0.603
+  mask=0.0 fdrop=0.0 seed=23 cTFIDF CV=0.411 item_CV=0.526
+  mask=0.0 seed=23 LDA CV=0.451 item_CV=0.510
+  mask=0.0 seed=23 BTM CV=0.526 item_CV=0.467
+  mask=0.25 fdrop=0.5 seed=11 beta CV=0.464 item_CV=0.580
+  mask=0.25 fdrop=0.5 seed=11 cTFIDF CV=0.376 item_CV=0.510
+  mask=0.25 fdrop=0.0 seed=11 beta CV=0.455 item_CV=0.518
+  mask=0.25 fdrop=0.0 seed=11 cTFIDF CV=0.385 item_CV=0.510
+  mask=0.25 seed=11 LDA CV=0.431 item_CV=0.508
+  mask=0.25 seed=11 BTM CV=0.478 item_CV=0.476
+  mask=0.25 fdrop=0.5 seed=23 beta CV=0.499 item_CV=0.554
+  mask=0.25 fdrop=0.5 seed=23 cTFIDF CV=0.415 item_CV=0.517
+  mask=0.25 fdrop=0.0 seed=23 beta CV=0.419 item_CV=0.573
+  mask=0.25 fdrop=0.0 seed=23 cTFIDF CV=0.418 item_CV=0.514
+  mask=0.25 seed=23 LDA CV=0.490 item_CV=0.492
+  mask=0.25 seed=23 BTM CV=0.454 item_CV=0.488
+  mask=0.5 fdrop=0.5 seed=11 beta CV=0.518 item_CV=nan
+  mask=0.5 fdrop=0.5 seed=11 cTFIDF CV=0.403 item_CV=0.498
+  mask=0.5 fdrop=0.0 seed=11 beta CV=0.570 item_CV=0.447
+  mask=0.5 fdrop=0.0 seed=11 cTFIDF CV=0.381 item_CV=0.502
+  mask=0.5 seed=11 LDA CV=0.420 item_CV=0.518
+  mask=0.5 seed=11 BTM CV=0.424 item_CV=0.514
+  mask=0.5 fdrop=0.5 seed=23 beta CV=0.516 item_CV=0.537
+  mask=0.5 fdrop=0.5 seed=23 cTFIDF CV=0.375 item_CV=0.498
+  mask=0.5 fdrop=0.0 seed=23 beta CV=0.567 item_CV=nan
+  mask=0.5 fdrop=0.0 seed=23 cTFIDF CV=0.371 item_CV=0.506
+  mask=0.5 seed=23 LDA CV=0.440 item_CV=0.514
+  mask=0.5 seed=23 BTM CV=0.415 item_CV=0.481
+  mask=0.75 fdrop=0.5 seed=11 beta CV=0.475 item_CV=nan
+  mask=0.75 fdrop=0.5 seed=11 cTFIDF CV=0.525 item_CV=0.427
+  mask=0.75 fdrop=0.0 seed=11 beta CV=0.459 item_CV=0.528
+  mask=0.75 fdrop=0.0 seed=11 cTFIDF CV=0.384 item_CV=0.402
+  mask=0.75 seed=11 LDA CV=0.427 item_CV=0.504
+  mask=0.75 seed=11 BTM CV=0.397 item_CV=0.496
+  mask=0.75 fdrop=0.5 seed=23 beta CV=0.568 item_CV=nan
+  mask=0.75 fdrop=0.5 seed=23 cTFIDF CV=0.372 item_CV=0.481
+  mask=0.75 fdrop=0.0 seed=23 beta CV=0.375 item_CV=0.508
+  mask=0.75 fdrop=0.0 seed=23 cTFIDF CV=0.370 item_CV=0.478
+  mask=0.75 seed=23 LDA CV=0.445 item_CV=0.497
+  mask=0.75 seed=23 BTM CV=0.413 item_CV=0.481
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\missing_github.csv
+  full seed=11 beta CV=0.491 NPMI=-0.078
+  full seed=11 cTFIDF CV=0.419 NPMI=0.094
+  full seed=23 beta CV=0.552 NPMI=-0.158
+  full seed=23 cTFIDF CV=0.377 NPMI=0.051
+  no-consistency seed=11 beta CV=0.501 NPMI=-0.299
+  no-consistency seed=11 cTFIDF CV=0.395 NPMI=0.071
+  no-consistency seed=23 beta CV=0.518 NPMI=-0.173
+  no-consistency seed=23 cTFIDF CV=0.409 NPMI=0.093
+  no-cross seed=11 beta CV=0.561 NPMI=-0.226
+  no-cross seed=11 cTFIDF CV=0.654 NPMI=0.334
+  no-cross seed=23 beta CV=0.513 NPMI=-0.354
+  no-cross seed=23 cTFIDF CV=0.360 NPMI=0.034
+  no-mask seed=11 beta CV=0.563 NPMI=0.025
+  no-mask seed=11 cTFIDF CV=0.399 NPMI=0.077
+  no-mask seed=23 beta CV=0.458 NPMI=-0.181
+  no-mask seed=23 cTFIDF CV=0.448 NPMI=0.127
+  no-fielddrop seed=11 beta CV=0.479 NPMI=-0.107
+  no-fielddrop seed=11 cTFIDF CV=0.400 NPMI=0.069
+  no-fielddrop seed=23 beta CV=0.542 NPMI=0.009
+  no-fielddrop seed=23 cTFIDF CV=0.411 NPMI=0.077
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\ablation_github.csv
+  imputation recon2 seed=11 recall=0.0447 precision=0.1375
+  imputation recon2 seed=23 recall=0.0550 precision=0.1600
+  imputation noxrec seed=11 recall=0.0170 precision=0.0490
+  imputation noxrec seed=23 recall=0.0269 precision=0.0825
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\imputation_github.csv

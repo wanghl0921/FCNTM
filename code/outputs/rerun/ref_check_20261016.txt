@@ -1,0 +1,54 @@
+reference check, 50 entries
+
+[MANUAL] blei2003lda: no DOI/arXiv id; 'Latent {Dirichlet} allocation' ('J. Mach. Learn. Res.', 2003)
+[MANUAL] yin2014gsdmm: no DOI/arXiv id; 'A {Dirichlet} multinomial mixture model-based approach for short text clustering' ('Proceedings of the 20th ACM SIGKDD', 2014)
+[MANUAL] srivastava2017avitm: no DOI/arXiv id; 'Autoencoding variational inference for topic models' ('International Conference on Learning Rep', 2017)
+[MANUAL] miao2016nvdm: no DOI/arXiv id; 'Neural variational inference for text processing' ('Proceedings of ICML', 2016)
+[NOTE] bianchi2021ctm: doi 10.18653/v1/2021.acl-short.96; title match 1.00; venue entry 'Proceedings of ACL-IJCNLP (Volume 2: Short Papers)' vs crossref 'Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)'
+[MANUAL] dieng2020etm: no DOI/arXiv id; 'Topic modeling in embedding spaces' ('Trans. Assoc. Comput. Linguist.', 2020)
+[OK] wu2024survey: doi 10.1007/s10462-023-10661-7; title match 1.00
+[NOTE] kurle2019multisource: doi 10.1609/aaai.v33i01.33014114; title match 1.00; venue entry 'Proceedings of AAAI' vs crossref 'Proceedings of the AAAI Conference on Artificial Intelligence'
+[NOTE] zhang2017robust: doi 10.1007/978-3-319-71246-8_15; title match 1.00; venue entry 'ECML PKDD, LNCS 10535' vs crossref 'Lecture Notes in Computer Science'
+[NOTE] pergola2021disentangled: doi 10.18653/v1/2021.naacl-main.228; title match 1.00; venue entry 'Proceedings of NAACL-HLT' vs crossref 'Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies'
+[OK] liu2022dualview: doi 10.1109/DSC55868.2022.00028; title match 1.00
+[MANUAL] esmaeili2019structured: no DOI/arXiv id; 'Structured neural topic models for reviews' ('Proceedings of AISTATS (PMLR 89)', 2019)
+[OK] card2018metadata: doi 10.18653/v1/P18-1189; title match 1.00
+[OK] suzuki2017jmvae: arXiv:1611.01891; title match 1.00
+[OK] nguyen2026subntm: doi 10.1016/j.knosys.2025.114762; title match 1.00
+[NOTE] zhu2018graphbtm: doi 10.18653/v1/D18-1495; title match 1.00; venue entry 'Proceedings of EMNLP' vs crossref 'Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing'
+[NOTE] zhang2020bcktm: doi 10.1093/comjnl/bxaa079; title match 1.00; year entry 2022 vs crossref 2020
+[NOTE] vorontsov2015bigartm: doi 10.1007/978-3-319-26123-2_36; title match 1.00; venue entry 'Analysis of Images, Social Networks and Texts (AIST 2015), CCIS 542' vs crossref 'Communications in Computer and Information Science'
+[MANUAL] roberts2019stm: no DOI/arXiv id; 'stm: An R package for structural topic models' ('J. Stat. Softw.', 2019)
+[MANUAL] zhang2015char: no DOI/arXiv id; 'Character-level convolutional networks for text classification' ('Advances in Neural Information Processin', 2015)
+[MANUAL] openindex2026: no DOI/arXiv id; 'Open {GitHub} issues: {GitHub} issue records by repository' ('', 2026)
+[OK] openalex2022: arXiv:2205.01833; title match 1.00
+[MANUAL] roder2015coherence: no DOI/arXiv id; 'Exploring the space of topic coherence measures' ('Proceedings of WSDM', 2015)
+[MANUAL] bouma2009npmi: no DOI/arXiv id; 'Normalized (pointwise) mutual information in collocation extraction' ('Proceedings of the Biennial GSCL Confere', 2009)
+[MANUAL] lau2014tea: no DOI/arXiv id; 'Machine reading tea leaves: Automatically evaluating topic coherence and topic m' ('Proceedings of EACL', 2014)
+[MANUAL] webber2010rbo: no DOI/arXiv id; 'A similarity measure for indefinite rankings' ('ACM Trans. Inf. Syst.', 2010)
+[MANUAL] bischof2012exclusivity: no DOI/arXiv id; 'Summarizing topical content with word frequency and exclusivity' ('Proceedings of ICML', 2012)
+[MANUAL] yan2013btm: no DOI/arXiv id; 'A biterm topic model for short texts' ('Proceedings of the 22nd International Wo', 2013)
+[MANUAL] lee2001nmf: no DOI/arXiv id; 'Algorithms for non-negative matrix factorization' ('Advances in Neural Information Processin', 2001)
+[OK] grootendorst2022bertopic: arXiv:2203.05794; title match 1.00
+[OK] angelov2020top2vec: arXiv:2008.09470; title match 1.00
+[MANUAL] reimers2019sbert: no DOI/arXiv id; 'Sentence-{BERT}: Sentence embeddings using Siamese {BERT}-networks' ('Proceedings of EMNLP-IJCNLP', 2019)
+[MANUAL] srivastava2014dropout: no DOI/arXiv id; 'Dropout: A simple way to prevent neural networks from overfitting' ('J. Mach. Learn. Res.', 2014)
+[MANUAL] prechelt1998early: no DOI/arXiv id; 'Early stopping---but when?' ('Neural Networks: Tricks of the Trade', 1998)
+[NOTE] crntm2020: doi 10.1016/j.ins.2022.05.098; title match 1.00; venue entry 'Inf. Sci.' vs crossref 'Information Sciences'
+[OK] dvidtm2026: doi 10.18653/v1/2026.acl-long.1318; title match 1.00
+[NOTE] quantization2020: doi 10.18653/v1/2020.emnlp-main.138; title match 1.00; venue entry 'Proceedings of EMNLP' vs crossref 'Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)'
+[NOTE] relationalbtm2018: doi 10.1093/comjnl/bxy037; title match 1.00; year entry 2019 vs crossref 2018
+[OK] sparsebtm2021: doi 10.1007/978-3-030-85896-4_19; title match 1.00
+[OK] civilnlp2023: doi 10.1016/j.autcon.2023.105200; title match 1.00
+[OK] civilnlp2021: doi 10.1016/j.autcon.2021.104059; title match 1.00
+[OK] civilaccident2018: doi 10.1016/j.autcon.2018.12.016; title match 1.00
+[OK] civilsafety2015: doi 10.1016/j.autcon.2015.11.001; title match 1.00
+[OK] civiltopic2024: doi 10.1016/j.autcon.2024.105890; title match 1.00
+[OK] passport2026: doi 10.1016/j.autcon.2026.107220; title match 1.00
+[OK] duet2019: doi 10.1061/(ASCE)CP.1943-5487.0000819; title match 1.00
+[OK] risknlp2023: doi 10.1061/JCCEE5.CPENG-5218; title match 1.00
+[OK] compliance2013: doi 10.1061/(ASCE)CP.1943-5487.0000301; title match 1.00
+[OK] ontology2015: doi 10.1061/(ASCE)CP.1943-5487.0000530; title match 1.00
+[OK] contract2022: doi 10.1016/j.autcon.2022.104465; title match 1.00
+
+summary: ok=21 notes=10 problems=0 manual=19

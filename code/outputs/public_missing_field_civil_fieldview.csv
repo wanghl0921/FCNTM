@@ -1,0 +1,13 @@
+﻿dataset,setting,seed,K,view,reference_corpus,n_topics,CV,CV_n,NPMI,NPMI_n,UMass,UMass_n,seconds
+civil,fielddrop_on,11,30,background,background,30,0.620198,30,0.132762,30,-3.418728,30,5890.66
+civil,fielddrop_on,11,30,summary,summary,30,0.409565,28,-0.151784,28,-11.812144,30,5890.66
+civil,fielddrop_on,23,30,background,background,30,0.63954,30,0.171853,30,-2.669345,30,5866.3
+civil,fielddrop_on,23,30,summary,summary,30,0.402491,26,-0.132401,26,-12.088815,30,5866.3
+civil,fielddrop_on,37,30,background,background,30,0.650171,30,0.168949,30,-2.570109,30,6543.58
+civil,fielddrop_on,37,30,summary,summary,30,0.41174,27,-0.132105,27,-12.06238,30,6543.58
+civil,fielddrop_off,11,30,background,background,30,0.649788,30,0.168006,30,-2.719097,30,7057.89
+civil,fielddrop_off,11,30,summary,summary,30,0.395394,28,-0.123038,28,-11.805469,30,7057.89
+civil,fielddrop_off,23,30,background,background,30,0.635858,30,0.154041,30,-2.793956,30,7088.92
+civil,fielddrop_off,23,30,summary,summary,30,0.417912,26,-0.159153,26,-12.106387,30,7088.92
+civil,fielddrop_off,37,30,background,background,30,0.626505,30,0.154113,30,-2.85887,30,7386.86
+civil,fielddrop_off,37,30,summary,summary,30,0.409729,28,-0.162998,28,-12.247327,30,7386.86

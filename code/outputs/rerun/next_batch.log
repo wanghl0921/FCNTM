@@ -1,0 +1,428 @@
+
+=== [17:01:24] 1/4 civil 整字段遮挡 ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_public_missing_field.py --dataset civil --seeds 11,23,37 --k 30 --lr 5e-4 --fusion gate --fusion-norm balanced --fusion-weight 0.5 --settings fielddrop_on,fielddrop_off --dump-state outputs/civil_missing_state.pt --resume-every 50 --out outputs/public_missing_field_civil_occlusion.csv --field-view-out outputs/public_missing_field_civil_fieldview.csv
+[civil] field vocab cause=7684 item=4787
+[civil] test docs=2000 with background field=2000
+  0 of 6 requested partitions are complete and pinned (the rest will be computed)
+    [train] epoch 1 loss 2567.070 klw 0.0025
+    [train] epoch 2 loss 2542.493 klw 0.0050
+    [train] epoch 3 loss 2532.147 klw 0.0075
+    [train] epoch 4 loss 2535.117 klw 0.0100
+    [train] epoch 5 loss 2527.613 klw 0.0125
+    [train] epoch 25 loss 2453.541 klw 0.0500
+    [train] epoch 50 loss 2428.424 klw 0.0500
+    [train] epoch 75 loss 2410.048 klw 0.0500
+    [train] epoch 100 loss 2386.107 klw 0.0500
+    [train] epoch 125 loss 2373.836 klw 0.0500
+    [train] epoch 150 loss 2364.542 klw 0.0500
+    [train] epoch 175 loss 2356.350 klw 0.0500
+    [train] epoch 200 loss 2347.260 klw 0.0500
+    [train] epoch 225 loss 2340.629 klw 0.0500
+    [train] epoch 250 loss 2335.140 klw 0.0500
+    [train] epoch 275 loss 2329.730 klw 0.0500
+    [train] epoch 300 loss 2323.276 klw 0.0500
+    [train] epoch 325 loss 2318.864 klw 0.0500
+    [train] epoch 350 loss 2315.995 klw 0.0500
+    [train] epoch 375 loss 2311.810 klw 0.0500
+    [train] epoch 400 loss 2307.974 klw 0.0500
+    [train] epoch 425 loss 2306.634 klw 0.0500
+    [train] epoch 450 loss 2304.806 klw 0.0500
+    [train] epoch 475 loss 2303.695 klw 0.0500
+    [train] epoch 500 loss 2294.946 klw 0.0500
+    [train] epoch 525 loss 2297.868 klw 0.0500
+    [train] epoch 550 loss 2295.060 klw 0.0500
+    [train] epoch 575 loss 2289.071 klw 0.0500
+    [train] epoch 600 loss 2294.153 klw 0.0500
+    [train] epoch 625 loss 2289.604 klw 0.0500
+    [train] epoch 650 loss 2293.970 klw 0.0500
+    [train] epoch 675 loss 2287.878 klw 0.0500
+    [train] epoch 700 loss 2286.833 klw 0.0500
+   fielddrop_on seed 11 {'full_CV': 0.620031, 'occ_CV': 0.60876, 'delta_CV': 0.011271, 'delta_NLL_token': 0.106901, 'top1_agreement': 0.688}
+    [train] epoch 1 loss 2561.859 klw 0.0025
+    [train] epoch 2 loss 2536.194 klw 0.0050
+    [train] epoch 3 loss 2528.579 klw 0.0075
+    [train] epoch 4 loss 2526.205 klw 0.0100
+    [train] epoch 5 loss 2525.310 klw 0.0125
+    [train] epoch 25 loss 2445.815 klw 0.0500
+    [train] epoch 50 loss 2428.182 klw 0.0500
+    [train] epoch 75 loss 2416.992 klw 0.0500
+    [train] epoch 100 loss 2391.094 klw 0.0500
+    [train] epoch 125 loss 2376.412 klw 0.0500
+    [train] epoch 150 loss 2367.257 klw 0.0500
+    [train] epoch 175 loss 2359.284 klw 0.0500
+    [train] epoch 200 loss 2356.288 klw 0.0500
+    [train] epoch 225 loss 2346.311 klw 0.0500
+    [train] epoch 250 loss 2343.474 klw 0.0500
+    [train] epoch 275 loss 2335.781 klw 0.0500
+    [train] epoch 300 loss 2327.110 klw 0.0500
+    [train] epoch 325 loss 2324.580 klw 0.0500
+    [train] epoch 350 loss 2319.646 klw 0.0500
+    [train] epoch 375 loss 2316.638 klw 0.0500
+    [train] epoch 400 loss 2308.890 klw 0.0500
+    [train] epoch 425 loss 2307.711 klw 0.0500
+    [train] epoch 450 loss 2304.329 klw 0.0500
+    [train] epoch 475 loss 2302.517 klw 0.0500
+    [train] epoch 500 loss 2300.492 klw 0.0500
+    [train] epoch 525 loss 2299.343 klw 0.0500
+    [train] epoch 550 loss 2295.584 klw 0.0500
+    [train] epoch 575 loss 2294.359 klw 0.0500
+    [train] epoch 600 loss 2291.275 klw 0.0500
+    [train] epoch 625 loss 2289.624 klw 0.0500
+    [train] epoch 650 loss 2288.439 klw 0.0500
+    [train] epoch 675 loss 2285.633 klw 0.0500
+    [train] epoch 700 loss 2286.033 klw 0.0500
+   fielddrop_on seed 23 {'full_CV': 0.64046, 'occ_CV': 0.632403, 'delta_CV': 0.008057, 'delta_NLL_token': 0.103726, 'top1_agreement': 0.6525}
+    [train] epoch 1 loss 2579.100 klw 0.0025
+    [train] epoch 2 loss 2552.707 klw 0.0050
+    [train] epoch 3 loss 2548.327 klw 0.0075
+    [train] epoch 4 loss 2544.087 klw 0.0100
+    [train] epoch 5 loss 2542.501 klw 0.0125
+    [train] epoch 25 loss 2467.966 klw 0.0500
+    [train] epoch 50 loss 2442.783 klw 0.0500
+    [train] epoch 75 loss 2426.623 klw 0.0500
+    [train] epoch 100 loss 2399.540 klw 0.0500
+    [train] epoch 125 loss 2389.506 klw 0.0500
+    [train] epoch 150 loss 2379.679 klw 0.0500
+    [train] epoch 175 loss 2370.021 klw 0.0500
+    [train] epoch 200 loss 2363.458 klw 0.0500
+    [train] epoch 225 loss 2356.339 klw 0.0500
+    [train] epoch 250 loss 2353.131 klw 0.0500
+    [train] epoch 275 loss 2344.274 klw 0.0500
+    [train] epoch 300 loss 2340.497 klw 0.0500
+    [train] epoch 325 loss 2336.701 klw 0.0500
+    [train] epoch 350 loss 2330.347 klw 0.0500
+    [train] epoch 375 loss 2325.150 klw 0.0500
+    [train] epoch 400 loss 2325.356 klw 0.0500
+    [train] epoch 425 loss 2319.954 klw 0.0500
+    [train] epoch 450 loss 2319.694 klw 0.0500
+    [train] epoch 475 loss 2313.750 klw 0.0500
+    [train] epoch 500 loss 2314.038 klw 0.0500
+    [train] epoch 525 loss 2311.982 klw 0.0500
+    [train] epoch 550 loss 2309.667 klw 0.0500
+    [train] epoch 575 loss 2310.364 klw 0.0500
+    [train] epoch 600 loss 2304.441 klw 0.0500
+    [train] epoch 625 loss 2304.567 klw 0.0500
+    [train] epoch 650 loss 2305.974 klw 0.0500
+    [train] epoch 675 loss 2303.609 klw 0.0500
+    [train] epoch 700 loss 2302.767 klw 0.0500
+   fielddrop_on seed 37 {'full_CV': 0.646262, 'occ_CV': 0.638362, 'delta_CV': 0.0079, 'delta_NLL_token': 0.098148, 'top1_agreement': 0.678}
+    [train] epoch 1 loss 2563.611 klw 0.0025
+    [train] epoch 2 loss 2538.318 klw 0.0050
+    [train] epoch 3 loss 2530.548 klw 0.0075
+    [train] epoch 4 loss 2530.334 klw 0.0100
+    [train] epoch 5 loss 2527.578 klw 0.0125
+    [train] epoch 25 loss 2440.915 klw 0.0500
+    [train] epoch 50 loss 2416.415 klw 0.0500
+    [train] epoch 75 loss 2391.801 klw 0.0500
+    [train] epoch 100 loss 2370.891 klw 0.0500
+    [train] epoch 125 loss 2358.831 klw 0.0500
+    [train] epoch 150 loss 2348.522 klw 0.0500
+    [train] epoch 175 loss 2337.307 klw 0.0500
+    [train] epoch 200 loss 2327.922 klw 0.0500
+    [train] epoch 225 loss 2316.714 klw 0.0500
+    [train] epoch 250 loss 2315.069 klw 0.0500
+    [train] epoch 275 loss 2306.991 klw 0.0500
+    [train] epoch 300 loss 2303.069 klw 0.0500
+    [train] epoch 325 loss 2300.605 klw 0.0500
+    [train] epoch 350 loss 2296.204 klw 0.0500
+    [train] epoch 375 loss 2293.444 klw 0.0500
+    [train] epoch 400 loss 2289.252 klw 0.0500
+    [train] epoch 425 loss 2288.257 klw 0.0500
+    [train] epoch 450 loss 2283.502 klw 0.0500
+    [train] epoch 475 loss 2282.978 klw 0.0500
+    [train] epoch 500 loss 2279.409 klw 0.0500
+    [train] epoch 525 loss 2278.823 klw 0.0500
+    [train] epoch 550 loss 2278.809 klw 0.0500
+    [train] epoch 575 loss 2273.834 klw 0.0500
+    [train] epoch 600 loss 2273.077 klw 0.0500
+    [train] epoch 625 loss 2271.294 klw 0.0500
+    [train] epoch 650 loss 2269.935 klw 0.0500
+    [train] epoch 675 loss 2269.804 klw 0.0500
+    [train] epoch 700 loss 2267.049 klw 0.0500
+   fielddrop_off seed 11 {'full_CV': 0.59738, 'occ_CV': 0.590032, 'delta_CV': 0.007348, 'delta_NLL_token': 0.130507, 'top1_agreement': 0.65}
+    [train] epoch 1 loss 2559.311 klw 0.0025
+    [train] epoch 2 loss 2534.337 klw 0.0050
+    [train] epoch 3 loss 2527.672 klw 0.0075
+    [train] epoch 4 loss 2525.975 klw 0.0100
+    [train] epoch 5 loss 2524.088 klw 0.0125
+    [train] epoch 25 loss 2435.950 klw 0.0500
+    [train] epoch 50 loss 2412.338 klw 0.0500
+    [train] epoch 75 loss 2378.409 klw 0.0500
+    [train] epoch 100 loss 2362.226 klw 0.0500
+    [train] epoch 125 loss 2354.147 klw 0.0500
+    [train] epoch 150 loss 2342.756 klw 0.0500
+    [train] epoch 175 loss 2333.550 klw 0.0500
+    [train] epoch 200 loss 2325.763 klw 0.0500
+    [train] epoch 225 loss 2320.963 klw 0.0500
+    [train] epoch 250 loss 2311.972 klw 0.0500
+    [train] epoch 275 loss 2304.956 klw 0.0500
+    [train] epoch 300 loss 2298.147 klw 0.0500
+    [train] epoch 325 loss 2294.911 klw 0.0500
+    [train] epoch 350 loss 2291.299 klw 0.0500
+    [train] epoch 375 loss 2287.003 klw 0.0500
+    [train] epoch 400 loss 2283.052 klw 0.0500
+    [train] epoch 425 loss 2279.028 klw 0.0500
+    [train] epoch 450 loss 2280.120 klw 0.0500
+    [train] epoch 475 loss 2276.795 klw 0.0500
+    [train] epoch 500 loss 2274.886 klw 0.0500
+    [train] epoch 525 loss 2272.553 klw 0.0500
+    [train] epoch 550 loss 2268.936 klw 0.0500
+    [train] epoch 575 loss 2271.345 klw 0.0500
+    [train] epoch 600 loss 2270.356 klw 0.0500
+    [train] epoch 625 loss 2265.550 klw 0.0500
+    [train] epoch 650 loss 2270.536 klw 0.0500
+    [train] epoch 675 loss 2264.336 klw 0.0500
+    [train] epoch 700 loss 2262.377 klw 0.0500
+   fielddrop_off seed 23 {'full_CV': 0.593381, 'occ_CV': 0.590399, 'delta_CV': 0.002982, 'delta_NLL_token': 0.122045, 'top1_agreement': 0.6495}
+    [train] epoch 1 loss 2575.006 klw 0.0025
+    [train] epoch 2 loss 2553.071 klw 0.0050
+    [train] epoch 3 loss 2547.884 klw 0.0075
+    [train] epoch 4 loss 2546.584 klw 0.0100
+    [train] epoch 5 loss 2541.711 klw 0.0125
+    [train] epoch 25 loss 2452.478 klw 0.0500
+    [train] epoch 50 loss 2433.781 klw 0.0500
+    [train] epoch 75 loss 2406.375 klw 0.0500
+    [train] epoch 100 loss 2382.438 klw 0.0500
+    [train] epoch 125 loss 2370.575 klw 0.0500
+    [train] epoch 150 loss 2361.466 klw 0.0500
+    [train] epoch 175 loss 2348.875 klw 0.0500
+    [train] epoch 200 loss 2339.192 klw 0.0500
+    [train] epoch 225 loss 2336.479 klw 0.0500
+    [train] epoch 250 loss 2331.497 klw 0.0500
+    [train] epoch 275 loss 2325.296 klw 0.0500
+    [train] epoch 300 loss 2318.845 klw 0.0500
+    [train] epoch 325 loss 2312.984 klw 0.0500
+    [train] epoch 350 loss 2311.211 klw 0.0500
+    [train] epoch 375 loss 2306.150 klw 0.0500
+    [train] epoch 400 loss 2305.286 klw 0.0500
+    [train] epoch 425 loss 2301.519 klw 0.0500
+    [train] epoch 450 loss 2295.253 klw 0.0500
+    [train] epoch 475 loss 2293.780 klw 0.0500
+    [train] epoch 500 loss 2293.237 klw 0.0500
+    [train] epoch 525 loss 2294.742 klw 0.0500
+    [train] epoch 550 loss 2290.618 klw 0.0500
+    [train] epoch 575 loss 2287.832 klw 0.0500
+    [train] epoch 600 loss 2283.583 klw 0.0500
+    [train] epoch 625 loss 2286.891 klw 0.0500
+    [train] epoch 650 loss 2282.439 klw 0.0500
+    [train] epoch 675 loss 2282.072 klw 0.0500
+    [train] epoch 700 loss 2281.770 klw 0.0500
+   fielddrop_off seed 37 {'full_CV': 0.615072, 'occ_CV': 0.610925, 'delta_CV': 0.004147, 'delta_NLL_token': 0.121089, 'top1_agreement': 0.6265}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_civil_occlusion.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_civil_fieldview.csv
+=== [04:06:36] 1/4 civil 整字段遮挡 exit=0 ===
+
+=== [04:06:36] 2/4 civil 部分遮挡 seed=11 ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u occlusion_robustness.py --corpus civil --seed 11 --k 30 --models FC-NTM,LDA,NMF,ProdLDA,ETM --rates 0,0.25,0.5,0.75,1.0 --fcntm-state outputs/civil_missing_state.pt
+[civil] FC-NTM
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.0762 agree=0.907
+  FC-NTM rate=0.5 hidden_NLL=8.0834 agree=0.848
+  FC-NTM rate=0.75 hidden_NLL=8.1145 agree=0.751
+  FC-NTM rate=1 hidden_NLL=8.1622 agree=0.688
+[civil] LDA
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.3710 agree=0.892
+  LDA rate=0.5 hidden_NLL=7.4153 agree=0.819
+  LDA rate=0.75 hidden_NLL=7.4865 agree=0.723
+  LDA rate=1 hidden_NLL=7.6526 agree=0.560
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.2640 agree=0.918
+  NMF rate=0.5 hidden_NLL=7.3492 agree=0.860
+  NMF rate=0.75 hidden_NLL=7.5031 agree=0.781
+  NMF rate=1 hidden_NLL=8.5196 agree=0.662
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9705 agree=0.885
+  ProdLDA rate=0.5 hidden_NLL=7.9752 agree=0.821
+  ProdLDA rate=0.75 hidden_NLL=8.0092 agree=0.724
+  ProdLDA rate=1 hidden_NLL=8.1811 agree=0.540
+[civil] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2679 agree=0.915
+  ETM rate=0.5 hidden_NLL=7.2872 agree=0.855
+  ETM rate=0.75 hidden_NLL=7.3324 agree=0.792
+  ETM rate=1 hidden_NLL=7.5703 agree=0.650
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+ FC-NTM  0.00         NaN       0     1.0000   0.0000
+ FC-NTM  0.25      8.0762    2000     0.9070   0.0023
+ FC-NTM  0.50      8.0834    2000     0.8480   0.0068
+ FC-NTM  0.75      8.1145    2000     0.7515   0.0185
+ FC-NTM  1.00      8.1622    2000     0.6880   0.0314
+    LDA  0.00         NaN       0     1.0000   0.0000
+    LDA  0.25      7.3710    2000     0.8920   0.0289
+    LDA  0.50      7.4153    2000     0.8190   0.0587
+    LDA  0.75      7.4865    2000     0.7225   0.1015
+    LDA  1.00      7.6526    2000     0.5605   0.1885
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.2640    2000     0.9185   0.0174
+    NMF  0.50      7.3492    2000     0.8595   0.0417
+    NMF  0.75      7.5031    2000     0.7810   0.0794
+    NMF  1.00      8.5196    2000     0.6620   0.1712
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.9705    2000     0.8850   0.0046
+ProdLDA  0.50      7.9752    2000     0.8205   0.0124
+ProdLDA  0.75      8.0092    2000     0.7235   0.0302
+ProdLDA  1.00      8.1811    2000     0.5405   0.1130
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2679    2000     0.9155   0.0083
+    ETM  0.50      7.2872    2000     0.8545   0.0226
+    ETM  0.75      7.3324    2000     0.7920   0.0506
+    ETM  1.00      7.5703    2000     0.6505   0.1540
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_robustness_civil_seed11.csv
+=== [05:08:17] 2/4 civil 部分遮挡 seed=11 exit=0 ===
+
+=== [05:08:17] 2/4 civil 部分遮挡 seed=23 ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u occlusion_robustness.py --corpus civil --seed 23 --k 30 --models FC-NTM,LDA,NMF,ProdLDA,ETM --rates 0,0.25,0.5,0.75,1.0 --fcntm-state outputs/civil_missing_state.pt
+[civil] FC-NTM
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.0802 agree=0.904
+  FC-NTM rate=0.5 hidden_NLL=8.0857 agree=0.833
+  FC-NTM rate=0.75 hidden_NLL=8.1179 agree=0.735
+  FC-NTM rate=1 hidden_NLL=8.1616 agree=0.652
+[civil] LDA
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.4004 agree=0.887
+  LDA rate=0.5 hidden_NLL=7.4361 agree=0.814
+  LDA rate=0.75 hidden_NLL=7.5029 agree=0.733
+  LDA rate=1 hidden_NLL=7.6552 agree=0.567
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.2909 agree=0.911
+  NMF rate=0.5 hidden_NLL=7.3559 agree=0.853
+  NMF rate=0.75 hidden_NLL=7.5274 agree=0.768
+  NMF rate=1 hidden_NLL=8.5641 agree=0.649
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9684 agree=0.887
+  ProdLDA rate=0.5 hidden_NLL=7.9799 agree=0.827
+  ProdLDA rate=0.75 hidden_NLL=8.0155 agree=0.731
+  ProdLDA rate=1 hidden_NLL=8.2087 agree=0.557
+[civil] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2797 agree=0.924
+  ETM rate=0.5 hidden_NLL=7.2992 agree=0.864
+  ETM rate=0.75 hidden_NLL=7.3426 agree=0.795
+  ETM rate=1 hidden_NLL=7.5770 agree=0.651
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+ FC-NTM  0.00         NaN       0     1.0000   0.0000
+ FC-NTM  0.25      8.0802    2000     0.9045   0.0024
+ FC-NTM  0.50      8.0857    2000     0.8325   0.0068
+ FC-NTM  0.75      8.1179    2000     0.7350   0.0192
+ FC-NTM  1.00      8.1616    2000     0.6525   0.0334
+    LDA  0.00         NaN       0     1.0000   0.0000
+    LDA  0.25      7.4004    2000     0.8875   0.0283
+    LDA  0.50      7.4361    2000     0.8140   0.0574
+    LDA  0.75      7.5029    2000     0.7325   0.0999
+    LDA  1.00      7.6552    2000     0.5670   0.1825
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.2909    2000     0.9110   0.0176
+    NMF  0.50      7.3559    2000     0.8525   0.0407
+    NMF  0.75      7.5274    2000     0.7685   0.0799
+    NMF  1.00      8.5641    2000     0.6490   0.1737
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.9684    2000     0.8875   0.0046
+ProdLDA  0.50      7.9799    2000     0.8265   0.0127
+ProdLDA  0.75      8.0155    2000     0.7305   0.0303
+ProdLDA  1.00      8.2087    2000     0.5575   0.1160
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2797    2000     0.9240   0.0086
+    ETM  0.50      7.2992    2000     0.8635   0.0232
+    ETM  0.75      7.3426    2000     0.7950   0.0524
+    ETM  1.00      7.5770    2000     0.6515   0.1543
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_robustness_civil_seed23.csv
+=== [06:07:54] 2/4 civil 部分遮挡 seed=23 exit=0 ===
+
+=== [06:07:54] 2/4 civil 部分遮挡 seed=37 ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u occlusion_robustness.py --corpus civil --seed 37 --k 30 --models FC-NTM,LDA,NMF,ProdLDA,ETM --rates 0,0.25,0.5,0.75,1.0 --fcntm-state outputs/civil_missing_state.pt
+[civil] FC-NTM
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=8.0809 agree=0.910
+  FC-NTM rate=0.5 hidden_NLL=8.0926 agree=0.845
+  FC-NTM rate=0.75 hidden_NLL=8.1195 agree=0.737
+  FC-NTM rate=1 hidden_NLL=8.1569 agree=0.678
+[civil] LDA
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.3843 agree=0.882
+  LDA rate=0.5 hidden_NLL=7.4141 agree=0.808
+  LDA rate=0.75 hidden_NLL=7.4858 agree=0.727
+  LDA rate=1 hidden_NLL=7.6532 agree=0.556
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.2949 agree=0.905
+  NMF rate=0.5 hidden_NLL=7.3471 agree=0.849
+  NMF rate=0.75 hidden_NLL=7.5207 agree=0.778
+  NMF rate=1 hidden_NLL=8.5495 agree=0.655
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9753 agree=0.897
+  ProdLDA rate=0.5 hidden_NLL=7.9860 agree=0.843
+  ProdLDA rate=0.75 hidden_NLL=8.0209 agree=0.752
+  ProdLDA rate=1 hidden_NLL=8.1751 agree=0.559
+[civil] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2707 agree=0.896
+  ETM rate=0.5 hidden_NLL=7.2896 agree=0.853
+  ETM rate=0.75 hidden_NLL=7.3315 agree=0.794
+  ETM rate=1 hidden_NLL=7.5652 agree=0.663
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+ FC-NTM  0.00         NaN       0     1.0000   0.0000
+ FC-NTM  0.25      8.0809    2000     0.9105   0.0024
+ FC-NTM  0.50      8.0926    2000     0.8445   0.0072
+ FC-NTM  0.75      8.1195    2000     0.7365   0.0198
+ FC-NTM  1.00      8.1569    2000     0.6780   0.0338
+    LDA  0.00         NaN       0     1.0000   0.0000
+    LDA  0.25      7.3843    2000     0.8825   0.0285
+    LDA  0.50      7.4141    2000     0.8080   0.0560
+    LDA  0.75      7.4858    2000     0.7265   0.1005
+    LDA  1.00      7.6532    2000     0.5565   0.1872
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.2949    2000     0.9055   0.0177
+    NMF  0.50      7.3471    2000     0.8485   0.0403
+    NMF  0.75      7.5207    2000     0.7780   0.0789
+    NMF  1.00      8.5495    2000     0.6555   0.1714
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.9753    2000     0.8970   0.0043
+ProdLDA  0.50      7.9860    2000     0.8425   0.0117
+ProdLDA  0.75      8.0209    2000     0.7520   0.0291
+ProdLDA  1.00      8.1751    2000     0.5595   0.1107
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2707    2000     0.8960   0.0082
+    ETM  0.50      7.2896    2000     0.8530   0.0224
+    ETM  0.75      7.3315    2000     0.7945   0.0514
+    ETM  1.00      7.5652    2000     0.6630   0.1506
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_robustness_civil_seed37.csv
+=== [07:05:17] 2/4 civil 部分遮挡 seed=37 exit=0 ===
+
+=== [07:05:17] 3/4 阶梯 abs60（full / no-cross / no-mask） ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_ablation_public.py --dataset civil --abstract-words 60 --configs full,no-cross,no-mask --seeds 11,23,37 --k 30 --lr 5e-4 --max-epochs 700 --resume --out ablation_civil_abs60.csv
+  no reused beta for seed 11; training
+   full seed 11 beta {'CV': 0.5875, 'NPMI': 0.1257}
+   full seed 11 cTFIDF {'CV': 0.5966, 'NPMI': 0.1472}
+  no reused beta for seed 23; training
+   full seed 23 beta {'CV': 0.609, 'NPMI': 0.1345}
+   full seed 23 cTFIDF {'CV': 0.6299, 'NPMI': 0.1618}
+  no reused beta for seed 37; training
+   full seed 37 beta {'CV': 0.6049, 'NPMI': 0.1324}
+   full seed 37 cTFIDF {'CV': 0.6192, 'NPMI': 0.1581}
+   no-cross seed 11 beta {'CV': 0.5752, 'NPMI': 0.1214}
+   no-cross seed 11 cTFIDF {'CV': 0.6214, 'NPMI': 0.158}
+   no-cross seed 23 beta {'CV': 0.5935, 'NPMI': 0.1138}
+   no-cross seed 23 cTFIDF {'CV': 0.6132, 'NPMI': 0.1456}
+   no-cross seed 37 beta {'CV': 0.5894, 'NPMI': 0.1283}
+   no-cross seed 37 cTFIDF {'CV': 0.615, 'NPMI': 0.145}
+   no-mask seed 11 beta {'CV': 0.583, 'NPMI': 0.113}
+   no-mask seed 11 cTFIDF {'CV': 0.5903, 'NPMI': 0.1283}
+   no-mask seed 23 beta {'CV': 0.5852, 'NPMI': 0.1333}
+   no-mask seed 23 cTFIDF {'CV': 0.6108, 'NPMI': 0.1436}
+   no-mask seed 37 beta {'CV': 0.558, 'NPMI': 0.1075}
+   no-mask seed 37 cTFIDF {'CV': 0.5992, 'NPMI': 0.1398}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ablation_civil_abs60.csv
+=== [18:21:59] 3/4 阶梯 abs60（full / no-cross / no-mask） exit=0 ===
+
+=== [18:21:59] 3/4 阶梯 abs30（full / no-cross / no-mask） ===
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_ablation_public.py --dataset civil --abstract-words 30 --configs full,no-cross,no-mask --seeds 11,23,37 --k 30 --lr 5e-4 --max-epochs 700 --resume --out ablation_civil_abs30.csv
+  no reused beta for seed 11; training
+   full seed 11 beta {'CV': 0.5438, 'NPMI': 0.0765}
+   full seed 11 cTFIDF {'CV': 0.6071, 'NPMI': 0.138}
+  no reused beta for seed 23; training

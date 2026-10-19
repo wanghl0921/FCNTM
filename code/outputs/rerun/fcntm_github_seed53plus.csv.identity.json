@@ -1,0 +1,28 @@
+{
+ "id": "91d8d84d9c0b47d8",
+ "payload": {
+  "script": "run_fcntm_train.run_corpus",
+  "n_vocab": 5175,
+  "n_docs": 6000,
+  "k": 30,
+  "seeds": [
+   53,
+   71,
+   89,
+   101,
+   113,
+   127,
+   139
+  ],
+  "field_dropout": 0.5,
+  "fusion": "gate",
+  "fusion_norm": "balanced",
+  "fusion_weight": 0.5,
+  "recover_nan": true,
+  "max_epochs": 700,
+  "lr": 0.0005,
+  "code": "b4c2bd15d5913c90",
+  "data": "8e81f48948b088ee",
+  "fields": "ca2e62c5f2e630de"
+ }
+}

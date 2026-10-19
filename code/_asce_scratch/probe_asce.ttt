@@ -1,0 +1,381 @@
+\begin{table}[t]
+\centering
+\caption{Topic quality on the civil engineering corpus (unified evaluation vocabulary, ten words per topic; values are means over seeds 11/23/37, and the training procedure differs across algorithm families as described in the ``Baselines, training protocols and metrics'' subsection; BERTopic and Top2Vec choose their own topic numbers and are shown for reference).}
+\label{tab:civil}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Model & Topics & $C_V$ & NPMI & UMass & EXCL$_{\mathrm{KADJ}}$ & IRBO \\
+\midrule
+BTM & 30 & 0.583$\pm$0.010 & 0.128$\pm$0.009 & $-$2.18 & 0.283 & 0.944 \\
+CombinedTM & 30 & 0.539$\pm$0.029 & 0.082$\pm$0.028 & $-$6.11 & 0.063 & 0.998 \\
+\fcntm{}-cTFIDF & 30 & \textbf{0.636}$\pm$0.014 & \textbf{0.159}$\pm$0.011 & $-$2.21 & 0.165 & 0.937 \\
+\fcntm{} & 30 & 0.633$\pm$0.014 & 0.154$\pm$0.022 & $-$2.85 & 0.014 & 0.990 \\
+ETM & 30 & 0.581$\pm$0.012 & 0.119$\pm$0.007 & $-$2.75 & 0.379 & 0.963 \\
+ProdLDA & 30 & 0.580$\pm$0.023 & 0.125$\pm$0.017 & $-$3.84 & 0.051 & 0.999 \\
+Top2Vec & 153 & 0.515$\pm$0.002 & 0.029$\pm$0.011 & $-$8.52 & 0.359 & 0.995 \\
+NMF & 30 & 0.598$\pm$0.009 & 0.135$\pm$0.006 & $-$2.86 & 0.559 & 0.984 \\
+BERTopic & 29 & 0.576$\pm$0.026 & 0.116$\pm$0.027 & $-$5.06 & 0.563 & 0.991 \\
+CTM-lite & 30 & 0.536$\pm$0.030 & 0.098$\pm$0.027 & $-$3.85 & 0.013 & 0.995 \\
+LDA & 30 & 0.554$\pm$0.008 & 0.056$\pm$0.025 & $-$4.62 & 0.602 & 0.987 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Topic quality on AG News (unified evaluation vocabulary, ten words per topic; values are means over seeds 11/23/37 where applicable, and the training procedure differs across algorithm families as described in the ``Baselines, training protocols and metrics'' subsection; BERTopic and Top2Vec choose their own topic numbers and are shown for reference).}
+\label{tab:agnews}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Model & Topics & $C_V$ & NPMI & UMass & EXCL$_{\mathrm{KADJ}}$ & IRBO \\
+\midrule
+BTM & 30 & 0.600$\pm$0.011 & 0.164$\pm$0.005 & $-$4.19 & 0.409 & 0.980 \\
+CombinedTM & 30 & 0.526$\pm$0.037 & 0.057$\pm$0.070 & $-$8.01 & 0.118 & 1.000 \\
+\fcntm{}-cTFIDF & 30 & \textbf{0.612}$\pm$0.014 & \textbf{0.173}$\pm$0.012 & $-$4.20 & 0.193 & 0.974 \\
+\fcntm{} & 30 & 0.586$\pm$0.026 & 0.137$\pm$0.022 & $-$4.91 & 0.013 & 0.993 \\
+ETM & 30 & 0.506$\pm$0.014 & 0.092$\pm$0.010 & $-$5.12 & 0.439 & 0.982 \\
+ProdLDA & 30 & 0.526$\pm$0.031 & 0.071$\pm$0.015 & $-$6.61 & 0.055 & 0.999 \\
+Top2Vec & 2.7 & 0.498$\pm$0.032 & 0.099$\pm$0.031 & $-$2.92 & 0.268 & 0.937 \\
+NMF & 30 & 0.494$\pm$0.015 & 0.069$\pm$0.013 & $-$5.96 & 0.799 & 0.997 \\
+BERTopic & 29 & 0.488$\pm$0.022 & 0.035$\pm$0.026 & $-$8.81 & 0.681 & 0.997 \\
+CTM-lite & 30 & 0.431$\pm$0.023 & $-$0.015$\pm$0.016 & $-$8.34 & 0.041 & 0.998 \\
+LDA & 30 & 0.421$\pm$0.013 & $-$0.066$\pm$0.018 & $-$8.62 & 0.696 & 0.994 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Topic quality on GitHub issues (same evaluation protocol and read-outs as Table~\ref{tab:agnews}; the FC-NTM rows, BTM, ETM, CombinedTM, ProdLDA and CTM-lite are three-seed results).}
+\label{tab:github}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Model & Topics & $C_V$ & NPMI & UMass & EXCL$_{\mathrm{KADJ}}$ & IRBO \\
+\midrule
+BTM & 30 & 0.712$\pm$0.012 & 0.232$\pm$0.012 & $-$1.79 & 0.349 & 0.934 \\
+\fcntm{}-cTFIDF & 30 & \textbf{0.727}$\pm$0.022 & \textbf{0.274}$\pm$0.026 & $-$1.90 & 0.133 & 0.901 \\
+\fcntm{} & 30 & 0.701$\pm$0.016 & 0.233$\pm$0.012 & $-$3.16 & 0.010 & 0.967 \\
+ETM & 30 & 0.675$\pm$0.014 & 0.213$\pm$0.010 & $-$2.14 & 0.366 & 0.955 \\
+CombinedTM & 30 & 0.643$\pm$0.022 & 0.193$\pm$0.015 & $-$4.70 & 0.031 & 0.983 \\
+NMF & 30 & 0.614$\pm$0.005 & 0.164$\pm$0.003 & $-$3.26 & 0.595 & 0.985 \\
+ProdLDA & 30 & 0.579$\pm$0.007 & 0.107$\pm$0.012 & $-$5.21 & 0.043 & 0.995 \\
+CTM-lite & 30 & 0.585$\pm$0.032 & 0.129$\pm$0.036 & $-$5.11 & 0.011 & 0.989 \\
+LDA & 30 & 0.546$\pm$0.011 & 0.074$\pm$0.017 & $-$4.21 & 0.684 & 0.990 \\
+BERTopic & 29 & 0.540$\pm$0.015 & 0.076$\pm$0.012 & $-$7.00 & 0.546 & 0.976 \\
+Top2Vec & 160 & 0.493$\pm$0.009 & $-$0.008$\pm$0.013 & $-$9.65 & 0.337 & 0.994 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Read-out comparison ($K=30$, means over seeds 11/23/37). Each model is first read out through its own topic--word matrix ($\beta$ read-out) and then through a class TF--IDF read-out aggregated from its training-set posterior $\theta$; BTM enters the same read-out through the point-estimate document--topic posterior of its original Section 3.3, and the FC-NTM row is the same model as in Tables~\ref{tab:agnews} and~\ref{tab:github}.}
+\label{tab:fair}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+Corpus & Model & $\beta$ read-out $C_V$ / NPMI & Class TF--IDF $C_V$ / NPMI \\
+\midrule
+ \multirow{7}{*}{GitHub}
+ & \fcntm{}(3 seed mean) & 0.701 / 0.233 & \textbf{0.727 / 0.274} \\
+ & ETM & 0.675 / 0.213 & 0.669 / 0.220 \\
+ & ProdLDA & 0.579 / 0.107 & 0.666 / 0.215 \\
+ & CTM-lite & 0.585 / 0.129 & 0.675 / 0.216 \\
+ & NMF & 0.614 / 0.164 & 0.603 / 0.158 \\
+ & LDA & 0.546 / 0.074 & 0.614 / 0.193 \\
+ & BTM(3 seeds) & 0.712 / 0.232 & 0.700 / 0.235 \\
+\midrule
+ \multirow{7}{*}{AG News}
+ & \fcntm{}(3 seed mean) & 0.586 / 0.137 & \textbf{0.612 / 0.173} \\
+ & ProdLDA & 0.526 / 0.071 & 0.544 / 0.125 \\
+ & NMF & 0.494 / 0.069 & 0.539 / 0.121 \\
+ & ETM & 0.506 / 0.092 & 0.511 / 0.082 \\
+ & CTM-lite & 0.431 / $-$0.015 & 0.455 / 0.062 \\
+ & LDA & 0.421 / $-$0.066 & 0.451 / 0.010 \\
+ & BTM(3 seeds) & 0.600 / 0.164 & 0.593 / 0.169 \\
+\midrule
+ \multirow{7}{*}{Civil corpus}
+ & \fcntm{}(3 seed mean) & \textbf{0.633 / 0.154} & \textbf{0.636 / 0.159} \\
+ & NMF & 0.598 / 0.135 & 0.607 / 0.142 \\
+ & ETM & 0.581 / 0.119 & 0.603 / 0.134 \\
+ & BTM(3 seeds) & 0.583 / 0.128 & 0.590 / 0.139 \\
+ & LDA & 0.554 / 0.056 & 0.575 / 0.105 \\
+ & ProdLDA & 0.580 / 0.125 & 0.545 / 0.108 \\
+ & CTM-lite & 0.536 / 0.098 & 0.530 / 0.094 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Ten-seed paired comparison of \fcntm{} and BTM on the three corpora. The read-out rows report $C_V$ differences (\fcntm{} minus BTM at the same read-out); the occlusion rows compare the relative degradation $\mathrm{NLL}(100\%)/\mathrm{NLL}(25\%)$, so a positive value means \fcntm{} is more stable. The occlusion rows use the pre-selected baselines (BTM on all three corpora and additionally LDA on AG News) rather than a full baseline tournament. CIs are two-sided $t$ intervals; sign and Wilcoxon tests are two-sided.}
+\label{tab:seed-paired}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llcccccc@{}}
+\toprule
+Corpus & Comparison & Mean diff. & 95\% CI low & 95\% CI high & Positive & Sign $p$ & Wilcoxon $p$ \\
+\midrule
+GitHub & Class TF--IDF & $+$0.028 & $+$0.012 & $+$0.043 & 9/10 & 0.021 & 0.004 \\
+GitHub & $\beta$ read-out & $-$0.014 & $-$0.028 & $-$0.001 & 3/10 & 0.344 & 0.037 \\
+GitHub & Occlusion (vs.\ BTM) & $+$0.024 & $+$0.022 & $+$0.026 & 10/10 & 0.002 & 0.002 \\
+\midrule
+AG News & Class TF--IDF & $-$0.009 & $-$0.030 & $+$0.013 & 3/10 & 0.344 & 0.375 \\
+AG News & $\beta$ read-out & $-$0.027 & $-$0.047 & $-$0.008 & 1/10 & 0.021 & 0.004 \\
+AG News & Occlusion (vs.\ BTM) & $+$0.025 & $+$0.024 & $+$0.026 & 10/10 & 0.002 & 0.002 \\
+AG News & Occlusion (vs.\ LDA) & $-$0.013 & $-$0.014 & $-$0.012 & 0/10 & 0.002 & 0.002 \\
+\midrule
+Civil corpus & Class TF--IDF & $+$0.049 & $+$0.033 & $+$0.064 & 10/10 & 0.002 & 0.002 \\
+Civil corpus & $\beta$ read-out & $+$0.061 & $+$0.047 & $+$0.075 & 10/10 & 0.002 & 0.002 \\
+Civil corpus & Occlusion (vs.\ BTM) & $-$0.003 & $-$0.004 & $-$0.002 & 0/10 & 0.002 & 0.002 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Field redundancy, measured occlusion gap and the $C_V$ difference against BTM on two corpora. Redundancy is fitted on the training split and evaluated on the test split and includes constructive controls (exact copy $=1.000$, cross-document shuffle $\approx0.000$); the occlusion $\Delta C_V$ is the mean$\pm$standard deviation over seeds 11/23/37 with dropout training. The last column gives the $C_V$ difference under the matched class TF--IDF read-out and under BTM's native $\beta$ read-out.}
+\label{tab:conditional}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Corpus & Held-out Ridge $R^2$ & Held-out $\rho^2_{\mathrm{cca}}$
+ & Occlusion $\Delta C_V$ & $C_V$ gap, cTFIDF$-$BTM (matched / $\beta$) \\
+\midrule
+GitHub issues & 0.230 & 0.306 & $+$0.009$\pm$0.022 & $+$0.027 / $+$0.014 \\
+AG News & 0.158 & 0.245 & $+$0.018$\pm$0.013 & $+$0.019 / $+$0.012 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Partial-occlusion curves on GitHub issues (seed 11). NLL is the per-token negative log-likelihood of the occluded background tokens (lower is better); relative degradation is $\mathrm{NLL}(100\%)/\mathrm{NLL}(25\%)$; agreement is the fraction of documents whose most probable topic is unchanged at 100\% occlusion relative to the unoccluded ($p=0$) inference. BTM enters the protocol through the document--topic posterior of its Section 3.3.}
+\label{tab:occl-robust}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Model & NLL(25\%) & NLL(50\%) & NLL(75\%) & NLL(100\%) & Relative degradation / Agreement(100\%) \\
+\midrule
+\fcntm{} & 7.712 & 7.735 & 7.790 & 7.960 & \textbf{1.032} / 0.358 \\
+LDA & 6.802 & 6.854 & 6.948 & 7.302 & 1.074 / 0.420 \\
+ProdLDA & 7.558 & 7.588 & 7.668 & 8.165 & 1.080 / 0.354 \\
+BTM & 6.630 & 6.639 & 6.670 & \textbf{6.972} & 1.052 / 0.448 \\
+ETM & \textbf{6.616} & 6.643 & 6.708 & 7.202 & 1.089 / 0.452 \\
+NMF & 6.972 & 7.169 & 7.561 & 10.255 & 1.471 / \textbf{0.469} \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Partial-occlusion behaviour on the three corpora (seeds 11/23/37, mean$\pm$standard deviation; the mask is redrawn per seed). Bold marks the smallest relative degradation per corpus. Field asymmetry is described by the mean background/summary token ratio and by the token-type share of background words that do not occur in the summary of the same document.}
+\label{tab:occl-cross}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+Corpus(Field asymmetry) & Model & Relative degradation & Agreement(100\%) \\
+\midrule
+\multirow{6}{*}{\shortstack[l]{GitHub issues\\ Length ratio 12.9\\ Background-exclusive 0.877}}
+ & \fcntm{} & \textbf{1.029$\pm$0.003} & 0.345 \\
+ & LDA & 1.074$\pm$0.000 & 0.424 \\
+ & ProdLDA & 1.081$\pm$0.002 & 0.347 \\
+ & ETM & 1.088$\pm$0.003 & 0.455 \\
+ & BTM & 1.052$\pm$0.001 & 0.438 \\
+ & NMF & 1.470$\pm$0.006 & 0.467 \\
+\midrule
+\multirow{6}{*}{\shortstack[l]{Civil corpus\\ Length ratio 11.2\\ Background-exclusive 0.894}}
+ & \fcntm{} & 1.010$\pm$0.001 & 0.673 \\
+ & LDA & 1.036$\pm$0.002 & 0.561 \\
+ & ProdLDA & 1.027$\pm$0.003 & 0.552 \\
+ & ETM & 1.041$\pm$0.001 & 0.655 \\
+ & BTM & \textbf{1.007$\pm$0.001} & 0.561 \\
+ & NMF & 1.173$\pm$0.001 & 0.655 \\
+\midrule
+\multirow{6}{*}{\shortstack[l]{AG News\\ Length ratio 3.9\\ Background-exclusive 0.868}}
+ & \fcntm{} & 1.018$\pm$0.001 & 0.520 \\
+ & LDA & \textbf{1.005$\pm$0.001} & 0.436 \\
+ & ProdLDA & 1.026$\pm$0.001 & 0.489 \\
+ & ETM & 1.072$\pm$0.001 & 0.554 \\
+ & BTM & 1.044$\pm$0.001 & 0.555 \\
+ & NMF & 1.408$\pm$0.003 & 0.546 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Field-restricted read-out ($C_V$, mean$\pm$standard deviation over seeds 11/23/37). Every topic--word matrix is truncated to the vocabulary of one field and scored against that field's test text only; ``background view'' is the abstract/body side and ``summary view'' the title side. FC-NTM's summary view is scored on 20--22 scorable topics per seed on GitHub (29--30 on AG News, 26--28 on the civil corpus) because topics whose ten field words never occur in the held-out text get an undefined $C_V$.}
+\label{tab:fieldview-baselines}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+Corpus & Model & Background view $C_V$ & Summary view $C_V$ \\
+\midrule
+\multirow{5}{*}{GitHub issues}
+ & \fcntm{} & 0.697$\pm$0.016 & 0.426$\pm$0.012 \\
+ & BTM & \textbf{0.710$\pm$0.011} & 0.396$\pm$0.018 \\
+ & NMF & 0.609$\pm$0.004 & 0.433$\pm$0.002 \\
+ & LDA & 0.543$\pm$0.011 & 0.466$\pm$0.005 \\
+ & ProdLDA & 0.575$\pm$0.006 & \textbf{0.467$\pm$0.034} \\
+\midrule
+\multirow{5}{*}{AG News}
+ & \fcntm{} & 0.566$\pm$0.016 & 0.423$\pm$0.015 \\
+ & BTM & \textbf{0.586$\pm$0.015} & 0.399$\pm$0.018 \\
+ & NMF & 0.477$\pm$0.015 & 0.444$\pm$0.002 \\
+ & LDA & 0.419$\pm$0.007 & \textbf{0.486$\pm$0.006} \\
+ & ProdLDA & 0.499$\pm$0.032 & 0.438$\pm$0.007 \\
+\midrule
+\multirow{5}{*}{Civil corpus}
+ & \fcntm{} & \textbf{0.637$\pm$0.015} & 0.408$\pm$0.005 \\
+ & BTM & 0.589$\pm$0.014 & 0.382$\pm$0.008 \\
+ & NMF & 0.600$\pm$0.009 & 0.398$\pm$0.013 \\
+ & LDA & 0.554$\pm$0.008 & 0.415$\pm$0.006 \\
+ & ProdLDA & 0.576$\pm$0.025 & \textbf{0.419$\pm$0.012} \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Three-step fusion ablation on GitHub issues ($K=30$, seeds 11/23/37, same protocol). Within one read-out each row changes exactly one thing: first the fused mixture $\theta_{\mathrm{fuse}}$ is decoded into the reconstruction term (mean fusion), then mean fusion is replaced by a learnable gate (the main model). ``Positive pairs'' counts the seeds whose paired difference against the row above is positive ($C_V$, NPMI).}
+\label{tab:fusion}
+\small
+\begin{tabular}{llcccc}
+\toprule
+Read-out & Configuration & $C_V$ & NPMI & Positive pairs & UMass \\
+\midrule
+\multirow{3}{*}{$\beta$} & No fusion & 0.721$\pm$0.016 & 0.266$\pm$0.012 & --- & $-$2.63 \\
+ & Mean fusion + fusion recon. & 0.708$\pm$0.016 & 0.245$\pm$0.013 & 1/3, 0/3 & $-$2.98 \\
+ & Gated fusion (main model) & 0.701$\pm$0.016 & 0.233$\pm$0.012 & 0/3, 0/3 & $-$3.16 \\
+\midrule
+\multirow{3}{*}{cTFIDF} & No fusion & 0.714$\pm$0.001 & 0.262$\pm$0.007 & --- & $-$1.86 \\
+ & Mean fusion + fusion recon. & 0.728$\pm$0.007 & 0.275$\pm$0.015 & 3/3, 3/3 & $-$1.91 \\
+ & Gated fusion (main model) & 0.727$\pm$0.022 & 0.274$\pm$0.026 & 1/3, 1/3 & $-$1.90 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Core-component ablation on three corpora and two read-outs ($K=30$, seeds 11/23/37, 700-epoch budget, all other settings identical to the main model). Each column switches off one component: cross-field reconstruction of both streams, the JS consistency weight, field-level word masking, and whole-field dropout; the fusion-reconstruction term is kept in all columns. Values are mean paired $\Delta C_V$ (negative means the component matters), parentheses count positive pairs.}
+\label{tab:core-ablation}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llcccc}
+\toprule
+Corpus & Read-out & $-$Cross-field recon. & $-$JS consistency & $-$Word masking & $-$Field dropout \\
+\midrule
+GitHub & $\beta$ & $+$0.021 (2/3) & $-$0.001 (1/3) & $-$0.012 (1/3) & $-$0.023 (1/3) \\
+GitHub & Class TF-IDF & $-$0.005 (1/3) & $+$0.004 (2/3) & $-$0.004 (1/3) & $-$0.021 (1/3) \\
+\midrule
+AG News & $\beta$ & $-$0.011 (2/3) & $+$0.003 (1/3) & $-$0.026 (0/3) & $-$0.010 (1/3) \\
+AG News & Class TF-IDF & $-$0.022 (0/3) & $-$0.002 (1/3) & $-$0.043 (0/3) & $-$0.023 (1/3) \\
+\midrule
+Civil corpus & $\beta$ & $-$0.022 (0/3) & $+$0.001 (2/3) & $-$0.010 (1/3) & $+$0.001 (1/3) \\
+Civil corpus & Class TF-IDF & $-$0.019 (0/3) & $-$0.002 (0/3) & $-$0.012 (0/3) & $-$0.034 (0/3) \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Sensitivity to the fusion-reconstruction weight $\lambda_f$ on GitHub issues (gated fusion, seeds 11/23/37). $\lambda_f=0$ is the no-fusion setting, $\lambda_f=0.5$ is the value used throughout; all other settings match the main model.}
+\label{tab:weight}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{$\lambda_f$} & \multicolumn{2}{c}{$\beta$ read-out} & \multicolumn{2}{c}{Class TF--IDF} \\
+ & $C_V$ & NPMI & $C_V$ & NPMI \\
+\midrule
+0 & 0.721$\pm$0.016 & 0.266$\pm$0.012 & 0.714$\pm$0.001 & 0.262$\pm$0.007 \\
+0.25 & 0.697$\pm$0.015 & 0.217$\pm$0.031 & 0.713$\pm$0.015 & 0.262$\pm$0.004 \\
+0.5 & 0.701$\pm$0.016 & 0.233$\pm$0.012 & 0.727$\pm$0.022 & 0.274$\pm$0.026 \\
+1.0 & 0.716$\pm$0.012 & 0.246$\pm$0.026 & 0.723$\pm$0.012 & 0.277$\pm$0.018 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Whole-field occlusion at inference time ($K=30$, final configuration, 700-epoch budget). $\Delta C_V$ is the coherence difference between full-field and occluded inference under the same read-out; $\Delta\mathrm{NLL}$ is the per-token increase; agreement is the fraction of documents whose most probable topic is unchanged. The two rows of a corpus use the same seeds, isolating the effect of the training-time dropout setting.}
+\label{tab:occlusion}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llcccccc}
+\toprule
+Corpus & Training setting & $C_V^{\mathrm{full}}$ & $C_V^{\mathrm{occ}}$ & $\Delta C_V$
+ & $\Delta\mathrm{NLL}$(per token) & Agreement & Mean JS \\
+\midrule
+GitHub & Dropout ($p=0.5$) & 0.727 & 0.717 & $+$0.009 & $+$0.241 & 0.345 & 0.082 \\
+       & No dropout & 0.705 & 0.725 & $-$0.020 & $+$0.242 & 0.346 & 0.092 \\
+\midrule
+Civil corpus & Dropout ($p=0.5$) & 0.636 & 0.627 & $+$0.009 & $+$0.103 & 0.673 & 0.033 \\
+        & No dropout & 0.602 & 0.597 & $+$0.005 & $+$0.125 & 0.642 & 0.039 \\
+\midrule
+AG News & Dropout ($p=0.5$) & 0.612 & 0.594 & $+$0.018 & $+$0.232 & 0.520 & 0.049 \\
+        & No dropout & 0.589 & 0.582 & $+$0.007 & $+$0.269 & 0.498 & 0.060 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Concatenated-field single-encoder control (seeds 11/23/37; same budget, vocabulary and read-outs). $\Delta$ is \fcntm{} minus the control, with positive pairs in parentheses.}
+\label{tab:concat}
+\small
+\begin{tabular}{llcccc}
+\toprule
+Corpus & Read-out & \fcntm{} & Concatenated & $\Delta$ (positive pairs) \\
+\midrule
+GitHub & $\beta$ & 0.701$\pm$0.016 & 0.683$\pm$0.014 & $+$0.017 (2/3) \\
+GitHub & Class TF--IDF & 0.727$\pm$0.022 & 0.710$\pm$0.020 & $+$0.017 (1/3) \\
+AG News & $\beta$ & 0.586$\pm$0.026 & 0.574$\pm$0.019 & $+$0.012 (2/3) \\
+AG News & Class TF--IDF & 0.612$\pm$0.014 & 0.584$\pm$0.009 & $+$0.028 (3/3) \\
+Civil corpus & $\beta$ & 0.633$\pm$0.014 & 0.623$\pm$0.014 & $+$0.010 (2/3) \\
+Civil corpus & Class TF--IDF & 0.636$\pm$0.014 & 0.606$\pm$0.014 & $+$0.029 (2/3) \\
+\bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[t]
+\centering
+\caption{Title-only routing to the 15 most frequent OpenAlex topics of the civil corpus (seeds 11/23/37; 857 test records, coverage 42.9\%). The TF--IDF classifier is supervised and serves as a reference point, not as a topic model.}
+\label{tab:archival}
+\small
+\begin{tabular}{llcc}
+\toprule
+Method & Input & Accuracy & Macro-F1 \\
+\midrule
+TF--IDF logistic regression (supervised) & title & 0.810 & 0.805 \\
+\fcntm{} & title + abstract & 0.719$\pm$0.016 & 0.676$\pm$0.032 \\
+\fcntm{} & title only & 0.664$\pm$0.004 & 0.624$\pm$0.013 \\
+Concatenated control & title only & 0.653$\pm$0.012 & 0.614$\pm$0.034 \\
+BTM & title only & 0.600$\pm$0.013 & 0.529$\pm$0.043 \\
+LDA & title only & 0.532$\pm$0.039 & 0.458$\pm$0.057 \\
+\bottomrule
+\end{tabular}
+\end{table}

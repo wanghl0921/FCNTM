@@ -1,0 +1,12 @@
+train docs 6000 vocab 5175
+test docs 2000
+meta {'repos': ['duckdb', 'typescript', 'moby', 'redis'], 'per_repo_train': 1500, 'per_repo_test': 1900, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 8000, 'source': 'open-index/open-github-issues (moby, TypeScript, duckdb, redis)'}
+doc embeddings (6000, 384)
+--- BERTopic (seed 37, topics 29, time 107.9s) ---
+    0 qbuf redis idle psub oll obl flags addr sub multi
+    1 docker container daemon run image info volume containers registry running
+    2 type typescript types error javascript function regression vscode property import
+    {'n_topics': 29.0, 'CV_n': 26.0, 'CV': 0.5234, 'NPMI_n': 26.0, 'NPMI': 0.0745, 'UCI_n': 26.0, 'UCI': -2.3156, 'UMass_n': 29.0, 'UMass': -6.732, 'EXCL': 0.5798, 'EXCL_KADJ': 0.5648, 'IRBO': 0.9935}
+   model  n_seeds  K_target  topic_count_mean  CV_mean  CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+BERTopic        1        30              29.0 0.523436     0.0   0.074506       0.0 -2.315613      0.0   -6.731956        0.0   0.579796       0.0        0.564789            0.0   0.993512       0.0
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ro_github_bertopic_s37.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ro_github_bertopic_s.csv

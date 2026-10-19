@@ -1,0 +1,197 @@
+regenerating into C:\Users\ADMINI~1\AppData\Local\Temp\2\fieldview_regen_jhhgiod6
+[github LDA seed 11] background: CV 0.5408 NPMI 0.0583 (n=30.0)
+[github LDA seed 11] summary: CV 0.4687 NPMI -0.3739 (n=20.0)
+[github LDA seed 23] background: CV 0.5542 NPMI 0.0890 (n=30.0)
+[github LDA seed 23] summary: CV 0.4689 NPMI -0.3616 (n=14.0)
+[github LDA seed 37] background: CV 0.5333 NPMI 0.0694 (n=30.0)
+[github LDA seed 37] summary: CV 0.4595 NPMI -0.3624 (n=19.0)
+  nmf_fit_github_seed11.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit nmf_fit_github_seed11.npz
+[github NMF seed 11] background: CV 0.6106 NPMI 0.1587 (n=30.0)
+[github NMF seed 11] summary: CV 0.4343 NPMI -0.3418 (n=22.0)
+  nmf_fit_github_seed23.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit nmf_fit_github_seed23.npz
+[github NMF seed 23] background: CV 0.6049 NPMI 0.1534 (n=30.0)
+[github NMF seed 23] summary: CV 0.4304 NPMI -0.3358 (n=22.0)
+  nmf_fit_github_seed37.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit nmf_fit_github_seed37.npz
+[github NMF seed 37] background: CV 0.6124 NPMI 0.1628 (n=30.0)
+[github NMF seed 37] summary: CV 0.4335 NPMI -0.3460 (n=22.0)
+  btm_fit_github_seed11.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit btm_fit_github_seed11.npz
+[github BTM seed 11] background: CV 0.6974 NPMI 0.2187 (n=30.0)
+[github BTM seed 11] summary: CV 0.4067 NPMI -0.2804 (n=22.0)
+  btm_fit_github_seed23.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit btm_fit_github_seed23.npz
+[github BTM seed 23] background: CV 0.7195 NPMI 0.2390 (n=30.0)
+[github BTM seed 23] summary: CV 0.4063 NPMI -0.2478 (n=20.0)
+  btm_fit_github_seed37.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit btm_fit_github_seed37.npz
+[github BTM seed 37] background: CV 0.7133 NPMI 0.2414 (n=30.0)
+[github BTM seed 37] summary: CV 0.3752 NPMI -0.2225 (n=22.0)
+[agnews LDA seed 11] background: CV 0.4270 NPMI -0.0652 (n=30.0)
+[agnews LDA seed 11] summary: CV 0.4859 NPMI -0.4035 (n=30.0)
+[agnews LDA seed 23] background: CV 0.4166 NPMI -0.0973 (n=30.0)
+[agnews LDA seed 23] summary: CV 0.4803 NPMI -0.3917 (n=29.0)
+[agnews LDA seed 37] background: CV 0.4140 NPMI -0.0874 (n=30.0)
+[agnews LDA seed 37] summary: CV 0.4923 NPMI -0.4045 (n=30.0)
+  nmf_fit_agnews_seed11.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit nmf_fit_agnews_seed11.npz
+[agnews NMF seed 11] background: CV 0.4839 NPMI 0.0550 (n=30.0)
+[agnews NMF seed 11] summary: CV 0.4464 NPMI -0.3567 (n=29.0)
+  nmf_fit_agnews_seed23.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit nmf_fit_agnews_seed23.npz
+[agnews NMF seed 23] background: CV 0.4605 NPMI 0.0357 (n=30.0)
+[agnews NMF seed 23] summary: CV 0.4423 NPMI -0.3451 (n=28.0)
+  nmf_fit_agnews_seed37.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit nmf_fit_agnews_seed37.npz
+[agnews NMF seed 37] background: CV 0.4878 NPMI 0.0578 (n=30.0)
+[agnews NMF seed 37] summary: CV 0.4429 NPMI -0.3470 (n=29.0)
+  btm_fit_agnews_seed11.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit btm_fit_agnews_seed11.npz
+[agnews BTM seed 11] background: CV 0.5902 NPMI 0.1487 (n=30.0)
+[agnews BTM seed 11] summary: CV 0.3790 NPMI -0.2905 (n=30.0)
+  btm_fit_agnews_seed23.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit btm_fit_agnews_seed23.npz
+[agnews BTM seed 23] background: CV 0.5973 NPMI 0.1619 (n=30.0)
+[agnews BTM seed 23] summary: CV 0.4053 NPMI -0.3100 (n=30.0)
+  btm_fit_agnews_seed37.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit btm_fit_agnews_seed37.npz
+[agnews BTM seed 37] background: CV 0.5691 NPMI 0.1492 (n=30.0)
+[agnews BTM seed 37] summary: CV 0.4140 NPMI -0.3062 (n=28.0)
+
+saved C:\Users\ADMINI~1\AppData\Local\Temp\2\fieldview_regen_jhhgiod6\baseline_fieldview.csv
+view           background  summary
+dataset model                     
+agnews  BTM        0.5855   0.3994
+        LDA        0.4192   0.4862
+        NMF        0.4774   0.4439
+github  BTM        0.7101   0.3961
+        LDA        0.5428   0.4657
+        NMF        0.6093   0.4327
+  fieldview_fit_ProdLDA_github_seed11.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit fieldview_fit_ProdLDA_github_seed11.npz
+[github ProdLDA seed 11] background: CV 0.5799 NPMI 0.1156 (n=29.0)
+[github ProdLDA seed 11] summary: CV 0.4872 NPMI -0.3811 (n=15.0)
+  fieldview_fit_ProdLDA_github_seed23.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit fieldview_fit_ProdLDA_github_seed23.npz
+[github ProdLDA seed 23] background: CV 0.5684 NPMI 0.1084 (n=29.0)
+[github ProdLDA seed 23] summary: CV 0.4872 NPMI -0.3654 (n=16.0)
+  fieldview_fit_ProdLDA_github_seed37.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit fieldview_fit_ProdLDA_github_seed37.npz
+[github ProdLDA seed 37] background: CV 0.5771 NPMI 0.0914 (n=30.0)
+[github ProdLDA seed 37] summary: CV 0.4276 NPMI -0.3099 (n=13.0)
+  fieldview_fit_ProdLDA_agnews_seed11.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit fieldview_fit_ProdLDA_agnews_seed11.npz
+[agnews ProdLDA seed 11] background: CV 0.5114 NPMI 0.0454 (n=30.0)
+[agnews ProdLDA seed 11] summary: CV 0.4345 NPMI -0.3478 (n=25.0)
+  fieldview_fit_ProdLDA_agnews_seed23.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit fieldview_fit_ProdLDA_agnews_seed23.npz
+[agnews ProdLDA seed 23] background: CV 0.5222 NPMI 0.0585 (n=30.0)
+[agnews ProdLDA seed 23] summary: CV 0.4332 NPMI -0.3430 (n=27.0)
+  fieldview_fit_ProdLDA_agnews_seed37.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit fieldview_fit_ProdLDA_agnews_seed37.npz
+[agnews ProdLDA seed 37] background: CV 0.4626 NPMI 0.0232 (n=30.0)
+[agnews ProdLDA seed 37] summary: CV 0.4466 NPMI -0.3650 (n=29.0)
+  fieldview_fit_ProdLDA_civil_seed11.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit fieldview_fit_ProdLDA_civil_seed11.npz
+[civil ProdLDA seed 11] background: CV 0.5832 NPMI 0.1359 (n=30.0)
+[civil ProdLDA seed 11] summary: CV 0.4078 NPMI -0.2091 (n=23.0)
+  fieldview_fit_ProdLDA_civil_seed23.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit fieldview_fit_ProdLDA_civil_seed23.npz
+[civil ProdLDA seed 23] background: CV 0.5480 NPMI 0.0979 (n=30.0)
+[civil ProdLDA seed 23] summary: CV 0.4179 NPMI -0.2032 (n=25.0)
+  fieldview_fit_ProdLDA_civil_seed37.npz is not pinned to this fit (stored None); refitting
+  adopting unpinned legacy fit fieldview_fit_ProdLDA_civil_seed37.npz
+[civil ProdLDA seed 37] background: CV 0.5957 NPMI 0.1370 (n=29.0)
+[civil ProdLDA seed 37] summary: CV 0.4309 NPMI -0.1745 (n=23.0)
+
+saved C:\Users\ADMINI~1\AppData\Local\Temp\2\fieldview_regen_jhhgiod6\baseline_fieldview.csv
+view             background  summary
+dataset model                       
+agnews  BTM          0.5855   0.3994
+        LDA          0.4192   0.4862
+        NMF          0.4774   0.4439
+        ProdLDA      0.4987   0.4381
+civil   ProdLDA      0.5756   0.4188
+github  BTM          0.7101   0.3961
+        LDA          0.5428   0.4657
+        NMF          0.6093   0.4327
+        ProdLDA      0.5751   0.4674
+[civil LDA seed 11] background: CV 0.5513 NPMI 0.0675 (n=30.0)
+[civil LDA seed 11] summary: CV 0.4179 NPMI -0.1820 (n=28.0)
+[civil LDA seed 23] background: CV 0.5470 NPMI 0.0259 (n=30.0)
+[civil LDA seed 23] summary: CV 0.4191 NPMI -0.1509 (n=26.0)
+[civil LDA seed 37] background: CV 0.5632 NPMI 0.0774 (n=30.0)
+[civil LDA seed 37] summary: CV 0.4073 NPMI -0.1852 (n=28.0)
+[civil NMF seed 11] background: CV 0.5997 NPMI 0.1407 (n=30.0)
+[civil NMF seed 11] summary: CV 0.3841 NPMI -0.1252 (n=29.0)
+[civil NMF seed 23] background: CV 0.5909 NPMI 0.1289 (n=30.0)
+[civil NMF seed 23] summary: CV 0.4105 NPMI -0.1422 (n=28.0)
+[civil NMF seed 37] background: CV 0.6088 NPMI 0.1405 (n=30.0)
+[civil NMF seed 37] summary: CV 0.3998 NPMI -0.1370 (n=28.0)
+[civil BTM seed 11] background: CV 0.5872 NPMI 0.1284 (n=30.0)
+[civil BTM seed 11] summary: CV 0.3893 NPMI -0.1023 (n=27.0)
+[civil BTM seed 23] background: CV 0.5760 NPMI 0.1252 (n=30.0)
+[civil BTM seed 23] summary: CV 0.3729 NPMI -0.0898 (n=27.0)
+[civil BTM seed 37] background: CV 0.6033 NPMI 0.1430 (n=29.0)
+[civil BTM seed 37] summary: CV 0.3834 NPMI -0.1023 (n=26.0)
+
+saved C:\Users\ADMINI~1\AppData\Local\Temp\2\fieldview_regen_jhhgiod6\baseline_fieldview.csv
+view             background  summary
+dataset model                       
+agnews  BTM          0.5855   0.3994
+        LDA          0.4192   0.4862
+        NMF          0.4774   0.4439
+        ProdLDA      0.4987   0.4381
+civil   BTM          0.5889   0.3819
+        LDA          0.5538   0.4148
+        NMF          0.5998   0.3981
+        ProdLDA      0.5756   0.4188
+github  BTM          0.7101   0.3961
+        LDA          0.5428   0.4657
+        NMF          0.6093   0.4327
+        ProdLDA      0.5751   0.4674
+archived previous CSV to backup_baseline_fieldview_pre_identity.csv
+archive replaced with the identity-carrying CSV
+{
+ "started_utc": "2026-10-12T01:30:08+00:00",
+ "tmp": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\2\\fieldview_regen_jhhgiod6",
+ "runs": [
+  {
+   "tag": "github+agnews LDA/NMF/BTM",
+   "rc": 0,
+   "seconds": 1011.5
+  },
+  {
+   "tag": "ProdLDA all corpora",
+   "rc": 0,
+   "seconds": 101.5
+  },
+  {
+   "tag": "civil LDA/NMF/BTM (refit)",
+   "rc": 0,
+   "seconds": 5718.2
+  }
+ ],
+ "comparison": {
+  "unmatched_keys": 0,
+  "max_delta": 0.0,
+  "per_column": {
+   "n_topics": 0.0,
+   "CV": 0.0,
+   "CV_n": 0.0,
+   "NPMI": 0.0,
+   "NPMI_n": 0.0
+  },
+  "rows_old": 72,
+  "rows_new": 72
+ },
+ "new_columns": [
+  "eval_id",
+  "fit_id"
+ ],
+ "replaced": true,
+ "backup": "backup_baseline_fieldview_pre_identity.csv",
+ "finished_utc": "2026-10-12T03:24:00+00:00"
+}

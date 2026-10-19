@@ -1,0 +1,22 @@
+train docs 6000 vocab 4724
+test docs 7600
+meta {'train_per_class': 1500, 'test_per_class': 1900, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 6000, 'source': 'AG News (official train/test CSVs)'}
+doc embeddings (6000, 384)
+--- BERTopic (seed 11, topics 29, time 108.6s) ---
+    0 game night season sox coach team win league victory baseball
+    1 oracle peoplesoft inc company profit fullquote billion corp million percent
+    2 microsoft music apple ibm windows intel computer chip sun linux
+    {'n_topics': 29.0, 'CV_n': 28.0, 'CV': 0.4765, 'NPMI_n': 28.0, 'NPMI': 0.0118, 'UCI_n': 28.0, 'UCI': -4.1171, 'UMass_n': 29.0, 'UMass': -9.4301, 'EXCL': 0.7, 'EXCL_KADJ': 0.6893, 'IRBO': 0.9989}
+--- BERTopic (seed 23, topics 29, time 20.2s) ---
+    0 game sox night season coach win league team baseball series
+    1 oil prices stocks dollar profit growth percent earnings quarter higher
+    2 gaza killed palestinian baghdad iraq israeli israel bomb arafat police
+    {'n_topics': 29.0, 'CV_n': 28.0, 'CV': 0.4746, 'NPMI_n': 28.0, 'NPMI': 0.031, 'UCI_n': 28.0, 'UCI': -3.6457, 'UMass_n': 29.0, 'UMass': -8.8457, 'EXCL': 0.7022, 'EXCL_KADJ': 0.6915, 'IRBO': 0.9992}
+--- BERTopic (seed 37, topics 29, time 21.0s) ---
+    0 game season night coach sox win team league red three
+    1 oil prices stocks dollar economy growth crude rates economic york
+    2 oracle peoplesoft billion corp profit fullquote buy million inc quarter
+    {'n_topics': 29.0, 'CV_n': 29.0, 'CV': 0.5143, 'NPMI_n': 29.0, 'NPMI': 0.0626, 'UCI_n': 29.0, 'UCI': -3.0427, 'UMass_n': 29.0, 'UMass': -8.148, 'EXCL': 0.6725, 'EXCL_KADJ': 0.6608, 'IRBO': 0.9986}
+   model  n_seeds  K_target  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+BERTopic        3        30              29.0 0.488469 0.022353   0.035116  0.025618 -3.601823 0.538557   -8.807922   0.641867   0.691571   0.01653        0.680556        0.01712   0.998922  0.000308
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ro_agnews_bertopic.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ro_agnews_bertopic_summary.csv

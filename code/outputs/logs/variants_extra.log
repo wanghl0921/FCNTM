@@ -1,0 +1,16 @@
+docs=577 with=292 without=285
+  recon2       seed=53 item_recall=0.108 CV_all=0.509 CV_with=0.544 CV_without=0.365 best_ep=576 (127s)
+  fd50         seed=53 item_recall=0.108 CV_all=0.538 CV_with=0.548 CV_without=0.249 best_ep=670 (132s)
+  recon2       seed=71 item_recall=0.136 CV_all=0.501 CV_with=0.509 CV_without=0.456 best_ep=473 (113s)
+  fd50         seed=71 item_recall=0.102 CV_all=0.511 CV_with=0.512 CV_without=0.488 best_ep=520 (115s)
+  recon2       seed=89 item_recall=0.161 CV_all=0.500 CV_with=0.495 CV_without=0.470 best_ep=712 (161s)
+  fd50         seed=89 item_recall=0.175 CV_all=0.541 CV_with=0.597 CV_without=0.382 best_ep=918 (184s)
+  recon2       seed=97 item_recall=0.141 CV_all=0.507 CV_with=0.515 CV_without=0.442 best_ep=817 (168s)
+  fd50         seed=97 item_recall=0.131 CV_all=0.549 CV_with=0.583 CV_without=0.396 best_ep=780 (159s)
+  recon2       seed=101 item_recall=0.076 CV_all=0.526 CV_with=0.559 CV_without=0.284 best_ep=836 (181s)
+  fd50         seed=101 item_recall=0.087 CV_all=0.540 CV_with=0.571 CV_without=0.290 best_ep=846 (173s)
+  recon2       seed=113 item_recall=0.089 CV_all=0.584 CV_with=0.599 CV_without=0.623 best_ep=674 (151s)
+  fd50         seed=113 item_recall=0.094 CV_all=0.541 CV_with=0.546 CV_without=0.460 best_ep=665 (141s)
+  recon2       seed=127 item_recall=0.144 CV_all=0.456 CV_with=0.455 CV_without=0.429 best_ep=895 (191s)
+  fd50         seed=127 item_recall=0.197 CV_all=0.532 CV_with=0.571 CV_without=0.426 best_ep=1167 (230s)
+saved outputs/variant_screen_extra.csv

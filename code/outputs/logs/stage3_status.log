@@ -1,0 +1,5 @@
+﻿=== stage3 started ===
+[2026-09-11 14:46:20] START stage3_missing_off
+[2026-09-11 17:37:08] END stage3_missing_off exit=0
+[2026-09-11 17:37:08] missing-field csv data rows=6
+[2026-09-11 17:37:08] ALL DONE

@@ -1,0 +1,19 @@
+train docs 6000 vocab 4724
+test docs 7600
+meta {'train_per_class': 1500, 'test_per_class': 1900, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 6000, 'source': 'AG News (official train/test CSVs)'}
+--- Top2Vec (seed 11, topics 2, time 137.3s) ---
+    0 two first year one world wednesday monday friday iraq tuesday
+    1 oil prices stocks profit percent quarter year company inc sales
+    {'n_topics': 2.0, 'CV_n': 2.0, 'CV': 0.479, 'NPMI_n': 2.0, 'NPMI': 0.0813, 'UCI_n': 2.0, 'UCI': 0.3381, 'UMass_n': 2.0, 'UMass': -2.7558, 'EXCL': 0.6389, 'EXCL_KADJ': 0.2778, 'IRBO': 0.9778}
+--- Top2Vec (seed 23, topics 4, time 54.1s) ---
+    0 two one year first iraq world yesterday wednesday president friday
+    1 oil prices stocks profit quarter percent year sales earnings third
+    2 fullquote inc company stocks software aspx quickinfo investor microsoft first
+    {'n_topics': 4.0, 'CV_n': 4.0, 'CV': 0.535, 'NPMI_n': 4.0, 'NPMI': 0.1351, 'UCI_n': 4.0, 'UCI': 0.2238, 'UMass_n': 4.0, 'UMass': -3.2403, 'EXCL': 0.4353, 'EXCL_KADJ': 0.2471, 'IRBO': 0.9573}
+--- Top2Vec (seed 37, topics 2, time 52.0s) ---
+    0 two first year one world wednesday monday friday iraq tuesday
+    1 oil prices stocks profit percent quarter inc company year sales
+    {'n_topics': 2.0, 'CV_n': 2.0, 'CV': 0.479, 'NPMI_n': 2.0, 'NPMI': 0.0813, 'UCI_n': 2.0, 'UCI': 0.3381, 'UMass_n': 2.0, 'UMass': -2.7491, 'EXCL': 0.6396, 'EXCL_KADJ': 0.2791, 'IRBO': 0.9913}
+  model  n_seeds  K_target  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+Top2Vec        3        30          2.666667 0.497675 0.032336   0.099225  0.031083  0.299974 0.065973   -2.915064   0.281718   0.571279  0.117723        0.268036       0.018121   0.975466  0.017146
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ro_agnews_top2vec.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\ro_agnews_top2vec_summary.csv

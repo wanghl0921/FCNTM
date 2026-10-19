@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+Text with superscript cite \textsuperscript{[1,2]} end.
+
+\begin{table}[t]
+\centering
+\caption{Probe caption}
+\label{tab:probe}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+Model & Read-out & $C_V$ & NPMI \\
+\midrule
+\multirow{2}{*}{FC-NTM} & $\beta$ & 0.721$\pm$0.016 & 0.266 \\
+ & Class TF--IDF & 0.700 & 0.235 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{equation}
+q_f(z_f\mid x_f)=\mathcal N\big(\mu_f(x_f),\operatorname{diag}(\sigma_f^2(x_f))\big)
+\label{eq:probe}
+\end{equation}
+
+Flattened: \begin{tabular}{llcc} A & B & C & D \\ 1 & 2 & 3 & 4 \end{tabular}
+
+Header-span table: \begin{tabular}{lcccc} \multirow{2}{*}{$\lambda_f$} & \multicolumn{2}{c}{$\beta$ read-out} & \multicolumn{2}{c}{Class TF--IDF} \\ & $C_V$ & NPMI & $C_V$ & NPMI \\ 0 & 0.721 & 0.266 & 0.700 & 0.235 \\ \end{tabular}
+\end{document}

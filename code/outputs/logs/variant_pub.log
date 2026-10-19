@@ -1,0 +1,12 @@
+[github] train=1000 test=400 vocab=2682 K=20 seeds=11 epochs=800
+  mean field lengths: cause=70.9 item=5.2
+  field weights if auto: (1.0369639104742832, 14.026707363601677)
+  base   seed=11 best_ep= 800 beta CV=0.525 NPMI=0.017 EX=0.006 | cTF CV=0.440 NPMI=0.092 | recall=0.078 prec=0.224 causeCV=0.517 (362s)
+  fused  seed=11 best_ep= 793 beta CV=0.612 NPMI=0.149 EX=0.007 | cTF CV=0.446 NPMI=0.099 | recall=0.057 prec=0.178 causeCV=0.525 (423s)
+  gate   seed=11 best_ep= 793 beta CV=0.610 NPMI=0.162 EX=0.007 | cTF CV=0.440 NPMI=0.093 | recall=0.059 prec=0.182 causeCV=0.533 (428s)
+  poe    seed=11 best_ep= 571 beta CV=0.545 NPMI=0.048 EX=0.005 | cTF CV=0.424 NPMI=0.088 | recall=0.067 prec=0.200 causeCV=0.498 (385s)
+  autow  seed=11 best_ep= 800 beta CV=0.507 NPMI=-0.069 EX=0.008 | cTF CV=0.490 NPMI=0.150 | recall=0.061 prec=0.169 causeCV=0.476 (364s)
+  token  seed=11 best_ep= 800 beta CV=0.437 NPMI=-0.165 EX=0.008 | cTF CV=0.462 NPMI=0.087 | recall=0.061 prec=0.179 causeCV=0.458 (376s)
+  excl   seed=11 best_ep= 800 beta CV=0.525 NPMI=0.017 EX=0.006 | cTF CV=0.440 NPMI=0.092 | recall=0.078 prec=0.224 causeCV=0.517 (379s)
+  prior  seed=11 best_ep= 610 beta CV=0.660 NPMI=0.094 EX=0.006 | cTF CV=0.438 NPMI=0.089 | recall=0.071 prec=0.213 causeCV=0.545 (411s)
+saved outputs\variant_public.csv

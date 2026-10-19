@@ -1,0 +1,326 @@
+train docs 6000 vocab 4724
+test docs 7600
+meta {'train_per_class': 1500, 'test_per_class': 1900, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 6000, 'source': 'AG News (official train/test CSVs)'}
+doc embeddings (6000, 384)
+--- LDA (seed 11, topics 30, time 103.1s) ---
+    0 inc percent corp company internet shares search online largest stock
+    1 offer fund global growth california generation selling corp business cuts
+    2 music mail service launch player storage local networks device one
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4318, 'NPMI_n': 30.0, 'NPMI': -0.0454, 'UCI_n': 30.0, 'UCI': -3.8165, 'UMass_n': 30.0, 'UMass': -8.1208, 'EXCL': 0.712, 'EXCL_KADJ': 0.7021, 'IRBO': 0.998}
+--- LDA (seed 23, topics 30, time 98.3s) ---
+    0 google space buy million wireless stock sony russia billion russian
+    1 gaza israeli israel west palestinian font northern army plan palestinians
+    2 league products champions yankees security club york broadband former san
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4242, 'NPMI_n': 30.0, 'NPMI': -0.079, 'UCI_n': 30.0, 'UCI': -4.5548, 'UMass_n': 30.0, 'UMass': -8.9525, 'EXCL': 0.7088, 'EXCL_KADJ': 0.6987, 'IRBO': 0.998}
+--- LDA (seed 37, topics 30, time 97.6s) ---
+    0 buy world security board mark tour some project secure time
+    1 team test day back first storage network sunday australia watch
+    2 united states champions loss insurance nations club league manchester england
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4061, 'NPMI_n': 30.0, 'NPMI': -0.0747, 'UCI_n': 30.0, 'UCI': -4.424, 'UMass_n': 30.0, 'UMass': -8.7887, 'EXCL': 0.6972, 'EXCL_KADJ': 0.6867, 'IRBO': 0.9964}
+--- BTM (seed 11, topics 30, time 953.7s) ---
+    0 first gold second olympic athens win world medal test two
+    1 one year world time all years long last first like
+    2 nuclear korea iran north united talks south states japan korean
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5684, 'NPMI_n': 30.0, 'NPMI': 0.1481, 'UCI_n': 30.0, 'UCI': -0.3556, 'UMass_n': 30.0, 'UMass': -4.4731, 'EXCL': 0.4226, 'EXCL_KADJ': 0.4027, 'IRBO': 0.9893}
+--- BTM (seed 23, topics 30, time 955.7s) ---
+    0 cup lead first woods ryder one tiger year tour round
+    1 test india australia cricket first olympic gold athens pakistan second
+    2 sox game series first red run three night league season
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.605, 'NPMI_n': 30.0, 'NPMI': 0.156, 'UCI_n': 30.0, 'UCI': -0.1633, 'UMass_n': 30.0, 'UMass': -4.2893, 'EXCL': 0.4314, 'EXCL_KADJ': 0.4118, 'IRBO': 0.9889}
+--- BTM (seed 37, topics 30, time 965.6s) ---
+    0 united league manchester champions england football chelsea club striker arsenal
+    1 coach team players football season one game time year now
+    2 fullquote stocks inc profit percent quarter ticker investor sales aspx
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.6306, 'NPMI_n': 30.0, 'NPMI': 0.1799, 'UCI_n': 30.0, 'UCI': 0.1819, 'UMass_n': 30.0, 'UMass': -4.0682, 'EXCL': 0.451, 'EXCL_KADJ': 0.4321, 'IRBO': 0.991}
+--- NMF (seed 11, topics 30, time 11.4s) ---
+    0 today major business cut move next announced plans jobs europe
+    1 stocks fullquote shares ticker inc investor stock aspx quickinfo york
+    2 oil prices price crude high economy energy growth gas supply
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4959, 'NPMI_n': 30.0, 'NPMI': 0.0693, 'UCI_n': 30.0, 'UCI': -1.6842, 'UMass_n': 30.0, 'UMass': -6.0489, 'EXCL': 0.8072, 'EXCL_KADJ': 0.8005, 'IRBO': 0.9987}
+--- NMF (seed 23, topics 30, time 11.6s) ---
+    0 major companies business cut late move jobs national bankruptcy close
+    1 fullquote stocks york shares ticker investor quickinfo aspx stock street
+    2 oil prices dollar economy growth investors price economic stocks crude
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4783, 'NPMI_n': 30.0, 'NPMI': 0.0564, 'UCI_n': 30.0, 'UCI': -1.804, 'UMass_n': 30.0, 'UMass': -6.1366, 'EXCL': 0.8071, 'EXCL_KADJ': 0.8004, 'IRBO': 0.9988}
+--- NMF (seed 37, topics 30, time 10.2s) ---
+    0 major business get cut air companies big good europe thursday
+    1 stocks fullquote shares ticker investor inc quickinfo aspx york street
+    2 oil prices price high record crude energy consumer yukos gas
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.508, 'NPMI_n': 30.0, 'NPMI': 0.0825, 'UCI_n': 30.0, 'UCI': -1.3534, 'UMass_n': 30.0, 'UMass': -5.7046, 'EXCL': 0.8033, 'EXCL_KADJ': 0.7965, 'IRBO': 0.9991}
+--- NeuralLDA (seed 11, topics 30, time 934.3s) ---
+    0 killed bomb attack baghdad near car least police people military
+    1 stock public trading shares share bank google company ebay street
+    2 south korea talks north japan india korean pakistan japanese nuclear
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5036, 'NPMI_n': 30.0, 'NPMI': 0.0431, 'UCI_n': 30.0, 'UCI': -2.5068, 'UMass_n': 30.0, 'UMass': -7.2228, 'EXCL': 0.1065, 'EXCL_KADJ': 0.0757, 'IRBO': 0.9992}
+--- NeuralLDA (seed 23, topics 30, time 974.5s) ---
+    0 president election bush presidential john kerry elections vote country campaign
+    1 wireless phone mobile ibm announced phones generation speed chip nokia
+    2 open cup round set time won title top tennis woods
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5384, 'NPMI_n': 30.0, 'NPMI': 0.0737, 'UCI_n': 30.0, 'UCI': -1.8622, 'UMass_n': 30.0, 'UMass': -6.6649, 'EXCL': 0.1117, 'EXCL_KADJ': 0.0811, 'IRBO': 0.9998}
+--- NeuralLDA (seed 37, topics 30, time 625.2s) ---
+    0 stocks york profit third quarter earnings fullquote ticker investor lower
+    1 world williams open gold top final set wins title round
+    2 court industry called supreme case alleged legal judge piracy arrested
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4893, 'NPMI_n': 30.0, 'NPMI': 0.0438, 'UCI_n': 30.0, 'UCI': -2.3233, 'UMass_n': 30.0, 'UMass': -6.9642, 'EXCL': 0.0814, 'EXCL_KADJ': 0.0497, 'IRBO': 0.9998}
+--- ETM (seed 11, topics 30, time 671.7s) ---
+    0 doubt michigan jacksonville steelers bettis torn ranked minneapolis jaguars entirely
+    1 modern art expanded professor mall failures saturn letters probe pioneer
+    2 charlie laptop sirius bud receiver mel satellite depot mcdonald batteries
+    {'n_topics': 30.0, 'CV_n': 27.0, 'CV': 0.5259, 'NPMI_n': 27.0, 'NPMI': -0.4287, 'UCI_n': 27.0, 'UCI': -12.616, 'UMass_n': 30.0, 'UMass': -18.989, 'EXCL': 0.8894, 'EXCL_KADJ': 0.8856, 'IRBO': 0.9996}
+--- ETM (seed 23, topics 30, time 664.5s) ---
+    0 master eta khan basque stations boxing eriksson experience sven separatist
+    1 lock label absence engines protection postal copy calendar library imac
+    2 initially milestone registered anything shrinking steam disappoints semiconductor saudi slowing
+    {'n_topics': 30.0, 'CV_n': 29.0, 'CV': 0.5213, 'NPMI_n': 29.0, 'NPMI': -0.421, 'UCI_n': 29.0, 'UCI': -12.4555, 'UMass_n': 30.0, 'UMass': -19.1329, 'EXCL': 0.8898, 'EXCL_KADJ': 0.886, 'IRBO': 0.9991}
+--- ETM (seed 37, topics 30, time 799.8s) ---
+    0 bears rice arctic phelps aids qualifying qualified master mel lsu
+    1 motorola rim stockholm revival infotype financequotelookup qtype sym qcat jhtml
+    2 jacksonville espn jaguars retired chosen surface restaurant northeastern symbian drivers
+    {'n_topics': 30.0, 'CV_n': 28.0, 'CV': 0.5394, 'NPMI_n': 28.0, 'NPMI': -0.4292, 'UCI_n': 28.0, 'UCI': -12.6117, 'UMass_n': 30.0, 'UMass': -19.4049, 'EXCL': 0.8817, 'EXCL_KADJ': 0.8776, 'IRBO': 0.9995}
+  [CTMLite seed 11] epoch 1 loss 166.451 klw 0.0010
+  [CTMLite seed 11] epoch 2 loss 156.830 klw 0.0020
+  [CTMLite seed 11] epoch 3 loss 152.165 klw 0.0030
+  [CTMLite seed 11] epoch 4 loss 149.654 klw 0.0040
+  [CTMLite seed 11] epoch 5 loss 147.870 klw 0.0050
+  [CTMLite seed 11] epoch 25 loss 142.433 klw 0.0200
+  [CTMLite seed 11] epoch 50 loss 140.402 klw 0.0200
+  [CTMLite seed 11] epoch 75 loss 139.661 klw 0.0200
+  [CTMLite seed 11] epoch 100 loss 139.186 klw 0.0200
+  [CTMLite seed 11] epoch 125 loss 139.172 klw 0.0200
+  [CTMLite seed 11] epoch 150 loss 138.587 klw 0.0200
+  [CTMLite seed 11] epoch 175 loss 138.302 klw 0.0200
+  [CTMLite seed 11] epoch 200 loss 137.905 klw 0.0200
+  [CTMLite seed 11] epoch 225 loss 137.903 klw 0.0200
+  [CTMLite seed 11] epoch 250 loss 137.568 klw 0.0200
+  [CTMLite seed 11] epoch 275 loss 137.660 klw 0.0200
+  [CTMLite seed 11] epoch 300 loss 137.316 klw 0.0200
+  [CTMLite seed 11] epoch 325 loss 136.918 klw 0.0200
+  [CTMLite seed 11] epoch 350 loss 136.958 klw 0.0200
+  [CTMLite seed 11] epoch 375 loss 136.778 klw 0.0200
+  [CTMLite seed 11] epoch 400 loss 136.656 klw 0.0200
+  [CTMLite seed 11] epoch 425 loss 136.481 klw 0.0200
+  [CTMLite seed 11] epoch 450 loss 136.230 klw 0.0200
+  [CTMLite seed 11] epoch 475 loss 136.075 klw 0.0200
+  [CTMLite seed 11] epoch 500 loss 135.868 klw 0.0200
+  [CTMLite seed 11] epoch 525 loss 135.932 klw 0.0200
+  [CTMLite seed 11] epoch 550 loss 135.864 klw 0.0200
+  [CTMLite seed 11] epoch 575 loss 135.496 klw 0.0200
+  [CTMLite seed 11] epoch 600 loss 135.438 klw 0.0200
+  [CTMLite seed 11] epoch 625 loss 135.427 klw 0.0200
+  [CTMLite seed 11] epoch 650 loss 135.284 klw 0.0200
+  [CTMLite seed 11] epoch 675 loss 135.358 klw 0.0200
+  [CTMLite seed 11] epoch 700 loss 135.320 klw 0.0200
+  [CTMLite seed 11] epoch 725 loss 135.166 klw 0.0200
+  [CTMLite seed 11] epoch 750 loss 134.862 klw 0.0200
+  [CTMLite seed 11] epoch 775 loss 135.155 klw 0.0200
+  [CTMLite seed 11] epoch 800 loss 134.793 klw 0.0200
+  [CTMLite seed 11] epoch 825 loss 134.939 klw 0.0200
+  [CTMLite seed 11] epoch 850 loss 134.928 klw 0.0200
+  [CTMLite seed 11] epoch 875 loss 134.744 klw 0.0200
+  [CTMLite seed 11] epoch 900 loss 134.726 klw 0.0200
+  [CTMLite seed 11] epoch 925 loss 134.601 klw 0.0200
+  [CTMLite seed 11] epoch 950 loss 134.533 klw 0.0200
+  [CTMLite seed 11] epoch 975 loss 134.296 klw 0.0200
+  [CTMLite seed 11] epoch 1000 loss 134.417 klw 0.0200
+  [CTMLite seed 11] epoch 1025 loss 134.283 klw 0.0200
+  [CTMLite seed 11] epoch 1050 loss 134.584 klw 0.0200
+  [CTMLite seed 11] epoch 1075 loss 134.608 klw 0.0200
+  [CTMLite seed 11] epoch 1100 loss 134.285 klw 0.0200
+  [CTMLite seed 11] epoch 1125 loss 134.386 klw 0.0200
+  [CTMLite seed 11] epoch 1150 loss 134.088 klw 0.0200
+  [CTMLite seed 11] epoch 1175 loss 134.418 klw 0.0200
+  [CTMLite seed 11] epoch 1200 loss 134.230 klw 0.0200
+  [CTMLite seed 11] epoch 1225 loss 134.168 klw 0.0200
+--- CTMLite (seed 11, topics 30, time 1868.6s) ---
+    0 election president prime minister vote presidential campaign party opposition leader
+    1 two australian six australia test bomb india attack today seven
+    2 baseball major series manager hits reserve growth interest three expos
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4468, 'NPMI_n': 30.0, 'NPMI': -0.0229, 'UCI_n': 30.0, 'UCI': -3.7454, 'UMass_n': 30.0, 'UMass': -8.5022, 'EXCL': 0.1053, 'EXCL_KADJ': 0.0744, 'IRBO': 0.9995}
+  [CTMLite seed 23] epoch 1 loss 166.571 klw 0.0010
+  [CTMLite seed 23] epoch 2 loss 156.936 klw 0.0020
+  [CTMLite seed 23] epoch 3 loss 152.579 klw 0.0030
+  [CTMLite seed 23] epoch 4 loss 149.768 klw 0.0040
+  [CTMLite seed 23] epoch 5 loss 148.049 klw 0.0050
+  [CTMLite seed 23] epoch 25 loss 141.915 klw 0.0200
+  [CTMLite seed 23] epoch 50 loss 140.537 klw 0.0200
+  [CTMLite seed 23] epoch 75 loss 139.565 klw 0.0200
+  [CTMLite seed 23] epoch 100 loss 139.097 klw 0.0200
+  [CTMLite seed 23] epoch 125 loss 138.799 klw 0.0200
+  [CTMLite seed 23] epoch 150 loss 138.465 klw 0.0200
+  [CTMLite seed 23] epoch 175 loss 138.333 klw 0.0200
+  [CTMLite seed 23] epoch 200 loss 138.073 klw 0.0200
+  [CTMLite seed 23] epoch 225 loss 137.923 klw 0.0200
+  [CTMLite seed 23] epoch 250 loss 137.482 klw 0.0200
+  [CTMLite seed 23] epoch 275 loss 137.511 klw 0.0200
+  [CTMLite seed 23] epoch 300 loss 137.376 klw 0.0200
+  [CTMLite seed 23] epoch 325 loss 136.906 klw 0.0200
+  [CTMLite seed 23] epoch 350 loss 136.877 klw 0.0200
+  [CTMLite seed 23] epoch 375 loss 136.775 klw 0.0200
+  [CTMLite seed 23] epoch 400 loss 136.701 klw 0.0200
+  [CTMLite seed 23] epoch 425 loss 136.395 klw 0.0200
+  [CTMLite seed 23] epoch 450 loss 136.144 klw 0.0200
+  [CTMLite seed 23] epoch 475 loss 136.074 klw 0.0200
+  [CTMLite seed 23] epoch 500 loss 136.121 klw 0.0200
+  [CTMLite seed 23] epoch 525 loss 135.908 klw 0.0200
+  [CTMLite seed 23] epoch 550 loss 135.858 klw 0.0200
+  [CTMLite seed 23] epoch 575 loss 135.597 klw 0.0200
+  [CTMLite seed 23] epoch 600 loss 135.427 klw 0.0200
+  [CTMLite seed 23] epoch 625 loss 135.526 klw 0.0200
+  [CTMLite seed 23] epoch 650 loss 135.195 klw 0.0200
+  [CTMLite seed 23] epoch 675 loss 135.237 klw 0.0200
+  [CTMLite seed 23] epoch 700 loss 135.081 klw 0.0200
+  [CTMLite seed 23] epoch 725 loss 135.165 klw 0.0200
+  [CTMLite seed 23] epoch 750 loss 135.069 klw 0.0200
+  [CTMLite seed 23] epoch 775 loss 134.818 klw 0.0200
+  [CTMLite seed 23] epoch 800 loss 134.739 klw 0.0200
+  [CTMLite seed 23] epoch 825 loss 134.854 klw 0.0200
+  [CTMLite seed 23] epoch 850 loss 134.930 klw 0.0200
+  [CTMLite seed 23] epoch 875 loss 134.670 klw 0.0200
+  [CTMLite seed 23] epoch 900 loss 134.721 klw 0.0200
+  [CTMLite seed 23] epoch 925 loss 134.593 klw 0.0200
+  [CTMLite seed 23] epoch 950 loss 134.524 klw 0.0200
+  [CTMLite seed 23] epoch 975 loss 134.520 klw 0.0200
+  [CTMLite seed 23] epoch 1000 loss 134.324 klw 0.0200
+  [CTMLite seed 23] epoch 1025 loss 134.528 klw 0.0200
+  [CTMLite seed 23] epoch 1050 loss 134.358 klw 0.0200
+  [CTMLite seed 23] epoch 1075 loss 134.479 klw 0.0200
+  [CTMLite seed 23] epoch 1100 loss 134.272 klw 0.0200
+  [CTMLite seed 23] epoch 1125 loss 134.186 klw 0.0200
+  [CTMLite seed 23] epoch 1150 loss 134.433 klw 0.0200
+  [CTMLite seed 23] epoch 1175 loss 134.352 klw 0.0200
+  [CTMLite seed 23] epoch 1200 loss 134.104 klw 0.0200
+--- CTMLite (seed 23, topics 30, time 1801.0s) ---
+    0 police bomb suspected prison egyptian killed three people accused islamic
+    1 top round russia final russian american moscow lead stage vladimir
+    2 profit third quarter loss earnings posted sales reported drop helped
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4357, 'NPMI_n': 30.0, 'NPMI': -0.0328, 'UCI_n': 30.0, 'UCI': -3.8227, 'UMass_n': 30.0, 'UMass': -8.6502, 'EXCL': 0.1038, 'EXCL_KADJ': 0.0729, 'IRBO': 0.9998}
+  [CTMLite seed 37] epoch 1 loss 166.574 klw 0.0010
+  [CTMLite seed 37] epoch 2 loss 157.350 klw 0.0020
+  [CTMLite seed 37] epoch 3 loss 152.780 klw 0.0030
+  [CTMLite seed 37] epoch 4 loss 149.996 klw 0.0040
+  [CTMLite seed 37] epoch 5 loss 148.183 klw 0.0050
+  [CTMLite seed 37] epoch 25 loss 142.078 klw 0.0200
+  [CTMLite seed 37] epoch 50 loss 140.361 klw 0.0200
+  [CTMLite seed 37] epoch 75 loss 139.449 klw 0.0200
+  [CTMLite seed 37] epoch 100 loss 139.208 klw 0.0200
+  [CTMLite seed 37] epoch 125 loss 138.831 klw 0.0200
+  [CTMLite seed 37] epoch 150 loss 138.222 klw 0.0200
+  [CTMLite seed 37] epoch 175 loss 138.101 klw 0.0200
+  [CTMLite seed 37] epoch 200 loss 138.212 klw 0.0200
+  [CTMLite seed 37] epoch 225 loss 137.921 klw 0.0200
+  [CTMLite seed 37] epoch 250 loss 137.832 klw 0.0200
+  [CTMLite seed 37] epoch 275 loss 137.700 klw 0.0200
+  [CTMLite seed 37] epoch 300 loss 137.280 klw 0.0200
+  [CTMLite seed 37] epoch 325 loss 137.202 klw 0.0200
+  [CTMLite seed 37] epoch 350 loss 136.966 klw 0.0200
+  [CTMLite seed 37] epoch 375 loss 136.913 klw 0.0200
+  [CTMLite seed 37] epoch 400 loss 136.703 klw 0.0200
+  [CTMLite seed 37] epoch 425 loss 136.463 klw 0.0200
+  [CTMLite seed 37] epoch 450 loss 136.384 klw 0.0200
+  [CTMLite seed 37] epoch 475 loss 136.138 klw 0.0200
+  [CTMLite seed 37] epoch 500 loss 136.002 klw 0.0200
+  [CTMLite seed 37] epoch 525 loss 135.880 klw 0.0200
+  [CTMLite seed 37] epoch 550 loss 135.690 klw 0.0200
+  [CTMLite seed 37] epoch 575 loss 135.803 klw 0.0200
+  [CTMLite seed 37] epoch 600 loss 135.742 klw 0.0200
+  [CTMLite seed 37] epoch 625 loss 135.557 klw 0.0200
+  [CTMLite seed 37] epoch 650 loss 135.493 klw 0.0200
+  [CTMLite seed 37] epoch 675 loss 135.072 klw 0.0200
+  [CTMLite seed 37] epoch 700 loss 135.141 klw 0.0200
+  [CTMLite seed 37] epoch 725 loss 135.156 klw 0.0200
+  [CTMLite seed 37] epoch 750 loss 134.961 klw 0.0200
+  [CTMLite seed 37] epoch 775 loss 135.068 klw 0.0200
+  [CTMLite seed 37] epoch 800 loss 135.089 klw 0.0200
+  [CTMLite seed 37] epoch 825 loss 134.894 klw 0.0200
+  [CTMLite seed 37] epoch 850 loss 134.968 klw 0.0200
+  [CTMLite seed 37] epoch 875 loss 134.633 klw 0.0200
+  [CTMLite seed 37] epoch 900 loss 134.734 klw 0.0200
+  [CTMLite seed 37] epoch 925 loss 134.567 klw 0.0200
+  [CTMLite seed 37] epoch 950 loss 134.731 klw 0.0200
+  [CTMLite seed 37] epoch 975 loss 134.711 klw 0.0200
+  [CTMLite seed 37] epoch 1000 loss 134.602 klw 0.0200
+  [CTMLite seed 37] epoch 1025 loss 134.464 klw 0.0200
+  [CTMLite seed 37] epoch 1050 loss 134.293 klw 0.0200
+  [CTMLite seed 37] epoch 1075 loss 134.345 klw 0.0200
+  [CTMLite seed 37] epoch 1100 loss 134.339 klw 0.0200
+  [CTMLite seed 37] epoch 1125 loss 134.164 klw 0.0200
+  [CTMLite seed 37] epoch 1150 loss 134.375 klw 0.0200
+  [CTMLite seed 37] epoch 1175 loss 134.274 klw 0.0200
+  [CTMLite seed 37] epoch 1200 loss 134.223 klw 0.0200
+  [CTMLite seed 37] epoch 1225 loss 133.883 klw 0.0200
+  [CTMLite seed 37] epoch 1250 loss 134.218 klw 0.0200
+  [CTMLite seed 37] epoch 1275 loss 133.936 klw 0.0200
+  [CTMLite seed 37] epoch 1300 loss 134.019 klw 0.0200
+  [CTMLite seed 37] epoch 1325 loss 134.116 klw 0.0200
+  [CTMLite seed 37] epoch 1350 loss 133.917 klw 0.0200
+  [CTMLite seed 37] epoch 1375 loss 134.120 klw 0.0200
+  [CTMLite seed 37] epoch 1400 loss 134.071 klw 0.0200
+  [CTMLite seed 37] epoch 1425 loss 133.981 klw 0.0200
+  [CTMLite seed 37] epoch 1450 loss 133.854 klw 0.0200
+  [CTMLite seed 37] epoch 1475 loss 133.875 klw 0.0200
+  [CTMLite seed 37] epoch 1500 loss 133.872 klw 0.0200
+  [CTMLite seed 37] epoch 1525 loss 133.654 klw 0.0200
+  [CTMLite seed 37] epoch 1550 loss 133.932 klw 0.0200
+  [CTMLite seed 37] epoch 1575 loss 133.969 klw 0.0200
+  [CTMLite seed 37] epoch 1600 loss 133.839 klw 0.0200
+  [CTMLite seed 37] epoch 1625 loss 133.816 klw 0.0200
+  [CTMLite seed 37] epoch 1650 loss 133.576 klw 0.0200
+  [CTMLite seed 37] epoch 1675 loss 133.658 klw 0.0200
+  [CTMLite seed 37] epoch 1700 loss 133.934 klw 0.0200
+  [CTMLite seed 37] epoch 1725 loss 133.748 klw 0.0200
+  [CTMLite seed 37] epoch 1750 loss 133.764 klw 0.0200
+  [CTMLite seed 37] epoch 1775 loss 133.734 klw 0.0200
+  [CTMLite seed 37] epoch 1800 loss 133.803 klw 0.0200
+  [CTMLite seed 37] epoch 1825 loss 133.786 klw 0.0200
+  [CTMLite seed 37] epoch 1850 loss 133.732 klw 0.0200
+  [CTMLite seed 37] epoch 1875 loss 133.647 klw 0.0200
+  [CTMLite seed 37] epoch 1900 loss 133.767 klw 0.0200
+  [CTMLite seed 37] epoch 1925 loss 133.583 klw 0.0200
+  [CTMLite seed 37] epoch 1950 loss 133.784 klw 0.0200
+  [CTMLite seed 37] epoch 1975 loss 133.659 klw 0.0200
+  [CTMLite seed 37] epoch 2000 loss 133.583 klw 0.0200
+--- CTMLite (seed 37, topics 30, time 2846.1s) ---
+    0 gold olympic court olympics athens bryant trial committee appeal williams
+    1 million first australia pay ltd cut championship zealand australian update
+    2 mobile phone phones communications wireless speed results telephone telecom telecommunications
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.4264, 'NPMI_n': 30.0, 'NPMI': -0.0463, 'UCI_n': 30.0, 'UCI': -4.2497, 'UMass_n': 30.0, 'UMass': -9.0428, 'EXCL': 0.1442, 'EXCL_KADJ': 0.1147, 'IRBO': 0.9996}
+--- CombinedTM (seed 11, topics 30, time 1245.3s) ---
+    0 oil prices supply gas winter record price crude demand high
+    1 red series boston sox yankees baseball expos louis run cardinals
+    2 executive chief fund exchange commission insurance accounting financial million agreed
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5597, 'NPMI_n': 30.0, 'NPMI': 0.1134, 'UCI_n': 30.0, 'UCI': -1.6616, 'UMass_n': 30.0, 'UMass': -6.459, 'EXCL': 0.1144, 'EXCL_KADJ': 0.0838, 'IRBO': 0.9999}
+--- CombinedTM (seed 23, topics 30, time 1305.3s) ---
+    0 charged prince case abuse court trial school accused arrested terrorist
+    1 china trade european global states chinese world brazil taiwan beijing
+    2 drug study heart face drugs risk merck food safety health
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5439, 'NPMI_n': 30.0, 'NPMI': 0.105, 'UCI_n': 30.0, 'UCI': -2.0442, 'UMass_n': 30.0, 'UMass': -7.0377, 'EXCL': 0.118, 'EXCL_KADJ': 0.0876, 'IRBO': 1.0}
+--- CombinedTM (seed 37, topics 30, time 1436.8s) ---
+    0 side manchester champions real club madrid liverpool striker italy milan
+    1 iraq hostage release british aid war kidnapped italian iraqi britain
+    2 bid oracle buy rival peoplesoft offer billion takeover purchase merger
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.5564, 'NPMI_n': 30.0, 'NPMI': 0.1032, 'UCI_n': 30.0, 'UCI': -1.9015, 'UMass_n': 30.0, 'UMass': -6.8052, 'EXCL': 0.1162, 'EXCL_KADJ': 0.0857, 'IRBO': 0.9998}
+--- BERTopic (seed 11, topics 29, time 149.1s) ---
+    0 night game
+    1 company
+    2 music
+    {'n_topics': 29.0, 'CV_n': 28.0, 'CV': 0.7648, 'NPMI_n': 22.0, 'NPMI': 0.1778, 'UCI_n': 22.0, 'UCI': -1.6151, 'UMass_n': 23.0, 'UMass': -6.9766, 'EXCL': 0.2621, 'EXCL_KADJ': 0.2357, 'IRBO': 0.9982}
+--- BERTopic (seed 23, topics 29, time 19.5s) ---
+    0 night game
+    1 prices oil stocks
+    2 killed
+    {'n_topics': 29.0, 'CV_n': 28.0, 'CV': 0.7129, 'NPMI_n': 24.0, 'NPMI': 0.083, 'UCI_n': 24.0, 'UCI': -2.736, 'UMass_n': 25.0, 'UMass': -7.7537, 'EXCL': 0.2345, 'EXCL_KADJ': 0.2071, 'IRBO': 0.9902}
+ERROR BERTopic 37 MemoryError('Allocation failed (probably too large).')
+ERROR Top2Vec 11 MemoryError('Allocation failed (probably too large).')
+ERROR Top2Vec 23 MemoryError('Allocation failed (probably too large).')
+ERROR Top2Vec 37 MemoryError('Allocation failed (probably too large).')
+     model  n_seeds  K_target  topic_count_mean  CV_mean   CV_std  NPMI_mean  NPMI_std   UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+       LDA        3        30         30.000000 0.420681 0.013205  -0.066338  0.018305  -4.265090 0.393966   -8.620660   0.440610   0.706005  0.007812        0.695867       0.008081   0.997452  0.000880
+       BTM        3        30         30.000000 0.601319 0.031248   0.161356  0.016562  -0.112337 0.272361   -4.276838   0.202739   0.435035  0.014547        0.415553       0.015048   0.989718  0.001099
+       NMF        3        30         30.000000 0.494082 0.014928   0.069431  0.013050  -1.613864 0.233420   -5.963352   0.228356   0.805848  0.002206        0.799153       0.002282   0.998864  0.000211
+ NeuralLDA        3        30         30.000000 0.510452 0.025239   0.053536  0.017460  -2.230777 0.332141   -6.950637   0.279204   0.099861  0.016223        0.068822       0.016782   0.999601  0.000357
+       ETM        3        30         30.000000 0.528835 0.009437  -0.426315  0.004599 -12.561065 0.091468  -19.175598   0.211249   0.886953  0.004539        0.883055       0.004696   0.999389  0.000219
+   CTMLite        3        30         30.000000 0.436312 0.010197  -0.034028  0.011737  -3.939275 0.271618   -8.731707   0.279357   0.117772  0.022942        0.087351       0.023733   0.999640  0.000151
+CombinedTM        3        30         30.000000 0.553331 0.008333   0.107213  0.005446  -1.869104 0.193385   -6.767286   0.291208   0.116202  0.001827        0.085726       0.001890   0.999863  0.000104
+  BERTopic        3        30         19.333333 0.738852 0.036692   0.130364  0.067043  -2.175573 0.792601   -7.365153   0.549550   0.248276  0.019506        0.221429       0.020203   0.994180  0.005696
+   Top2Vec        3        30          0.000000      NaN 0.000000        NaN  0.000000        NaN 0.000000         NaN   0.000000        NaN  0.000000             NaN       0.000000        NaN  0.000000
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_runs_agnews.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_benchmark_summary_agnews.csv

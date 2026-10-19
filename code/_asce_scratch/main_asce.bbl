@@ -1,0 +1,274 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{}{Angelov}{2020}]{angelov2020top2vec}
+Angelov, D. (2020).
+\newblock ``Top2vec: Distributed representations of topics.''\ {\em arXiv
+  preprint arXiv:2008.09470}.
+
+\bibitem[\protect\citeauthoryear{}{Bianchi et~al.\@}{2021}]{bianchi2021ctm}
+Bianchi, F., Terragni, S., and Hovy, D. (2021).
+\newblock ``Pre-training is a hot topic: Contextualized document embeddings
+  improve topic coherence.''\ {\em Proceedings of ACL-IJCNLP (Volume 2: Short
+  Papers)},  759--766.
+
+\bibitem[\protect\citeauthoryear{}{Bischof and
+  Airoldi}{2012}]{bischof2012exclusivity}
+Bischof, J. and Airoldi, E.~M. (2012).
+\newblock ``Summarizing topical content with word frequency and exclusivity.''\
+  {\em Proceedings of ICML},  201--208.
+
+\bibitem[\protect\citeauthoryear{}{Blei et~al.\@}{2003}]{blei2003lda}
+Blei, D.~M., Ng, A.~Y., and Jordan, M.~I. (2003).
+\newblock ``Latent dirichlet allocation.''\ {\em Journal of Machine Learning
+  Research}, 3, 993--1022.
+
+\bibitem[\protect\citeauthoryear{}{Bouma}{2009}]{bouma2009npmi}
+Bouma, G. (2009).
+\newblock ``Normalized (pointwise) mutual information in collocation
+  extraction.''\ {\em Proceedings of the Biennial GSCL Conference},  31--40.
+
+\bibitem[\protect\citeauthoryear{}{Card et~al.\@}{2018}]{card2018metadata}
+Card, D., Tan, C., and Smith, N.~A. (2018).
+\newblock ``Neural models for documents with metadata.''\ {\em Proceedings of
+  the 56th Annual Meeting of the Association for Computational Linguistics
+  (Volume 1: Long Papers)},  2031--2040.
+
+\bibitem[\protect\citeauthoryear{}{Dieng et~al.\@}{2020}]{dieng2020etm}
+Dieng, A.~B., Ruiz, F. J.~R., and Blei, D.~M. (2020).
+\newblock ``Topic modeling in embedding spaces.''\ {\em Transactions of the
+  Association for Computational Linguistics}, 8, 439--453.
+
+\bibitem[\protect\citeauthoryear{}{Esmaeili
+  et~al.\@}{2019}]{esmaeili2019structured}
+Esmaeili, B., Huang, H., Wallace, B.~C., and van, d. M. J.~W. (2019).
+\newblock ``Structured neural topic models for reviews.''\ {\em Proceedings of
+  AISTATS (PMLR 89)},  3429--3439.
+
+\bibitem[\protect\citeauthoryear{}{Feng et~al.\@}{2022}]{crntm2020}
+Feng, J., Zhang, Z., Ding, C.~H., et~al.\@ (2022).
+\newblock ``Context reinforced neural topic modeling over short texts.''\ {\em
+  Information Sciences}, 607, 79--91.
+
+\bibitem[\protect\citeauthoryear{}{Grootendorst}{2022}]{grootendorst2022bertopic}
+Grootendorst, M. (2022).
+\newblock ``Bertopic: Neural topic modeling with a class-based tf-idf
+  procedure.''\ {\em arXiv preprint arXiv:2203.05794}.
+
+\bibitem[\protect\citeauthoryear{}{Kurle et~al.\@}{2019}]{kurle2019multisource}
+Kurle, R., G\"unnemann, S., and van, d. S.~P. (2019).
+\newblock ``Multi-source neural variational inference.''\ {\em Proceedings of
+  AAAI},  4114--4121.
+
+\bibitem[\protect\citeauthoryear{}{Lau et~al.\@}{2014}]{lau2014tea}
+Lau, J.~H., Newman, D., and Baldwin, T. (2014).
+\newblock ``Machine reading tea leaves: Automatically evaluating topic
+  coherence and topic model quality.''\ {\em Proceedings of EACL},  530--539.
+
+\bibitem[\protect\citeauthoryear{}{Lee and Seung}{2001}]{lee2001nmf}
+Lee, D.~D. and Seung, H.~S. (2001).
+\newblock ``Algorithms for non-negative matrix factorization.''\ {\em Advances
+  in Neural Information Processing Systems},  556--562.
+
+\bibitem[\protect\citeauthoryear{}{Li et~al.\@}{2019}]{relationalbtm2018}
+Li, X., Zhang, A., Li, C., et~al.\@ (2019).
+\newblock ``Relational biterm topic model: Short-text topic modeling using word
+  embeddings.''\ {\em The Computer Journal}, 62(3), 359--372.
+
+\bibitem[\protect\citeauthoryear{}{Liu et~al.\@}{2026}]{dvidtm2026}
+Liu, D., Fang, Z., and Wu, B. (2026).
+\newblock ``Dvi-dtm: Dual-view representation learning for interpretable short
+  text dynamic topic modeling.''\ {\em Proceedings of the Annual Meeting of the
+  Association for Computational Linguistics (ACL)},  28576--28593.
+
+\bibitem[\protect\citeauthoryear{}{Liu et~al.\@}{2022}]{liu2022dualview}
+Liu, W., Huang, Y., Guo, Y., et~al.\@ (2022).
+\newblock ``Topic modeling for short texts via dual view collaborate
+  optimization.''\ {\em 2022 7th IEEE International Conference on Data Science
+  in Cyberspace (DSC)},  160--166.
+
+\bibitem[\protect\citeauthoryear{}{Miao et~al.\@}{2016}]{miao2016nvdm}
+Miao, Y., Yu, L., and Blunsom, P. (2016).
+\newblock ``Neural variational inference for text processing.''\ {\em
+  Proceedings of ICML},  1727--1736.
+
+\bibitem[\protect\citeauthoryear{}{Moon et~al.\@}{2022}]{contract2022}
+Moon, S., Chi, S., and Im, S.-B. (2022).
+\newblock ``Automated detection of contractual risk clauses from construction
+  specifications using bidirectional encoder representations from transformers
+  (bert).''\ {\em Automation in Construction}, 142, 104465.
+
+\bibitem[\protect\citeauthoryear{}{Nguyen et~al.\@}{2026}]{nguyen2026subntm}
+Nguyen, T., Doan, D.~T., Luong, H.~T., et~al.\@ (2026).
+\newblock ``Sub-document neural topic model.''\ {\em Knowledge-Based Systems},
+  331, 114762.
+
+\bibitem[\protect\citeauthoryear{}{open index}{2026}]{openindex2026}
+open index (2026).
+\newblock ``Open github issues: Github issue records by repository.
+
+\bibitem[\protect\citeauthoryear{}{Pergola
+  et~al.\@}{2021}]{pergola2021disentangled}
+Pergola, G., Gui, L., and He, Y. (2021).
+\newblock ``A disentangled adversarial neural topic model for separating
+  opinions from plots in user reviews.''\ {\em Proceedings of NAACL-HLT},
+  2870--2883.
+
+\bibitem[\protect\citeauthoryear{}{Pham and Han}{2023}]{risknlp2023}
+Pham, H. T. T.~L. and Han, S. (2023).
+\newblock ``Natural language processing with multitask classification for
+  semantic prediction of risk-handling actions in construction contracts.''\
+  {\em Journal of Computing in Civil Engineering}, 37(6), 04023027.
+
+\bibitem[\protect\citeauthoryear{}{Prechelt}{1998}]{prechelt1998early}
+Prechelt, L. (1998).
+\newblock ``Early stopping---but when?.''\ {\em Neural Networks: Tricks of the
+  Trade}, Springer,  55--69.
+
+\bibitem[\protect\citeauthoryear{}{Priem et~al.\@}{2022}]{openalex2022}
+Priem, J., Piwowar, H., and Orr, R. (2022).
+\newblock ``Openalex: A fully-open index of scholarly works, authors, venues,
+  institutions, and concepts.''\ {\em arXiv preprint arXiv:2205.01833}.
+
+\bibitem[\protect\citeauthoryear{}{Reimers and
+  Gurevych}{2019}]{reimers2019sbert}
+Reimers, N. and Gurevych, I. (2019).
+\newblock ``Sentence-bert: Sentence embeddings using siamese bert-networks.''\
+  {\em Proceedings of EMNLP-IJCNLP},  3982--3992.
+
+\bibitem[\protect\citeauthoryear{}{Roberts et~al.\@}{2019}]{roberts2019stm}
+Roberts, M.~E., Stewart, B.~M., and Tingley, D. (2019).
+\newblock ``stm: An r package for structural topic models.''\ {\em Journal of
+  Statistical Software}, 91(2), 1--40.
+
+\bibitem[\protect\citeauthoryear{}{R\"oder et~al.\@}{2015}]{roder2015coherence}
+R\"oder, M., Both, A., and Hinneburg, A. (2015).
+\newblock ``Exploring the space of topic coherence measures.''\ {\em
+  Proceedings of WSDM},  399--408.
+
+\bibitem[\protect\citeauthoryear{}{Salama and El-Gohary}{2016}]{compliance2013}
+Salama, D.~M. and El-Gohary, N. (2016).
+\newblock ``Semantic text classification for supporting automated compliance
+  checking in construction.''\ {\em Journal of Computing in Civil Engineering},
+  30(1), 04014106.
+
+\bibitem[\protect\citeauthoryear{}{Shamshiri et~al.\@}{2024}]{civilnlp2023}
+Shamshiri, A., Ryu, K.~R., and Park, J.~Y. (2024).
+\newblock ``Text mining and natural language processing in construction.''\
+  {\em Automation in Construction}, 158, 105200.
+
+\bibitem[\protect\citeauthoryear{}{Srivastava and
+  Sutton}{2017}]{srivastava2017avitm}
+Srivastava, A. and Sutton, C. (2017).
+\newblock ``Autoencoding variational inference for topic models.''\ {\em
+  International Conference on Learning Representations}.
+
+\bibitem[\protect\citeauthoryear{}{Srivastava
+  et~al.\@}{2014}]{srivastava2014dropout}
+Srivastava, N., Hinton, G., Krizhevsky, A., et~al.\@ (2014).
+\newblock ``Dropout: A simple way to prevent neural networks from
+  overfitting.''\ {\em Journal of Machine Learning Research}, 15, 1929--1958.
+
+\bibitem[\protect\citeauthoryear{}{Suzuki et~al.\@}{2016}]{suzuki2017jmvae}
+Suzuki, M., Nakayama, K., and Matsuo, Y. (2016).
+\newblock ``Joint multimodal learning with deep generative models.''\ {\em
+  arXiv preprint arXiv:1611.01891}.
+
+\bibitem[\protect\citeauthoryear{}{Tixier et~al.\@}{2016}]{civilsafety2015}
+Tixier, A. J.-P., Hallowell, M.~R., Rajagopalan, B., et~al.\@ (2016).
+\newblock ``Automated content analysis for construction safety: A natural
+  language processing system to extract precursors and outcomes from
+  unstructured injury reports.''\ {\em Automation in Construction}, 62, 45--56.
+
+\bibitem[\protect\citeauthoryear{}{Vangelova et~al.\@}{2026}]{passport2026}
+Vangelova, S., Forth, K., Beetz, J., and De, W.~C. (2026).
+\newblock ``Computational taxonomy development for digital passports using
+  semantic topic modelling to advance circular construction.''\ {\em Automation
+  in Construction}, 192, 107220.
+
+\bibitem[\protect\citeauthoryear{}{Vorontsov
+  et~al.\@}{2015}]{vorontsov2015bigartm}
+Vorontsov, K., Frei, O., Apishev, M., et~al.\@ (2015).
+\newblock ``Bigartm: Open source library for regularized multimodal topic
+  modeling of large collections.''\ {\em Analysis of Images, Social Networks
+  and Texts (AIST 2015), CCIS 542},  370--381.
+
+\bibitem[\protect\citeauthoryear{}{Wang and Taylor}{2019}]{duet2019}
+Wang, Y. and Taylor, J.~E. (2019).
+\newblock ``Duet: Data-driven approach based on latent dirichlet allocation
+  topic modeling.''\ {\em Journal of Computing in Civil Engineering}, 33(3),
+  04019023.
+
+\bibitem[\protect\citeauthoryear{}{Webber et~al.\@}{2010}]{webber2010rbo}
+Webber, W., Moffat, A., and Zobel, J. (2010).
+\newblock ``A similarity measure for indefinite rankings.''\ {\em ACM
+  Transactions on Information Systems}, 28(4), article 20, 1--38.
+
+\bibitem[\protect\citeauthoryear{}{Wu et~al.\@}{2022}]{civilnlp2021}
+Wu, C., Li, X., Guo, Y., et~al.\@ (2022).
+\newblock ``Natural language processing for smart construction: Current status
+  and future directions.''\ {\em Automation in Construction}, 134, 104059.
+
+\bibitem[\protect\citeauthoryear{}{Wu et~al.\@}{2020}]{quantization2020}
+Wu, X., Li, C., Zhu, Y., et~al.\@ (2020).
+\newblock ``Short text topic modeling with topic distribution quantization and
+  negative sampling decoder.''\ {\em Proceedings of EMNLP},  1772--1782.
+
+\bibitem[\protect\citeauthoryear{}{Wu et~al.\@}{2024}]{wu2024survey}
+Wu, X., Nguyen, T., and Luu, A.~T. (2024).
+\newblock ``A survey on neural topic models: Methods, applications, and
+  challenges.''\ {\em Artificial Intelligence Review}, 57, article 18.
+
+\bibitem[\protect\citeauthoryear{}{Yan et~al.\@}{2013}]{yan2013btm}
+Yan, X., Guo, J., Lan, Y., et~al.\@ (2013).
+\newblock ``A biterm topic model for short texts.''\ {\em Proceedings of the
+  22nd International World Wide Web Conference},  1445--1456.
+
+\bibitem[\protect\citeauthoryear{}{Yin and Wang}{2014}]{yin2014gsdmm}
+Yin, J. and Wang, J. (2014).
+\newblock ``A dirichlet multinomial mixture model-based approach for short text
+  clustering.''\ {\em Proceedings of the 20th ACM SIGKDD},  233--242.
+
+\bibitem[\protect\citeauthoryear{}{Zhang et~al.\@}{2019}]{civilaccident2018}
+Zhang, F., Fleyeh, H.~A., Wang, X., et~al.\@ (2019).
+\newblock ``Construction site accident analysis using text mining and natural
+  language processing techniques.''\ {\em Automation in Construction}, 99,
+  238--248.
+
+\bibitem[\protect\citeauthoryear{}{Zhang et~al.\@}{2017}]{zhang2017robust}
+Zhang, G., Iwata, T., and Kashima, H. (2017).
+\newblock ``Robust multi-view topic modeling by incorporating detecting
+  anomalies.''\ {\em ECML PKDD, LNCS 10535},  238--250.
+
+\bibitem[\protect\citeauthoryear{}{Zhang et~al.\@}{2022}]{zhang2020bcktm}
+Zhang, K., Zhou, Y., Chen, Z., et~al.\@ (2022).
+\newblock ``Incorporating biterm correlation knowledge into topic modeling for
+  short texts.''\ {\em The Computer Journal}, 65(3), 537--553.
+
+\bibitem[\protect\citeauthoryear{}{Zhang et~al.\@}{2015}]{zhang2015char}
+Zhang, X., Zhao, J., and LeCun, Y. (2015).
+\newblock ``Character-level convolutional networks for text classification.''\
+  {\em Advances in Neural Information Processing Systems},  649--657.
+
+\bibitem[\protect\citeauthoryear{}{Zhou and El-Gohary}{2016}]{ontology2015}
+Zhou, P. and El-Gohary, N. (2016).
+\newblock ``Ontology-based multilabel text classification of construction
+  regulatory documents.''\ {\em Journal of Computing in Civil Engineering},
+  30(4), 04015058.
+
+\bibitem[\protect\citeauthoryear{}{Zhou et~al.\@}{2025}]{civiltopic2024}
+Zhou, P.~C., Qi, Y., Yang, Q., et~al.\@ (2025).
+\newblock ``Neural topic modeling of machine learning applications in building:
+  Key topics, algorithms, and evolution patterns.''\ {\em Automation in
+  Construction}, 170, 105890.
+
+\bibitem[\protect\citeauthoryear{}{Zhu et~al.\@}{2021}]{sparsebtm2021}
+Zhu, B., Cai, Y., and Zhang, H. (2021).
+\newblock ``Sparse biterm topic model for short texts.''\ {\em Lecture Notes in
+  Computer Science},  227--241.
+
+\bibitem[\protect\citeauthoryear{}{Zhu et~al.\@}{2018}]{zhu2018graphbtm}
+Zhu, Q., Feng, Z., and Li, X. (2018).
+\newblock ``Graphbtm: Graph enhanced autoencoded variational inference for
+  biterm topic model.''\ {\em Proceedings of EMNLP},  4663--4672.
+
+\end{thebibliography}

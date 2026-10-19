@@ -1,0 +1,67 @@
+{
+ "id": "e4411e57ad2a777f",
+ "payload": {
+  "script": "baseline_fieldview.main",
+  "k": 30,
+  "seeds": [
+   11,
+   23,
+   37
+  ],
+  "corpora": [
+   "agnews",
+   "civil",
+   "github"
+  ],
+  "models": [
+   "BTM",
+   "LDA",
+   "NMF",
+   "ProdLDA"
+  ],
+  "eval_ids": {
+   "agnews": "8243118b7743b357",
+   "civil": "0459e6843826f93c",
+   "github": "026c739c2995c8c5"
+  },
+  "fit_ids": [
+   "107b119b0e33b4b6",
+   "23ad7d6f709cb857",
+   "2efecd383a25cc04",
+   "39cc0f0bee313cb1",
+   "4140d27470320657",
+   "6ccaf545c0115e24",
+   "6d8cf227ead2a580",
+   "6f379a9529e2f6bb",
+   "6f44116b2139e3ec",
+   "723e5f155316e959",
+   "86000903e006fa70",
+   "8b96537fa01bced0",
+   "cecba6faa8959a06",
+   "cfb8a66b8d83afa0",
+   "e334bd77d1751f5e",
+   "legacy:0d5448832efd9fd8",
+   "legacy:1354d06ba7119a1a",
+   "legacy:1fec0a70615c01f2",
+   "legacy:261bd18eb2c6b1dc",
+   "legacy:3224c939a05100c9",
+   "legacy:371b66ee8e2869a5",
+   "legacy:382cb5de5fcf6dd3",
+   "legacy:382d91a90e647bdf",
+   "legacy:3db4bc577deb7a39",
+   "legacy:4865ab9b436b5081",
+   "legacy:52734ed9b41e76f9",
+   "legacy:587bd88fd431c692",
+   "legacy:60516efb7fcc3bea",
+   "legacy:66b7995c0eef970c",
+   "legacy:6ba538a1fd43c927",
+   "legacy:7447e444fd605364",
+   "legacy:8e942c2d977213bd",
+   "legacy:924e84fcf6c506f2",
+   "legacy:9318310d01a9f6e4",
+   "legacy:9691af75c7d2fc9d",
+   "legacy:eef1ae019aed8f29"
+  ],
+  "code": "21a3663098d66449"
+ }
+}

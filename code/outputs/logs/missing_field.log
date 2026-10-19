@@ -1,0 +1,64 @@
+docs=577 with_cause=292 without_cause=285
+seed 11: train=462 test=115
+  heldout20 all           n=115 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=nan BTM=nan NMF=nan
+  heldout20 with_cause    n= 62 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=nan BTM=nan NMF=nan
+  heldout20 without_cause n= 53 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=nan BTM=nan NMF=nan
+  all577    all           n=577 FC-NTM-Emb=0.499 FC-NTM-Emb-ForceEnc=0.595 BTM=0.515 NMF=0.524
+  all577    with_cause    n=292 FC-NTM-Emb=0.534 FC-NTM-Emb-ForceEnc=0.591 BTM=0.518 NMF=0.548
+  all577    without_cause n=285 FC-NTM-Emb=0.351 FC-NTM-Emb-ForceEnc=0.552 BTM=0.796 NMF=0.516
+seed 23: train=462 test=115
+  heldout20 all           n=115 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=0.443 BTM=0.536 NMF=0.634
+  heldout20 with_cause    n= 62 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=0.458 BTM=0.507 NMF=nan
+  heldout20 without_cause n= 53 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=nan BTM=nan NMF=nan
+  all577    all           n=577 FC-NTM-Emb=0.486 FC-NTM-Emb-ForceEnc=0.537 BTM=0.479 NMF=0.476
+  all577    with_cause    n=292 FC-NTM-Emb=0.526 FC-NTM-Emb-ForceEnc=0.518 BTM=0.472 NMF=0.484
+  all577    without_cause n=285 FC-NTM-Emb=0.346 FC-NTM-Emb-ForceEnc=0.580 BTM=0.469 NMF=0.522
+seed 37: train=462 test=115
+  heldout20 all           n=115 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=0.656 BTM=0.254 NMF=0.258
+  heldout20 with_cause    n= 62 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=0.632 BTM=nan NMF=nan
+  heldout20 without_cause n= 53 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=nan BTM=nan NMF=nan
+  all577    all           n=577 FC-NTM-Emb=0.484 FC-NTM-Emb-ForceEnc=0.552 BTM=0.500 NMF=0.491
+  all577    with_cause    n=292 FC-NTM-Emb=0.497 FC-NTM-Emb-ForceEnc=0.504 BTM=0.487 NMF=0.551
+  all577    without_cause n=285 FC-NTM-Emb=0.495 FC-NTM-Emb-ForceEnc=0.605 BTM=0.625 NMF=0.471
+seed 53: train=462 test=115
+  heldout20 all           n=115 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=nan BTM=nan NMF=nan
+  heldout20 with_cause    n= 53 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=nan BTM=nan NMF=nan
+  heldout20 without_cause n= 62 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=nan BTM=nan NMF=nan
+  all577    all           n=577 FC-NTM-Emb=0.509 FC-NTM-Emb-ForceEnc=0.513 BTM=0.470 NMF=0.481
+  all577    with_cause    n=292 FC-NTM-Emb=0.544 FC-NTM-Emb-ForceEnc=0.466 BTM=0.465 NMF=0.507
+  all577    without_cause n=285 FC-NTM-Emb=0.365 FC-NTM-Emb-ForceEnc=0.621 BTM=0.511 NMF=0.513
+seed 71: train=462 test=115
+  heldout20 all           n=115 FC-NTM-Emb=0.529 FC-NTM-Emb-ForceEnc=0.591 BTM=0.618 NMF=0.544
+  heldout20 with_cause    n= 63 FC-NTM-Emb=0.580 FC-NTM-Emb-ForceEnc=0.606 BTM=0.628 NMF=0.555
+  heldout20 without_cause n= 52 FC-NTM-Emb=nan FC-NTM-Emb-ForceEnc=nan BTM=nan NMF=nan
+  all577    all           n=577 FC-NTM-Emb=0.501 FC-NTM-Emb-ForceEnc=0.496 BTM=0.457 NMF=0.516
+  all577    with_cause    n=292 FC-NTM-Emb=0.509 FC-NTM-Emb-ForceEnc=0.485 BTM=0.439 NMF=0.571
+  all577    without_cause n=285 FC-NTM-Emb=0.456 FC-NTM-Emb-ForceEnc=0.476 BTM=0.597 NMF=0.364
+
+                                                 CV    NPMI    UMass
+scope     group         model                                       
+all577    all           BTM                  0.4841  0.0741  -8.0012
+                        FC-NTM-Emb           0.4958 -0.0572 -11.8338
+                        FC-NTM-Emb-ForceEnc  0.5386 -0.1553 -13.1628
+                        NMF                  0.4976 -0.0111  -9.9237
+          with_cause    BTM                  0.4761  0.0398  -8.7439
+                        FC-NTM-Emb           0.5220 -0.0078 -11.4275
+                        FC-NTM-Emb-ForceEnc  0.5129  0.0259 -11.5017
+                        NMF                  0.5324  0.0272 -10.0433
+          without_cause BTM                  0.5999  0.0153 -13.6419
+                        FC-NTM-Emb           0.4027 -0.1511 -10.8573
+                        FC-NTM-Emb-ForceEnc  0.5666 -0.5356 -12.7672
+                        NMF                  0.4772 -0.4180 -15.2080
+heldout20 all           BTM                  0.4692 -0.1031 -14.3060
+                        FC-NTM-Emb           0.5290 -0.5156 -12.2323
+                        FC-NTM-Emb-ForceEnc  0.5632 -0.2129 -13.1674
+                        NMF                  0.4786 -0.0875 -14.8257
+          with_cause    BTM                  0.5677 -0.0864 -13.4859
+                        FC-NTM-Emb           0.5803 -0.5755 -10.7172
+                        FC-NTM-Emb-ForceEnc  0.5651 -0.2578 -11.0684
+                        NMF                  0.5553 -0.1652 -13.1308
+          without_cause BTM                     NaN     NaN  -7.4494
+                        FC-NTM-Emb              NaN     NaN  -5.0916
+                        FC-NTM-Emb-ForceEnc     NaN     NaN  -6.6152
+                        NMF                     NaN     NaN  -8.6592
+saved outputs/missing_field_eval.csv

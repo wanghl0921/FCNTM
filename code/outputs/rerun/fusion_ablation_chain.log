@@ -1,0 +1,10 @@
+[chain] field-dropout run finished; starting the fusion ablation
+$ C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_ablation_public.py --dataset github --seeds 11,23,37 --k 30 --lr 5e-4 --configs no-fusion --out ablation_public_github_nofusion.csv
+   no-fusion seed 11 beta {'CV': 0.7116, 'NPMI': 0.2577}
+   no-fusion seed 11 cTFIDF {'CV': 0.7159, 'NPMI': 0.2696}
+   no-fusion seed 23 beta {'CV': 0.7123, 'NPMI': 0.2608}
+   no-fusion seed 23 cTFIDF {'CV': 0.7139, 'NPMI': 0.2588}
+   no-fusion seed 37 beta {'CV': 0.7393, 'NPMI': 0.2797}
+   no-fusion seed 37 cTFIDF {'CV': 0.7135, 'NPMI': 0.2564}
+saved ablation_public_github_nofusion.csv
+[chain] fusion ablation exit=0

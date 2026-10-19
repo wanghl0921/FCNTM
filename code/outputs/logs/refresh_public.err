@@ -1,0 +1,4 @@
+C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\gensim\topic_coherence\direct_confirmation_measure.py:204: RuntimeWarning: divide by zero encountered in scalar divide
+  m_lr_i = np.log(numerator / denominator)
+C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\gensim\topic_coherence\indirect_confirmation_measure.py:323: RuntimeWarning: invalid value encountered in scalar divide
+  return cv1.T.dot(cv2)[0, 0] / (_magnitude(cv1) * _magnitude(cv2))

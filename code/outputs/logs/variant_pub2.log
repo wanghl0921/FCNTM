@@ -1,0 +1,11 @@
+[github] train=1000 test=400 vocab=2682 K=20 seeds=23 epochs=800
+  mean field lengths: cause=70.9 item=5.2
+  field weights if auto: (1.0369639104742832, 14.026707363601677)
+  base   seed=23 best_ep= 754 beta CV=0.518 NPMI=0.108 EX=0.006 | cTF CV=0.496 NPMI=0.148 | recall=0.077 prec=0.229 causeCV=0.497 (365s)
+  fused  seed=23 best_ep= 624 beta CV=0.552 NPMI=0.094 EX=0.006 | cTF CV=0.432 NPMI=0.095 | recall=0.060 prec=0.182 causeCV=0.496 (411s)
+  gate   seed=23 best_ep= 776 beta CV=0.570 NPMI=0.078 EX=0.008 | cTF CV=0.454 NPMI=0.111 | recall=0.062 prec=0.183 causeCV=0.452 (440s)
+  autow  seed=23 best_ep= 799 beta CV=0.434 NPMI=-0.027 EX=0.008 | cTF CV=0.443 NPMI=0.095 | recall=0.061 prec=0.173 causeCV=0.446 (372s)
+  prior  seed=23 best_ep= 624 beta CV=0.544 NPMI=0.025 EX=0.006 | cTF CV=0.431 NPMI=0.095 | recall=0.058 prec=0.170 causeCV=0.462 (417s)
+  excl2  seed=23 best_ep= 754 beta CV=0.498 NPMI=0.085 EX=0.006 | cTF CV=0.499 NPMI=0.148 | recall=0.072 prec=0.210 causeCV=0.479 (376s)
+  prior_autow seed=23 best_ep= 750 beta CV=0.430 NPMI=-0.096 EX=0.009 | cTF CV=0.450 NPMI=0.096 | recall=0.057 prec=0.161 causeCV=0.457 (429s)
+saved outputs\variant_public.csv

@@ -1,0 +1,32 @@
+{
+ "id": "5ae87fcfaa9a54a5",
+ "payload": {
+  "script": "newseeds_occlusion",
+  "corpus": "agnews",
+  "seeds": [
+   53,
+   71,
+   89,
+   101,
+   113,
+   127,
+   139
+  ],
+  "k": 30,
+  "code": "dcffbbe402c6c094",
+  "vocab_digest": "953b2a367b9b997e",
+  "data": "22815d0fb84599c3",
+  "fields": "5d56e5811fa8c322",
+  "test_data": "a5d8e0d3970f3395",
+  "test_fields": "4f9d51d7aae2f8e5",
+  "rates": [
+   0.0,
+   0.25,
+   0.5,
+   0.75,
+   1.0
+  ],
+  "mask": "doc_rng_seed_plus7",
+  "state_digest": "c8e68fadbbfb931c"
+ }
+}

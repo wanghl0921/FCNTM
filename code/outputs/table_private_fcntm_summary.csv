@@ -1,0 +1,2 @@
+model,n,topics,CV_mean,CV_std,NPMI_mean,NPMI_std,UCI_mean,UCI_std,UMass_mean,UMass_std,EXCL_KADJ_mean,EXCL_KADJ_std,IRBO_mean,IRBO_std,jaccard
+FC-NTM,5,30,0.4464,0.0268,-0.038,0.0204,-6.6764,0.4915,-11.3601,0.5471,0.0164,0.0019,0.997,0.0011,0.213

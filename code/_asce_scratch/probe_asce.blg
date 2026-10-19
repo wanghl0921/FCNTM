@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: probe_asce.aux
+The style file: ascelike-new.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main_asce.bib
+Warning--empty journal in openindex2026
+You've used 50 entries,
+            2831 wiz_defined-function locations,
+            869 strings with 12652 characters,
+and the built_in function-call counts, 30601 in all, are:
+= -- 3131
+> -- 1025
+< -- 79
++ -- 302
+- -- 292
+* -- 2545
+:= -- 4088
+add.period$ -- 100
+call.type$ -- 50
+change.case$ -- 383
+chr.to.int$ -- 50
+cite$ -- 51
+duplicate$ -- 1489
+empty$ -- 2316
+format.name$ -- 564
+if$ -- 6413
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 49
+newline$ -- 203
+num.names$ -- 300
+pop$ -- 556
+preamble$ -- 1
+purify$ -- 683
+quote$ -- 0
+skip$ -- 1269
+stack$ -- 0
+substring$ -- 2317
+swap$ -- 474
+text.length$ -- 23
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1000
+warning$ -- 1
+while$ -- 200
+width$ -- 0
+write$ -- 646
+(There was 1 warning)

@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\summarize_seed_extension.py", line 116, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\summarize_seed_extension.py", line 90, in main
+    curves[seed] = rel_degradation(pd.read_csv(path))
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\summarize_seed_extension.py", line 65, in rel_degradation
+    for seed, g in frame[frame["rate"] > 0].groupby("seed"):
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\util\_decorators.py", line 336, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\frame.py", line 10835, in groupby
+    return DataFrameGroupBy(
+        obj=self,
+    ...<6 lines>...
+        dropna=dropna,
+    )
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\groupby\groupby.py", line 1095, in __init__
+    grouper, exclusions, obj = get_grouper(
+                               ~~~~~~~~~~~^
+        obj,
+        ^^^^
+    ...<4 lines>...
+        dropna=self.dropna,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\groupby\grouper.py", line 901, in get_grouper
+    raise KeyError(gpr)
+KeyError: 'seed'

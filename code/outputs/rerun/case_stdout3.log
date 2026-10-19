@@ -1,0 +1,36 @@
+## Topic 0: Asphalt mixture design and performance
+top words: asphalt, mixture, binder, mixtures, temperature, test, performance, modified, stability, low
+- [Asphalt Pavement Performance Evaluation] 'Synergetic Effect of NanoZnO and Trinidad Lake Asphalt for Antiaging Properties of SBSModified Asphalt' | title-only T0 -> Asphalt Pavement Performance Evaluation (ok) | full-field T0 -> Asphalt Pavement Performance Evaluation (ok)
+- [Asphalt Pavement Performance Evaluation] 'Modification of Asphalt by Diols' | title-only T0 -> Asphalt Pavement Performance Evaluation (ok) | full-field T0 -> Asphalt Pavement Performance Evaluation (ok)
+- [Asphalt Pavement Performance Evaluation] 'Characteristic Evolution of GO/SBSModified Asphalt during Aging' | title-only T0 -> Asphalt Pavement Performance Evaluation (ok) | full-field T0 -> Asphalt Pavement Performance Evaluation (ok)
+
+## Topic 3: Seismic response of tunnels and piles
+top words: response, ground, motion, seismic, tunnel, earthquake, acceleration, foundation, pile, wave
+- [Seismic Performance and Analysis] 'Earthquake ground-motion parameters at stiff sites in Addis Ababa, Ethiopia' | title-only T3 -> Seismic Performance and Analysis (ok) | full-field T3 -> Seismic Performance and Analysis (ok)
+- [Seismic Performance and Analysis] 'Stochastic finite-fault modeling of ground motions from the June 27, 1998 Adana-Ceyhan earthquake' | title-only T3 -> Seismic Performance and Analysis (ok) | full-field T3 -> Seismic Performance and Analysis (ok)
+- [Seismic Performance and Analysis] 'Keandalan Analisa Pushover Untuk Meramal Prilaku Seismik Nonlinier Struktur Portal Terbuka Dengan Reentrant Corner' | title-only T3 -> Seismic Performance and Analysis (ok) | full-field T3 -> Seismic Performance and Analysis (ok)
+
+## Topic 8: BIM and construction management
+top words: construction, information, bim, building, project, industry, management, projects, implementation, process
+- [BIM and Construction Integration] 'Exploring the Adoption of Building Information Modeling (BIM) in the Jordanian Construction Industry' | title-only T8 -> BIM and Construction Integration (ok) | full-field T8 -> BIM and Construction Integration (ok)
+- [BIM and Construction Integration] 'BIM Use by Architecture, Engineering, and Construction (AEC) Industry in Educational Facility Projects' | title-only T8 -> BIM and Construction Integration (ok) | full-field T8 -> BIM and Construction Integration (ok)
+- [BIM and Construction Integration] 'The implementation of BIM in construction projects' | title-only T8 -> BIM and Construction Integration (ok) | full-field T8 -> BIM and Construction Integration (ok)
+
+## Topic 9: Structural mechanics: shear, buckling, composite beams
+top words: load, capacity, finite, element, shear, beam, plate, composite, behavior, buckling
+- [Structural Load-Bearing Analysis] 'Out-of-Plane Secondary Bifurcation Buckling Behavior of Elastic Circle Pipe Arch' | title-only T9 -> Structural Load-Bearing Analysis (ok) | full-field T9 -> Structural Load-Bearing Analysis (ok)
+- [Structural Load-Bearing Analysis] 'Local Buckling of Axially Compressed, Pultruded GRP, WF-Section, Short Columns - Comparison of Experimental and FE Analysis Buckling Loads' | title-only T9 -> Structural Load-Bearing Analysis (ok) | full-field T9 -> Structural Load-Bearing Analysis (ok)
+- [Structural Load-Bearing Analysis] 'LATERAL BUCKLING OF CASTELLATED BEAMS' | title-only T9 -> Structural Load-Bearing Analysis (ok) | full-field T9 -> Structural Load-Bearing Analysis (ok)
+
+## Topic 6: Mixed laboratory-materials topic (failure case)
+top words: diamond, wood, metal, cell, density, wear, segments, adsorption, matrix, saw
+- [Wood Treatment and Properties] 'Pseudotsuga menziesii (Mirb.) Franco wood basic density in the Patagonia Argentina' | title-only T6 -> Wood Treatment and Properties (ok) | full-field T6 -> Wood Treatment and Properties (ok)
+- [Wood Treatment and Properties] 'Radial trends of wood density and components in Pinus nigra Arn. of Iberian Peninsula' | title-only T6 -> Wood Treatment and Properties (ok) | full-field T6 -> Wood Treatment and Properties (ok)
+- [Wood Treatment and Properties] 'Some Observations of Wood Density and Anatomical Properties in A Douglas-Fir Sample with Suppressed Growth' | title-only T6 -> Wood Treatment and Properties (ok) | full-field T6 -> Wood Treatment and Properties (ok)
+
+test protocol check on 857 labelled records: title-only acc 0.663, full-field acc 0.716
+## Failure case: 'United States building code approach to variations in regional seismicity' | true [Seismic Performance and Analysis] | title-only -> BIM and Construction Integration (topic 8) | full-field -> Seismic Performance and Analysis
+## Failure case: 'Corrosion Behavior of Reinforcing steel in Concrete' | true [Concrete Corrosion and Durability] | title-only -> Innovative concrete reinforcement materials (topic 21) | full-field -> Innovative concrete reinforcement materials
+
+
+case table written to C:\Users\Administrator\Downloads\FCNTM完整论文\topic_table_civil_seed11_paper_en.tex

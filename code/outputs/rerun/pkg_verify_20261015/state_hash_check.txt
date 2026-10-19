@@ -1,0 +1,4 @@
+state hash check against FCNTM_检查点_20261014.zip
+
+civil_missing_state.pt  00711cfc23df6ae5ebfca1c54f75e28f9c5d3853603e95b0c7a048e509efea2f  82232515 bytes
+concat_state_civil.pt  a706754efc7e78974b846dff146f7913ca6d5459b7a33ac25893eff3873a3a65  40481079 bytes

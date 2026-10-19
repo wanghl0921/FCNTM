@@ -1,0 +1,21 @@
+[10-14 09:37:05] === concat fix chain start ===
+[10-14 09:37:05] copied fcntm_main_state_github.pt back into outputs/rerun
+[10-14 09:37:05] copied fcntm_main_state_agnews.pt back into outputs/rerun
+[10-14 09:37:05] copied fcntm_main_state_civil.pt back into outputs/rerun
+[10-14 09:37:05] === concat_retrain: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_concat_control.py --corpora github,agnews,civil --seeds 11,23,37 --k 30
+[10-14 10:19:30] === concat_retrain exit=3221225477
+[10-14 10:19:30] chain stops: concat_retrain failed (exit=3221225477); the main states stay in outputs/rerun for debugging
+[10-14 10:36:57] === concat fix chain start ===
+[10-14 10:36:57] === concat_retrain: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u run_concat_control.py --corpora github,agnews,civil --seeds 11,23,37 --k 30
+[10-14 20:31:35] === concat_retrain exit=0
+[10-14 20:31:35] === title_archival: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u civil_title_archival.py --seeds 11,23,37 --top-labels 15
+[10-14 22:09:30] === title_archival exit=0
+[10-14 22:09:30] === verify_newseed_archives: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u verify_newseed_archives.py --corpora github,agnews,civil
+[10-14 22:26:01] === verify_newseed_archives exit=0
+[10-14 22:26:01] === summarize_civil_extension: C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe -u summarize_civil_extension.py
+[10-14 22:26:32] === summarize_civil_extension exit=0
+[10-14 22:26:34] numbers written to concat_fix_numbers_20261014.txt
+[10-14 22:26:34] moved fcntm_main_state_github.pt back to the checkpoint folder
+[10-14 22:26:34] moved fcntm_main_state_agnews.pt back to the checkpoint folder
+[10-14 22:26:34] moved fcntm_main_state_civil.pt back to the checkpoint folder
+[10-14 22:26:34] === concat fix chain DONE ===

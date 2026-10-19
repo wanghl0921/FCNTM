@@ -1,0 +1,12 @@
+LICENCE NOT SELECTED YET
+
+Copyright (c) 2026 The authors.
+
+The code in this repository and the archived experiment artifacts are
+released by the authors. No open-source licence has been chosen yet; before
+publishing this repository, replace this file with the licence you want to
+apply (for example MIT or Apache-2.0 for the code).
+
+The corpus splits derive from third-party sources (AG News, the
+open-index/open-github-issues dataset, OpenAlex) and remain subject to the
+licences of those sources.

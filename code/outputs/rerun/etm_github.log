@@ -1,0 +1,14 @@
+[supervise] attempt 1/6: python -u benchmark_public.py --dataset github --models ETM --seeds 11 --k 30 --no-resume --out rerun_etm_github.csv --summary rerun_etm_github_summary.csv --details-out outputs/rerun/etm_github_details.json
+train docs 6000 vocab 5175
+test docs 2000
+meta {'repos': ['duckdb', 'typescript', 'moby', 'redis'], 'per_repo_train': 1500, 'per_repo_test': 500, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 8000, 'source': 'open-index/open-github-issues (moby, TypeScript, duckdb, redis)'}
+resume: 0 of 1 runs already done
+--- ETM (seed 11, topics 30, time 876.1s) ---
+    0 redis server command cli aof file script set config rdb
+    1 duckdb appear data agree branch report master name client all
+    2 function array type functions map values value way return string
+    {'n_topics': 30.0, 'CV_n': 30.0, 'CV': 0.6827, 'NPMI_n': 30.0, 'NPMI': 0.2232, 'UCI_n': 30.0, 'UCI': 0.8554, 'UMass_n': 30.0, 'UMass': -2.0878, 'EXCL': 0.3867, 'EXCL_KADJ': 0.3655, 'IRBO': 0.9545}
+model  n_seeds  n_failed  K_target  topic_count_mean  CV_mean  CV_std  NPMI_mean  NPMI_std  UCI_mean  UCI_std  UMass_mean  UMass_std  EXCL_mean  EXCL_std  EXCL_KADJ_mean  EXCL_KADJ_std  IRBO_mean  IRBO_std
+  ETM        1         0        30              30.0 0.682685     0.0   0.223228       0.0    0.8554      0.0     -2.0878        0.0   0.386678       0.0        0.365529            0.0   0.954534       0.0
+saved -> C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_etm_github.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\rerun_etm_github_summary.csv
+[supervise] attempt 1 exited with 0

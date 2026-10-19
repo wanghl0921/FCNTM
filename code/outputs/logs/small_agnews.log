@@ -1,0 +1,80 @@
+[agnews] train=1000 test=400 vocab=1914 K=20 seeds=11,23
+  seed 11 fitted in 194s (fcntm best_epoch=227)
+  seed 23 fitted in 199s (fcntm best_epoch=249)
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\main_agnews.csv
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\fieldview_agnews.csv
+  mask=0.0 fdrop=0.5 seed=11 beta CV=0.590 item_CV=nan
+  mask=0.0 fdrop=0.5 seed=11 cTFIDF CV=0.343 item_CV=0.669
+  mask=0.0 fdrop=0.0 seed=11 beta CV=0.514 item_CV=0.677
+  mask=0.0 fdrop=0.0 seed=11 cTFIDF CV=0.405 item_CV=nan
+  mask=0.0 seed=11 LDA CV=0.448 item_CV=0.607
+  mask=0.0 seed=11 BTM CV=0.454 item_CV=nan
+  mask=0.0 fdrop=0.5 seed=23 beta CV=0.495 item_CV=0.600
+  mask=0.0 fdrop=0.5 seed=23 cTFIDF CV=0.296 item_CV=0.669
+  mask=0.0 fdrop=0.0 seed=23 beta CV=0.564 item_CV=nan
+  mask=0.0 fdrop=0.0 seed=23 cTFIDF CV=0.312 item_CV=0.636
+  mask=0.0 seed=23 LDA CV=0.429 item_CV=0.591
+  mask=0.0 seed=23 BTM CV=0.437 item_CV=nan
+  mask=0.25 fdrop=0.5 seed=11 beta CV=0.551 item_CV=nan
+  mask=0.25 fdrop=0.5 seed=11 cTFIDF CV=0.403 item_CV=0.660
+  mask=0.25 fdrop=0.0 seed=11 beta CV=0.579 item_CV=nan
+  mask=0.25 fdrop=0.0 seed=11 cTFIDF CV=0.389 item_CV=0.690
+  mask=0.25 seed=11 LDA CV=0.518 item_CV=0.669
+  mask=0.25 seed=11 BTM CV=0.426 item_CV=0.653
+  mask=0.25 fdrop=0.5 seed=23 beta CV=0.633 item_CV=nan
+  mask=0.25 fdrop=0.5 seed=23 cTFIDF CV=0.373 item_CV=0.643
+  mask=0.25 fdrop=0.0 seed=23 beta CV=0.583 item_CV=nan
+  mask=0.25 fdrop=0.0 seed=23 cTFIDF CV=0.323 item_CV=0.656
+  mask=0.25 seed=23 LDA CV=0.475 item_CV=nan
+  mask=0.25 seed=23 BTM CV=0.452 item_CV=nan
+  mask=0.5 fdrop=0.5 seed=11 beta CV=0.685 item_CV=nan
+  mask=0.5 fdrop=0.5 seed=11 cTFIDF CV=0.498 item_CV=0.630
+  mask=0.5 fdrop=0.0 seed=11 beta CV=nan item_CV=nan
+  mask=0.5 fdrop=0.0 seed=11 cTFIDF CV=0.474 item_CV=0.625
+  mask=0.5 seed=11 LDA CV=0.537 item_CV=0.641
+  mask=0.5 seed=11 BTM CV=0.425 item_CV=nan
+  mask=0.5 fdrop=0.5 seed=23 beta CV=0.615 item_CV=nan
+  mask=0.5 fdrop=0.5 seed=23 cTFIDF CV=0.486 item_CV=0.644
+  mask=0.5 fdrop=0.0 seed=23 beta CV=0.459 item_CV=0.641
+  mask=0.5 fdrop=0.0 seed=23 cTFIDF CV=0.490 item_CV=0.670
+  mask=0.5 seed=23 LDA CV=0.549 item_CV=nan
+  mask=0.5 seed=23 BTM CV=0.433 item_CV=nan
+  mask=0.75 fdrop=0.5 seed=11 beta CV=0.419 item_CV=0.654
+  mask=0.75 fdrop=0.5 seed=11 cTFIDF CV=0.422 item_CV=0.610
+  mask=0.75 fdrop=0.0 seed=11 beta CV=0.394 item_CV=0.643
+  mask=0.75 fdrop=0.0 seed=11 cTFIDF CV=0.477 item_CV=0.622
+  mask=0.75 seed=11 LDA CV=0.526 item_CV=0.634
+  mask=0.75 seed=11 BTM CV=0.504 item_CV=nan
+  mask=0.75 fdrop=0.5 seed=23 beta CV=0.521 item_CV=0.668
+  mask=0.75 fdrop=0.5 seed=23 cTFIDF CV=0.441 item_CV=0.618
+  mask=0.75 fdrop=0.0 seed=23 beta CV=0.583 item_CV=0.659
+  mask=0.75 fdrop=0.0 seed=23 cTFIDF CV=0.489 item_CV=0.582
+  mask=0.75 seed=23 LDA CV=0.534 item_CV=nan
+  mask=0.75 seed=23 BTM CV=0.448 item_CV=0.645
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\missing_agnews.csv
+  full seed=11 beta CV=0.590 NPMI=-0.543
+  full seed=11 cTFIDF CV=0.343 NPMI=-0.272
+  full seed=23 beta CV=0.495 NPMI=-0.476
+  full seed=23 cTFIDF CV=0.296 NPMI=-0.234
+  no-consistency seed=11 beta CV=0.599 NPMI=-0.558
+  no-consistency seed=11 cTFIDF CV=0.308 NPMI=-0.247
+  no-consistency seed=23 beta CV=0.543 NPMI=-0.501
+  no-consistency seed=23 cTFIDF CV=0.315 NPMI=-0.239
+  no-cross seed=11 beta CV=0.543 NPMI=-0.502
+  no-cross seed=11 cTFIDF CV=0.292 NPMI=-0.235
+  no-cross seed=23 beta CV=0.608 NPMI=-0.552
+  no-cross seed=23 cTFIDF CV=0.311 NPMI=-0.231
+  no-mask seed=11 beta CV=0.495 NPMI=-0.444
+  no-mask seed=11 cTFIDF CV=0.318 NPMI=-0.250
+  no-mask seed=23 beta CV=0.496 NPMI=-0.459
+  no-mask seed=23 cTFIDF CV=0.326 NPMI=-0.258
+  no-fielddrop seed=11 beta CV=0.514 NPMI=-0.474
+  no-fielddrop seed=11 cTFIDF CV=0.405 NPMI=-0.334
+  no-fielddrop seed=23 beta CV=0.564 NPMI=-0.528
+  no-fielddrop seed=23 cTFIDF CV=0.312 NPMI=-0.266
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\ablation_agnews.csv
+  imputation recon2 seed=11 recall=0.0287 precision=0.0328
+  imputation recon2 seed=23 recall=0.0206 precision=0.0230
+  imputation noxrec seed=11 recall=0.0260 precision=0.0293
+  imputation noxrec seed=23 recall=0.0209 precision=0.0262
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\small\imputation_agnews.csv

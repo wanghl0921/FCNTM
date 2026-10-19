@@ -1,0 +1,7 @@
+train docs 6000 vocab 5175
+test docs 2000
+meta {'repos': ['duckdb', 'typescript', 'moby', 'redis'], 'per_repo_train': 1500, 'per_repo_test': 1900, 'split_seed': 20260905, 'no_below': 5, 'no_above': 0.7, 'keep_n': 8000, 'source': 'open-index/open-github-issues (moby, TypeScript, duckdb, redis)'}
+doc embeddings (6000, 384)
+ERROR BERTopic 11 MemoryError('Allocation failed (probably too large).')
+ERROR BERTopic 23 MemoryError('Allocation failed (probably too large).')
+ERROR BERTopic 37 MemoryError('Allocation failed (probably too large).')

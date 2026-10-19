@@ -1,0 +1,47 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\run_fcntm_train.py", line 537, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\run_fcntm_train.py", line 496, in main
+    run_corpus(train, test, seeds, args.k,
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               out_path, append=args.append,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+               state_path=(os.path.join(config.ROOT, args.dump_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                           if args.dump_state else None))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\run_fcntm_train.py", line 252, in run_corpus
+    info = NN.train_topic_vae_valid(
+        model, loss_fn, loss_fn, corpus_train["n_docs"], seed,
+        val_fraction=0.2, kl_max=0.05, **extra)
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\models.py", line 533, in train_topic_vae_valid
+    loss, _ = train_loss_fn(idx, kl_weight=kl_weight)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\run_fcntm_train.py", line 202, in loss_fn
+    return model.train_step(
+           ~~~~~~~~~~~~~~~~^
+        NN._normalize_rows(cause_batch),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        NN._normalize_rows(item_batch),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        cause_batch, item_batch,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        has_cause[idx], kl_weight)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\models.py", line 1161, in train_step
+    term = self.recon_scale * reconstruction_loss_from_counts(
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        fused_logits, g_counts_masked, reduce=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        per_token=self.recon_norm == "token",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\models.py", line 131, in reconstruction_loss_from_counts
+    return _nll_from_log_prob(log_p, counts, reduce=reduce, per_token=per_token)
+  File "C:\Users\Administrator\Downloads\FCNTM完整代码\models.py", line 142, in _nll_from_log_prob
+    loss = -(counts * log_p).sum(dim=-1)
+             ~~~~~~~^~~~~~~
+RuntimeError: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 3934720 bytes.

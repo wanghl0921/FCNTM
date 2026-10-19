@@ -1,0 +1,59 @@
+[supervise] attempt 1/10: python -u occlusion_robustness.py --corpus github --seed 11 --models FC-NTM,LDA,NMF,ProdLDA,ETM --rates 0,0.25,0.5,0.75,1.0 --out occlusion_robustness_github_seed11.csv
+[github] FC-NTM
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=7.7117 agree=0.841
+  FC-NTM rate=0.5 hidden_NLL=7.7347 agree=0.730
+  FC-NTM rate=0.75 hidden_NLL=7.7905 agree=0.583
+  FC-NTM rate=1 hidden_NLL=7.9597 agree=0.358
+[github] LDA
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=6.8018 agree=0.845
+  LDA rate=0.5 hidden_NLL=6.8538 agree=0.776
+  LDA rate=0.75 hidden_NLL=6.9484 agree=0.674
+  LDA rate=1 hidden_NLL=7.3024 agree=0.420
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9910 agree=0.886
+  NMF rate=0.5 hidden_NLL=7.1880 agree=0.825
+  NMF rate=0.75 hidden_NLL=7.5825 agree=0.727
+  NMF rate=1 hidden_NLL=10.2863 agree=0.479
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5584 agree=0.840
+  ProdLDA rate=0.5 hidden_NLL=7.5883 agree=0.746
+  ProdLDA rate=0.75 hidden_NLL=7.6677 agree=0.647
+  ProdLDA rate=1 hidden_NLL=8.1648 agree=0.354
+[github] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=6.6165 agree=0.874
+  ETM rate=0.5 hidden_NLL=6.6433 agree=0.811
+  ETM rate=0.75 hidden_NLL=6.7083 agree=0.703
+  ETM rate=1 hidden_NLL=7.2023 agree=0.452
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+ FC-NTM  0.00         NaN       0     1.0000   0.0000
+ FC-NTM  0.25      7.7117    2000     0.8410   0.0059
+ FC-NTM  0.50      7.7347    2000     0.7295   0.0167
+ FC-NTM  0.75      7.7905    2000     0.5825   0.0441
+ FC-NTM  1.00      7.9597    2000     0.3580   0.0830
+    LDA  0.00         NaN       0     1.0000   0.0000
+    LDA  0.25      6.8018    2000     0.8450   0.0298
+    LDA  0.50      6.8538    2000     0.7760   0.0614
+    LDA  0.75      6.9484    2000     0.6740   0.1083
+    LDA  1.00      7.3024    2000     0.4205   0.2268
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      6.9910    2000     0.8860   0.0219
+    NMF  0.50      7.1880    2000     0.8245   0.0523
+    NMF  0.75      7.5825    2000     0.7265   0.0986
+    NMF  1.00     10.2863    2000     0.4790   0.2448
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5584    2000     0.8400   0.0077
+ProdLDA  0.50      7.5883    2000     0.7460   0.0203
+ProdLDA  0.75      7.6677    2000     0.6475   0.0442
+ProdLDA  1.00      8.1648    2000     0.3545   0.1578
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      6.6165    2000     0.8740   0.0139
+    ETM  0.50      6.6433    2000     0.8115   0.0339
+    ETM  0.75      6.7083    2000     0.7025   0.0747
+    ETM  1.00      7.2023    2000     0.4515   0.2390
+saved C:\Users\Administrator\Downloads\FCNTMÍêÕû´úÂë\outputs\occlusion_robustness_github_seed11.csv
+[supervise] attempt 1 exited with 0

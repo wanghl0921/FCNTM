@@ -1,0 +1,36 @@
+[supervise] attempt 1/10: python -u fair_readout.py --corpus github,agnews --seeds 11 --models ETM,ProdLDA,CTMLite,LDA,NMF
+[github] training ETM seed=11
+[github] training ProdLDA seed=11
+[github] training CTMLite seed=11
+[github] training LDA seed=11
+[github] training NMF seed=11
+      source   model  seed readout     CV   NPMI   UMass
+fair_readout     ETM    11    beta 0.6827 0.2232 -2.0878
+fair_readout     ETM    11  ctfidf 0.7025 0.2478 -2.6865
+fair_readout ProdLDA    11    beta 0.5845 0.1172 -5.0153
+fair_readout ProdLDA    11  ctfidf 0.6609 0.2029 -2.2825
+fair_readout CTMLite    11    beta 0.6185 0.1649 -4.2154
+fair_readout CTMLite    11  ctfidf 0.7064 0.2480 -1.8666
+fair_readout     LDA    11    beta 0.5442 0.0595 -4.4232
+fair_readout     LDA    11  ctfidf 0.5863 0.1617 -3.3862
+fair_readout     NMF    11    beta 0.6156 0.1641 -3.2372
+fair_readout     NMF    11  ctfidf 0.5801 0.1319 -4.4389
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\fair_readout_github.csv
+[agnews] training ETM seed=11
+[agnews] training ProdLDA seed=11
+[agnews] training CTMLite seed=11
+[agnews] training LDA seed=11
+[agnews] training NMF seed=11
+      source   model  seed readout     CV    NPMI   UMass
+fair_readout     ETM    11    beta 0.5108  0.0941 -5.0146
+fair_readout     ETM    11  ctfidf 0.5090  0.0923 -6.6635
+fair_readout ProdLDA    11    beta 0.5503  0.0789 -6.5846
+fair_readout ProdLDA    11  ctfidf 0.5316  0.1112 -4.0203
+fair_readout CTMLite    11    beta 0.4573 -0.0004 -7.9901
+fair_readout CTMLite    11  ctfidf 0.4628  0.0714 -4.8147
+fair_readout     LDA    11    beta 0.4318 -0.0454 -8.1208
+fair_readout     LDA    11  ctfidf 0.4514  0.0080 -7.7874
+fair_readout     NMF    11    beta 0.4959  0.0693 -6.0489
+fair_readout     NMF    11  ctfidf 0.5323  0.1200 -6.1519
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\fair_readout_agnews.csv
+[supervise] attempt 1 exited with 0

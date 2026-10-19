@@ -1,0 +1,109 @@
+[supervise] attempt 1/60: python -u run_fcntm_train.py --corpus agnews --seeds 11,23,37 --k 30 --fusion gate --fusion-norm balanced --fusion-weight 0.5 --field-dropout 0.5 --max-epochs 700 --lr 5e-4 --recover-nan --resume-every 50 --out outputs/fcntm_agnews_final.csv --dump-details outputs/fcntm_agnews_final_details.json
+    [train] epoch 1 loss 458.102 klw 0.0025
+    [train] epoch 2 loss 452.223 klw 0.0050
+    [train] epoch 3 loss 450.330 klw 0.0075
+    [train] epoch 4 loss 449.516 klw 0.0100
+    [train] epoch 5 loss 448.979 klw 0.0125
+    [train] epoch 25 loss 446.215 klw 0.0500
+    [train] epoch 50 loss 433.890 klw 0.0500
+    [train] epoch 75 loss 430.262 klw 0.0500
+    [train] epoch 100 loss 428.545 klw 0.0500
+    [train] epoch 125 loss 424.335 klw 0.0500
+    [train] epoch 150 loss 420.532 klw 0.0500
+    [train] epoch 175 loss 417.834 klw 0.0500
+    [train] epoch 200 loss 415.706 klw 0.0500
+    [train] epoch 225 loss 413.714 klw 0.0500
+    [train] epoch 250 loss 411.978 klw 0.0500
+    [train] epoch 275 loss 410.152 klw 0.0500
+    [train] epoch 300 loss 408.021 klw 0.0500
+    [train] epoch 325 loss 407.317 klw 0.0500
+    [train] epoch 350 loss 405.468 klw 0.0500
+    [train] epoch 375 loss 404.490 klw 0.0500
+    [train] epoch 400 loss 403.395 klw 0.0500
+    [train] epoch 425 loss 402.819 klw 0.0500
+    [train] epoch 450 loss 402.080 klw 0.0500
+    [train] epoch 475 loss 400.770 klw 0.0500
+    [train] epoch 500 loss 400.600 klw 0.0500
+    [train] epoch 525 loss 399.758 klw 0.0500
+    [train] epoch 550 loss 399.319 klw 0.0500
+    [train] epoch 575 loss 399.186 klw 0.0500
+    [train] epoch 600 loss 398.949 klw 0.0500
+    [train] epoch 625 loss 397.870 klw 0.0500
+    [train] epoch 650 loss 398.175 klw 0.0500
+    [train] epoch 675 loss 397.555 klw 0.0500
+    [train] epoch 700 loss 397.246 klw 0.0500
+   FC-NTM seed 11 {'CV': 0.5888, 'NPMI': 0.1431, 'IRBO': 0.9928}
+   FC-NTM-cTFIDF seed 11 {'CV': 0.6284, 'NPMI': 0.1863, 'IRBO': 0.9778}
+    [train] epoch 1 loss 458.676 klw 0.0025
+    [train] epoch 2 loss 452.774 klw 0.0050
+    [train] epoch 3 loss 450.867 klw 0.0075
+    [train] epoch 4 loss 449.734 klw 0.0100
+    [train] epoch 5 loss 448.723 klw 0.0125
+    [train] epoch 25 loss 446.491 klw 0.0500
+    [train] epoch 50 loss 435.500 klw 0.0500
+    [train] epoch 75 loss 427.937 klw 0.0500
+    [train] epoch 100 loss 422.015 klw 0.0500
+    [train] epoch 125 loss 419.389 klw 0.0500
+    [train] epoch 150 loss 417.407 klw 0.0500
+    [train] epoch 175 loss 415.668 klw 0.0500
+    [train] epoch 200 loss 414.128 klw 0.0500
+    [train] epoch 225 loss 412.372 klw 0.0500
+    [train] epoch 250 loss 410.676 klw 0.0500
+    [train] epoch 275 loss 409.107 klw 0.0500
+    [train] epoch 300 loss 407.246 klw 0.0500
+    [train] epoch 325 loss 406.286 klw 0.0500
+    [train] epoch 350 loss 405.445 klw 0.0500
+    [train] epoch 375 loss 403.746 klw 0.0500
+    [train] epoch 400 loss 402.955 klw 0.0500
+    [train] epoch 425 loss 402.406 klw 0.0500
+    [train] epoch 450 loss 401.893 klw 0.0500
+    [train] epoch 475 loss 400.052 klw 0.0500
+    [train] epoch 500 loss 400.146 klw 0.0500
+    [train] epoch 525 loss 400.101 klw 0.0500
+    [train] epoch 550 loss 399.044 klw 0.0500
+    [train] epoch 575 loss 398.535 klw 0.0500
+    [train] epoch 600 loss 398.289 klw 0.0500
+    [train] epoch 625 loss 398.212 klw 0.0500
+    [train] epoch 650 loss 396.856 klw 0.0500
+    [train] epoch 675 loss 397.567 klw 0.0500
+    [train] epoch 700 loss 396.769 klw 0.0500
+   FC-NTM seed 23 {'CV': 0.6099, 'NPMI': 0.1562, 'IRBO': 0.9927}
+   FC-NTM-cTFIDF seed 23 {'CV': 0.6024, 'NPMI': 0.1694, 'IRBO': 0.9733}
+    [train] epoch 1 loss 457.522 klw 0.0025
+    [train] epoch 2 loss 451.793 klw 0.0050
+    [train] epoch 3 loss 449.675 klw 0.0075
+    [train] epoch 4 loss 449.104 klw 0.0100
+    [train] epoch 5 loss 448.641 klw 0.0125
+    [train] epoch 25 loss 446.387 klw 0.0500
+    [train] epoch 50 loss 433.363 klw 0.0500
+    [train] epoch 75 loss 426.449 klw 0.0500
+    [train] epoch 100 loss 422.691 klw 0.0500
+    [train] epoch 125 loss 420.749 klw 0.0500
+    [train] epoch 150 loss 418.504 klw 0.0500
+    [train] epoch 175 loss 417.058 klw 0.0500
+    [train] epoch 200 loss 414.846 klw 0.0500
+    [train] epoch 225 loss 412.898 klw 0.0500
+    [train] epoch 250 loss 411.104 klw 0.0500
+    [train] epoch 275 loss 409.415 klw 0.0500
+    [train] epoch 300 loss 407.779 klw 0.0500
+    [train] epoch 325 loss 406.528 klw 0.0500
+    [train] epoch 350 loss 405.611 klw 0.0500
+    [train] epoch 375 loss 403.312 klw 0.0500
+    [train] epoch 400 loss 402.791 klw 0.0500
+    [train] epoch 425 loss 402.151 klw 0.0500
+    [train] epoch 450 loss 401.470 klw 0.0500
+    [train] epoch 475 loss 400.268 klw 0.0500
+    [train] epoch 500 loss 400.466 klw 0.0500
+    [train] epoch 525 loss 399.980 klw 0.0500
+    [train] epoch 550 loss 399.572 klw 0.0500
+    [train] epoch 575 loss 399.061 klw 0.0500
+    [train] epoch 600 loss 398.251 klw 0.0500
+    [train] epoch 625 loss 398.057 klw 0.0500
+    [train] epoch 650 loss 396.847 klw 0.0500
+    [train] epoch 675 loss 396.169 klw 0.0500
+    [train] epoch 700 loss 396.086 klw 0.0500
+   FC-NTM seed 37 {'CV': 0.558, 'NPMI': 0.1131, 'IRBO': 0.9932}
+   FC-NTM-cTFIDF seed 37 {'CV': 0.606, 'NPMI': 0.1629, 'IRBO': 0.9711}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs/fcntm_agnews_final_details.json
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs/fcntm_agnews_final.csv
+[supervise] attempt 1 exited with 0

@@ -1,0 +1,16 @@
+﻿model,rate,hidden_NLL,n_docs,agreement,mean_js,corpus,seed
+Constant-unigram,0.0,,0,1.0,0.0,agnews,11
+Constant-unigram,0.25,7.803531557441754,7593,1.0,0.0,agnews,11
+Constant-unigram,0.5,7.807182282954048,7596,1.0,0.0,agnews,11
+Constant-unigram,0.75,7.807073789554972,7599,1.0,0.0,agnews,11
+Constant-unigram,1.0,7.809374407798971,7599,1.0,0.0,agnews,11
+Constant-unigram,0.0,,0,1.0,0.0,agnews,23
+Constant-unigram,0.25,7.804557813514508,7593,1.0,0.0,agnews,23
+Constant-unigram,0.5,7.80870672285489,7596,1.0,0.0,agnews,23
+Constant-unigram,0.75,7.809341233592917,7599,1.0,0.0,agnews,23
+Constant-unigram,1.0,7.809374407798971,7599,1.0,0.0,agnews,23
+Constant-unigram,0.0,,0,1.0,0.0,agnews,37
+Constant-unigram,0.25,7.807785354985801,7593,1.0,0.0,agnews,37
+Constant-unigram,0.5,7.806971409969425,7596,1.0,0.0,agnews,37
+Constant-unigram,0.75,7.808557111945269,7599,1.0,0.0,agnews,37
+Constant-unigram,1.0,7.809374407798971,7599,1.0,0.0,agnews,37

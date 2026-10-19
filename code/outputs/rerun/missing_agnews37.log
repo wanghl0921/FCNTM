@@ -1,0 +1,27 @@
+[agnews] field vocab cause=4681 item=3829
+[agnews] test docs=7600 with background field=7599
+loaded states for ['fielddrop_on:11', 'fielddrop_on:23']
+existing rows in public_missing_field_occlusion.csv : 3
+    [resume] continuing from epoch 200
+    [train] epoch 225 loss 412.898 klw 0.0500
+    [train] epoch 250 loss 411.104 klw 0.0500
+    [train] epoch 275 loss 409.415 klw 0.0500
+    [train] epoch 300 loss 407.779 klw 0.0500
+    [train] epoch 325 loss 406.528 klw 0.0500
+    [train] epoch 350 loss 405.611 klw 0.0500
+    [train] epoch 375 loss 403.312 klw 0.0500
+    [train] epoch 400 loss 402.791 klw 0.0500
+    [train] epoch 425 loss 402.151 klw 0.0500
+    [train] epoch 450 loss 401.470 klw 0.0500
+    [train] epoch 475 loss 400.268 klw 0.0500
+    [train] epoch 500 loss 400.466 klw 0.0500
+    [train] epoch 525 loss 399.980 klw 0.0500
+    [train] epoch 550 loss 399.572 klw 0.0500
+    [train] epoch 575 loss 399.061 klw 0.0500
+    [train] epoch 600 loss 398.251 klw 0.0500
+    [train] epoch 625 loss 398.057 klw 0.0500
+    [train] epoch 650 loss 396.847 klw 0.0500
+    [train] epoch 675 loss 396.169 klw 0.0500
+    [train] epoch 700 loss 396.086 klw 0.0500
+   fielddrop_on seed 37 {'full_CV': 0.605953, 'occ_CV': 0.601558, 'delta_CV': 0.004395, 'delta_NLL_token': 0.224401, 'top1_agreement': 0.522437}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_occlusion.csv | C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\public_missing_field_fieldview.csv

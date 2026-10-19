@@ -1,0 +1,8 @@
+   FC-NTM seed 11 {'CV': 0.679, 'NPMI': 0.1232, 'IRBO': 0.9745}
+   FC-NTM-cTFIDF seed 11 {'CV': 0.646, 'NPMI': 0.1995, 'IRBO': 0.8628}
+   FC-NTM seed 23 {'CV': 0.6802, 'NPMI': 0.1836, 'IRBO': 0.9884}
+   FC-NTM-cTFIDF seed 23 {'CV': 0.7121, 'NPMI': 0.252, 'IRBO': 0.9192}
+   FC-NTM seed 37 {'CV': 0.6638, 'NPMI': 0.1887, 'IRBO': 0.9866}
+   FC-NTM-cTFIDF seed 37 {'CV': 0.7063, 'NPMI': 0.2482, 'IRBO': 0.9205}
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs/github_gate_details.json
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs/codev_github_gate_bal.csv

@@ -1,0 +1,60 @@
+[supervise] attempt 1/3: python -u run_ag_occlusion_when_ready.py
+state ready: C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\agnews_missing_state.pt
+[agnews] FC-NTM
+  FC-NTM rate=0 hidden_NLL=nan agree=1.000
+  FC-NTM rate=0.25 hidden_NLL=7.6866 agree=0.817
+  FC-NTM rate=0.5 hidden_NLL=7.7133 agree=0.699
+  FC-NTM rate=0.75 hidden_NLL=7.7983 agree=0.536
+  FC-NTM rate=1 hidden_NLL=7.8262 agree=0.521
+[agnews] LDA
+  LDA rate=0 hidden_NLL=nan agree=1.000
+  LDA rate=0.25 hidden_NLL=7.8222 agree=0.746
+  LDA rate=0.5 hidden_NLL=7.8607 agree=0.637
+  LDA rate=0.75 hidden_NLL=7.8823 agree=0.523
+  LDA rate=1 hidden_NLL=7.8670 agree=0.439
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.6663 agree=0.818
+  NMF rate=0.5 hidden_NLL=10.3145 agree=0.726
+  NMF rate=0.75 hidden_NLL=11.3276 agree=0.632
+  NMF rate=1 hidden_NLL=13.8463 agree=0.523
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6415 agree=0.807
+  ProdLDA rate=0.5 hidden_NLL=7.6618 agree=0.707
+  ProdLDA rate=0.75 hidden_NLL=7.7142 agree=0.604
+  ProdLDA rate=1 hidden_NLL=7.8354 agree=0.492
+[agnews] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.3159 agree=0.842
+  ETM rate=0.5 hidden_NLL=7.3821 agree=0.751
+  ETM rate=0.75 hidden_NLL=7.5046 agree=0.664
+  ETM rate=1 hidden_NLL=7.8505 agree=0.558
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+ FC-NTM  0.00         NaN       0     1.0000   0.0000
+ FC-NTM  0.25      7.6866    7593     0.8171   0.0072
+ FC-NTM  0.50      7.7133    7596     0.6995   0.0203
+ FC-NTM  0.75      7.7983    7599     0.5363   0.0517
+ FC-NTM  1.00      7.8262    7599     0.5207   0.0498
+    LDA  0.00         NaN       0     1.0000   0.0000
+    LDA  0.25      7.8222    7593     0.7457   0.0545
+    LDA  0.50      7.8607    7596     0.6374   0.1014
+    LDA  0.75      7.8823    7599     0.5228   0.1537
+    LDA  1.00      7.8670    7599     0.4392   0.2115
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      9.6663    7593     0.8175   0.0422
+    NMF  0.50     10.3145    7596     0.7261   0.0920
+    NMF  0.75     11.3276    7599     0.6325   0.1534
+    NMF  1.00     13.8463    7599     0.5229   0.2449
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.6415    7593     0.8070   0.0085
+ProdLDA  0.50      7.6618    7596     0.7066   0.0213
+ProdLDA  0.75      7.7142    7599     0.6039   0.0437
+ProdLDA  1.00      7.8354    7599     0.4924   0.0948
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.3159    7593     0.8417   0.0247
+    ETM  0.50      7.3821    7596     0.7512   0.0588
+    ETM  0.75      7.5046    7599     0.6643   0.1100
+    ETM  1.00      7.8505    7599     0.5578   0.2030
+saved C:\Users\Administrator\Downloads\FCNTM完整代码\outputs\occlusion_robustness_agnews_seed11.csv
+[supervise] attempt 1 exited with 0
