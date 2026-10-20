@@ -1,6 +1,6 @@
 # RESULTS MANIFEST
 
-- generated: 2026-10-19T03:31:25+00:00
+- generated: 2026-10-20T07:05:45+00:00
 - python: 3.13.15 on Windows-2019Server-10.0.17763-SP0
 - protocol: K=30, seeds=[11, 23, 37], topn=10, read-outs=['beta', 'ctfidf']
 
@@ -11,7 +11,7 @@
 | data/agnews/train.csv | `18ae93aaf03f25ea` | 1558082 |
 | data/agnews/test.csv | `ffdaf569a16f1564` | 1956623 |
 | data/github_issues/train.csv | `88b7e7b7133e5101` | 15900136 |
-| data/github_issues/test.csv | `92d7657e57d350a5` | 4909113 |
+| data/github_issues/test.csv | `665db67457a4dc6c` | 4952908 |
 | data/civil_openalex/raw.csv | `0d849556730aee05` | 16706536 |
 | data/civil_openalex/train_full.csv | `90519f3de27df394` | 15249679 |
 | data/civil_openalex/test_full.csv | `d1afccffccb6c35b` | 5032143 |
@@ -19,30 +19,30 @@
 | data/civil_openalex/test_abs60.csv | `ac24971a86801d54` | 3516883 |
 | data/civil_openalex/train_abs30.csv | `dd7d4f7b0fa2fdea` | 9400226 |
 | data/civil_openalex/test_abs30.csv | `9808049e3216c68e` | 3109210 |
-| civil_corpus/collect_openalex.py | `e6fe8472f3e29c36` | 12414 |
+| civil_corpus/collect_openalex.py | `5ec128294c2a3fae` | 12707 |
 | civil_corpus/civil_openalex_cc.csv | `0d849556730aee05` | 16706536 |
-| agnews_repo/data/ag_news_csv/train.csv | `76a0a2d2f92b2863` | 29470338 |
-| agnews_repo/data/ag_news_csv/test.csv | `521465c2428ed7f0` | 1857427 |
+| agnews_repo/data/ag_news_csv/train.csv | `8d425ab2441f8d31` | 29590338 |
+| agnews_repo/data/ag_news_csv/test.csv | `79443885edce9f5f` | 1865027 |
 
 ## checkpoint
 
 | path | sha256 | bytes |
 |---|---|---|
-| outputs/fcntm_github_final_details.json | `8ab50a8a1aea2d46` | 22074540 |
-| outputs/fcntm_agnews_final_details.json | `759b91932fa303e8` | 21183392 |
+| outputs/fcntm_github_final_details.json | **MISSING** | |
+| outputs/fcntm_agnews_final_details.json | **MISSING** | |
 | outputs/fcntm_civil_final.csv | `9697121173ddf994` | 25237 |
-| outputs/fcntm_civil_final_details.json | `2525e005e18c5fd1` | 27135792 |
-| outputs/github_missing_state.pt | `6a2244fe94755e3a` | 37473191 |
-| outputs/agnews_missing_state.pt | `e8c49f397b42269f` | 25767590 |
-| outputs/github_fielddrop_off.pt | `1d228e61d5a287f0` | 28106983 |
-| outputs/agnews_fielddrop_off.pt | `bf6f88d7160970ed` | 25766950 |
-| outputs/civil_missing_state.pt | `00711cfc23df6ae5` | 82232515 |
-| outputs/rerun/fcntm_main_state_github.pt | `c6f4f58b9f55ac7d` | 65585769 |
-| outputs/rerun/fcntm_main_state_agnews.pt | `c8e68fadbbfb931c` | 60130921 |
-| outputs/rerun/fcntm_main_state_civil.pt | `d203634b24f9de22` | 95942169 |
-| outputs/rerun/concat_state_github.pt | `3660e6d7a5c6aa39` | 27469239 |
-| outputs/rerun/concat_state_agnews.pt | `9eb1d04e48ae96f1` | 25131255 |
-| outputs/rerun/concat_state_civil.pt | `a706754efc7e7897` | 40481079 |
+| outputs/fcntm_civil_final_details.json | **MISSING** | |
+| outputs/github_missing_state.pt | **MISSING** | |
+| outputs/agnews_missing_state.pt | **MISSING** | |
+| outputs/github_fielddrop_off.pt | **MISSING** | |
+| outputs/agnews_fielddrop_off.pt | **MISSING** | |
+| outputs/civil_missing_state.pt | **MISSING** | |
+| outputs/rerun/fcntm_main_state_github.pt | **MISSING** | |
+| outputs/rerun/fcntm_main_state_agnews.pt | **MISSING** | |
+| outputs/rerun/fcntm_main_state_civil.pt | **MISSING** | |
+| outputs/rerun/concat_state_github.pt | **MISSING** | |
+| outputs/rerun/concat_state_agnews.pt | **MISSING** | |
+| outputs/rerun/concat_state_civil.pt | **MISSING** | |
 | outputs/rerun/btm_fit_github_seed11.npz | `8a6479757359cc5e` | 197667 |
 | outputs/rerun/btm_fit_github_seed23.npz | `09cd4ec326cdcb3a` | 195092 |
 | outputs/rerun/btm_fit_github_seed37.npz | `713259b1123e312e` | 194645 |
@@ -147,15 +147,15 @@
 | outputs/baseline_fieldview.csv | `6d04efccfdf447f3` | 6816 |
 | outputs/rerun/fcntm_github_seed53plus.csv | `7cdb76e23b236b27` | 53233 |
 | outputs/rerun/fcntm_agnews_seed53plus.csv | `785b75c795e81a9f` | 52870 |
-| outputs/rerun/fcntm_github_seed53plus_details.json | `4c9b5097b8dc0d0a` | 51464263 |
-| outputs/rerun/fcntm_agnews_seed53plus_details.json | `d10914eace834afc` | 49435487 |
+| outputs/rerun/fcntm_github_seed53plus_details.json | **MISSING** | |
+| outputs/rerun/fcntm_agnews_seed53plus_details.json | **MISSING** | |
 | outputs/rerun/fair_readout_github_newseeds.csv | `8e9993ca8a8cb66a` | 1346 |
 | outputs/rerun/fair_readout_agnews_newseeds.csv | `c777d4ac63c844e3` | 1343 |
 | outputs/rerun/occlusion_robustness_github_newseeds.csv | `4c6282b0cd9122dd` | 6570 |
 | outputs/rerun/occlusion_robustness_agnews_newseeds.csv | `df14a0e7c6389f37` | 7544 |
 | outputs/rerun/seed_extension_summary.csv | `6ac0b0289a43df8b` | 1187 |
 | outputs/rerun/fcntm_civil_seed53plus.csv | `70333ad926920048` | 58842 |
-| outputs/rerun/fcntm_civil_seed53plus_details.json | `5bb3b970526bf704` | 63300520 |
+| outputs/rerun/fcntm_civil_seed53plus_details.json | **MISSING** | |
 | outputs/rerun/fair_readout_civil_newseeds.csv | `ba7e4a4c809c0f44` | 1783 |
 | outputs/rerun/occlusion_robustness_civil_newseeds.csv | `0f0af9ea18f74a3b` | 6459 |
 | outputs/rerun/civil_seed_extension_summary.csv | `65ab5b796bc8d4e8` | 498 |
@@ -168,7 +168,7 @@
 | outputs/rerun/concat_control_civil.csv | `fedf4e9df2cc34f5` | 826 |
 | outputs/rerun/civil_title_archival.csv | `30af9ac0566f4e0f` | 1398 |
 | outputs/civil_openalex_topics.csv | `4e2f075217e7b4bc` | 1105979 |
-| outputs/civil_openalex_topics_meta.json | `887bef9e537b0aac` | 626 |
+| outputs/civil_openalex_topics_meta.json | `5b46f495acdb3f62` | 637 |
 | outputs/rerun/civil_topic_cases_20261014.md | `c5826f9cb0501ab6` | 5004 |
 | outputs/rerun/concat_fix_numbers_20261014.txt | `655e087f0c226d85` | 1513 |
 
@@ -176,59 +176,59 @@
 
 | path | sha256 | bytes |
 |---|---|---|
-| config.py | `c67be6f0a0e7c00a` | 2072 |
-| metrics.py | `ae3a1334c19ee66a` | 8638 |
+| config.py | `370666cf1413c841` | 2129 |
+| metrics.py | `561790773ae8d193` | 8692 |
 | public_data.py | `486cd83cced65f3e` | 9353 |
-| public_data_github.py | `a196448511c394fa` | 11474 |
+| public_data_github.py | `b835d7a1c5a5a28b` | 11786 |
 | models.py | `ff1514bbbc4f9d01` | 72874 |
-| baselines.py | `255d72ea1a40b962` | 18423 |
-| new_baselines.py | `b349935350c8f5e7` | 13914 |
-| experiment.py | `d06fc42b4905ab92` | 16914 |
-| benchmark_public.py | `c7806050a778c9cd` | 18336 |
+| baselines.py | `7c8f44b723f85910` | 18924 |
+| new_baselines.py | `bbb610469fdf2152` | 14257 |
+| experiment.py | `a86c071ea7dc18f3` | 17409 |
+| benchmark_public.py | `04955964722e447f` | 18602 |
 | run_fcntm_train.py | `a0fb2ad094334d8f` | 27302 |
-| run_public_missing_field.py | `8308b303e87a68aa` | 30425 |
-| occlusion_robustness.py | `a299ec9031339405` | 22978 |
-| fair_readout.py | `9e06a2dc4e626cb3` | 6224 |
-| rescore_clean_test.py | `ae2ab2fe45e45ecf` | 4177 |
-| dump_btm_readout_topics.py | `c678c8b79734876a` | 3059 |
-| add_btm_doc_topic.py | `c3ad08a14015a3a1` | 3777 |
-| recompute_irbo.py | `163d972d41a4cb5b` | 2925 |
+| run_public_missing_field.py | `9287e696480ba0ca` | 31084 |
+| occlusion_robustness.py | `484d41c52f0b4206` | 23561 |
+| fair_readout.py | `37988bc14871d936` | 6381 |
+| rescore_clean_test.py | `fad26651263f45ab` | 4293 |
+| dump_btm_readout_topics.py | `0b463e53f8df8ff2` | 3144 |
+| add_btm_doc_topic.py | `1e96137956b2490a` | 3870 |
+| recompute_irbo.py | `0fad87aacf74b49a` | 3009 |
 | run_ablation_public.py | `787246790fcce60b` | 19147 |
-| run_core_ablations.py | `eeb83e60dc74590d` | 7045 |
+| run_core_ablations.py | `353b7f0f35e1402d` | 7214 |
 | embed_public.py | `33e789f7970eab28` | 10383 |
 | public_data_civil.py | `3ed59de9702c37b5` | 13809 |
-| make_result_tables.py | `fe071cc99e01e05b` | 7406 |
-| make_topic_table.py | `ebc9611309c1f757` | 7785 |
-| compare_occlusion.py | `d342cf037611b312` | 5557 |
-| check_paper_numbers.py | `c7e9a47438a71ac5` | 54339 |
-| result_identity.py | `f1f836011d161046` | 7198 |
-| rerun_btm_nmf_boundary_fix.py | `1797059f16dd19ed` | 6733 |
-| check_empty_summary_behavior.py | `a83a981a7be0c21f` | 2697 |
-| check_btm_empty_biterm_counts.py | `7a92d654ea808a95` | 2210 |
-| check_missing_decomposition.py | `9cd684cebd4d8d90` | 2087 |
-| results_manifest.py | `b607901c29df754c` | 25343 |
-| field_redundancy.py | `247d6bb2c10baed8` | 7977 |
+| make_result_tables.py | `01f8bd90e1b56764` | 7588 |
+| make_topic_table.py | `33938f1c065b262e` | 7967 |
+| compare_occlusion.py | `aca5f8dc0b939835` | 5690 |
+| check_paper_numbers.py | `be9ef973118549fc` | 55572 |
+| result_identity.py | `df5a7a3190f634f0` | 7410 |
+| rerun_btm_nmf_boundary_fix.py | `4f8422e7f28497da` | 6892 |
+| check_empty_summary_behavior.py | `4ae8e0c66690a8bc` | 2764 |
+| check_btm_empty_biterm_counts.py | `08a44450437acbb0` | 2270 |
+| check_missing_decomposition.py | `6bb61ad2c2067d4c` | 2142 |
+| results_manifest.py | `7caa3bbf139719cf` | 25979 |
+| field_redundancy.py | `aa88965080cbbdc9` | 8174 |
 | field_complementarity.py | `120a9bde57ad0128` | 6673 |
-| summarize_ladder.py | `16774b7217d64cc2` | 4774 |
-| add_civil_btm_occlusion.py | `de5832bdc86c94dd` | 3903 |
-| occlusion_controls.py | `f47da3270224452a` | 6048 |
-| bn_readout_sensitivity.py | `f9f8bc01ee5ff04d` | 4987 |
-| baseline_fieldview.py | `e4fec356766abd75` | 9549 |
-| extend_seeds_btm.py | `1cfa48fc826e911c` | 3587 |
-| extend_seeds_fcntm_occlusion.py | `1c72a0d9ef34e229` | 2152 |
-| extend_seeds_lda_occlusion.py | `f34fcfa1c89d28b2` | 1732 |
-| summarize_seed_extension.py | `4e8c175ec34f736b` | 9272 |
-| seed_identity.py | `abfc2c7dd4ffcfe8` | 6293 |
+| summarize_ladder.py | `df4a9a0d40a5e7a2` | 4889 |
+| add_civil_btm_occlusion.py | `0f467ecc9ed76b5b` | 4003 |
+| occlusion_controls.py | `c95d765e07f77190` | 6206 |
+| bn_readout_sensitivity.py | `81c1fc015b9261bf` | 5100 |
+| baseline_fieldview.py | `128aaecc3115afec` | 9763 |
+| extend_seeds_btm.py | `b61cb3535777be4e` | 3676 |
+| extend_seeds_fcntm_occlusion.py | `fe4a7870679d05d2` | 2208 |
+| extend_seeds_lda_occlusion.py | `9acfa4f3d5343994` | 1781 |
+| summarize_seed_extension.py | `3496de0490bbeaed` | 9500 |
+| seed_identity.py | `ce3599f5a3d21160` | 6459 |
 | verify_newseed_archives.py | `6c22782cb46296f3` | 7569 |
-| repin_fieldview_archive.py | `dbe6c160dd66161a` | 5477 |
-| finish_fieldview_regen.py | `b841375a728a028f` | 1654 |
-| run_concat_control.py | `50e10b84c8f1ff5a` | 11478 |
-| civil_title_archival.py | `45541e634bb57859` | 13588 |
-| summarize_civil_extension.py | `2e5569caeb600f33` | 6002 |
-| fetch_openalex_topics.py | `68bc2d4daae2cf96` | 3549 |
-| make_civil_table.py | `21a5378aab687c5f` | 3938 |
-| make_civil_topic_cases_20261014.py | `527618aec8b8fb5c` | 7302 |
-| check_english_numbers.py | `489c48b91ebefa81` | 18324 |
+| repin_fieldview_archive.py | `9963de5f9647c780` | 5611 |
+| finish_fieldview_regen.py | `f65a0035730d4401` | 1706 |
+| run_concat_control.py | `691bfe35e4bde070` | 11768 |
+| civil_title_archival.py | `f08aaff77482251a` | 13895 |
+| summarize_civil_extension.py | `2615e23cee07a6a9` | 6148 |
+| fetch_openalex_topics.py | `38fecaa2bf8450ea` | 3651 |
+| make_civil_table.py | `3cad620be8c6d192` | 4042 |
+| make_civil_topic_cases_20261014.py | `5c83dbe5d14b6fb7` | 7485 |
+| check_english_numbers.py | `132533f0cb94f76e` | 18781 |
 
 ## table / figure -> artifacts
 
@@ -269,26 +269,17 @@
 | file | sha256 | bytes |
 |---|---|---|
 | main.tex | `9d7baf212735cc3c` | 104644 |
-| main.pdf | `f863005e27b3b2bd` | 492112 |
 | supplementary.tex | `140d0bf516f98f1a` | 19920 |
-| supplementary.pdf | `65d78cc9c1d9f0ca` | 220672 |
-| main_en.tex | `0d714da42d8ce697` | 89027 |
-| main_en.pdf | `888e2026600de929` | 504267 |
-| supplementary_en.tex | `34233fc51f16f985` | 24761 |
-| supplementary_en.pdf | `b2be373c6fc99013` | 235437 |
-| main_asce.tex | `8eb588bf8f711b00` | 73416 |
-| main_asce.pdf | `b758807316795c2a` | 530533 |
+| main_en.tex | `c7b40439c9666ff0` | 85173 |
+| supplementary_en.tex | `24bee07a971a1c84` | 42022 |
+| main_asce.tex | `50464f9940e1d4c7` | 54715 |
 | main_asce.bib | `99d51dcfd7759cec` | 14818 |
-| FC-NTM_manuscript.docx | `dc162be51a024abb` | 672438 |
-| FC-NTM_manuscript_ASCE.docx | `96e7d8eedf43efd8` | 669772 |
-| FC-NTM_manuscript_zh.docx | `649f1831862e27f5` | 508035 |
 | ascelike-new.cls | `b9002dae251b5666` | 25540 |
 | ascelike-new.bst | `018056e4c6245316` | 34611 |
-| make_paper_figures.py | `c2aa8e8944e61e61` | 10235 |
 | topic_table_github_seed11_paper.tex | `7b40eb4d80501bda` | 1343 |
 | fig_main_comparison.pdf | `7021ad9a168d02a6` | 25957 |
 | fig_occlusion.pdf | `7414f63a018c716f` | 34049 |
 | fig_occlusion_cross_corpus.pdf | `27d12812ae7a2be2` | 44187 |
 | fig_complementarity.pdf | `e536447760a853c4` | 40578 |
-| fig_architecture_en.pdf | `b402e903a1cd38bb` | 84635 |
-| fig_seed_paired_en.pdf | `63f6ca5366fa5eb4` | 27565 |
+| fig_architecture_en.pdf | `9c564885ede64c13` | 87801 |
+| fig_seed_paired_en.pdf | `437a77cdb3eb69c9` | 27172 |

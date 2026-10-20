@@ -35,7 +35,8 @@ Behaviour when the background field is progressively occluded:
 | Path | Contents |
 |---|---|
 | `code/` | training and evaluation entry points, corpus loaders, baselines, metrics, result CSVs under `code/outputs/`, the frozen splits under `code/data/`, regression tests and the two number checkers |
-| `docs/figures/` | rendered figures and diagrams; the manuscript and submission files are not part of this repository |
+| `paper/` | LaTeX sources the number checkers parse: `main.tex` (manuscript), `main_en.tex` (analysis version), `main_asce.tex` + `main_asce.bib` (ASCE version), `supplementary*.tex`, the ASCE class files, the topic-table inputs and the figure PDFs. The submitted PDF/Word files are not distributed. |
+| `docs/figures/` | rendered figures and diagrams used by this README |
 
 Model checkpoints (11 files, 49 model states) and the large per-seed detail
 dumps are published as **Release assets** of `v1.0.0` rather than in the
@@ -61,6 +62,15 @@ re-train models or re-score the released checkpoints, place the checkpoint
 files from the Release assets under `code/outputs/` and
 `code/outputs/rerun/`; the sentence-embedding model used by the contextual
 baselines is downloaded automatically on first use.
+
+The two number checkers read the LaTeX sources directly from `paper/`
+(`main.tex` for the 764 Chinese numbers, `main_en.tex` for the English
+tables) and the archived result CSVs from `code/outputs/`. No external path
+is required: a fresh clone can run `python check_paper_numbers.py` and
+`python check_english_numbers.py` as is. `results_manifest.py` regenerates
+the manifest for the clone (`python results_manifest.py`) and reports the 17
+Release assets (11 checkpoints, 6 per-seed detail dumps) as missing until
+they are placed under `code/outputs/` and `code/outputs/rerun/`.
 
 ## Data
 
