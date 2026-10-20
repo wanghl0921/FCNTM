@@ -35,7 +35,7 @@ Behaviour when the background field is progressively occluded:
 | Path | Contents |
 |---|---|
 | `code/` | training and evaluation entry points, corpus loaders, baselines, metrics, result CSVs under `code/outputs/`, the frozen splits under `code/data/`, regression tests and the two number checkers |
-| `paper/` | LaTeX sources the number checkers parse: `main.tex` (manuscript), `main_en.tex` (analysis version), `main_asce.tex` + `main_asce.bib` (ASCE version), `supplementary*.tex`, the ASCE class files, the topic-table inputs and the figure PDFs. The submitted PDF/Word files are not distributed. |
+| `paper/` | LaTeX source of the ASCE manuscript (`main_asce.tex`, `main_asce.bib`), the official ASCE class files and the three figure PDFs it includes. The submitted PDF/Word files and the supplementary PDF are not distributed. |
 | `docs/figures/` | rendered figures and diagrams used by this README |
 
 Model checkpoints (11 files, 49 model states) and the large per-seed detail
@@ -49,9 +49,8 @@ repository itself: `FCNTM_checkpoints_20261014.zip` and
 cd code
 python -m pip install -r requirements.txt  # CPU torch; requirements.txt
                                            # carries the PyTorch CPU index
-python tests_review_fixes.py               # 33 numeric regression checks
-python check_paper_numbers.py              # 764 printed numbers vs artifacts
-python check_english_numbers.py --self-test  # English tables + tamper self-test
+python tests_review_fixes.py               # numeric regression checks
+python check_english_numbers.py            # tables of paper/main_asce.tex vs CSVs
 python results_manifest.py --verify        # 206-artifact manifest; reports the
                                            # Release assets (11 checkpoints + 6
                                            # detail dumps) as missing until they
@@ -67,14 +66,17 @@ baselines (`sentence-transformers/all-MiniLM-L6-v2`, revision pinned in
 and then cached by `huggingface_hub`; set `FCNTM_HF_OFFLINE=1` to force the
 cached copy on a machine without network access.
 
-The two number checkers read the LaTeX sources directly from `paper/`
-(`main.tex` for the 764 Chinese numbers, `main_en.tex` for the English
-tables) and the archived result CSVs from `code/outputs/`. No external path
-is required: a fresh clone can run `python check_paper_numbers.py` and
-`python check_english_numbers.py` as is. `results_manifest.py` regenerates
-the manifest for the clone (`python results_manifest.py`) and reports the 17
-Release assets (11 checkpoints, 6 per-seed detail dumps) as missing until
-they are placed under `code/outputs/` and `code/outputs/rerun/`.
+The number checkers read `paper/` directly and the archived result CSVs from
+`code/outputs/`, so a fresh clone needs no external path. Because `paper/`
+ships the ASCE source only, `check_english_numbers.py` verifies the tables
+that this source contains (civil-corpus quality and the ten-seed paired table)
+against the per-seed CSVs and prints a skip line for the tables that are in
+the supplementary PDF. `check_paper_numbers.py` (the 764-number check of the
+Chinese manuscript) prints a skip message, since that source is not part of
+this repository. `results_manifest.py` regenerates the manifest for the clone
+(`python results_manifest.py`) and reports the 17 Release assets (11
+checkpoints, 6 per-seed detail dumps) as missing until they are placed under
+`code/outputs/` and `code/outputs/rerun/`.
 
 ## Data
 

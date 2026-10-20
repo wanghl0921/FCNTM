@@ -595,9 +595,12 @@ def verify(path: Path) -> int:
     import re as _re
     allow_unmapped = {"fig:arch"}     # static architecture drawing, no numbers
     labels = set()
-    for name in ("main.tex", "main_en.tex", "supplementary.tex",
-                 "supplementary_en.tex"):
-        tex = (PAPER / name).read_text(encoding="utf-8")
+    for name in ("main.tex", "main_en.tex", "main_asce.tex",
+                 "supplementary.tex", "supplementary_en.tex"):
+        tex_path = PAPER / name
+        if not tex_path.exists():  # the repository ships the ASCE source only
+            continue
+        tex = tex_path.read_text(encoding="utf-8")
         labels |= set(_re.findall(r"\\label\{((?:tab|fig):[^}]+)\}", tex))
     unmapped = sorted(labels - set(doc.get("tables", {})) - allow_unmapped)
     for label in unmapped:

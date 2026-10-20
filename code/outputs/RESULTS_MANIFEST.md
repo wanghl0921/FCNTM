@@ -1,6 +1,6 @@
 # RESULTS MANIFEST
 
-- generated: 2026-10-20T08:03:33+00:00
+- generated: 2026-10-20T08:43:02+00:00
 - python: 3.13.15 on Windows-2019Server-10.0.17763-SP0
 - protocol: K=30, seeds=[11, 23, 37], topn=10, read-outs=['beta', 'ctfidf']
 
@@ -200,13 +200,13 @@
 | make_result_tables.py | `fe071cc99e01e05b` | 7406 |
 | make_topic_table.py | `ebc9611309c1f757` | 7785 |
 | compare_occlusion.py | `d342cf037611b312` | 5557 |
-| check_paper_numbers.py | `c7e9a47438a71ac5` | 54339 |
+| check_paper_numbers.py | `c7cd31b895e17db9` | 54723 |
 | result_identity.py | `f1f836011d161046` | 7198 |
 | rerun_btm_nmf_boundary_fix.py | `1797059f16dd19ed` | 6733 |
 | check_empty_summary_behavior.py | `a83a981a7be0c21f` | 2697 |
 | check_btm_empty_biterm_counts.py | `7a92d654ea808a95` | 2210 |
 | check_missing_decomposition.py | `9cd684cebd4d8d90` | 2087 |
-| results_manifest.py | `b607901c29df754c` | 25343 |
+| results_manifest.py | `92b92c5600793f76` | 25486 |
 | field_redundancy.py | `247d6bb2c10baed8` | 7977 |
 | field_complementarity.py | `8715ec5c51ae7832` | 6510 |
 | summarize_ladder.py | `16774b7217d64cc2` | 4774 |
@@ -228,7 +228,7 @@
 | fetch_openalex_topics.py | `68bc2d4daae2cf96` | 3549 |
 | make_civil_table.py | `21a5378aab687c5f` | 3938 |
 | make_civil_topic_cases_20261014.py | `527618aec8b8fb5c` | 7302 |
-| check_english_numbers.py | `489c48b91ebefa81` | 18324 |
+| check_english_numbers.py | `48fdb9323e178e84` | 19076 |
 
 ## table / figure -> artifacts
 
@@ -268,18 +268,9 @@
 
 | file | sha256 | bytes |
 |---|---|---|
-| main.tex | `4f88b71ba48d43db` | 103274 |
-| supplementary.tex | `60115bcc45242d00` | 19597 |
-| main_en.tex | `e6cab35b46f442b8` | 84011 |
-| supplementary_en.tex | `61c2558ea1352813` | 41293 |
 | main_asce.tex | `ae54e16b3a8ef1b1` | 53991 |
 | main_asce.bib | `1277149ea30a8f93` | 14367 |
 | ascelike-new.cls | `b9002dae251b5666` | 25540 |
 | ascelike-new.bst | `018056e4c6245316` | 34611 |
-| topic_table_github_seed11_paper.tex | `9332105794211ccb` | 1331 |
-| fig_main_comparison.pdf | `7021ad9a168d02a6` | 25957 |
-| fig_occlusion.pdf | `7414f63a018c716f` | 34049 |
-| fig_occlusion_cross_corpus.pdf | `27d12812ae7a2be2` | 44187 |
-| fig_complementarity.pdf | `e536447760a853c4` | 40578 |
 | fig_architecture_en.pdf | `9c564885ede64c13` | 87801 |
 | fig_seed_paired_en.pdf | `437a77cdb3eb69c9` | 27172 |

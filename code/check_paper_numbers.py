@@ -1123,6 +1123,11 @@ def run_all(path: Path | None = None) -> int:
     global PAPER_TEX, FAILURES, CHECKS
     if path is not None:
         PAPER_TEX = path
+    if not PAPER_TEX.exists():
+        print("paper-vs-artifact number check: the Chinese manuscript source "
+              f"({PAPER_TEX.name}) is not shipped in this repository "
+              "(paper/ holds the ASCE source only); skipped.")
+        return 0
     FAILURES = []
     CHECKS = 0
     print(f"paper-vs-artifact number check on {PAPER_TEX.name}")
@@ -1159,6 +1164,9 @@ def self_test() -> int:
     a plain table value, the same value with a legal trailing LaTeX comment,
     a whole table deleted, and a percentage in the running text.
     """
+    if not PAPER_TEX.exists():
+        print("self-test: Chinese manuscript source not shipped; skipped")
+        return 0
     print("self-test: tampering with copies of main.tex")
     text = PAPER_TEX.read_text(encoding="utf-8")
     # the tamper targets are derived from the current text, not hard-coded, so

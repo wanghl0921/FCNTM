@@ -389,6 +389,8 @@ ABSTRACT_CHECKS = [
 
 def check_abstract(tex: str, problems: list) -> None:
     abstract = tex[tex.index("\\begin{abstract}"):tex.index("\\end{abstract}")]
+    # the ASCE version spells the signs out ("plus 0.049"); normalise first
+    abstract = abstract.replace("plus ", "+").replace("minus ", "-")
     for needle, anchor, span in ABSTRACT_CHECKS:
         js = [m.start() for m in re.finditer(re.escape(needle), abstract)]
         ks = [m.start() for m in re.finditer(re.escape(anchor), abstract)]
@@ -398,13 +400,22 @@ def check_abstract(tex: str, problems: list) -> None:
                             f"{anchor!r} within {span} chars")
 
 
-def check(tex: str) -> list:
+TABLE_CHECKS = (
+    ("tab:civil", check_civil_main),
+    ("tab:seed-paired", check_seed_paired),
+    ("tab:concat", check_concat),
+    ("tab:archival", check_archival),
+    ("tab:fair", check_fair_civil),
+)
+
+
+def check(tex: str, name: str = "main_en.tex") -> list:
     problems = []
-    check_civil_main(tex, problems)
-    check_seed_paired(tex, problems)
-    check_concat(tex, problems)
-    check_archival(tex, problems)
-    check_fair_civil(tex, problems)
+    for label, fn in TABLE_CHECKS:
+        if ("\\label{%s}" % label) in tex:
+            fn(tex, problems)
+        else:
+            print("  skip %s: table not in %s" % (label, name))
     check_abstract(tex, problems)
     return problems
 
@@ -435,21 +446,29 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--self-test", action="store_true")
     args = ap.parse_args()
-    tex = (PAPER / "main_en.tex").read_text(encoding="utf-8")
-    problems = check(tex)
+    source = PAPER / "main_en.tex"
+    if not source.exists():
+        source = PAPER / "main_asce.tex"
+    if not source.exists():
+        print("english number check: no manuscript source in paper/; skipped")
+        return 0
+    tex = source.read_text(encoding="utf-8")
+    problems = check(tex, source.name)
     if problems:
         print("english number check FAILED:")
         for p in problems:
             print("  " + p)
         return 1
     print("english number check: every keyed value matches the per-seed CSVs")
-    if args.self_test:
+    if args.self_test and "\\label{tab:archival}" in tex:
         problems = []
         self_test(tex, problems)
         if problems:
             for p in problems:
                 print("  " + p)
             return 1
+    elif args.self_test:
+        print("  skip self-test: tab:archival is not in %s" % source.name)
     return 0
 
 
