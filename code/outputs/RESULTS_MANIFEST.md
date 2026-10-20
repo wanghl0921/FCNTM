@@ -1,6 +1,6 @@
 # RESULTS MANIFEST
 
-- generated: 2026-10-20T07:13:19+00:00
+- generated: 2026-10-20T08:03:33+00:00
 - python: 3.13.15 on Windows-2019Server-10.0.17763-SP0
 - protocol: K=30, seeds=[11, 23, 37], topn=10, read-outs=['beta', 'ctfidf']
 
@@ -195,7 +195,7 @@
 | recompute_irbo.py | `163d972d41a4cb5b` | 2925 |
 | run_ablation_public.py | `3d7459f602006ef2` | 18728 |
 | run_core_ablations.py | `eeb83e60dc74590d` | 7045 |
-| embed_public.py | `0f01e31d6374be42` | 10138 |
+| embed_public.py | `905c0c1fe0075054` | 10775 |
 | public_data_civil.py | `4d25d029123d366f` | 13514 |
 | make_result_tables.py | `fe071cc99e01e05b` | 7406 |
 | make_topic_table.py | `ebc9611309c1f757` | 7785 |
