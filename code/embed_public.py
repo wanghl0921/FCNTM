@@ -41,18 +41,28 @@ EMB_ALGO = "tokwin-v2"
 _MODEL = None
 
 
+# Offline mode is opt-in: set FCNTM_HF_OFFLINE=1 (or HF_HUB_OFFLINE=1) to use
+# the cached copy only.  By default the pinned revision is downloaded on first
+# use and cached by huggingface_hub.
+_OFFLINE = os.environ.get("FCNTM_HF_OFFLINE", "").strip().lower() in (
+    "1", "true", "yes")
+if _OFFLINE:
+    os.environ.setdefault("HF_HUB_OFFLINE", "1")
+    os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+
+
 def _get_model():
     global _MODEL
     if _MODEL is None:
-        os.environ.setdefault("HF_HUB_OFFLINE", "1")
-        os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
         from transformers import AutoModel, AutoTokenizer
 
         _MODEL = {
             "tokenizer": AutoTokenizer.from_pretrained(
-                EMB_MODEL, revision=EMB_REVISION),
+                EMB_MODEL, revision=EMB_REVISION,
+                local_files_only=_OFFLINE),
             "model": AutoModel.from_pretrained(
-                EMB_MODEL, revision=EMB_REVISION).eval(),
+                EMB_MODEL, revision=EMB_REVISION,
+                local_files_only=_OFFLINE).eval(),
         }
     return _MODEL
 

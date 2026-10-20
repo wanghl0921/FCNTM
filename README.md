@@ -47,7 +47,8 @@ repository itself: `FCNTM_checkpoints_20261014.zip` and
 
 ```bash
 cd code
-pip install -r requirements.txt            # Python 3.13, CPU-only torch
+python -m pip install -r requirements.txt  # CPU torch; requirements.txt
+                                           # carries the PyTorch CPU index
 python tests_review_fixes.py               # 33 numeric regression checks
 python check_paper_numbers.py              # 764 printed numbers vs artifacts
 python check_english_numbers.py --self-test  # English tables + tamper self-test
@@ -60,8 +61,11 @@ python results_manifest.py --verify        # 206-artifact manifest; reports the
 The checkers operate on the result CSVs that ship in `code/outputs/`. To
 re-train models or re-score the released checkpoints, place the checkpoint
 files from the Release assets under `code/outputs/` and
-`code/outputs/rerun/`; the sentence-embedding model used by the contextual
-baselines is downloaded automatically on first use.
+`code/outputs/rerun/`. The sentence-embedding model used by the contextual
+baselines (`sentence-transformers/all-MiniLM-L6-v2`, revision pinned in
+`requirements.txt`) is downloaded automatically on first use (about 90 MB)
+and then cached by `huggingface_hub`; set `FCNTM_HF_OFFLINE=1` to force the
+cached copy on a machine without network access.
 
 The two number checkers read the LaTeX sources directly from `paper/`
 (`main.tex` for the 764 Chinese numbers, `main_en.tex` for the English

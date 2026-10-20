@@ -17,16 +17,26 @@ from config import EMBEDDING_MODEL_NAME, OUT_DIR
 _model = None
 
 
+# Offline mode is opt-in: set FCNTM_HF_OFFLINE=1 (or HF_HUB_OFFLINE=1) to use
+# the cached copy only.  By default the weights are downloaded on first use and
+# cached by huggingface_hub, so a fresh clone works with an empty cache.
+_OFFLINE = os.environ.get("FCNTM_HF_OFFLINE", "").strip().lower() in (
+    "1", "true", "yes")
+if _OFFLINE:
+    os.environ.setdefault("HF_HUB_OFFLINE", "1")
+    os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+
+
 def _get_model():
     global _model
     if _model is None:
-        os.environ.setdefault("HF_HUB_OFFLINE", "1")
-        os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
         from transformers import AutoModel, AutoTokenizer
 
         _model = {
-            "tokenizer": AutoTokenizer.from_pretrained(EMBEDDING_MODEL_NAME),
-            "model": AutoModel.from_pretrained(EMBEDDING_MODEL_NAME).eval(),
+            "tokenizer": AutoTokenizer.from_pretrained(
+                EMBEDDING_MODEL_NAME, local_files_only=_OFFLINE),
+            "model": AutoModel.from_pretrained(
+                EMBEDDING_MODEL_NAME, local_files_only=_OFFLINE).eval(),
         }
     return _model
 
