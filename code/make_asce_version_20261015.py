@@ -84,14 +84,15 @@ def protect_title(text: str) -> str:
                       lambda m: "{" + m.group(0) + "}", text)
     return text
 
-PREAMBLE = r"""\documentclass[Journal,letterpaper]{ascelike-new}
+PREAMBLE = r"""\documentclass[Journal,letterpaper,NoLists]{ascelike-new}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{multirow}
 \usepackage[figurename=Fig.,labelfont=bf,labelsep=period]{caption}
 \usepackage{url}
-\usepackage[colorlinks=true,citecolor=red,linkcolor=black]{hyperref}
+\usepackage[colorlinks=true,citecolor=black,linkcolor=black,urlcolor=blue]{hyperref}
+\setlength{\emergencystretch}{3em}
 
 \newcommand{\fcntm}{FC-NTM}
 
@@ -118,13 +119,19 @@ E-mails: 2010254508@qq.com (H.~Wang); manqp@126.com (Q.~Man, corresponding autho
 \KeyWords{%KEYWORDS%}
 """
 
-EXTRA_SECTIONS = r"""\section{Data Availability Statement}
+EXTRA_SECTIONS = r"""\section{Acknowledgments}
 
-The code, the fixed corpus splits, the trained model checkpoints and the per-seed experimental
-results that support this study accompany the submission and are released in a public repository
-(the permanent repository URL is inserted at submission). The experiments can be reproduced with
-the released configurations and evaluation scripts. Access to the third-party source corpora
-remains subject to the terms and licences of the original providers.
+This work was supported by the National Key Research and Development Program of China under
+Grant No. 2024YFC3809900, sub-project 2024YFC3809904-03 (``Research on Dynamic Investment
+Control Models at the Transaction Stage''), undertaken at Harbin Institute of Technology.
+
+\section{Data Availability Statement}
+
+The code, the fixed corpus splits and the per-seed experimental results that support this study are
+available at \url{https://github.com/wanghl0921/FCNTM}. The experiments can be reproduced with the
+released configurations and evaluation scripts. Trained model checkpoints and the per-seed detail
+dumps are released as assets of v1.0.0 in the same repository, and access to the third-party source
+corpora remains subject to the terms and licences of the original providers.
 
 \section{Practical Applications}
 
@@ -145,18 +152,46 @@ descriptive field are the natural next setting in which to test the same procedu
 
 \section{Supplemental Materials}
 
-The supplementary material contains the auxiliary experiments and controls, the data and metric
-notes, and the case-study tables cited in the text.
+The supplementary material (Tables S1--S20, Figures S1--S3, the ablation details and the training
+details of the baselines) is available at
+\url{https://github.com/wanghl0921/FCNTM/releases/download/v1.0.1/supplementary.pdf}.
 
 """
 
 # The ASCE manuscript keeps the tables that carry the main claims; the
 # ancillary ablations, sweeps and secondary comparisons move to the
 # supplementary material (which numbers them S8--S13).
-MOVED_TO_SUPPLEMENT = (
-    "tab:conditional", "tab:fieldview-baselines", "tab:fusion",
-    "tab:core-ablation", "tab:weight", "tab:occlusion",
+MOVED_TABLES = {
+    "tab:conditional": 8,
+    "tab:fieldview-baselines": 9,
+    "tab:fusion": 10,
+    "tab:core-ablation": 11,
+    "tab:weight": 12,
+    "tab:occlusion": 13,
+    "tab:agnews": 14,
+    "tab:github": 15,
+    "tab:fair": 16,
+    "tab:occl-robust": 17,
+    "tab:occl-cross": 18,
+    "tab:concat": 19,
+    "tab:archival": 20,
+}
+
+MOVED_FIGURES = {"fig:main": 1, "fig:cond": 2, "fig:occl-cross": 3}
+
+DROP_SUBSECTIONS = (
+    "Ablation: fusion reconstruction and gating",
+    "Ablation: core components",
+    "Sensitivity to the fusion weight",
+    "Field-restricted read-out",
 )
+
+ABLATION_POINTER = r"""\noindent\textbf{Ablations and field-restricted read-out.} The three-step fusion
+ablation, the core-component ablation, the fusion-weight sensitivity and the field-restricted
+read-out are reported in the Supplementary Material (Tables S9--S12), with the same protocol and
+read-outs as the main tables.
+
+"""
 
 SUPPLEMENT_POINTER = r"""The component ablations (the three-step fusion ablation and the
 core-component ablation), the sensitivity sweep over the fusion-reconstruction weight, the
@@ -166,17 +201,18 @@ comparison are reported in the supplementary material (Tables S8--S13).
 """
 
 
-def drop_tables(body: str) -> str:
-    blocks = list(re.finditer(r"\\begin\{table\}.*?\\end\{table\}\n\n?",
-                              body, re.S))
-    drop = []
-    for label in MOVED_TO_SUPPLEMENT:
-        hits = [b for b in blocks if ("\\label{%s}" % label) in b.group(0)]
-        if len(hits) != 1:
-            print("  warning: %s matches %d table blocks" % (label, len(hits)))
-            continue
-        drop.append(hits[0])
-    for b in sorted(drop, key=lambda m: m.start(), reverse=True):
+def drop_exhibits(body: str) -> str:
+    drops = []
+    for env, labels in (("table", MOVED_TABLES), ("figure", MOVED_FIGURES)):
+        blocks = list(re.finditer(
+            r"\\begin\{%s\}.*?\\end\{%s\}\n\n?" % (env, env), body, re.S))
+        for label in labels:
+            hits = [b for b in blocks if ("\\label{%s}" % label) in b.group(0)]
+            if len(hits) != 1:
+                print("  warning: %s matches %d blocks" % (label, len(hits)))
+                continue
+            drops.append(hits[0])
+    for b in sorted(drops, key=lambda m: m.start(), reverse=True):
         body = body[:b.start()] + body[b.end():]
     return body
 
@@ -368,11 +404,27 @@ def main() -> None:
                         "the ``Field inference under partial occlusion'' subsection")
     body = body.replace(r"Section~\ref{sec:protocol}",
                         "the ``Baselines, training protocols and metrics'' subsection")
-    body = drop_tables(body)
-    # a table that moved to the supplement is cited by its S-number
-    for number, label in enumerate(MOVED_TO_SUPPLEMENT, start=8):
+    body = drop_exhibits(body)
+    # a table or figure that moved to the supplement is cited by its S-number
+    for label, number in MOVED_TABLES.items():
         body = body.replace("Table~\\ref{%s}" % label, "Table~S%d" % number)
-        body = body.replace("\\ref{%s}" % label, "Table~S%d" % number)
+        body = body.replace("\\ref{%s}" % label, "S%d" % number)
+    for label, number in MOVED_FIGURES.items():
+        body = body.replace("Figure~\\ref{%s}" % label, "Figure~S%d" % number)
+        body = body.replace("Fig.~\\ref{%s}" % label, "Fig.~S%d" % number)
+        body = body.replace("\\ref{%s}" % label, "S%d" % number)
+    for title in DROP_SUBSECTIONS:
+        pattern = re.compile(
+            r"\\subsection\{%s\}.*?(?=\\subsection\{|\\section\{)"
+            % re.escape(title), re.S)
+        body, count = pattern.subn("", body, count=1)
+        if count != 1:
+            print("  warning: subsection not found:", title)
+    body = body.replace(r"\section{Discussion and Limitations}",
+                        ABLATION_POINTER + r"\section{Discussion and Limitations}")
+    # run-in bold subsection leads save about one page of heading whitespace
+    body = re.sub(r"\\subsection\{([^}]*)\}\s*",
+                  lambda m: "\\noindent\\textbf{%s.} " % m.group(1), body)
     body = body.replace(r"\section{Discussion and Limitations}",
                         SUPPLEMENT_POINTER + r"\section{Discussion and Limitations}")
     out = (PREAMBLE + "\n" + FRONT

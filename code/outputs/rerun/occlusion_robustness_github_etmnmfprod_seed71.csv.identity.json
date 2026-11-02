@@ -1,0 +1,25 @@
+{
+ "id": "24feabae1042d96e",
+ "payload": {
+  "script": "occlusion_robustness.main",
+  "corpus": "github",
+  "seed": 71,
+  "k": 30,
+  "models": [
+   "ETM",
+   "NMF",
+   "ProdLDA"
+  ],
+  "rates": [
+   0.0,
+   0.25,
+   0.5,
+   0.75,
+   1.0
+  ],
+  "fcntm_state": "6a2244fe94755e3a",
+  "code": "c4100bc302b3d8b7",
+  "data": "591527f20052effd",
+  "fields": "ca2e62c5f2e630de"
+ }
+}

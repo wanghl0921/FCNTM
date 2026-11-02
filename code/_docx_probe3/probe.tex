@@ -1,0 +1,36 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,booktabs,multirow,graphicx}
+\newcommand{\fcntm}{FC-NTM}
+\title{\bfseries Big Title: Sub Title}
+\author{Hongli Wang\textsuperscript{1} and Qingpeng Man\textsuperscript{1,*}\\
+\small\textsuperscript{1}School of Civil Engineering, HIT\\
+\small\textsuperscript{*}Corresponding author.}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+This is the abstract paragraph with $x^2$ inline math and \fcntm{} macro.
+\end{abstract}
+\section{Introduction}
+See Table~\ref{tab:a} and Eq.~\eqref{eq:one}. Cite \textsuperscript{[1]} here.
+\begin{equation}\label{eq:one}
+a = b + c
+\end{equation}
+Text between equations.
+\begin{equation}
+d = \sum_{i=1}^{n} w_i
+\end{equation}
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lcc}
+\toprule
+A & B & C\\
+\midrule
+\multirow{2}{*}{X} & 1 & 2\\
+ & 3 & 4\\
+\bottomrule
+\end{tabular}
+\caption{Cap text}
+\label{tab:a}
+\end{table}
+\end{document}

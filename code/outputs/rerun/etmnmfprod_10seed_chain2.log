@@ -1,0 +1,625 @@
+
+=== [22:22:29] [1/21] github seed53 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 53 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed53.csv
+  stored curve occlusion_robustness_github_etmnmfprod_seed53.csv is not pinned to this configuration (identity differs in: models); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed53.unpinned2.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9961 agree=0.893
+  NMF rate=0.5 hidden_NLL=7.1755 agree=0.824
+  NMF rate=0.75 hidden_NLL=7.5573 agree=0.730
+  NMF rate=1 hidden_NLL=10.2054 agree=0.466
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5357 agree=0.832
+  ProdLDA rate=0.5 hidden_NLL=7.5603 agree=0.736
+  ProdLDA rate=0.75 hidden_NLL=7.6380 agree=0.640
+  ProdLDA rate=1 hidden_NLL=8.1362 agree=0.335
+[github] ETM
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8670.96it/s]
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=6.6217 agree=0.885
+  ETM rate=0.5 hidden_NLL=6.6454 agree=0.814
+  ETM rate=0.75 hidden_NLL=6.7066 agree=0.732
+  ETM rate=1 hidden_NLL=7.2106 agree=0.439
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      6.9961    2000     0.8935   0.0217
+    NMF  0.50      7.1755    2000     0.8235   0.0502
+    NMF  0.75      7.5573    2000     0.7300   0.0976
+    NMF  1.00     10.2054    2000     0.4660   0.2503
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5357    2000     0.8315   0.0075
+ProdLDA  0.50      7.5603    2000     0.7360   0.0198
+ProdLDA  0.75      7.6380    2000     0.6400   0.0445
+ProdLDA  1.00      8.1362    2000     0.3345   0.1612
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      6.6217    2000     0.8855   0.0137
+    ETM  0.50      6.6454    2000     0.8140   0.0354
+    ETM  0.75      6.7066    2000     0.7315   0.0741
+    ETM  1.00      7.2106    2000     0.4385   0.2494
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed53.csv
+=== [22:42:03] [1/21] github seed53 exit=0 ===
+
+=== [22:42:03] [2/21] github seed71 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 71 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed71.csv
+  stored curve occlusion_robustness_github_etmnmfprod_seed71.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed71.unpinned.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9686 agree=0.900
+  NMF rate=0.5 hidden_NLL=7.1822 agree=0.824
+  NMF rate=0.75 hidden_NLL=7.5440 agree=0.730
+  NMF rate=1 hidden_NLL=10.1820 agree=0.464
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5537 agree=0.831
+  ProdLDA rate=0.5 hidden_NLL=7.5900 agree=0.740
+  ProdLDA rate=0.75 hidden_NLL=7.6664 agree=0.621
+  ProdLDA rate=1 hidden_NLL=8.1251 agree=0.349
+[github] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=6.6271 agree=0.884
+  ETM rate=0.5 hidden_NLL=6.6591 agree=0.798
+  ETM rate=0.75 hidden_NLL=6.7254 agree=0.687
+  ETM rate=1 hidden_NLL=7.2218 agree=0.447
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      6.9686    2000     0.9005   0.0216
+    NMF  0.50      7.1822    2000     0.8240   0.0513
+    NMF  0.75      7.5440    2000     0.7295   0.0985
+    NMF  1.00     10.1820    2000     0.4635   0.2515
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5537    2000     0.8305   0.0081
+ProdLDA  0.50      7.5900    2000     0.7395   0.0213
+ProdLDA  0.75      7.6664    2000     0.6205   0.0467
+ProdLDA  1.00      8.1251    2000     0.3495   0.1638
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      6.6271    2000     0.8840   0.0138
+    ETM  0.50      6.6591    2000     0.7985   0.0347
+    ETM  0.75      6.7254    2000     0.6870   0.0777
+    ETM  1.00      7.2218    2000     0.4470   0.2423
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed71.csv
+=== [23:00:20] [2/21] github seed71 exit=0 ===
+
+=== [23:00:20] [3/21] github seed89 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 89 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed89.csv
+  stored curve occlusion_robustness_github_etmnmfprod_seed89.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed89.unpinned.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9407 agree=0.896
+  NMF rate=0.5 hidden_NLL=7.1465 agree=0.820
+  NMF rate=0.75 hidden_NLL=7.6048 agree=0.724
+  NMF rate=1 hidden_NLL=10.2539 agree=0.471
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5547 agree=0.837
+  ProdLDA rate=0.5 hidden_NLL=7.5929 agree=0.734
+  ProdLDA rate=0.75 hidden_NLL=7.6659 agree=0.618
+  ProdLDA rate=1 hidden_NLL=8.1279 agree=0.336
+[github] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=6.6047 agree=0.881
+  ETM rate=0.5 hidden_NLL=6.6478 agree=0.814
+  ETM rate=0.75 hidden_NLL=6.7270 agree=0.731
+  ETM rate=1 hidden_NLL=7.1789 agree=0.466
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      6.9407    2000     0.8960   0.0219
+    NMF  0.50      7.1465    2000     0.8195   0.0520
+    NMF  0.75      7.6048    2000     0.7240   0.0987
+    NMF  1.00     10.2539    2000     0.4715   0.2509
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5547    2000     0.8365   0.0079
+ProdLDA  0.50      7.5929    2000     0.7335   0.0209
+ProdLDA  0.75      7.6659    2000     0.6175   0.0474
+ProdLDA  1.00      8.1279    2000     0.3360   0.1717
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      6.6047    2000     0.8810   0.0139
+    ETM  0.50      6.6478    2000     0.8140   0.0362
+    ETM  0.75      6.7270    2000     0.7310   0.0772
+    ETM  1.00      7.1789    2000     0.4660   0.2366
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed89.csv
+=== [23:18:10] [3/21] github seed89 exit=0 ===
+
+=== [23:18:10] [4/21] github seed101 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 101 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed101.csv
+  stored curve occlusion_robustness_github_etmnmfprod_seed101.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed101.unpinned.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.0267 agree=0.889
+  NMF rate=0.5 hidden_NLL=7.1839 agree=0.822
+  NMF rate=0.75 hidden_NLL=7.5657 agree=0.717
+  NMF rate=1 hidden_NLL=10.1943 agree=0.464
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5410 agree=0.844
+  ProdLDA rate=0.5 hidden_NLL=7.5764 agree=0.750
+  ProdLDA rate=0.75 hidden_NLL=7.6584 agree=0.656
+  ProdLDA rate=1 hidden_NLL=8.1662 agree=0.367
+[github] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=6.6405 agree=0.874
+  ETM rate=0.5 hidden_NLL=6.6666 agree=0.803
+  ETM rate=0.75 hidden_NLL=6.7322 agree=0.700
+  ETM rate=1 hidden_NLL=7.1706 agree=0.450
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.0267    2000     0.8895   0.0217
+    NMF  0.50      7.1839    2000     0.8220   0.0507
+    NMF  0.75      7.5657    2000     0.7170   0.0985
+    NMF  1.00     10.1943    2000     0.4635   0.2490
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5410    2000     0.8440   0.0075
+ProdLDA  0.50      7.5764    2000     0.7505   0.0197
+ProdLDA  0.75      7.6584    2000     0.6560   0.0449
+ProdLDA  1.00      8.1662    2000     0.3670   0.1587
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      6.6405    2000     0.8740   0.0156
+    ETM  0.50      6.6666    2000     0.8030   0.0380
+    ETM  0.75      6.7322    2000     0.7000   0.0815
+    ETM  1.00      7.1706    2000     0.4495   0.2433
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed101.csv
+=== [23:37:30] [4/21] github seed101 exit=0 ===
+
+=== [23:37:30] [5/21] github seed113 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 113 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed113.csv
+  stored curve occlusion_robustness_github_etmnmfprod_seed113.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed113.unpinned.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9238 agree=0.887
+  NMF rate=0.5 hidden_NLL=7.1026 agree=0.818
+  NMF rate=0.75 hidden_NLL=7.5169 agree=0.721
+  NMF rate=1 hidden_NLL=10.2143 agree=0.456
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5482 agree=0.825
+  ProdLDA rate=0.5 hidden_NLL=7.5964 agree=0.740
+  ProdLDA rate=0.75 hidden_NLL=7.6678 agree=0.609
+  ProdLDA rate=1 hidden_NLL=8.0996 agree=0.339
+[github] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=6.5984 agree=0.879
+  ETM rate=0.5 hidden_NLL=6.6248 agree=0.804
+  ETM rate=0.75 hidden_NLL=6.7036 agree=0.722
+  ETM rate=1 hidden_NLL=7.1972 agree=0.439
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      6.9238    2000     0.8870   0.0207
+    NMF  0.50      7.1026    2000     0.8180   0.0486
+    NMF  0.75      7.5169    2000     0.7205   0.0969
+    NMF  1.00     10.2143    2000     0.4560   0.2507
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5482    2000     0.8245   0.0082
+ProdLDA  0.50      7.5964    2000     0.7400   0.0209
+ProdLDA  0.75      7.6678    2000     0.6085   0.0479
+ProdLDA  1.00      8.0996    2000     0.3385   0.1723
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      6.5984    2000     0.8795   0.0142
+    ETM  0.50      6.6248    2000     0.8045   0.0352
+    ETM  0.75      6.7036    2000     0.7215   0.0744
+    ETM  1.00      7.1972    2000     0.4390   0.2450
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed113.csv
+=== [23:54:23] [5/21] github seed113 exit=0 ===
+
+=== [23:54:23] [6/21] github seed127 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 127 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed127.csv
+  stored curve occlusion_robustness_github_etmnmfprod_seed127.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed127.unpinned.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9942 agree=0.888
+  NMF rate=0.5 hidden_NLL=7.1375 agree=0.821
+  NMF rate=0.75 hidden_NLL=7.5570 agree=0.709
+  NMF rate=1 hidden_NLL=10.2587 agree=0.459
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5298 agree=0.841
+  ProdLDA rate=0.5 hidden_NLL=7.5574 agree=0.754
+  ProdLDA rate=0.75 hidden_NLL=7.6370 agree=0.634
+  ProdLDA rate=1 hidden_NLL=8.1160 agree=0.332
+[github] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=6.6079 agree=0.887
+  ETM rate=0.5 hidden_NLL=6.6441 agree=0.822
+  ETM rate=0.75 hidden_NLL=6.7131 agree=0.719
+  ETM rate=1 hidden_NLL=7.1876 agree=0.467
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      6.9942    2000     0.8885   0.0212
+    NMF  0.50      7.1375    2000     0.8205   0.0501
+    NMF  0.75      7.5570    2000     0.7085   0.0979
+    NMF  1.00     10.2587    2000     0.4590   0.2513
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5298    2000     0.8405   0.0072
+ProdLDA  0.50      7.5574    2000     0.7545   0.0188
+ProdLDA  0.75      7.6370    2000     0.6345   0.0427
+ProdLDA  1.00      8.1160    2000     0.3320   0.1536
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      6.6079    2000     0.8875   0.0135
+    ETM  0.50      6.6441    2000     0.8215   0.0338
+    ETM  0.75      6.7131    2000     0.7190   0.0766
+    ETM  1.00      7.1876    2000     0.4670   0.2411
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed127.csv
+=== [00:13:23] [6/21] github seed127 exit=0 ===
+
+=== [00:13:23] [7/21] github seed139 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 139 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed139.csv
+  stored curve occlusion_robustness_github_etmnmfprod_seed139.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed139.unpinned.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9698 agree=0.891
+  NMF rate=0.5 hidden_NLL=7.1570 agree=0.817
+  NMF rate=0.75 hidden_NLL=7.5393 agree=0.717
+  NMF rate=1 hidden_NLL=10.2454 agree=0.462
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5204 agree=0.824
+  ProdLDA rate=0.5 hidden_NLL=7.5464 agree=0.738
+  ProdLDA rate=0.75 hidden_NLL=7.6249 agree=0.604
+  ProdLDA rate=1 hidden_NLL=8.0798 agree=0.326
+[github] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=6.6301 agree=0.873
+  ETM rate=0.5 hidden_NLL=6.6688 agree=0.795
+  ETM rate=0.75 hidden_NLL=6.7340 agree=0.693
+  ETM rate=1 hidden_NLL=7.1882 agree=0.441
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      6.9698    2000     0.8910   0.0213
+    NMF  0.50      7.1570    2000     0.8165   0.0511
+    NMF  0.75      7.5393    2000     0.7170   0.0983
+    NMF  1.00     10.2454    2000     0.4620   0.2523
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5204    2000     0.8240   0.0075
+ProdLDA  0.50      7.5464    2000     0.7380   0.0203
+ProdLDA  0.75      7.6249    2000     0.6040   0.0450
+ProdLDA  1.00      8.0798    2000     0.3260   0.1549
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      6.6301    2000     0.8730   0.0145
+    ETM  0.50      6.6688    2000     0.7955   0.0376
+    ETM  0.75      6.7340    2000     0.6925   0.0807
+    ETM  1.00      7.1882    2000     0.4410   0.2460
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed139.csv
+=== [00:32:48] [7/21] github seed139 exit=0 ===
+
+=== [00:32:48] [8/21] agnews seed53 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 53 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed53.csv
+  stored curve occlusion_robustness_agnews_etmnmfprod_seed53.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed53.unpinned.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.6493 agree=0.830
+  NMF rate=0.5 hidden_NLL=10.2991 agree=0.733
+  NMF rate=0.75 hidden_NLL=11.3074 agree=0.642
+  NMF rate=1 hidden_NLL=13.5780 agree=0.544
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6145 agree=0.806
+  ProdLDA rate=0.5 hidden_NLL=7.6560 agree=0.705
+  ProdLDA rate=0.75 hidden_NLL=7.7085 agree=0.597
+  ProdLDA rate=1 hidden_NLL=7.8299 agree=0.482
+[agnews] ETM
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 5571.42it/s]
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.3263 agree=0.846
+  ETM rate=0.5 hidden_NLL=7.4033 agree=0.757
+  ETM rate=0.75 hidden_NLL=7.5185 agree=0.668
+  ETM rate=1 hidden_NLL=7.8437 agree=0.557
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      9.6493    7593     0.8299   0.0412
+    NMF  0.50     10.2991    7596     0.7332   0.0893
+    NMF  0.75     11.3074    7599     0.6422   0.1508
+    NMF  1.00     13.5780    7599     0.5441   0.2421
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.6145    7593     0.8064   0.0085
+ProdLDA  0.50      7.6560    7596     0.7051   0.0215
+ProdLDA  0.75      7.7085    7599     0.5972   0.0441
+ProdLDA  1.00      7.8299    7599     0.4821   0.0956
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.3263    7593     0.8462   0.0246
+    ETM  0.50      7.4033    7596     0.7575   0.0584
+    ETM  0.75      7.5185    7599     0.6682   0.1098
+    ETM  1.00      7.8437    7599     0.5566   0.2034
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed53.csv
+=== [00:51:21] [8/21] agnews seed53 exit=0 ===
+
+=== [00:51:21] [9/21] agnews seed71 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 71 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed71.csv
+  stored curve occlusion_robustness_agnews_etmnmfprod_seed71.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed71.unpinned.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.4833 agree=0.828
+  NMF rate=0.5 hidden_NLL=10.1089 agree=0.727
+  NMF rate=0.75 hidden_NLL=11.1955 agree=0.636
+  NMF rate=1 hidden_NLL=13.4343 agree=0.537
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6163 agree=0.812
+  ProdLDA rate=0.5 hidden_NLL=7.6487 agree=0.724
+  ProdLDA rate=0.75 hidden_NLL=7.7054 agree=0.613
+  ProdLDA rate=1 hidden_NLL=7.8108 agree=0.505
+[agnews] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.3282 agree=0.837
+  ETM rate=0.5 hidden_NLL=7.3898 agree=0.751
+  ETM rate=0.75 hidden_NLL=7.5237 agree=0.654
+  ETM rate=1 hidden_NLL=7.8434 agree=0.556
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      9.4833    7593     0.8275   0.0412
+    NMF  0.50     10.1089    7596     0.7270   0.0900
+    NMF  0.75     11.1955    7599     0.6359   0.1519
+    NMF  1.00     13.4343    7599     0.5368   0.2441
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.6163    7593     0.8117   0.0084
+ProdLDA  0.50      7.6487    7596     0.7243   0.0214
+ProdLDA  0.75      7.7054    7599     0.6128   0.0443
+ProdLDA  1.00      7.8108    7599     0.5054   0.0950
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.3282    7593     0.8371   0.0251
+    ETM  0.50      7.3898    7596     0.7511   0.0591
+    ETM  0.75      7.5237    7599     0.6542   0.1131
+    ETM  1.00      7.8434    7599     0.5561   0.2017
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed71.csv
+=== [01:09:09] [9/21] agnews seed71 exit=0 ===
+
+=== [01:09:09] [10/21] agnews seed89 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 89 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed89.csv
+  stored curve occlusion_robustness_agnews_etmnmfprod_seed89.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed89.unpinned.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.7823 agree=0.829
+  NMF rate=0.5 hidden_NLL=10.4230 agree=0.732
+  NMF rate=0.75 hidden_NLL=11.4939 agree=0.638
+  NMF rate=1 hidden_NLL=13.8495 agree=0.535
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6215 agree=0.812
+  ProdLDA rate=0.5 hidden_NLL=7.6589 agree=0.706
+  ProdLDA rate=0.75 hidden_NLL=7.7077 agree=0.603
+  ProdLDA rate=1 hidden_NLL=7.8183 agree=0.496
+[agnews] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.3101 agree=0.844
+  ETM rate=0.5 hidden_NLL=7.3766 agree=0.763
+  ETM rate=0.75 hidden_NLL=7.4993 agree=0.676
+  ETM rate=1 hidden_NLL=7.8319 agree=0.563
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      9.7823    7593     0.8289   0.0409
+    NMF  0.50     10.4230    7596     0.7318   0.0892
+    NMF  0.75     11.4939    7599     0.6376   0.1505
+    NMF  1.00     13.8495    7599     0.5351   0.2434
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.6215    7593     0.8117   0.0084
+ProdLDA  0.50      7.6589    7596     0.7057   0.0212
+ProdLDA  0.75      7.7077    7599     0.6034   0.0432
+ProdLDA  1.00      7.8183    7599     0.4963   0.0933
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.3101    7593     0.8437   0.0250
+    ETM  0.50      7.3766    7596     0.7628   0.0596
+    ETM  0.75      7.4993    7599     0.6763   0.1119
+    ETM  1.00      7.8319    7599     0.5633   0.2018
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed89.csv
+=== [01:27:00] [10/21] agnews seed89 exit=0 ===
+
+=== [01:27:00] [11/21] agnews seed101 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 101 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed101.csv
+  stored curve occlusion_robustness_agnews_etmnmfprod_seed101.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed101.unpinned.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.6830 agree=0.828
+  NMF rate=0.5 hidden_NLL=10.3765 agree=0.741
+  NMF rate=0.75 hidden_NLL=11.3831 agree=0.641
+  NMF rate=1 hidden_NLL=13.6497 agree=0.545
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6101 agree=0.813
+  ProdLDA rate=0.5 hidden_NLL=7.6475 agree=0.715
+  ProdLDA rate=0.75 hidden_NLL=7.6975 agree=0.612
+  ProdLDA rate=1 hidden_NLL=7.8110 agree=0.489
+[agnews] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.3081 agree=0.835
+  ETM rate=0.5 hidden_NLL=7.3803 agree=0.748
+  ETM rate=0.75 hidden_NLL=7.5121 agree=0.670
+  ETM rate=1 hidden_NLL=7.8338 agree=0.564
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      9.6830    7593     0.8283   0.0416
+    NMF  0.50     10.3765    7596     0.7408   0.0898
+    NMF  0.75     11.3831    7599     0.6409   0.1507
+    NMF  1.00     13.6497    7599     0.5454   0.2411
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.6101    7593     0.8128   0.0083
+ProdLDA  0.50      7.6475    7596     0.7146   0.0209
+ProdLDA  0.75      7.6975    7599     0.6117   0.0427
+ProdLDA  1.00      7.8110    7599     0.4891   0.0932
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.3081    7593     0.8353   0.0246
+    ETM  0.50      7.3803    7596     0.7480   0.0592
+    ETM  0.75      7.5121    7599     0.6696   0.1105
+    ETM  1.00      7.8338    7599     0.5639   0.2006
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed101.csv
+=== [01:44:53] [11/21] agnews seed101 exit=0 ===
+
+=== [01:44:53] [12/21] agnews seed113 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 113 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed113.csv
+  stored curve occlusion_robustness_agnews_etmnmfprod_seed113.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed113.unpinned.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.7574 agree=0.826
+  NMF rate=0.5 hidden_NLL=10.4595 agree=0.739
+  NMF rate=0.75 hidden_NLL=11.4624 agree=0.647
+  NMF rate=1 hidden_NLL=13.7592 agree=0.542
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5977 agree=0.821
+  ProdLDA rate=0.5 hidden_NLL=7.6349 agree=0.720
+  ProdLDA rate=0.75 hidden_NLL=7.6787 agree=0.616
+  ProdLDA rate=1 hidden_NLL=7.7937 agree=0.492
+[agnews] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2906 agree=0.835
+  ETM rate=0.5 hidden_NLL=7.3778 agree=0.755
+  ETM rate=0.75 hidden_NLL=7.5017 agree=0.672
+  ETM rate=1 hidden_NLL=7.8310 agree=0.563
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      9.7574    7593     0.8261   0.0417
+    NMF  0.50     10.4595    7596     0.7391   0.0900
+    NMF  0.75     11.4624    7599     0.6474   0.1502
+    NMF  1.00     13.7592    7599     0.5420   0.2435
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.5977    7593     0.8211   0.0083
+ProdLDA  0.50      7.6349    7596     0.7204   0.0210
+ProdLDA  0.75      7.6787    7599     0.6158   0.0427
+ProdLDA  1.00      7.7937    7599     0.4916   0.0935
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2906    7593     0.8346   0.0248
+    ETM  0.50      7.3778    7596     0.7547   0.0583
+    ETM  0.75      7.5017    7599     0.6724   0.1078
+    ETM  1.00      7.8310    7599     0.5634   0.1983
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed113.csv
+=== [02:02:25] [12/21] agnews seed113 exit=0 ===
+
+=== [02:02:25] [13/21] agnews seed127 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 127 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed127.csv
+  stored curve occlusion_robustness_agnews_etmnmfprod_seed127.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed127.unpinned.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.7992 agree=0.828
+  NMF rate=0.5 hidden_NLL=10.4856 agree=0.734
+  NMF rate=0.75 hidden_NLL=11.5047 agree=0.648
+  NMF rate=1 hidden_NLL=13.8280 agree=0.552
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6114 agree=0.810
+  ProdLDA rate=0.5 hidden_NLL=7.6507 agree=0.709
+  ProdLDA rate=0.75 hidden_NLL=7.7019 agree=0.598
+  ProdLDA rate=1 hidden_NLL=7.8104 agree=0.481
+[agnews] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.3281 agree=0.842
+  ETM rate=0.5 hidden_NLL=7.3930 agree=0.751
+  ETM rate=0.75 hidden_NLL=7.5125 agree=0.667
+  ETM rate=1 hidden_NLL=7.8539 agree=0.560
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      9.7992    7593     0.8276   0.0411
+    NMF  0.50     10.4856    7596     0.7342   0.0892
+    NMF  0.75     11.5047    7599     0.6478   0.1506
+    NMF  1.00     13.8280    7599     0.5524   0.2414
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.6114    7593     0.8100   0.0083
+ProdLDA  0.50      7.6507    7596     0.7095   0.0212
+ProdLDA  0.75      7.7019    7599     0.5978   0.0433
+ProdLDA  1.00      7.8104    7599     0.4809   0.0937
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.3281    7593     0.8416   0.0256
+    ETM  0.50      7.3930    7596     0.7508   0.0597
+    ETM  0.75      7.5125    7599     0.6666   0.1112
+    ETM  1.00      7.8539    7599     0.5596   0.2049
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed127.csv
+=== [02:20:05] [13/21] agnews seed127 exit=0 ===
+
+=== [02:20:05] [14/21] agnews seed139 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 139 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed139.csv
+  stored curve occlusion_robustness_agnews_etmnmfprod_seed139.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed139.unpinned.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.5828 agree=0.824
+  NMF rate=0.5 hidden_NLL=10.1746 agree=0.736
+  NMF rate=0.75 hidden_NLL=11.2730 agree=0.635
+  NMF rate=1 hidden_NLL=13.5187 agree=0.550
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6181 agree=0.807
+  ProdLDA rate=0.5 hidden_NLL=7.6467 agree=0.713
+  ProdLDA rate=0.75 hidden_NLL=7.6971 agree=0.613
+  ProdLDA rate=1 hidden_NLL=7.8062 agree=0.496
+[agnews] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.3191 agree=0.853
+  ETM rate=0.5 hidden_NLL=7.3620 agree=0.774
+  ETM rate=0.75 hidden_NLL=7.4936 agree=0.679
+  ETM rate=1 hidden_NLL=7.8159 agree=0.582
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      9.5828    7593     0.8239   0.0410
+    NMF  0.50     10.1746    7596     0.7361   0.0881
+    NMF  0.75     11.2730    7599     0.6347   0.1499
+    NMF  1.00     13.5187    7599     0.5504   0.2400
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.6181    7593     0.8074   0.0084
+ProdLDA  0.50      7.6467    7596     0.7128   0.0212
+ProdLDA  0.75      7.6971    7599     0.6132   0.0429
+ProdLDA  1.00      7.8062    7599     0.4958   0.0929
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.3191    7593     0.8525   0.0242
+    ETM  0.50      7.3620    7596     0.7738   0.0578
+    ETM  0.75      7.4936    7599     0.6789   0.1069
+    ETM  1.00      7.8159    7599     0.5820   0.1952
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed139.csv
+=== [02:37:54] [14/21] agnews seed139 exit=0 ===
+skip [15/21] civil seed53: complete (occlusion_robustness_civil_etmnmfprod_seed53.csv)
+skip [16/21] civil seed71: complete (occlusion_robustness_civil_etmnmfprod_seed71.csv)
+skip [17/21] civil seed89: complete (occlusion_robustness_civil_etmnmfprod_seed89.csv)
+skip [18/21] civil seed101: complete (occlusion_robustness_civil_etmnmfprod_seed101.csv)
+
+=== [02:37:54] [19/21] civil seed113 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus civil --seed 113 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed113.csv
+  stored curve occlusion_robustness_civil_etmnmfprod_seed113.csv is not pinned to this configuration (stored result carries no identity sidecar (produced before identities were pinned)); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed113.unpinned.csv
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.2612 agree=0.906
+  NMF rate=0.5 hidden_NLL=7.3375 agree=0.852
+  NMF rate=0.75 hidden_NLL=7.5064 agree=0.786
+  NMF rate=1 hidden_NLL=8.5086 agree=0.652
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9607 agree=0.897
+  ProdLDA rate=0.5 hidden_NLL=7.9803 agree=0.821
+  ProdLDA rate=0.75 hidden_NLL=8.0156 agree=0.747
+  ProdLDA rate=1 hidden_NLL=8.2125 agree=0.560
+[civil] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2577 agree=0.922
+  ETM rate=0.5 hidden_NLL=7.2791 agree=0.860
+  ETM rate=0.75 hidden_NLL=7.3253 agree=0.783
+  ETM rate=1 hidden_NLL=7.5480 agree=0.669
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.2612    2000     0.9065   0.0171
+    NMF  0.50      7.3375    2000     0.8515   0.0408
+    NMF  0.75      7.5064    2000     0.7860   0.0790
+    NMF  1.00      8.5086    2000     0.6525   0.1712
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.9607    2000     0.8975   0.0045
+ProdLDA  0.50      7.9803    2000     0.8210   0.0124
+ProdLDA  0.75      8.0156    2000     0.7465   0.0297
+ProdLDA  1.00      8.2125    2000     0.5600   0.1158
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2577    2000     0.9225   0.0081
+    ETM  0.50      7.2791    2000     0.8600   0.0223
+    ETM  0.75      7.3253    2000     0.7830   0.0502
+    ETM  1.00      7.5480    2000     0.6695   0.1480
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed113.csv
+=== [03:04:31] [19/21] civil seed113 exit=0 ===
+skip [20/21] civil seed127: complete (occlusion_robustness_civil_etmnmfprod_seed127.csv)
+skip [21/21] civil seed139: complete (occlusion_robustness_civil_etmnmfprod_seed139.csv)
+
+ALL DONE. failed=0: []

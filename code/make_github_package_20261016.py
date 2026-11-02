@@ -57,6 +57,9 @@ def keep_code(path: Path) -> bool:
         return False
     if name.startswith(("_asce_build", "_en_build", "_zh_build")):
         return False
+    if name.startswith("_") and name.endswith((".txt", ".png")):
+        # local LaTeX console logs and crop images, not part of the release
+        return False
     if name.endswith((".pyc", ".pt", ".zip")):
         return False
     if ".resume." in name:

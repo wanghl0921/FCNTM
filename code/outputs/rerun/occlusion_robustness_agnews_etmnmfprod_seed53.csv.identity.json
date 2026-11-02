@@ -1,0 +1,25 @@
+{
+ "id": "e15aeff21569b0cc",
+ "payload": {
+  "script": "occlusion_robustness.main",
+  "corpus": "agnews",
+  "seed": 53,
+  "k": 30,
+  "models": [
+   "ETM",
+   "NMF",
+   "ProdLDA"
+  ],
+  "rates": [
+   0.0,
+   0.25,
+   0.5,
+   0.75,
+   1.0
+  ],
+  "fcntm_state": "e8c49f397b42269f",
+  "code": "c4100bc302b3d8b7",
+  "data": "4f9d51d7aae2f8e5",
+  "fields": "d4db7f37989fdd65"
+ }
+}

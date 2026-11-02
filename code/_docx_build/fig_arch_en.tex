@@ -1,0 +1,42 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,calc}
+\begin{document}
+\begin{tikzpicture}[
+  font=\small,
+  box/.style={draw=#1!70!black, fill=#1!12, rounded corners=2pt, align=center,
+              inner sep=4pt, minimum height=8mm, line width=0.8pt},
+  arrow/.style={-{Stealth[length=2.5mm]}, line width=0.8pt, color=black!60}
+]
+\node[box=orange, text width=19mm] (rc) at (0,0) {Background field $x_{\mathrm{bg}}$\\[1pt]{\scriptsize (may be missing)}};
+\node[box=green!60!black, text width=19mm] (ri) at (0,-1.7) {Summary field $x_{\mathrm{sm}}$};
+\node[box=blue, text width=21mm] (ec) at (3.0,0) {Background encoder\\[1pt]{\scriptsize $q_{\mathrm{bg}}(z_{\mathrm{bg}}\mid x_{\mathrm{bg}})$}};
+\node[box=blue, text width=21mm] (ei) at (3.0,-1.7) {Summary encoder\\[1pt]{\scriptsize $q_{\mathrm{sm}}(z_{\mathrm{sm}}\mid x_{\mathrm{sm}})$}};
+\node[box=yellow!80!black, text width=11mm] (tc) at (5.9,0) {$\theta_{\mathrm{bg}}$};
+\node[box=yellow!80!black, text width=11mm] (ti) at (5.9,-1.7) {$\theta_{\mathrm{sm}}$};
+\node[box=cyan!70!black, text width=19mm] (fuse) at (8.8,-0.85) {Gated fusion\\[1pt]{\scriptsize $\theta^{\mathrm{fuse}}$}};
+\node[box=violet, text width=21mm] (dec) at (11.8,-0.85) {Shared decoder\\[1pt]{\scriptsize $\beta$}};
+\node[box=purple!70!black, text width=26mm] (rec) at (14.8,-0.85) {Cross-field word reconstruction\\[1pt]{\scriptsize background $+$ summary words}};
+\node[box=red!70!black, text width=30mm, minimum height=12mm] (js) at (9.2,-3.2) {JS$(\theta_{\mathrm{bg}},\theta_{\mathrm{sm}})$\\[1pt]{\scriptsize consistency term}};
+\node[draw=black!70, fill=black!8, rounded corners=2pt, align=center, inner sep=4pt,
+      minimum height=12mm, line width=0.8pt, text width=21mm] (loss) at (12.9,-3.2)
+      {Total loss $\mathcal{L}$};
+\draw[arrow] (rc) -- (ec);
+\draw[arrow] (ri) -- (ei);
+\draw[arrow] (ec) -- (tc);
+\draw[arrow] (ei) -- (ti);
+\draw[arrow] (tc.east) -- (fuse.west);
+\draw[arrow] (ti.east) -- (fuse.west);
+\draw[arrow] (fuse.east) -- (dec.west);
+\draw[arrow] (dec.east) -- (rec.west);
+\draw[arrow, rounded corners=3pt] (tc.east) -- ++(0.50,0) |- ([yshift=2.2mm]js.west);
+\draw[arrow, rounded corners=3pt] (ti.east) -- ++(0.22,0) |- ([yshift=-2.2mm]js.west);
+\draw[arrow] (rec.south) |- (loss.east);
+\draw[arrow, dashed] (js.east) -- (loss.west);
+\node[font=\scriptsize, above=1mm of dec, text width=52mm, align=center]
+      {Both streams decode with the same $\beta$ and reconstruct every present field (Eq.~(3))};
+\node[red!70!black, font=\scriptsize, above=1mm of rc, text width=30mm, align=center]
+      {the stream falls back to the prior when its field is missing};
+\end{tikzpicture}
+\end{document}

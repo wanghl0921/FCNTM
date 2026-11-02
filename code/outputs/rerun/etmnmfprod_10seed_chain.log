@@ -1,0 +1,2565 @@
+
+=== [16:53:32] [1/21] github seed53 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 53 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed53.csv
+  stored curve occlusion_robustness_github_etmnmfprod_seed53.csv is not pinned to this configuration (identity differs in: models); recomputing every model
+  old curve moved to C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed53.unpinned1.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9961 agree=0.893
+  NMF rate=0.5 hidden_NLL=7.1755 agree=0.824
+  NMF rate=0.75 hidden_NLL=7.5573 agree=0.730
+  NMF rate=1 hidden_NLL=10.2054 agree=0.466
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5357 agree=0.832
+  ProdLDA rate=0.5 hidden_NLL=7.5603 agree=0.736
+  ProdLDA rate=0.75 hidden_NLL=7.6380 agree=0.640
+  ProdLDA rate=1 hidden_NLL=8.1362 agree=0.335
+[github] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [17:02:36] [1/21] github seed53 exit=1 ===
+
+=== [17:02:36] [2/21] github seed71 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 71 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed71.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9686 agree=0.900
+  NMF rate=0.5 hidden_NLL=7.1822 agree=0.824
+  NMF rate=0.75 hidden_NLL=7.5440 agree=0.730
+  NMF rate=1 hidden_NLL=10.1820 agree=0.464
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5537 agree=0.831
+  ProdLDA rate=0.5 hidden_NLL=7.5900 agree=0.740
+  ProdLDA rate=0.75 hidden_NLL=7.6664 agree=0.621
+  ProdLDA rate=1 hidden_NLL=8.1251 agree=0.349
+[github] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [17:10:39] [2/21] github seed71 exit=1 ===
+
+=== [17:10:39] [3/21] github seed89 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 89 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed89.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9407 agree=0.896
+  NMF rate=0.5 hidden_NLL=7.1465 agree=0.820
+  NMF rate=0.75 hidden_NLL=7.6048 agree=0.724
+  NMF rate=1 hidden_NLL=10.2539 agree=0.471
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5547 agree=0.837
+  ProdLDA rate=0.5 hidden_NLL=7.5929 agree=0.734
+  ProdLDA rate=0.75 hidden_NLL=7.6659 agree=0.618
+  ProdLDA rate=1 hidden_NLL=8.1279 agree=0.336
+[github] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [17:18:05] [3/21] github seed89 exit=1 ===
+
+=== [17:18:05] [4/21] github seed101 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 101 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed101.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.0267 agree=0.889
+  NMF rate=0.5 hidden_NLL=7.1839 agree=0.822
+  NMF rate=0.75 hidden_NLL=7.5657 agree=0.717
+  NMF rate=1 hidden_NLL=10.1943 agree=0.464
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5410 agree=0.844
+  ProdLDA rate=0.5 hidden_NLL=7.5764 agree=0.750
+  ProdLDA rate=0.75 hidden_NLL=7.6584 agree=0.656
+  ProdLDA rate=1 hidden_NLL=8.1662 agree=0.367
+[github] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [17:27:09] [4/21] github seed101 exit=1 ===
+
+=== [17:27:09] [5/21] github seed113 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 113 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed113.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9238 agree=0.887
+  NMF rate=0.5 hidden_NLL=7.1026 agree=0.818
+  NMF rate=0.75 hidden_NLL=7.5169 agree=0.721
+  NMF rate=1 hidden_NLL=10.2143 agree=0.456
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5482 agree=0.825
+  ProdLDA rate=0.5 hidden_NLL=7.5964 agree=0.740
+  ProdLDA rate=0.75 hidden_NLL=7.6678 agree=0.609
+  ProdLDA rate=1 hidden_NLL=8.0996 agree=0.339
+[github] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [17:33:51] [5/21] github seed113 exit=1 ===
+
+=== [17:33:51] [6/21] github seed127 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 127 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed127.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9942 agree=0.888
+  NMF rate=0.5 hidden_NLL=7.1375 agree=0.821
+  NMF rate=0.75 hidden_NLL=7.5570 agree=0.709
+  NMF rate=1 hidden_NLL=10.2587 agree=0.459
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5298 agree=0.841
+  ProdLDA rate=0.5 hidden_NLL=7.5574 agree=0.754
+  ProdLDA rate=0.75 hidden_NLL=7.6370 agree=0.634
+  ProdLDA rate=1 hidden_NLL=8.1160 agree=0.332
+[github] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [17:42:58] [6/21] github seed127 exit=1 ===
+
+=== [17:42:58] [7/21] github seed139 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus github --seed 139 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_github_etmnmfprod_seed139.csv
+[github] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=6.9698 agree=0.891
+  NMF rate=0.5 hidden_NLL=7.1570 agree=0.817
+  NMF rate=0.75 hidden_NLL=7.5393 agree=0.717
+  NMF rate=1 hidden_NLL=10.2454 agree=0.462
+[github] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5204 agree=0.824
+  ProdLDA rate=0.5 hidden_NLL=7.5464 agree=0.738
+  ProdLDA rate=0.75 hidden_NLL=7.6249 agree=0.604
+  ProdLDA rate=1 hidden_NLL=8.0798 agree=0.326
+[github] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [17:52:04] [7/21] github seed139 exit=1 ===
+
+=== [17:52:04] [8/21] agnews seed53 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 53 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed53.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.6493 agree=0.830
+  NMF rate=0.5 hidden_NLL=10.2991 agree=0.733
+  NMF rate=0.75 hidden_NLL=11.3074 agree=0.642
+  NMF rate=1 hidden_NLL=13.5780 agree=0.544
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6145 agree=0.806
+  ProdLDA rate=0.5 hidden_NLL=7.6560 agree=0.705
+  ProdLDA rate=0.75 hidden_NLL=7.7085 agree=0.597
+  ProdLDA rate=1 hidden_NLL=7.8299 agree=0.482
+[agnews] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [18:00:40] [8/21] agnews seed53 exit=1 ===
+
+=== [18:00:40] [9/21] agnews seed71 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 71 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed71.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.4833 agree=0.828
+  NMF rate=0.5 hidden_NLL=10.1089 agree=0.727
+  NMF rate=0.75 hidden_NLL=11.1955 agree=0.636
+  NMF rate=1 hidden_NLL=13.4343 agree=0.537
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6163 agree=0.812
+  ProdLDA rate=0.5 hidden_NLL=7.6487 agree=0.724
+  ProdLDA rate=0.75 hidden_NLL=7.7054 agree=0.613
+  ProdLDA rate=1 hidden_NLL=7.8108 agree=0.505
+[agnews] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [18:09:18] [9/21] agnews seed71 exit=1 ===
+
+=== [18:09:18] [10/21] agnews seed89 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 89 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed89.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.7823 agree=0.829
+  NMF rate=0.5 hidden_NLL=10.4230 agree=0.732
+  NMF rate=0.75 hidden_NLL=11.4939 agree=0.638
+  NMF rate=1 hidden_NLL=13.8495 agree=0.535
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6215 agree=0.812
+  ProdLDA rate=0.5 hidden_NLL=7.6589 agree=0.706
+  ProdLDA rate=0.75 hidden_NLL=7.7077 agree=0.603
+  ProdLDA rate=1 hidden_NLL=7.8183 agree=0.496
+[agnews] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [18:17:57] [10/21] agnews seed89 exit=1 ===
+
+=== [18:17:57] [11/21] agnews seed101 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 101 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed101.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.6830 agree=0.828
+  NMF rate=0.5 hidden_NLL=10.3765 agree=0.741
+  NMF rate=0.75 hidden_NLL=11.3831 agree=0.641
+  NMF rate=1 hidden_NLL=13.6497 agree=0.545
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6101 agree=0.813
+  ProdLDA rate=0.5 hidden_NLL=7.6475 agree=0.715
+  ProdLDA rate=0.75 hidden_NLL=7.6975 agree=0.612
+  ProdLDA rate=1 hidden_NLL=7.8110 agree=0.489
+[agnews] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [18:26:43] [11/21] agnews seed101 exit=1 ===
+
+=== [18:26:43] [12/21] agnews seed113 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 113 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed113.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.7574 agree=0.826
+  NMF rate=0.5 hidden_NLL=10.4595 agree=0.739
+  NMF rate=0.75 hidden_NLL=11.4624 agree=0.647
+  NMF rate=1 hidden_NLL=13.7592 agree=0.542
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.5977 agree=0.821
+  ProdLDA rate=0.5 hidden_NLL=7.6349 agree=0.720
+  ProdLDA rate=0.75 hidden_NLL=7.6787 agree=0.616
+  ProdLDA rate=1 hidden_NLL=7.7937 agree=0.492
+[agnews] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [18:35:46] [12/21] agnews seed113 exit=1 ===
+
+=== [18:35:46] [13/21] agnews seed127 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 127 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed127.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.7992 agree=0.828
+  NMF rate=0.5 hidden_NLL=10.4856 agree=0.734
+  NMF rate=0.75 hidden_NLL=11.5047 agree=0.648
+  NMF rate=1 hidden_NLL=13.8280 agree=0.552
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6114 agree=0.810
+  ProdLDA rate=0.5 hidden_NLL=7.6507 agree=0.709
+  ProdLDA rate=0.75 hidden_NLL=7.7019 agree=0.598
+  ProdLDA rate=1 hidden_NLL=7.8104 agree=0.481
+[agnews] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [18:44:24] [13/21] agnews seed127 exit=1 ===
+
+=== [18:44:24] [14/21] agnews seed139 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus agnews --seed 139 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_agnews_etmnmfprod_seed139.csv
+[agnews] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=9.5828 agree=0.824
+  NMF rate=0.5 hidden_NLL=10.1746 agree=0.736
+  NMF rate=0.75 hidden_NLL=11.2730 agree=0.635
+  NMF rate=1 hidden_NLL=13.5187 agree=0.550
+[agnews] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.6181 agree=0.807
+  ProdLDA rate=0.5 hidden_NLL=7.6467 agree=0.713
+  ProdLDA rate=0.75 hidden_NLL=7.6971 agree=0.613
+  ProdLDA rate=1 hidden_NLL=7.8062 agree=0.496
+[agnews] ETM
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpcore\_sync\http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 502 Bad Gateway
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 802, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<9 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 294, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 535, in cached_files
+    raise e
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\utils\hub.py", line 438, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1176, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1762, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\file_download.py", line 1669, in get_hf_file_metadata
+    response = _httpx_follow_hub_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 754, in _httpx_follow_hub_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 627, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\huggingface_hub\utils\_http.py", line 535, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\20102\.workbuddy\binaries\python\versions\3.13.12\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 502 Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 583, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\occlusion_robustness.py", line 545, in main
+    emb = EP.embed_words(vocab)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 255, in embed_words
+    return embed_texts(vocab, kind="word")
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 246, in embed_texts
+    arr = chunk_and_pool(texts) if chunk_long else _encode(texts)
+                                                   ~~~~~~~^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 71, in _encode
+    model = _get_model()
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\embed_public.py", line 60, in _get_model
+    "tokenizer": AutoTokenizer.from_pretrained(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EMB_MODEL, revision=EMB_REVISION,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        local_files_only=_OFFLINE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 777, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 706, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 747, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Lib\site-packages\transformers\configuration_utils.py", line 824, in _get_config_dict
+    raise OSError(
+    ...<4 lines>...
+    )
+OSError: Can't load the configuration of 'sentence-transformers/all-MiniLM-L6-v2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'sentence-transformers/all-MiniLM-L6-v2' is the correct path to a directory containing a config.json file
+=== [18:52:59] [14/21] agnews seed139 exit=1 ===
+
+=== [18:52:59] [15/21] civil seed53 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus civil --seed 53 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed53.csv
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.2636 agree=0.913
+  NMF rate=0.5 hidden_NLL=7.3429 agree=0.853
+  NMF rate=0.75 hidden_NLL=7.5100 agree=0.778
+  NMF rate=1 hidden_NLL=8.5048 agree=0.650
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9723 agree=0.898
+  ProdLDA rate=0.5 hidden_NLL=8.0006 agree=0.842
+  ProdLDA rate=0.75 hidden_NLL=8.0277 agree=0.749
+  ProdLDA rate=1 hidden_NLL=8.2022 agree=0.562
+[civil] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2826 agree=0.912
+  ETM rate=0.5 hidden_NLL=7.3067 agree=0.860
+  ETM rate=0.75 hidden_NLL=7.3510 agree=0.782
+  ETM rate=1 hidden_NLL=7.5797 agree=0.657
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.2636    2000     0.9135   0.0173
+    NMF  0.50      7.3429    2000     0.8530   0.0418
+    NMF  0.75      7.5100    2000     0.7780   0.0799
+    NMF  1.00      8.5048    2000     0.6500   0.1725
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.9723    2000     0.8985   0.0046
+ProdLDA  0.50      8.0006    2000     0.8415   0.0127
+ProdLDA  0.75      8.0277    2000     0.7485   0.0302
+ProdLDA  1.00      8.2022    2000     0.5620   0.1111
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2826    2000     0.9120   0.0085
+    ETM  0.50      7.3067    2000     0.8600   0.0225
+    ETM  0.75      7.3510    2000     0.7825   0.0531
+    ETM  1.00      7.5797    2000     0.6570   0.1544
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed53.csv
+=== [19:20:19] [15/21] civil seed53 exit=0 ===
+
+=== [19:20:19] [16/21] civil seed71 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus civil --seed 71 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed71.csv
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.2940 agree=0.909
+  NMF rate=0.5 hidden_NLL=7.3594 agree=0.854
+  NMF rate=0.75 hidden_NLL=7.5203 agree=0.773
+  NMF rate=1 hidden_NLL=8.5328 agree=0.654
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9537 agree=0.891
+  ProdLDA rate=0.5 hidden_NLL=7.9733 agree=0.827
+  ProdLDA rate=0.75 hidden_NLL=8.0151 agree=0.739
+  ProdLDA rate=1 hidden_NLL=8.1809 agree=0.575
+[civil] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2829 agree=0.903
+  ETM rate=0.5 hidden_NLL=7.2978 agree=0.856
+  ETM rate=0.75 hidden_NLL=7.3420 agree=0.772
+  ETM rate=1 hidden_NLL=7.5734 agree=0.645
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.2940    2000     0.9090   0.0182
+    NMF  0.50      7.3594    2000     0.8540   0.0426
+    NMF  0.75      7.5203    2000     0.7735   0.0811
+    NMF  1.00      8.5328    2000     0.6545   0.1734
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.9537    2000     0.8910   0.0045
+ProdLDA  0.50      7.9733    2000     0.8265   0.0126
+ProdLDA  0.75      8.0151    2000     0.7390   0.0304
+ProdLDA  1.00      8.1809    2000     0.5745   0.1121
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2829    2000     0.9030   0.0084
+    ETM  0.50      7.2978    2000     0.8555   0.0229
+    ETM  0.75      7.3420    2000     0.7725   0.0541
+    ETM  1.00      7.5734    2000     0.6450   0.1536
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed71.csv
+=== [19:47:55] [16/21] civil seed71 exit=0 ===
+
+=== [19:47:55] [17/21] civil seed89 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus civil --seed 89 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed89.csv
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.2816 agree=0.895
+  NMF rate=0.5 hidden_NLL=7.3616 agree=0.850
+  NMF rate=0.75 hidden_NLL=7.5295 agree=0.785
+  NMF rate=1 hidden_NLL=8.5399 agree=0.646
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9614 agree=0.891
+  ProdLDA rate=0.5 hidden_NLL=7.9831 agree=0.832
+  ProdLDA rate=0.75 hidden_NLL=8.0241 agree=0.736
+  ProdLDA rate=1 hidden_NLL=8.2006 agree=0.575
+[civil] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2536 agree=0.908
+  ETM rate=0.5 hidden_NLL=7.2807 agree=0.847
+  ETM rate=0.75 hidden_NLL=7.3212 agree=0.779
+  ETM rate=1 hidden_NLL=7.5496 agree=0.661
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.2816    2000     0.8950   0.0175
+    NMF  0.50      7.3616    2000     0.8495   0.0408
+    NMF  0.75      7.5295    2000     0.7850   0.0803
+    NMF  1.00      8.5399    2000     0.6465   0.1717
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.9614    2000     0.8910   0.0047
+ProdLDA  0.50      7.9831    2000     0.8320   0.0127
+ProdLDA  0.75      8.0241    2000     0.7360   0.0301
+ProdLDA  1.00      8.2006    2000     0.5750   0.1146
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2536    2000     0.9080   0.0082
+    ETM  0.50      7.2807    2000     0.8470   0.0229
+    ETM  0.75      7.3212    2000     0.7795   0.0496
+    ETM  1.00      7.5496    2000     0.6615   0.1472
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed89.csv
+=== [20:15:26] [17/21] civil seed89 exit=0 ===
+
+=== [20:15:26] [18/21] civil seed101 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus civil --seed 101 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed101.csv
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.2653 agree=0.911
+  NMF rate=0.5 hidden_NLL=7.3546 agree=0.867
+  NMF rate=0.75 hidden_NLL=7.5151 agree=0.790
+  NMF rate=1 hidden_NLL=8.5264 agree=0.651
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9797 agree=0.899
+  ProdLDA rate=0.5 hidden_NLL=7.9933 agree=0.830
+  ProdLDA rate=0.75 hidden_NLL=8.0258 agree=0.752
+  ProdLDA rate=1 hidden_NLL=8.2030 agree=0.542
+[civil] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2609 agree=0.911
+  ETM rate=0.5 hidden_NLL=7.2890 agree=0.852
+  ETM rate=0.75 hidden_NLL=7.3287 agree=0.787
+  ETM rate=1 hidden_NLL=7.5495 agree=0.656
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.2653    2000     0.9110   0.0177
+    NMF  0.50      7.3546    2000     0.8665   0.0414
+    NMF  0.75      7.5151    2000     0.7900   0.0798
+    NMF  1.00      8.5264    2000     0.6510   0.1718
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.9797    2000     0.8995   0.0046
+ProdLDA  0.50      7.9933    2000     0.8295   0.0124
+ProdLDA  0.75      8.0258    2000     0.7525   0.0292
+ProdLDA  1.00      8.2030    2000     0.5420   0.1134
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2609    2000     0.9115   0.0087
+    ETM  0.50      7.2890    2000     0.8520   0.0228
+    ETM  0.75      7.3287    2000     0.7870   0.0505
+    ETM  1.00      7.5495    2000     0.6560   0.1514
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed101.csv
+=== [20:43:43] [18/21] civil seed101 exit=0 ===
+
+=== [20:43:43] [19/21] civil seed113 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus civil --seed 113 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed113.csv
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.2612 agree=0.906
+  NMF rate=0.5 hidden_NLL=7.3375 agree=0.852
+  NMF rate=0.75 hidden_NLL=7.5064 agree=0.786
+  NMF rate=1 hidden_NLL=8.5086 agree=0.652
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9607 agree=0.897
+  ProdLDA rate=0.5 hidden_NLL=7.9803 agree=0.821
+  ProdLDA rate=0.75 hidden_NLL=8.0156 agree=0.747
+  ProdLDA rate=1 hidden_NLL=8.2125 agree=0.560
+[civil] ETM
+=== [21:04:09] [19/21] civil seed113 exit=1 ===
+
+=== [21:04:09] [20/21] civil seed127 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus civil --seed 127 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed127.csv
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.2559 agree=0.905
+  NMF rate=0.5 hidden_NLL=7.3363 agree=0.858
+  NMF rate=0.75 hidden_NLL=7.5130 agree=0.790
+  NMF rate=1 hidden_NLL=8.5218 agree=0.643
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9475 agree=0.899
+  ProdLDA rate=0.5 hidden_NLL=7.9690 agree=0.839
+  ProdLDA rate=0.75 hidden_NLL=8.0069 agree=0.740
+  ProdLDA rate=1 hidden_NLL=8.1742 agree=0.543
+[civil] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2487 agree=0.916
+  ETM rate=0.5 hidden_NLL=7.2751 agree=0.867
+  ETM rate=0.75 hidden_NLL=7.3228 agree=0.769
+  ETM rate=1 hidden_NLL=7.5630 agree=0.640
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.2559    2000     0.9055   0.0175
+    NMF  0.50      7.3363    2000     0.8580   0.0412
+    NMF  0.75      7.5130    2000     0.7900   0.0802
+    NMF  1.00      8.5218    2000     0.6430   0.1723
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.9475    2000     0.8990   0.0045
+ProdLDA  0.50      7.9690    2000     0.8390   0.0123
+ProdLDA  0.75      8.0069    2000     0.7395   0.0298
+ProdLDA  1.00      8.1742    2000     0.5435   0.1113
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2487    2000     0.9165   0.0081
+    ETM  0.50      7.2751    2000     0.8665   0.0215
+    ETM  0.75      7.3228    2000     0.7695   0.0508
+    ETM  1.00      7.5630    2000     0.6400   0.1506
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed127.csv
+=== [21:31:49] [20/21] civil seed127 exit=0 ===
+
+=== [21:31:49] [21/21] civil seed139 ===
+$ C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\.venv-occl\Scripts\python.exe -u occlusion_robustness.py --corpus civil --seed 139 --models NMF,ProdLDA,ETM --out C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed139.csv
+[civil] NMF
+  NMF rate=0 hidden_NLL=nan agree=1.000
+  NMF rate=0.25 hidden_NLL=7.3045 agree=0.910
+  NMF rate=0.5 hidden_NLL=7.3574 agree=0.848
+  NMF rate=0.75 hidden_NLL=7.5344 agree=0.772
+  NMF rate=1 hidden_NLL=8.5304 agree=0.651
+[civil] ProdLDA
+  ProdLDA rate=0 hidden_NLL=nan agree=1.000
+  ProdLDA rate=0.25 hidden_NLL=7.9668 agree=0.901
+  ProdLDA rate=0.5 hidden_NLL=7.9794 agree=0.836
+  ProdLDA rate=0.75 hidden_NLL=8.0122 agree=0.735
+  ProdLDA rate=1 hidden_NLL=8.1593 agree=0.564
+[civil] ETM
+  ETM rate=0 hidden_NLL=nan agree=1.000
+  ETM rate=0.25 hidden_NLL=7.2734 agree=0.926
+  ETM rate=0.5 hidden_NLL=7.2847 agree=0.875
+  ETM rate=0.75 hidden_NLL=7.3253 agree=0.790
+  ETM rate=1 hidden_NLL=7.5590 agree=0.668
+  model  rate  hidden_NLL  n_docs  agreement  mean_js
+    NMF  0.00         NaN       0     1.0000   0.0000
+    NMF  0.25      7.3045    2000     0.9105   0.0173
+    NMF  0.50      7.3574    2000     0.8480   0.0412
+    NMF  0.75      7.5344    2000     0.7720   0.0810
+    NMF  1.00      8.5304    2000     0.6510   0.1690
+ProdLDA  0.00         NaN       0     1.0000   0.0000
+ProdLDA  0.25      7.9668    2000     0.9015   0.0046
+ProdLDA  0.50      7.9794    2000     0.8360   0.0125
+ProdLDA  0.75      8.0122    2000     0.7345   0.0302
+ProdLDA  1.00      8.1593    2000     0.5635   0.1127
+    ETM  0.00         NaN       0     1.0000   0.0000
+    ETM  0.25      7.2734    2000     0.9265   0.0078
+    ETM  0.50      7.2847    2000     0.8755   0.0214
+    ETM  0.75      7.3253    2000     0.7900   0.0506
+    ETM  1.00      7.5590    2000     0.6680   0.1488
+saved C:\Users\20102\Desktop\FCNTM\FCNTM完整代码\outputs\rerun\occlusion_robustness_civil_etmnmfprod_seed139.csv
+=== [21:59:32] [21/21] civil seed139 exit=0 ===
+
+ALL DONE. failed=15: ['[1/21] github seed53', '[2/21] github seed71', '[3/21] github seed89', '[4/21] github seed101', '[5/21] github seed113', '[6/21] github seed127', '[7/21] github seed139', '[8/21] agnews seed53', '[9/21] agnews seed71', '[10/21] agnews seed89', '[11/21] agnews seed101', '[12/21] agnews seed113', '[13/21] agnews seed127', '[14/21] agnews seed139', '[19/21] civil seed113']
