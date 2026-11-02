@@ -54,63 +54,58 @@ produces consistent gains.}
 \section{Introduction}
 \label{sec:intro}
 
-Engineering libraries and design offices accumulate far more title--abstract records than any
-team can read. Many records circulate with the title alone. Organising them into interpretable
-topics, and continuing to do so when the abstract is gone, would let staff navigate and screen a
-collection at scale before expert cataloguing takes over. Such records belong to a wider family
-of documents that pair a short summary-like field with a longer contextual one, whether the pair
-is a title and an abstract, a clause and the contract around it, or a report headline and its
-body. The same topic surfaces differently in the two fields: the body tends to carry context and
-causes, the summary objects and actions.
+Paper and report collections in engineering libraries and design offices grow faster than anyone
+can read them, and in many catalogues the abstract is simply absent --- the title is all that
+circulates. If the records could still be sorted into interpretable topics with titles alone,
+staff could browse and screen a collection cheaply, leaving the fine cataloguing to experts.
+Title--abstract records are one instance of a pattern that recurs across engineering documents:
+a short summary-like field sits next to a longer contextual field, as in a clause and the
+contract around it, or a report headline and its body. And the two fields rarely say the same
+thing in the same way. Bodies carry context and causes; summaries carry objects and actions.
 
-Topic models summarise unlabelled collections as readable topic structures and are widely used in
-domain-specific text mining, for example the analysis of financial news
-\cite{garciamendez2023lda}, as well as in software repositories and social media analysis, and latent topic information has
-been coupled with downstream neural encoders for
-large-scale text classification \cite{qin2024tae}. Over the past decade topic modelling has
-moved from probabilistic graphical models to neural variational ones. Latent Dirichlet allocation (LDA) is
-the classical bag-of-words Bayesian model \cite{blei2003lda}; GSDMM addresses short texts with a
-collapsed Gibbs Dirichlet--multinomial mixture \cite{yin2014gsdmm}; AVITM develops autoencoding
-variational inference for topic models and introduces ProdLDA with a linear topic--word decoder
-\cite{srivastava2017avitm}; NVDM applies variational auto-encoders to text early on
-\cite{miao2016nvdm}; CTM/CombinedTM combine contextual sentence embeddings with bag-of-words
-counts \cite{bianchi2021ctm}; ETM defines topics in a word-embedding space \cite{dieng2020etm};
-and the biterm topic model (BTM) represents each text through word pairs and remains a strong
-baseline for short texts \cite{yan2013btm}. Surveys note that structured and short-text corpora
-are still open problems for neural topic models \cite{wu2024survey}.
+Topic models reduce an unlabelled collection to a set of readable topic structures, and
+domain-specific text mining leans on them heavily --- financial news \cite{garciamendez2023lda},
+software repositories, social media. Latent topics have also been coupled with downstream neural
+encoders for large-scale text classification \cite{qin2024tae}. The model families themselves
+have shifted over the past decade, from probabilistic graphical models to neural variational
+ones. LDA \cite{blei2003lda} is the classical bag-of-words Bayesian model. GSDMM targets short
+texts with a collapsed Gibbs Dirichlet--multinomial mixture \cite{yin2014gsdmm}. With AVITM,
+autoencoding variational inference entered the field and produced ProdLDA, whose linear
+topic--word decoder is easy to read \cite{srivastava2017avitm}. NVDM applied variational
+auto-encoders to text early on \cite{miao2016nvdm}; CTM and CombinedTM added contextual sentence
+embeddings to bag-of-words counts \cite{bianchi2021ctm}; ETM placed topics in a word-embedding
+space \cite{dieng2020etm}. BTM, the biterm topic model, keeps representing each text through
+word pairs and is still a baseline to beat on short texts \cite{yan2013btm}. Surveys treat
+structured and short-text corpora as open problems for neural topic models \cite{wu2024survey}.
 
-Existing neural topic models exploit the internal field structure of a document only to a limited
-degree: the fields are usually concatenated into one bag of words and their division is discarded.
-Multi-view and multi-source learning has been explored across heterogeneous observations and
-source-specific views
-\cite{kurle2019multisource,zhang2017robust,pergola2021disentangled,liu2022dualview}; structured
-neural topic models for reviews encode user--item context and assign words to sentence-level
-aspects \cite{esmaeili2019structured}; structural topic models describe metadata with
-document-level covariates \cite{roberts2019stm}. Short-text work such as DV-BTM optimises two
-views jointly \cite{liu2022dualview}, CRNTM reinforces topic inference with context
-\cite{crntm2020}, and DVI-DTM learns dual-view representations for interpretable dynamic topics
-\cite{dvidtm2026}. These studies assign the views different, known roles: source-specific
-observations in multi-source inference \cite{kurle2019multisource}, opinions and plots in user
-reviews \cite{pergola2021disentangled}, and sentence-level aspects in structured review models
-\cite{esmaeili2019structured}. The setting studied here differs: the two fields of the
-\emph{same} record are modelled by separate variational streams, and their relation is specified
-by the record schema rather than by an additional latent variable. Separate encoders, posterior
-alignment and missing-view inference are all established; what is new here is the
-field-cooperative configuration itself and the read-out protocol used to measure what each field
-contributes.
+Concatenate the fields into one bag of words, as most neural topic models implicitly do, and the
+internal field structure of a document is gone. A separate literature comes closer: multi-view
+and multi-source learning across heterogeneous observations
+\cite{kurle2019multisource,zhang2017robust,pergola2021disentangled,liu2022dualview}, structured
+topic models for reviews that encode user--item context and sentence-level aspects
+\cite{esmaeili2019structured}, and structural topic models with document-level covariates
+\cite{roberts2019stm}. On the short-text side, DV-BTM optimises two views jointly
+\cite{liu2022dualview}, CRNTM reinforces topic inference with context \cite{crntm2020}, and
+DVI-DTM learns dual-view representations for dynamic topics \cite{dvidtm2026}. In all of these
+the views carry known, externally given roles --- source-specific observations
+\cite{kurle2019multisource}, opinions and plots in reviews \cite{pergola2021disentangled},
+aspects in review models \cite{esmaeili2019structured}. Here the roles are not given. The two
+fields of the \emph{same} record are modelled by separate variational streams, and their relation
+comes from the record schema rather than from an extra latent variable. Separate encoders,
+posterior alignment and missing-view inference are all established; what this study adds is the
+field-cooperative configuration itself, together with the read-out protocol that measures what
+each field contributes.
 
-Engineering informatics has an active text-mining community of its own: safety reports have been
-content-analysed and classified \cite{civilsafety2015,civilaccident2018}, regulations and
-contracts processed automatically and contractual risk clauses extracted
-\cite{compliance2013,ontology2015,contract2022,risknlp2023}, alongside surveys of natural language
-processing for construction \cite{civilnlp2021,civilnlp2023}. Topic models have entered the field
-as well: DUET applies LDA to social-media text to detect physical events in urban
-areas \cite{duet2019}, neural topic modelling has mapped machine-learning
-applications in buildings \cite{civiltopic2024}, and semantic topic modelling has built
-taxonomies for digital building passports \cite{passport2026}. These applications treat a record
-as one flat text. The present study instead examines the \emph{internal} field structure of an
-engineering record: topic inference when a field is missing, field-restricted read-out, and
-whether the read-outs can be measured reliably.
+Engineering informatics, meanwhile, has built up a text-mining practice of its own: safety
+reports content-analysed and classified \cite{civilsafety2015,civilaccident2018}, regulations and
+contracts processed automatically down to contractual risk clauses
+\cite{compliance2013,ontology2015,contract2022,risknlp2023}, and dedicated surveys of natural
+language processing for construction \cite{civilnlp2021,civilnlp2023}. Topic models have joined
+in --- DUET for physical events in urban social media \cite{duet2019}, a mapping of
+machine-learning applications in buildings \cite{civiltopic2024}, taxonomies for digital building
+passports \cite{passport2026}. What none of these applications do is open the record and look
+inside. That is the step taken here: topic inference when a field is missing, field-restricted
+read-out, and a check of whether such read-outs can be measured reliably.
 
 We make three contributions.
 \begin{enumerate}
@@ -157,45 +152,47 @@ civil-engineering literature.}
 \label{sec:related}
 
 \paragraph{Neural topic models.}
-Neural topic models map a bag of words to a latent Gaussian posterior and decode topics from it:
-NVDM applied variational auto-encoders to text \cite{miao2016nvdm}; AVITM develops autoencoding
-variational inference, and its ProdLDA variant uses a linear decoder with a readable topic--word
-matrix \cite{srivastava2017avitm}; CTM/CombinedTM concatenate sentence embeddings with counts
-\cite{bianchi2021ctm}; and ETM defines topics in an embedding space \cite{dieng2020etm}. For
-short texts, BTM models word pairs \cite{yan2013btm}; BERTopic uses class TF--IDF topic
-representations \cite{grootendorst2022bertopic}, and Top2Vec learns joint document, word and
-topic embeddings \cite{angelov2020top2vec}. GraphBTM and BCK-TM add word-pair structure
-\cite{zhu2018graphbtm,zhang2020bcktm}, and BigARTM provides an additive regularisation framework
-\cite{vorontsov2015bigartm}. Short-text neural topic modelling has also used topic-distribution
-quantisation with a negative-sampling decoder \cite{quantization2020}. Our decoder follows the
-ProdLDA structure with topic orthogonality, dropout \cite{srivastava2014dropout} and
-validation-based early stopping \cite{prechelt1998early}. The objectives, training loops and
-learning rates differ across algorithms.
+Neural topic models map a bag of words to a latent Gaussian posterior and decode topics from it.
+NVDM was the early application of variational auto-encoders to text \cite{miao2016nvdm}; AVITM
+brought autoencoding variational inference and, through its ProdLDA variant, a linear decoder
+whose topic--word matrix can be read directly \cite{srivastava2017avitm}. CTM and CombinedTM
+concatenate sentence embeddings with bag-of-words counts \cite{bianchi2021ctm}, ETM places topics
+in an embedding space \cite{dieng2020etm}, and for short texts BTM keeps to word pairs
+\cite{yan2013btm}. BERTopic builds its topic representations from class TF--IDF
+\cite{grootendorst2022bertopic}; Top2Vec learns joint document, word and topic embeddings
+\cite{angelov2020top2vec}. GraphBTM and BCK-TM add word-pair structure
+\cite{zhu2018graphbtm,zhang2020bcktm}, and BigARTM contributes an additive regularisation
+framework \cite{vorontsov2015bigartm}. Topic-distribution quantisation with a negative-sampling
+decoder is a more recent short-text option \cite{quantization2020}. Our own decoder follows
+ProdLDA, with topic orthogonality, dropout \cite{srivastava2014dropout} and validation-based
+early stopping \cite{prechelt1998early}; beyond that, objectives, training loops and learning
+rates differ across the algorithms.
 
 \paragraph{Multi-view, multimodal and structured-document models.}
-Multi-view latent-variable learning and topic modelling share information across views:
+Sharing information across views is the business of multi-view latent-variable learning:
 multi-source variational inference \cite{kurle2019multisource}, robust multi-view topic modelling
-\cite{zhang2017robust}, and disentangled or dual-view topic models
+\cite{zhang2017robust}, and the disentangled or dual-view topic models
 \cite{pergola2021disentangled,liu2022dualview}. Structured neural topic models for reviews
 \cite{esmaeili2019structured} and metadata-conditioned models \cite{card2018metadata,roberts2019stm}
-exploit additional document structure; CRNTM and DVI-DTM provide recent short-text examples
-\cite{crntm2020,dvidtm2026}, alongside related word-pair models
-\cite{relationalbtm2018,sparsebtm2021}. Kurle et al.\ encode each source separately and align
-their posterior representations; JMVAE-kl infers a missing modality from the remaining one
-\cite{suzuki2017jmvae}; and SubNTM models sub-document topics \cite{nguyen2026subntm}. Our setting is fixed by the record schema instead: two textual fields that share one vocabulary
-and one linear decoder, and the question of what field-restricted read-outs and
+exploit other kinds of document structure. CRNTM and DVI-DTM are recent short-text examples
+\cite{crntm2020,dvidtm2026}, with related word-pair models nearby
+\cite{relationalbtm2018,sparsebtm2021}. Kurle et al.\ encode each source separately and align the
+posterior representations, JMVAE-kl infers a missing modality from those that remain
+\cite{suzuki2017jmvae}, and SubNTM models sub-document topics \cite{nguyen2026subntm}. What fixes
+our setting is the record schema: two textual fields, one shared vocabulary, one linear decoder
+--- and a question none of the above asks, namely what field-restricted read-outs and
 missing-background inference actually measure. The established components are simply put to
 work at the field level.
 
 \paragraph{Text mining and topic modelling of engineering documents.}
-Engineering informatics has an extensive text-mining literature on safety reports
+Within engineering informatics the text-mining literature is extensive --- safety reports
 \cite{civilsafety2015,civilaccident2018}, regulatory and contractual documents
-\cite{compliance2013,ontology2015,contract2022,risknlp2023}, and domain surveys
-\cite{civilnlp2021,civilnlp2023}. Topic models include DUET \cite{duet2019}, neural topic
-modelling of building applications \cite{civiltopic2024} and passport taxonomies
-\cite{passport2026}. These applications treat a record as one flat text; the
-present study asks how the record's fixed field structure changes field-restricted read-out and
-missing-field inference.
+\cite{compliance2013,ontology2015,contract2022,risknlp2023}, domain surveys
+\cite{civilnlp2021,civilnlp2023} --- and topic models appear in it as DUET \cite{duet2019}, as a
+study of machine-learning applications in buildings \cite{civiltopic2024} and as passport
+taxonomies \cite{passport2026}. All of it treats a record as one flat text. The question taken up
+here is different: what the record's fixed field structure does to field-restricted read-out and
+to missing-field inference.
 
 \section{Methodology}
 \label{sec:method}
