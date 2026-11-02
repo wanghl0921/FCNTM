@@ -28,9 +28,8 @@
 % Double-anonymized submission: author block withheld; see title_page.tex
 
 \abstract{Engineering libraries and design offices hold far more bibliographic records than any team can
-read one by one, and a large share of these records circulate with titles only. This paper
-addresses the engineering problem of organising civil engineering title--abstract records into
-interpretable topics and of inferring topics when the abstract is missing. \textbf{Contribution
+read one by one, and a large share of these records circulate with titles only. We consider a practical form of this problem: organising civil engineering title--abstract
+records into interpretable topics, and still assigning topics when the abstract is missing. \textbf{Contribution
 to artificial intelligence:} we present \fcntm{}, a field-cooperative neural topic model in which
 each field of a record is encoded by its own conditional variational stream while one linear
 topic decoder is shared across the streams; cross-field reconstruction, a consistency term,
@@ -56,22 +55,20 @@ produces consistent gains.}
 \label{sec:intro}
 
 Engineering libraries and design offices accumulate far more title--abstract records than any
-team can read one by one, and a large share of those records circulate with titles only. The
-ability to organise such records into interpretable topics --- and to keep doing so when only the
-title is available --- supports literature navigation, browsing and screening, and later
-integration with expert cataloguing. Civil and construction engineering records are a natural
-instance of a wider class of documents that pair a short summary-like field with a longer
-contextual field: bibliographic title--abstract pairs, technical specifications and contract
-clauses, and accident reports. The same topic is expressed differently in the two fields; for
-example, the body tends to carry context and causes, whereas the summary tends to carry objects
-and actions.
+team can read. Many records circulate with the title alone. Organising them into interpretable
+topics, and continuing to do so when the abstract is gone, would let staff navigate and screen a
+collection at scale before expert cataloguing takes over. Such records belong to a wider family
+of documents that pair a short summary-like field with a longer contextual one, whether the pair
+is a title and an abstract, a clause and the contract around it, or a report headline and its
+body. The same topic surfaces differently in the two fields: the body tends to carry context and
+causes, the summary objects and actions.
 
 Topic models summarise unlabelled collections as readable topic structures and are widely used in
 domain-specific text mining, for example the analysis of financial news
-\cite{garciamendez2023lda}, as well as in software repositories and social media analysis;
-latent topic information has moreover been coupled with downstream neural encoders for
-large-scale text classification \cite{qin2024tae}. Topic modelling has moved from
-probabilistic graphical models to neural variational models. Latent Dirichlet allocation (LDA) is
+\cite{garciamendez2023lda}, as well as in software repositories and social media analysis, and latent topic information has
+been coupled with downstream neural encoders for
+large-scale text classification \cite{qin2024tae}. Over the past decade topic modelling has
+moved from probabilistic graphical models to neural variational ones. Latent Dirichlet allocation (LDA) is
 the classical bag-of-words Bayesian model \cite{blei2003lda}; GSDMM addresses short texts with a
 collapsed Gibbs Dirichlet--multinomial mixture \cite{yin2014gsdmm}; AVITM develops autoencoding
 variational inference for topic models and introduces ProdLDA with a linear topic--word decoder
@@ -97,24 +94,25 @@ observations in multi-source inference \cite{kurle2019multisource}, opinions and
 reviews \cite{pergola2021disentangled}, and sentence-level aspects in structured review models
 \cite{esmaeili2019structured}. The setting studied here differs: the two fields of the
 \emph{same} record are modelled by separate variational streams, and their relation is specified
-by the record schema and is not represented by an additional latent variable. Separate encoders,
-posterior alignment and missing-view inference are established components of this literature; the
-field-cooperative configuration and its read-out protocol are the contributions of this study.
+by the record schema rather than by an additional latent variable. Separate encoders, posterior
+alignment and missing-view inference are all established; what is new here is the
+field-cooperative configuration itself and the read-out protocol used to measure what each field
+contributes.
 
-In engineering informatics, text mining has become a recognised analysis tool: content analysis
-and classification of safety reports \cite{civilsafety2015,civilaccident2018}, automated
-classification of regulations and contracts and extraction of contractual risk clauses
-\cite{compliance2013,ontology2015,contract2022,risknlp2023}, and surveys of natural language
+Engineering informatics has an active text-mining community of its own: safety reports have been
+content-analysed and classified \cite{civilsafety2015,civilaccident2018}, regulations and
+contracts processed automatically and contractual risk clauses extracted
+\cite{compliance2013,ontology2015,contract2022,risknlp2023}, alongside surveys of natural language
 processing for construction \cite{civilnlp2021,civilnlp2023}. Topic models have entered the field
-as well: DUET applies LDA topic modelling to social-media text for detecting physical events in
-urban areas \cite{duet2019}, neural topic modelling has been used to map machine-learning
-applications in buildings \cite{civiltopic2024}, and semantic topic modelling has been used to
-build taxonomies for digital building passports \cite{passport2026}. These studies use topic
-models for classification, thematic mapping and taxonomy construction. This study examines the
-\emph{internal} field structure of an engineering record: topic inference when a field is
-missing, field-restricted read-out, and whether these read-outs can be measured reliably.
+as well: DUET applies LDA to social-media text to detect physical events in urban
+areas \cite{duet2019}, neural topic modelling has mapped machine-learning
+applications in buildings \cite{civiltopic2024}, and semantic topic modelling has built
+taxonomies for digital building passports \cite{passport2026}. These applications treat a record
+as one flat text. The present study instead examines the \emph{internal} field structure of an
+engineering record: topic inference when a field is missing, field-restricted read-out, and
+whether the read-outs can be measured reliably.
 
-The study has three principal contributions.
+We make three contributions.
 \begin{enumerate}
 \item \textbf{A field-cooperative neural topic model with native missing-field support.}
 \fcntm{} models the two fields of a record as two conditional variational streams that share one
@@ -134,14 +132,13 @@ corpus ($+0.049$ class TF--IDF and $+0.061$ native read-out, 10/10 seeds) and on
 ($+0.028$, 9/10), but not on AG News ($-0.009$, 3/10), while a same-budget concatenated-field
 control locates the gains in the complete configuration rather than in the two-stream
 architecture alone. A title-only routing experiment on the civil corpus (0.66 accuracy on the
-evaluated subset) shows how the trained model supports browsing and screening of engineering
-records.
+evaluated subset) shows how the trained model can screen engineering records from titles alone.
 \end{enumerate}
 
-Figure~\ref{fig:concept} summarises the problem setting and the three contributions: the data
-reality of dual-field scholarly records with missing abstracts, the field-cooperative
-configuration that trains both fields against one shared decoder, and the observation regimes
-that a single trained model serves.
+Figure~\ref{fig:concept} summarises the problem setting and the three contributions: dual-field
+scholarly records whose abstracts may be missing, the field-cooperative configuration that
+trains both fields against one shared decoder, and the observation regimes a single trained
+model has to serve.
 
 \begin{figure}[!t]
 \centering
@@ -169,8 +166,8 @@ short texts, BTM models word pairs \cite{yan2013btm}; BERTopic uses class TF--ID
 representations \cite{grootendorst2022bertopic}, and Top2Vec learns joint document, word and
 topic embeddings \cite{angelov2020top2vec}. GraphBTM and BCK-TM add word-pair structure
 \cite{zhu2018graphbtm,zhang2020bcktm}, and BigARTM provides an additive regularisation framework
-\cite{vorontsov2015bigartm}. Short-text neural topic modeling has also used topic-distribution
-quantization with a negative-sampling decoder \cite{quantization2020}. Our decoder follows the
+\cite{vorontsov2015bigartm}. Short-text neural topic modelling has also used topic-distribution
+quantisation with a negative-sampling decoder \cite{quantization2020}. Our decoder follows the
 ProdLDA structure with topic orthogonality, dropout \cite{srivastava2014dropout} and
 validation-based early stopping \cite{prechelt1998early}. The objectives, training loops and
 learning rates differ across algorithms.
@@ -185,10 +182,10 @@ exploit additional document structure; CRNTM and DVI-DTM provide recent short-te
 \cite{crntm2020,dvidtm2026}, alongside related word-pair models
 \cite{relationalbtm2018,sparsebtm2021}. Kurle et al.\ encode each source separately and align
 their posterior representations; JMVAE-kl infers a missing modality from the remaining one
-\cite{suzuki2017jmvae}; and SubNTM models sub-document topics \cite{nguyen2026subntm}. Our
-setting is fixed by the record schema: two textual fields share one vocabulary and one linear
-decoder, and the study asks what field-restricted read-outs and missing-background inference
-measure. The established components are applied to the field-level problem.
+\cite{suzuki2017jmvae}; and SubNTM models sub-document topics \cite{nguyen2026subntm}. Our setting is fixed by the record schema instead: two textual fields that share one vocabulary
+and one linear decoder, and the question of what field-restricted read-outs and
+missing-background inference actually measure. The established components are simply put to
+work at the field level.
 
 \paragraph{Text mining and topic modelling of engineering documents.}
 Engineering informatics has an extensive text-mining literature on safety reports
@@ -196,9 +193,9 @@ Engineering informatics has an extensive text-mining literature on safety report
 \cite{compliance2013,ontology2015,contract2022,risknlp2023}, and domain surveys
 \cite{civilnlp2021,civilnlp2023}. Topic models include DUET \cite{duet2019}, neural topic
 modelling of building applications \cite{civiltopic2024} and passport taxonomies
-\cite{passport2026}. These studies apply topic models to classification, thematic mapping and
-taxonomy construction; the present study asks how fixed field structure affects field-restricted
-read-out and missing-field inference.
+\cite{passport2026}. These applications treat a record as one flat text; the
+present study asks how the record's fixed field structure changes field-restricted read-out and
+missing-field inference.
 
 \section{Methodology}
 \label{sec:method}
@@ -382,7 +379,7 @@ Section~\ref{sec:discussion} considers the remaining effect of prior model selec
 are organised around three questions: how well civil title--abstract records can be structured
 into verifiable topics; how much signal remains when the abstract is missing; and how much the
 complete field-cooperative configuration adds over a concatenated single-encoder control.
-Cross-corpus diagnostics supplement these analyses.
+Cross-corpus diagnostics round off the analysis.
 
 \begin{table}[t]
 \centering
@@ -493,7 +490,7 @@ differences behind these means across all three corpora. Figure~\ref{fig:main} c
 On AG News, \fcntm{}-cTFIDF reaches $C_V=0.612$ and NPMI $=0.173$, above BTM under the matched
 class TF--IDF read-out ($0.593$ / $0.169$) and above the $\beta$ read-outs of ProdLDA, ETM, NMF,
 CTM-lite and LDA; under its own $\beta$ read-out BTM keeps a small lead ($0.600$ versus $0.586$).
-On GitHub issues, \fcntm{}-cTFIDF reaches $C_V=0.727$ and NPMI $=0.274$, above BTM at both
+On GitHub issues, \fcntm{}-cTFIDF records $C_V=0.727$ and NPMI $=0.274$, above BTM at both
 read-outs ($0.712$ / $0.232$ for the native $\beta$ read-out, $0.700$ / $0.235$ matched), and
 above the sentence-embedding baselines (CombinedTM $0.643$, BERTopic $0.540$).
 The matched-read-out advantage over BTM is $+0.027$ $C_V$ and $+0.039$ NPMI on GitHub and
@@ -687,10 +684,10 @@ From 25\% to 100\% occlusion the per-token NLL of \fcntm{} rises by only 3.2\%
 ($7.712\to7.960$), less than LDA (7.4\%), ProdLDA (8.0\%), ETM (8.9\%), BTM (5.2\%) and NMF
 (47.1\%), which is consistent with the training-time whole-field dropout. At full occlusion, BTM
 has the lowest NLL (6.972); topic agreement is highest for NMF (0.469), followed by ETM (0.452),
-while \fcntm{} reaches 0.358. We report relative degradation together with absolute NLL and
-agreement, which provide calibration and input-sensitivity information. The protocol covers
-three English corpora with ten seeds per corpus, with occlusion masks redrawn for each seed,
-and the field split follows existing title/body structure.
+while \fcntm{} reaches 0.358. Relative degradation is therefore always read alongside absolute
+NLL and agreement, because the ratio alone says nothing about how good the absolute predictions
+are. The protocol covers three English corpora, ten seeds per corpus, occlusion masks redrawn
+for every seed, and the field split follows the existing title/body structure.
 
 \begin{figure}[!t]
 \centering
@@ -942,9 +939,9 @@ without). The influence of whole-field dropout is concentrated in the posterior 
 is weaker for word-prediction calibration. It lowers the per-token increase from 0.269 to 0.232
 and the posterior JS from 0.060 to 0.049 on AG News, is directionally the same on the civil
 corpus (0.125$\to$0.103, JS 0.039$\to$0.033), and shows no increase difference on GitHub (0.242
-versus 0.241) where only the JS slightly improves. Two corpora show reduced posterior drift
-under field loss. This measure should be reported with absolute prediction accuracy because the
-two describe different aspects of the result.
+versus 0.241) where only the JS slightly improves. Posterior drift under field loss is reduced
+on two of the three corpora. We read these measures next to absolute prediction accuracy
+because they describe different aspects of the same result.
 
 \begin{table}[t]
 \centering
@@ -995,14 +992,12 @@ with the training-label prior as fallback for model topics that receive no train
 test records in one run triggered this fallback) --- fitted on the same title-only inference, so
 the pipeline combines an unsupervised representation with a supervised training-split mapping.
 Accuracy and macro-F1 are reported per seed. A supervised TF--IDF logistic regression on the same
-titles serves as a reference point, and \fcntm{} with the full fields serves as an upper
-reference.
+titles provides a reference point, and \fcntm{} given both fields marks the upper end.
 
 Title-based routing reaches 0.664 accuracy for \fcntm{}, 0.653 for the concatenated control,
 0.719 with the full fields and 0.810 for the supervised TF--IDF classifier. The corresponding
 accuracies for the classical topic models are 0.532 for LDA and 0.600 for BTM. Accuracy and
-macro-F1 for each seed are reported in Table~\ref{tab:archival}. The labelling
-protocol uses OpenAlex primary topics for the 42.9\% of test records covered by the 15-topic set.
+macro-F1 for each seed are reported in Table~\ref{tab:archival}.
 
 \begin{table}[t]
 \centering
@@ -1045,18 +1040,18 @@ Civil corpus & Class TF--IDF & 0.636$\pm$0.014 & 0.606$\pm$0.014 & $+$0.029 (2/3
 \section{Discussion and limitations}
 \label{sec:discussion}
 
-The results show a practical role for the field-aware representation. A single trained model
-supports field-restricted topic words and continues to infer topic proportions when the
-background field is missing. Multi-seed read-out differences are largest and most consistent on
-the civil corpus and are supported for the matched class TF--IDF read-out on GitHub. AG News
-provides a useful boundary case, with a class TF--IDF mean difference of $-0.009$ and a
-confidence interval that includes zero. These patterns indicate that field cooperation has
-conditional value for particular corpora and read-outs.
+The results assign the field-aware representation a practical role: one trained model supports
+field-restricted topic words and keeps inferring topic proportions when the background field is
+missing. Multi-seed read-out differences are largest and most consistent on the civil corpus and
+are supported for the matched class TF--IDF read-out on GitHub. AG News marks the boundary: its
+class TF--IDF mean difference is $-0.009$ and its confidence interval includes zero. Field
+cooperation is thus not a blanket win; it pays off on particular corpora, and only for
+particular read-outs.
 
-The concatenated-field encoder performs close to \fcntm{}, indicating that the results
-characterise the complete field-aware configuration. Relative degradation, absolute NLL and topic
-agreement capture different aspects of missing-field behaviour, while redundancy and
-field-length statistics describe corpus structure.
+The concatenated-field encoder stays close to \fcntm{}, so the results characterise the complete
+field-aware configuration rather than two-stream modelling in general. Relative degradation,
+absolute NLL and topic agreement capture different aspects of missing-field behaviour, while
+redundancy and field-length statistics describe corpus structure.
 
 The routing experiment uses automatically generated OpenAlex labels for a fixed 15-topic subset
 covering 42.9\% of the test records. It is useful for screening; deployment will require
@@ -1068,10 +1063,11 @@ hyper-parameters were selected on development data. Two design couplings bound t
 evidence: the component ablation attenuates rather than eliminates cross-field information flow,
 because the fused reconstruction term continues to rebuild both fields; and the gating comparison
 evaluates the gate together with the fusion-reconstruction term, since the gate receives
-gradients only through that term. Future work should test other languages,
-field conventions, automatically detected boundaries and larger independent evaluations. Within
-this scope, the model and protocol provide a reproducible basis for missing-field topic
-modelling and practical screening of engineering records.
+gradients only through that term. The evidence base is otherwise open on several sides: other
+languages, other field conventions and automatically detected field boundaries have not been
+tested, nor has validation on larger independently labelled collections. Within that scope, the
+released model, protocol and per-seed results give a concrete starting point for missing-field
+topic modelling on engineering collections.
 
 \section{Conclusions}
 \label{sec:conclusions}
@@ -1091,10 +1087,10 @@ civil-corpus differences are $+0.049$ $C_V$ for class TF--IDF and $+0.061$ for n
 (95\% CI $[+0.012,+0.043]$, 9/10). A same-budget concatenated-field encoder provides a close
 reference, with mean differences of $+0.010$--$+0.029$ and mixed paired majorities. Title-only
 routing reaches 0.664 accuracy on the evaluated 15-topic subset. The field-relation measurements
-and occlusion diagnostics provide additional context by separating changes in topic coherence
-from changes in posterior structure and word-level prediction. The unified protocol, field-aware
-representation and missing-field inference together provide a reproducible basis for applying the
-framework to new engineering collections.
+and occlusion diagnostics separate changes in topic coherence from changes in posterior structure
+and word-level prediction. The protocol, the trained model and the per-seed results are released
+together, so the framework can be tried on new engineering collections and checked against the
+same numbers.
 
 \section*{Data availability}
 The code, the fixed corpus splits and the per-seed experimental results that support this study
