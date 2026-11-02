@@ -28,7 +28,7 @@
 % Double-anonymized submission: author block withheld; see title_page.tex
 
 \abstract{Engineering libraries and design offices hold far more bibliographic records than any team can
-read one by one, and a large share of these records circulate with titles only. We consider a practical form of this problem: organising civil engineering title--abstract
+read in full, and many of these records are catalogued with a title but no abstract. We consider a practical form of this problem: organising civil engineering title--abstract
 records into interpretable topics, and still assigning topics when the abstract is missing. \textbf{Contribution
 to artificial intelligence:} we present \fcntm{}, a field-cooperative neural topic model in which
 each field of a record is encoded by its own conditional variational stream while one linear
@@ -37,11 +37,11 @@ field-level word masking and whole-field dropout allow a single trained model to
 records, partially observed records and title-only records, and a unified topic--word read-out
 protocol under one evaluation vocabulary separates read-out effects from model effects in
 comparative evaluation. \textbf{Engineering application:} the model is evaluated on 8,000 civil
-engineering title--abstract records from OpenAlex. \fcntm{} achieves the highest topic coherence
-among the ten evaluated methods, and a ten-seed paired comparison against the biterm topic model
-favours \fcntm{} in all ten seeds, with coherence gains of $+0.049$ (class
-term-frequency--inverse-document-frequency read-out) and $+0.061$ (decoder read-out).
-Title-only routing reaches 0.66 accuracy against automatically assigned OpenAlex subject labels
+engineering title--abstract records from OpenAlex. \fcntm{} attains the highest topic coherence
+of the ten methods evaluated. In a ten-seed paired comparison against the biterm topic model it
+is ahead in every seed, with coherence gains of $+0.049$ for the class
+term-frequency--inverse-document-frequency read-out and $+0.061$ for the $\beta$ read-out.
+Title-only routing reaches an accuracy of 0.664 against automatically assigned OpenAlex subject labels
 on the covered subset, supporting browsing and screening of engineering records. Occlusion
 experiments quantify inference stability under missing-field conditions on the civil corpus,
 GitHub issues and AG News, and identify the corpus conditions under which field cooperation
@@ -63,9 +63,9 @@ a short summary-like field sits next to a longer contextual field, as in a claus
 contract around it, or a report headline and its body. And the two fields rarely say the same
 thing in the same way. Bodies carry context and causes; summaries carry objects and actions.
 
-Topic models reduce an unlabelled collection to a set of readable topic structures, and
-domain-specific text mining leans on them heavily --- financial news \cite{garciamendez2023lda},
-software repositories, social media. Latent topics have also been coupled with downstream neural
+Topic models reduce an unlabelled collection to a set of interpretable topic structures, and
+domain-specific text mining relies on them in settings as varied as financial news
+\cite{garciamendez2023lda}, software repositories and social media. Latent topics have also been coupled with downstream neural
 encoders for large-scale text classification \cite{qin2024tae}. The model families themselves
 have shifted over the past decade, from probabilistic graphical models to neural variational
 ones. LDA \cite{blei2003lda} is the classical bag-of-words Bayesian model. GSDMM targets short
@@ -75,11 +75,11 @@ topic--word decoder is easy to read \cite{srivastava2017avitm}. NVDM applied var
 auto-encoders to text early on \cite{miao2016nvdm}; CTM and CombinedTM added contextual sentence
 embeddings to bag-of-words counts \cite{bianchi2021ctm}; ETM placed topics in a word-embedding
 space \cite{dieng2020etm}. BTM, the biterm topic model, keeps representing each text through
-word pairs and is still a baseline to beat on short texts \cite{yan2013btm}. Surveys treat
+word pairs and remains a strong baseline for short texts \cite{yan2013btm}. Surveys treat
 structured and short-text corpora as open problems for neural topic models \cite{wu2024survey}.
 
-Concatenate the fields into one bag of words, as most neural topic models implicitly do, and the
-internal field structure of a document is gone. A separate literature comes closer: multi-view
+When the fields are concatenated into a single bag of words, as most neural topic models do
+implicitly, the internal field structure of a document is lost. A separate literature comes closer: multi-view
 and multi-source learning across heterogeneous observations
 \cite{kurle2019multisource,zhang2017robust,pergola2021disentangled,liu2022dualview}, structured
 topic models for reviews that encode user--item context and sentence-level aspects
@@ -110,11 +110,11 @@ read-out, and a check of whether such read-outs can be measured reliably.
 We make three contributions.
 \begin{enumerate}
 \item \textbf{A field-cooperative neural topic model with native missing-field support.}
-\fcntm{} models the two fields of a record as two conditional variational streams that share one
-linear topic decoder; cross-field reconstruction and a field consistency regulariser encode the
-field relation into a shared topic space, and field-level word masking with whole-field dropout
-lets one trained model serve complete, partially observed and title-only records without
-retraining or model surgery.
+\fcntm{} encodes the two fields of a record in separate conditional variational streams that
+share one linear topic decoder. Cross-field reconstruction and a field-consistency regulariser
+tie the two fields into a shared topic space, and field-level word masking with whole-field
+dropout lets a single trained model serve complete, partially observed and title-only records
+without retraining or architectural change.
 \item \textbf{A unified topic--word read-out protocol for comparative evaluation.} All models are
 scored on one evaluation vocabulary with exactly ten words per topic, each model being read out
 both through its native topic--word matrix and through a class
@@ -122,12 +122,13 @@ term-frequency--inverse-document-frequency (TF--IDF) read-out. This separates di
 by the read-out from differences caused by the model --- a common confound in topic-model
 benchmarking --- and is what makes the reported comparisons interpretable.
 \item \textbf{Multi-seed evidence on when field cooperation helps, and an engineering screening
-task.} Ten-seed paired comparisons give reproducible read-out gains on the civil engineering
-corpus ($+0.049$ class TF--IDF and $+0.061$ native read-out, 10/10 seeds) and on GitHub issues
-($+0.028$, 9/10), but not on AG News ($-0.009$, 3/10), while a same-budget concatenated-field
-control locates the gains in the complete configuration rather than in the two-stream
-architecture alone. A title-only routing experiment on the civil corpus (0.66 accuracy on the
-evaluated subset) shows how the trained model can screen engineering records from titles alone.
+task.} Ten-seed paired comparisons show reproducible gains on the civil engineering
+corpus ($+0.049$ for the class TF--IDF read-out and $+0.061$ for the $\beta$ read-out; 10/10
+seeds) and on GitHub issues ($+0.028$; 9/10 seeds), but not on AG News ($-0.009$; 3/10 seeds).
+A concatenated-field control trained under the same budget places these gains in the complete
+configuration rather than in the two-stream architecture alone. A title-only routing experiment
+on the civil corpus (0.664 accuracy on the evaluated subset) shows how the trained model can
+screen engineering records from titles alone.
 \end{enumerate}
 
 Figure~\ref{fig:concept} summarises the problem setting and the three contributions: dual-field
@@ -169,7 +170,7 @@ early stopping \cite{prechelt1998early}; beyond that, objectives, training loops
 rates differ across the algorithms.
 
 \paragraph{Multi-view, multimodal and structured-document models.}
-Sharing information across views is the business of multi-view latent-variable learning:
+Sharing information across views is a central concern of multi-view latent-variable learning:
 multi-source variational inference \cite{kurle2019multisource}, robust multi-view topic modelling
 \cite{zhang2017robust}, and the disentangled or dual-view topic models
 \cite{pergola2021disentangled,liu2022dualview}. Structured neural topic models for reviews
@@ -181,8 +182,7 @@ posterior representations, JMVAE-kl infers a missing modality from those that re
 \cite{suzuki2017jmvae}, and SubNTM models sub-document topics \cite{nguyen2026subntm}. What fixes
 our setting is the record schema: two textual fields, one shared vocabulary, one linear decoder
 --- and a question none of the above asks, namely what field-restricted read-outs and
-missing-background inference actually measure. The established components are simply put to
-work at the field level.
+missing-background inference actually measure. The established components are applied at the field level.
 
 \paragraph{Text mining and topic modelling of engineering documents.}
 Within engineering informatics the text-mining literature is extensive --- safety reports
@@ -212,23 +212,23 @@ objective combines per-stream reconstruction, the KL terms of the active streams
 reconstruction, the JS term (computed only when both streams are active) and the topic-orthogonality
 penalty. A missing or dropped field falls back to the prior, so the gated mixture reduces to the
 remaining stream ($\theta^{\mathrm{fuse}}=\theta_{\mathrm{sm}}$ when the background field is missing
-or dropped). The native $\beta$ read-out uses the raw matrix $W$, whereas generation follows the
+or dropped). The $\beta$ read-out uses the raw matrix $W$, whereas generation follows the
 batch-normalised path of Eq.~\eqref{eq:decode}.}
 \label{fig:arch}
 \end{figure}
 
 \subsection{Problem setting}
-Each record $d$ consists of field A (\emph{background}, e.g.\ the abstract of a paper or the body
-of an issue) and field B (\emph{summary}, e.g.\ the title), with $N$ records in total and a shared
+Each record $d$ consists of a \emph{background} field (e.g.\ the abstract of a paper or the body
+of an issue) and a \emph{summary} field (e.g.\ the title), with $N$ records in total and a shared
 evaluation vocabulary of $V$ terms. The model maintains $K$ topics, a document--topic distribution
 $\theta_d\in\Delta^{K-1}$, and a topic--word matrix $\beta\in\mathbb{R}^{K\times V}$ shared by both
 fields. The task is to infer $\theta_d$ and $\beta$ from unlabelled records, to produce readable
-topics in two read-outs, and to remain usable when one field is partially or entirely missing at
+topics under two read-outs, and to keep the model usable when one field is partially or entirely missing at
 inference time.
 
 \subsection{Field streams and the shared decoder}
 Each field is encoded by its own two-layer MLP encoder (200 hidden units, Softplus activations,
-dropout $0.2$) into the parameters of a field-conditioned Gaussian posterior,
+dropout rate $0.2$) into the parameters of a field-conditioned Gaussian posterior,
 \begin{equation}
 q_f(z_f\mid x_f)=\mathcal N\big(\mu_f(x_f),\operatorname{diag}(\sigma_f^2(x_f))\big),
 \qquad f\in\{\mathrm{bg},\mathrm{sm}\},
@@ -236,8 +236,8 @@ q_f(z_f\mid x_f)=\mathcal N\big(\mu_f(x_f),\operatorname{diag}(\sigma_f^2(x_f))\
 \end{equation}
 where $x_f$ is the $L_1$-normalised bag of words of field $f$ and $\log\sigma_f^2$ is capped at
 $2$. Posterior means are mapped to topic proportions by a deterministic softmax,
-$\bar\theta_f=\operatorname{softmax}(\mu_f(x_f))$, which is used at evaluation time in place of
-sampling; $\bar\theta_f$ is a deterministic topic-proportion estimate and does not equal the
+$\bar\theta_f=\operatorname{softmax}(\mu_f(x_f))$, which replaces sampling at evaluation time.
+Note that $\bar\theta_f$ is a point estimate of the topic proportions and does not equal the
 expectation of $\operatorname{softmax}(z_f)$. Both streams share one linear topic--word matrix
 $W\in\mathbb{R}^{K\times V}$, and we write $\theta_f\in\mathbb{R}^{1\times K}$ for the topic
 proportions of field $f$ under the row-vector convention,
@@ -249,8 +249,8 @@ where $\theta_f$ passes through dropout before the product, $\mathrm{BN}$ is a b
 layer \emph{without} affine parameters applied over the vocabulary dimension (batch statistics
 during training, running statistics at evaluation), and there is no additive bias. The $\beta$
 read-out of Section~\ref{sec:readout} reads the raw rows of $W$, whereas generation uses the
-normalised path of Eq.~\eqref{eq:decode}; the gap between the two is quantified in the
-Supplementary Material.
+normalised path of Eq.~\eqref{eq:decode}. Section~\ref{sec:readout} discusses the difference
+between the two.
 
 \subsection{Training objective}
 For a document $d$ let $\mathcal{G}_d$ collect its present fields (the background field is present
@@ -266,10 +266,10 @@ R_f(g)=-\sum_{w=1}^{V} n^{(g)}_{dw}\,\log p\!\left(w\mid\theta_f\right),
 \label{eq:recon}
 \end{equation}
 with fixed field weights $\omega_{\mathrm{bg}}=2.0$ and $\omega_{\mathrm{sm}}=1.0$. The summary
-stream reconstructs the background field as well (cross-field reconstruction), and a background
-field that was observed but dropped during training stays in the reconstruction targets even
-though its own stream is inactive, whereas a naturally missing background field enters neither the
-inputs nor the targets. The per-document objective is
+stream also reconstructs the background field (cross-field reconstruction). A background field
+that is observed but dropped during training remains a reconstruction target even though its own
+stream is inactive, whereas a naturally missing background field enters neither the inputs nor the
+targets. The per-document objective is
 \begin{equation}
 \mathcal{L}_d=\frac{1}{|\mathcal{A}_d|}\sum_{f\in\mathcal{A}_d}
 \Big[R_f+\lambda_{\mathrm{KL}}(t)\,\mathrm{KL}_f\Big]
@@ -290,9 +290,9 @@ for records with both fields present, and
 $\theta_d^{\mathrm{fuse}}=\theta_{\mathrm{sm}}$ when the background field is missing or
 dropped. During training Eq.~\eqref{eq:lfuse} combines the \emph{sampled} per-stream
 proportions that also feed the per-stream reconstructions; at inference time, and for the JS
-term below, the deterministic estimates $\bar\theta_f$ are used. At inference,
-Eq.~\eqref{eq:lfuse} is a convex combination of two deterministic topic-proportion estimates.
-We refer to this quantity as a \emph{fused topic mixture} to distinguish it from a posterior. The
+term below, the deterministic estimates $\bar\theta_f$ are used, so that Eq.~\eqref{eq:lfuse}
+becomes a convex combination of two point estimates. We
+refer to this quantity as a \emph{fused topic mixture} to distinguish it from a posterior. The
 gate $g$ receives gradients only through $R_{\mathrm{fuse}}$, so with $\lambda_f=0$ the model
 degenerates exactly to fixed mean fusion. The consistency term
 \begin{equation}
@@ -312,20 +312,21 @@ and the batch objective is $\frac{1}{|B|}\sum_{d\in B}\mathcal{L}_d
 +\lambda_{\mathrm{orth}}\Omega$ with $\lambda_{\mathrm{orth}}=0.2$.
 
 \subsection{Field masking}
-Two masking mechanisms expose the model to missing fields, and they act on different units.
+Two masking mechanisms expose the model to missing fields, and they act on different units: word
+types during training, token positions at test time (Section~\ref{sec:occl}).
 (i) \emph{Word-level input dropout} (denoising) is applied during training to the bag-of-words
 \emph{word types} of each field: each bag-of-words dimension is independently zeroed with
 probability $0.30$ (background) or $0.40$ (summary) in the encoder view only, while the
 reconstruction targets remain the complete counts. (ii) \emph{Whole-field dropout} removes the
 background stream of each training document with probability $0.5$ and substitutes the prior; the
-summary stream is never dropped and learns to reconstruct both fields on its own. The test-time
-occlusion protocol of Section~\ref{sec:occl} masks \emph{token positions} in the raw field text.
-The training and evaluation procedures use different masking units. The consistency weight
+summary stream is never dropped and learns to reconstruct both fields on its own. The consistency
+weight
 $\lambda_{\mathrm{JS}}=0.5$, the fusion weight $\lambda_f=0.5$ and the dropout probabilities were
 selected on held-out data.
 
 \subsection{Optimisation}
-Training uses Adam (learning rate $5\times10^{-4}$, momentum parameters $0.9$ and $0.999$),
+Training uses Adam (learning rate $5\times10^{-4}$; exponential decay rates $\beta_1=0.9$ and
+$\beta_2=0.999$),
 mini-batches of $128$, gradient-norm clipping at $5.0$ and a budget of $700$ epochs. After the KL
 warm-up the state with the lowest held-out loss is kept, for which $20\%$ of the training split is
 held out; the patience is $150$ epochs. Evaluation-mode inference is deterministic: the
@@ -358,29 +359,29 @@ We use three dual-field corpora. The \textbf{civil engineering corpus} is the ap
 title--abstract records of English-language scholarly works from OpenAlex \cite{openalex2022}
 (\url{https://openalex.org}) in \emph{Civil and Structural Engineering} and \emph{Building and
 Construction} (2000--2023; CC BY, CC BY-SA, or public-domain records). The sample comprises
-7,102 articles, 889 conference papers and 9 reviews, split into 6000 training and 2000 test
+7,102 articles, 889 conference papers and 9 reviews, split into 6,000 training and 2,000 test
 records, with the title as the summary field and the abstract as the background field (mean
 length ratio 11.2). \textbf{GitHub issues} \cite{openindex2026} pairs the issue body with its
-title (four mature repositories, 6000/2000, ratio 12.9), and \textbf{AG News} \cite{zhang2015char}
-pairs the description with the headline (6000/7600, ratio 3.9). All corpora are lower-cased and
+title (four mature repositories, 6,000/2,000, ratio 12.9), and \textbf{AG News} \cite{zhang2015char}
+pairs the description with the headline (6,000/7,600, ratio 3.9). All corpora are lower-cased and
 tokenised on letter sequences; stop words and very short tokens are removed, the vocabulary is
 built from the training split only, and test records never enter the vocabulary.
-Table~\ref{tab:civil} reports the application corpus and Tables~\ref{tab:agnews} and~\ref{tab:github} report the two public corpora, all on the same evaluation vocabulary with exactly ten
+Tables~\ref{tab:agnews} and~\ref{tab:github} report the two public corpora and Table~\ref{tab:civil} the application corpus, all on the same evaluation vocabulary with exactly ten
 words per topic and $K=30$. The evaluation protocol (vocabulary, ten words per topic, coherence
 and diversity metrics) is shared by every model, whereas the training procedure differs across
 algorithm families and is described in Section~\ref{sec:protocol}.
 Because 400 records from each public test corpus were used during design, every public-corpus
-result is also recomputed on a development-free subset (1600 GitHub and 7200 AG News records).
-This rescoring excludes direct test overlap and is reported as a sensitivity analysis;
+result is also recomputed on a development-free subset (1,600 GitHub and 7,200 AG News records).
+This recomputation removes direct test overlap and is reported as a sensitivity analysis;
 Section~\ref{sec:discussion} considers the remaining effect of prior model selection. The results
 are organised around three questions: how well civil title--abstract records can be structured
 into verifiable topics; how much signal remains when the abstract is missing; and how much the
 complete field-cooperative configuration adds over a concatenated single-encoder control.
-Cross-corpus diagnostics round off the analysis.
+Cross-corpus diagnostics complete the analysis.
 
 \begin{table}[t]
 \centering
-\caption{Topic quality on AG News (unified evaluation vocabulary, ten words per topic; values are means over seeds 11/23/37 where applicable, and the training procedure differs across algorithm families as described in Section~\ref{sec:protocol}; BERTopic and Top2Vec choose their own topic numbers and are shown for reference).}
+\caption{Topic quality on AG News under the unified evaluation vocabulary (ten words per topic; values are means over seeds 11/23/37 where applicable; BERTopic and Top2Vec choose their own topic numbers and are shown for reference).}
 \label{tab:agnews}
 \small
 \begin{tabular}{lcccccc}
@@ -438,20 +439,18 @@ The implementations fall into four families with different training procedures: 
 \fcntm{} share the Adam loop \cite{kingma2015adam} and the 700-epoch budget but differ in learning
 rate; the official CombinedTM keeps its own loop), and embedding clustering (BERTopic, Top2Vec),
 which choose their own topic numbers and are shown for reference only. Full hyper-parameters are
-listed in the Supplementary Material. Quality is measured by $C_V$ coherence
-\cite{roder2015coherence}; NPMI \cite{bouma2009npmi,lau2014tea}; UCI and UMass
-\cite{newman2010coherence,mimno2011coherence}; inter-topic diversity as one minus the mean
-rank-biased overlap (RBO) with persistence $0.9$ and the residual tail retained for fixed
-ten-word lists \cite{webber2010rbo}; and an exclusivity score based on Bischof and Airoldi
-\cite{bischof2012exclusivity}, normalised by $K$ so that zero corresponds to the chance-level
-value $1/K$. Topics with non-finite scores are dropped, so the effective topic count is recorded
-next to every score.
+listed in the Supplementary Material. Topic quality is measured in three families. Coherence is
+reported as $C_V$ \cite{roder2015coherence}, NPMI \cite{bouma2009npmi,lau2014tea} and UMass
+\cite{newman2010coherence,mimno2011coherence}. Diversity is one minus the mean rank-biased overlap
+(RBO) \cite{webber2010rbo}, computed with persistence $0.9$ and the residual tail retained for
+fixed ten-word lists. Exclusivity follows Bischof and Airoldi \cite{bischof2012exclusivity} and is
+normalised by $K$, so that zero corresponds to the chance level $1/K$. Topics with non-finite
+scores are discarded, and the effective number of topics is reported alongside every score.
 
 \begin{table}[!t]
 \centering
-\caption{Topic quality on the civil engineering corpus (unified evaluation vocabulary, ten words
-per topic; values are means over seeds 11/23/37, and the training procedure differs across
-algorithm families as described in Section~\ref{sec:protocol}; BERTopic and Top2Vec choose their
+\caption{Topic quality on the civil engineering corpus under the unified evaluation vocabulary
+(ten words per topic; values are means over seeds 11/23/37; BERTopic and Top2Vec choose their
 own topic numbers and are shown for reference).}
 \label{tab:civil}
 \small
@@ -479,24 +478,27 @@ LDA & 30 & 0.554$\pm$0.008 & 0.056$\pm$0.025 & $-$4.62 & 0.602 & 0.987 \\
 
 \subsection{Main results}
 On the civil engineering corpus (Table~\ref{tab:civil}), \fcntm{} attains the highest coherence
-among all evaluated models under both read-outs ($C_V=0.633$ for the $\beta$ read-out and $0.636$
-for the class TF--IDF read-out; NPMI $0.154$ and $0.159$ over seeds 11/23/37), ahead of NMF
-(0.598), BTM (0.583) and the neural baselines, and the ten-seed extension keeps both read-out
-advantages (Table~\ref{tab:seed-paired}); Figure~\ref{fig:seedpaired} shows the per-seed
-differences behind these means across all three corpora. Figure~\ref{fig:main} compares all evaluated models on the two public corpora under both coherence metrics.
-On AG News, \fcntm{}-cTFIDF reaches $C_V=0.612$ and NPMI $=0.173$, above BTM under the matched
-class TF--IDF read-out ($0.593$ / $0.169$) and above the $\beta$ read-outs of ProdLDA, ETM, NMF,
-CTM-lite and LDA; under its own $\beta$ read-out BTM keeps a small lead ($0.600$ versus $0.586$).
-On GitHub issues, \fcntm{}-cTFIDF records $C_V=0.727$ and NPMI $=0.274$, above BTM at both
-read-outs ($0.712$ / $0.232$ for the native $\beta$ read-out, $0.700$ / $0.235$ matched), and
-above the sentence-embedding baselines (CombinedTM $0.643$, BERTopic $0.540$).
+of all models evaluated under both read-outs ($C_V=0.633$ for the $\beta$ read-out and $0.636$
+for the class TF--IDF read-out; NPMI $0.154$ and $0.159$ over seeds 11/23/37). It is followed by
+NMF (0.598) and BTM (0.583), and it is ahead of every neural baseline. The ten-seed extension
+preserves both read-out advantages (Table~\ref{tab:seed-paired}), and Figure~\ref{fig:seedpaired}
+shows the per-seed differences behind these means across all three corpora.
+
+Figure~\ref{fig:main} compares all evaluated models on the two public corpora under both
+coherence metrics. On AG News, \fcntm{}-cTFIDF reaches $C_V=0.612$ and NPMI $=0.173$, above BTM
+under the matched class TF--IDF read-out ($0.593$ / $0.169$) and above the $\beta$ read-outs of
+ProdLDA, ETM, NMF, CTM-lite and LDA; under its own $\beta$ read-out BTM keeps a small lead
+($0.600$ versus $0.586$). On GitHub issues, \fcntm{}-cTFIDF records $C_V=0.727$ and NPMI $=0.274$,
+above BTM at both read-outs ($0.712$ / $0.232$ for the $\beta$ read-out, $0.700$ / $0.235$
+matched), and above the sentence-embedding baselines (CombinedTM $0.643$, BERTopic $0.540$).
+
 The matched-read-out advantage over BTM is $+0.027$ $C_V$ and $+0.039$ NPMI on GitHub and
 $+0.019$ / $+0.004$ on AG News for three seeds, but the per-seed structure differs: on GitHub all
-three seeds are positive, whereas the AG News mean is carried by two of three seeds and the NPMI
-advantage by one. On the development-free test subset the ordering is unchanged
-(GitHub $0.734$ versus $0.711$, NPMI $0.284$ versus $0.248$; AG News $0.610$ versus $0.590$, NPMI
-$0.172$ versus $0.167$; with BTM's native $\beta$ read-out, $0.734$ versus $0.726$ and $0.610$
-versus $0.598$).
+three seeds are positive, whereas on AG News the mean difference rests on two of the three seeds
+and the NPMI advantage on a single seed. On the development-free test subset the ordering is
+unchanged (GitHub $0.734$ versus $0.711$, NPMI $0.284$ versus $0.248$; AG News $0.610$ versus
+$0.590$, NPMI $0.172$ versus $0.167$; with BTM's $\beta$ read-out, $0.734$ versus $0.726$ and
+$0.610$ versus $0.598$).
 
 \begin{figure}[!t]
 \centering
@@ -525,19 +527,17 @@ on AG News it helps every model except BTM. Comparisons use the matched read-out
 \fcntm{}-cTFIDF leads the strongest GitHub baselines (BTM $0.700$, CTM-lite $0.675$, ETM $0.669$,
 ProdLDA $0.666$) by $0.027$--$0.061$ $C_V$ and $0.039$--$0.059$ NPMI, larger than its
 seed-to-seed standard deviation ($0.022$); on AG News the advantage over BTM is $+0.019$ $C_V$
-but rests on two of three seeds; under the native $\beta$ read-out the AG News means are $0.586$
+but rests on two of three seeds; under the $\beta$ read-out the AG News means are $0.586$
 for \fcntm{} and $0.600$ for BTM. On the civil corpus NMF ($0.607$) and ETM ($0.603$) exceed BTM
 ($0.590$), and \fcntm{}-cTFIDF leads them by $0.029$ and $0.033$ $C_V$, although the ten-seed
-comparison is against BTM. Figure~\ref{fig:heatmap} visualises the same comparison; within each
-panel one colour scale spans all corpora and read-outs, the boxed first row is \fcntm{}, and
-bold entries mark the best model per column.
+comparison is against BTM. Figure~\ref{fig:heatmap} visualises the same comparison.
 
 \begin{figure}[!t]
 \centering
 \includegraphics[width=0.98\linewidth]{Fig5.pdf}
 \caption{The read-out comparison of Table~\ref{tab:fair} as a heatmap ($K=30$, means over seeds
 11/23/37). Left: $C_V$; right: NPMI. Columns combine the three corpora with the two read-outs
-(native $\beta$; class TF--IDF). The boxed first row is \fcntm{}; bold entries mark the
+($\beta$ read-out; class TF--IDF). The boxed first row is \fcntm{}; bold entries mark the
 column-wise best.}
 \label{fig:heatmap}
 \end{figure}
@@ -584,8 +584,8 @@ Corpus & Model & $\beta$ read-out $C_V$ / NPMI & Class TF--IDF $C_V$ / NPMI \\
 
 \subsection{Ten-seed paired comparison}
 To test whether the three-seed differences are seed noise, we extend \fcntm{} and BTM to ten
-seeds on all three corpora (adding 53/71/89/101/113/127/139) and compare both read-outs and the
-occlusion behaviour seed by seed. Occlusion comparisons are limited to preselected baselines:
+seeds on all three corpora, adding seeds 53, 71, 89, 101, 113, 127 and 139, and compare both
+read-outs and the occlusion behaviour seed by seed. Occlusion comparisons are limited to preselected baselines:
 BTM on all three corpora and LDA additionally on AG News.
 
 \begin{table}[!t]
@@ -594,8 +594,8 @@ BTM on all three corpora and LDA additionally on AG News.
 report $C_V$ differences (\fcntm{} minus BTM at the same read-out); the occlusion rows compare
 the relative degradation $\mathrm{NLL}(100\%)/\mathrm{NLL}(25\%)$, so a positive value means
 \fcntm{} is more stable. Occlusion comparisons are limited to preselected baselines: BTM on all
-three corpora and LDA additionally on AG News. CIs are two-sided 95\% $t$ intervals; sign and
-Wilcoxon tests are two-sided.}
+three corpora and LDA additionally on AG News. CIs are two-sided 95\% $t$-based confidence
+intervals; sign and Wilcoxon tests are two-sided.}
 \label{tab:seed-paired}
 \footnotesize
 \setlength{\tabcolsep}{4pt}
@@ -621,10 +621,10 @@ Civil corpus & Occlusion (vs.\ BTM) & $-$0.003 & $-$0.004 & $-$0.002 & 0/10 & 0.
 
 For GitHub, the class TF--IDF difference is $+0.028$ $C_V$ (95\% CI $[+0.012,+0.043]$, 9/10
 positive seeds), and the relative-degradation difference is $+0.024$ (10/10). On the civil
-corpus, the class TF--IDF and native $\beta$ differences are $+0.049$ and $+0.061$ $C_V$, with
+corpus, the class TF--IDF and $\beta$ read-out differences are $+0.049$ and $+0.061$ $C_V$, with
 10/10 positive paired differences; the occlusion difference is $-0.003$ (0/10). On AG News, the
-class TF--IDF difference is $-0.009$ (95\% CI $[-0.030,+0.013]$, 3/10) and the native $\beta$
-difference is $-0.027$ (1/10). The native $\beta$ difference on GitHub is $-0.014$ (3/10). The
+class TF--IDF difference is $-0.009$ (95\% CI $[-0.030,+0.013]$, 3/10) and the $\beta$ read-out
+difference is $-0.027$ (1/10). The $\beta$ read-out difference on GitHub is $-0.014$ (3/10). The
 class TF--IDF mean differences across the three corpora are $+0.049$, $+0.028$ and $-0.009$.
 Confidence intervals describe training and masking randomness under a fixed corpus and design.
 
@@ -641,7 +641,7 @@ AG News.
 
 \begin{table}[t]
 \centering
-\caption{Field redundancy, measured occlusion gap and the $C_V$ difference against BTM on two corpora. Redundancy is fitted on the training split and evaluated on the test split and includes constructive controls (exact copy $=1.000$, cross-document shuffle $\approx0.000$); the occlusion $\Delta C_V$ is the mean$\pm$standard deviation over seeds 11/23/37 with dropout training. The last column gives the $C_V$ difference under the matched class TF--IDF read-out and under BTM's native $\beta$ read-out.}
+\caption{Field redundancy, measured occlusion gap and the $C_V$ difference against BTM on two corpora. Redundancy is fitted on the training split and evaluated on the test split and includes constructive controls (exact copy $=1.000$, cross-document shuffle $\approx0.000$); the occlusion $\Delta C_V$ is the mean$\pm$standard deviation over seeds 11/23/37 with dropout training. The last column gives the $C_V$ difference under the matched class TF--IDF read-out and under BTM's $\beta$ read-out.}
 \label{tab:conditional}
 \footnotesize
 \setlength{\tabcolsep}{4pt}
@@ -665,8 +665,8 @@ AG News & 0.158 & 0.245 & $+$0.018$\pm$0.013 & $+$0.019 / $+$0.012 \\
 \subsection{Field inference under partial occlusion}
 \label{sec:occl}
 
-A direct test of field complementarity is whether the visible field B helps a model recover
-content when part of field A is unavailable. The protocol (Supplementary Material) masks a
+A direct test of field complementarity is whether the visible summary field helps a model recover
+content when part of the background field is unavailable. The protocol (Supplementary Material) masks a
 fraction $p$ of the background-field tokens in the test documents, re-infers the topic
 proportions from the remaining input, and scores the occluded tokens under the model's own word
 distribution; it reports the per-token negative log-likelihood (NLL), the agreement of the most
@@ -690,9 +690,9 @@ for every seed, and the field split follows the existing title/body structure.
 \centering
 \includegraphics[width=0.86\linewidth]{Fig7.pdf}
 \caption{Inference behaviour under partial occlusion of the background field (GitHub issues,
-seed 11, 2000 test documents). Left: per-token negative log-likelihood of the occluded tokens;
+seed 11, 2,000 test documents). Left: per-token negative log-likelihood of the occluded tokens;
 right: relative degradation $\mathrm{NLL}(p)/\mathrm{NLL}(0.25)$, which summarises the relative
-increase from the 25\% condition. \fcntm{} is trained with whole-field dropout at $p=0.5$ and has
+increase from the 25\% condition. \fcntm{}, trained with whole-field dropout at $p=0.5$, shows
 the smallest relative degradation ($\times1.032$). The figure also reports absolute NLL to
 contextualise this ratio; topic agreement is reported in Table~\ref{tab:occl-robust}.}
 \label{fig:occlusion}
@@ -853,10 +853,10 @@ The three-step ablation separates two questions: whether the fused mixture recei
 reconstruction term, and whether fusion is averaged or gated. The fusion-reconstruction term is
 effective, but only for the read-out that uses the fused posterior: adding it under mean fusion
 raises the class TF--IDF $C_V$ and NPMI by 0.014 and 0.013 (3/3 seeds) while lowering the $\beta$
-read-out by 0.013 and 0.021. Replacing mean fusion by a gate brings no further gain in this corpus
-and protocol (class TF--IDF differences $-0.001$ and $-0.000$, 1/3 seeds; $\beta$ read-out
-$-0.007$ and $-0.012$, 0/3): within this corpus and protocol, the gate adds no gain over mean
-fusion once the fusion-reconstruction term is present.
+read-out by 0.013 and 0.021. Replacing mean fusion by a gate brings no further gain on this
+corpus (class TF--IDF differences $-0.001$ and $-0.000$, 1/3 seeds; $\beta$ read-out $-0.007$
+and $-0.012$, 0/3): once the fusion-reconstruction term is present, the gate adds nothing over
+mean fusion.
 
 \subsection{Ablation: core components}
 
@@ -895,9 +895,10 @@ $-0.010/-0.012$, with all class TF--IDF columns at 0/3). Third, whole-field drop
 the class TF--IDF read-out and is consistently beneficial on two of the three corpora only: it
 lowers both read-outs on GitHub
 and AG News but changes the $\beta$ read-out of the civil corpus by only $+0.001$ while lowering
-its class TF--IDF read-out by 0.034. Fourth, field asymmetry does not explain the component-level
-differences: the civil corpus has almost the same length ratio as GitHub (11.2 versus 12.9) yet
-behaves like AG News (3.9).
+its class TF--IDF read-out by 0.034.
+
+These component-level differences are not explained by field asymmetry: the civil corpus has
+almost the same length ratio as GitHub (11.2 versus 12.9) yet behaves like AG News (3.9).
 
 \subsection{Sensitivity to the fusion weight}
 
@@ -929,7 +930,7 @@ The value 0.5 used throughout is therefore a conservative compromise.
 \subsection{Whole-field occlusion}
 Deleting the background field entirely leaves topic-word coherence almost unchanged (all six
 cells within $\pm0.02$, with sign flips across seeds on GitHub), so coherence is insensitive to
-field loss and the information loss must be read from the document-level posterior and the
+field loss and the information loss is visible in the document-level posterior and the
 word-level prediction: about 66\% (GitHub) and 48\% (AG News) of the documents change their most
 probable topic, and the per-token NLL rises by 0.24/0.23 with dropout training (0.24/0.27
 without). The influence of whole-field dropout is concentrated in the posterior distribution and
@@ -978,16 +979,17 @@ supports field-restricted read-out and title-only inference.
 
 \subsection{Title-only routing on the civil corpus}
 When the abstract of a record is missing, can its title still be routed to an interpretable
-civil subfield? The evaluation labels are the OpenAlex primary topics of each record
+civil subfield? The evaluation labels are the primary topics that OpenAlex assigns to each record
 \cite{openalextopics2026}. OpenAlex assigns these labels automatically from the title, abstract
 and source metadata; the frozen snapshot (topic IDs, fetch date) is released with the code, and
 the label set is the 15 most frequent topics of the training split, covering 42.9\% of the test
-records (2000-record test split). Every model infers a topic distribution from the title only
-(\fcntm{} and the control use their missing-background inference path); the per-model
-topic-to-label mapping is a supervised step --- the majority training label of each argmax topic,
-with the training-label prior as fallback for model topics that receive no training record (three
-test records in one run triggered this fallback) --- fitted on the same title-only inference, so
-the pipeline combines an unsupervised representation with a supervised training-split mapping.
+records (2000-record test split). Every model infers a topic distribution from the title alone;
+\fcntm{} and the control use their missing-background inference path. The topic-to-label mapping
+is fitted on the same title-only inference and is supervised: each topic receives the majority
+training label of the documents assigned to it, with the training-label prior as fallback for
+topics that receive no training document (this occurred for three test records in one run). The
+pipeline therefore combines an unsupervised representation with a supervised mapping fitted on
+the training split.
 Accuracy and macro-F1 are reported per seed. A supervised TF--IDF logistic regression on the same
 titles provides a reference point, and \fcntm{} given both fields marks the upper end.
 
@@ -1040,10 +1042,10 @@ Civil corpus & Class TF--IDF & 0.636$\pm$0.014 & 0.606$\pm$0.014 & $+$0.029 (2/3
 The results assign the field-aware representation a practical role: one trained model supports
 field-restricted topic words and keeps inferring topic proportions when the background field is
 missing. Multi-seed read-out differences are largest and most consistent on the civil corpus and
-are supported for the matched class TF--IDF read-out on GitHub. AG News marks the boundary: its
-class TF--IDF mean difference is $-0.009$ and its confidence interval includes zero. Field
-cooperation is thus not a blanket win; it pays off on particular corpora, and only for
-particular read-outs.
+are supported for the matched class TF--IDF read-out on GitHub. AG News marks the limit of this
+effect: the mean class TF--IDF difference is $-0.009$, and its confidence interval includes zero.
+Field cooperation therefore does not hold universally: its benefits are confined to particular
+corpora and particular read-outs.
 
 The concatenated-field encoder stays close to \fcntm{}, so the results characterise the complete
 field-aware configuration rather than two-stream modelling in general. Relative degradation,
@@ -1056,13 +1058,13 @@ validation with independent, expert-labelled data.
 
 Scope is the main limitation: the evidence covers three English title/body-style corpora, with
 ten seeds for \fcntm{} and BTM and three for the remaining baselines, and \fcntm{}
-hyper-parameters were selected on development data. Two design couplings bound the ablation
+hyper-parameters were selected on development data. Two design decisions limit the ablation
 evidence: the component ablation attenuates rather than eliminates cross-field information flow,
 because the fused reconstruction term continues to rebuild both fields; and the gating comparison
 evaluates the gate together with the fusion-reconstruction term, since the gate receives
-gradients only through that term. The evidence base is otherwise open on several sides: other
-languages, other field conventions and automatically detected field boundaries have not been
-tested, nor has validation on larger independently labelled collections. Within that scope, the
+gradients only through that term. Beyond these, several aspects remain untested: other
+languages, other field conventions and automatically detected field boundaries, as well as
+validation on larger, independently labelled collections. Within that scope, the
 released model, protocol and per-seed results give a concrete starting point for missing-field
 topic modelling on engineering collections.
 
@@ -1077,17 +1079,17 @@ single trained model supports a decoder $\beta$ read-out and a class TF--IDF rea
 evaluation vocabulary, which removes the vocabulary and topic-length confounds of cross-model
 comparison.
 
-Across civil engineering title--abstract records and two public corpora, the study identifies the
-settings in which each read-out produces measurable differences. The largest and most consistent
-civil-corpus differences are $+0.049$ $C_V$ for class TF--IDF and $+0.061$ for native $\beta$
+Across civil engineering title--abstract records and two public corpora, these experiments identify
+the settings in which each read-out produces measurable differences. The largest and most consistent
+civil-corpus differences are $+0.049$ $C_V$ for class TF--IDF and $+0.061$ for the $\beta$ read-out
 (10/10 seeds). Under the matched class TF--IDF read-out, the GitHub difference is $+0.028$ $C_V$
 (95\% CI $[+0.012,+0.043]$, 9/10). A same-budget concatenated-field encoder provides a close
 reference, with mean differences of $+0.010$--$+0.029$ and mixed paired majorities. Title-only
 routing reaches 0.664 accuracy on the evaluated 15-topic subset. The field-relation measurements
 and occlusion diagnostics separate changes in topic coherence from changes in posterior structure
 and word-level prediction. The protocol, the trained model and the per-seed results are released
-together, so the framework can be tried on new engineering collections and checked against the
-same numbers.
+together, so that the framework can be applied to new engineering collections and checked against
+the same reference results.
 
 \section*{Data availability}
 The code, the fixed corpus splits and the per-seed experimental results that support this study
@@ -1097,8 +1099,7 @@ are released as assets of the same repository, and access to the third-party sou
 remains subject to the terms and licences of the original providers. The supplementary material
 (auxiliary experiments and controls, data and metric notes, example topics and case studies) is
 included in the same online repository as the code and the per-seed results, under
-\texttt{paper/applied\_intelligence/} (the repository link is provided on the separate title page
-for double-anonymized review).
+\texttt{paper/applied\_intelligence/}.
 
 \section*{Declarations}
 
