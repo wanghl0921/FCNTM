@@ -125,8 +125,9 @@ benchmarking --- and is what makes the reported comparisons interpretable.
 task.} Ten-seed paired comparisons show reproducible gains on the civil engineering
 corpus ($+0.049$ for the class TF--IDF read-out and $+0.061$ for the $\beta$ read-out; 10/10
 seeds) and on GitHub issues ($+0.028$; 9/10 seeds), but not on AG News ($-0.009$; 3/10 seeds).
-A concatenated-field control trained under the same budget places these gains in the complete
-configuration rather than in the two-stream architecture alone. A title-only routing experiment
+A same-budget concatenated-field control locates most of the mean-coherence gain in the shared
+decoder, leaving field-level posteriors and native missing-field inference as the specific
+contributions of the two-stream configuration. A title-only routing experiment
 on the civil corpus (0.664 accuracy on the evaluated subset) shows how the trained model can
 screen engineering records from titles alone.
 \end{enumerate}
@@ -974,8 +975,18 @@ The concatenated input doubles the first encoder layer, keeping the parameter co
 corpora (seeds 11/23/37). Table~\ref{tab:concat} reports the comparison.
 
 Across the six corpus--read-out cells, the mean $C_V$ differences between \fcntm{} and the
-control range from $+0.010$ to $+0.029$, with paired majorities from 1/3 to 3/3. The control also
-supports field-restricted read-out and title-only inference.
+control range from $+0.010$ to $+0.029$, all six cells favour \fcntm{}, and the paired
+majorities run from 1/3 to 3/3. The largest gap is on the civil corpus under the class
+TF--IDF read-out ($+0.029$), and title-only routing also favours \fcntm{} ($0.664$ versus
+$0.653$ accuracy). The control can serve field-restricted read-out in the same descriptive
+sense as any topic model with a topic--word matrix, and it infers title-only records by
+zeroing the background half of the input. What it does not provide are two separate field
+posteriors: the per-field posteriors, the fused mixture and the consistency diagnostics of
+the preceding subsections are defined only for a two-stream configuration, and its
+missing-background path is an input-level emulation rather than a trained field-level
+operation. The comparison therefore locates most of the mean coherence gain in the shared
+decoder and the training budget rather than in the two-stream structure; the additional
+structure buys field attribution and native missing-field handling, not a large average gain.
 
 \subsection{Title-only routing on the civil corpus}
 When the abstract of a record is missing, can its title still be routed to an interpretable
@@ -1047,10 +1058,15 @@ effect: the mean class TF--IDF difference is $-0.009$, and its confidence interv
 Field cooperation therefore does not hold universally: its benefits are confined to particular
 corpora and particular read-outs.
 
-The concatenated-field encoder stays close to \fcntm{}, so the results characterise the complete
-field-aware configuration rather than two-stream modelling in general. Relative degradation,
-absolute NLL and topic agreement capture different aspects of missing-field behaviour, while
-redundancy and field-length statistics describe corpus structure.
+The concatenated-field control narrows the average coherence gap to $+0.010$--$+0.029$ with
+all six cells positive. This is itself informative: most of the mean-coherence gain comes from
+the shared decoder and the training budget, and a practitioner who only needs topic words can
+approach \fcntm{} with a single encoder. The case for the two-stream configuration is
+functional rather than a large average gain --- separate field posteriors, a trained
+missing-field path and the consistency diagnostics that the read-out protocol relies on exist
+only in the complete configuration. Relative degradation, absolute NLL and topic agreement
+capture different aspects of missing-field behaviour, while redundancy and field-length
+statistics describe corpus structure.
 
 The routing experiment uses automatically generated OpenAlex labels for a fixed 15-topic subset
 covering 42.9\% of the test records. It is useful for screening; deployment will require
@@ -1084,7 +1100,10 @@ the settings in which each read-out produces measurable differences. The largest
 civil-corpus differences are $+0.049$ $C_V$ for class TF--IDF and $+0.061$ for the $\beta$ read-out
 (10/10 seeds). Under the matched class TF--IDF read-out, the GitHub difference is $+0.028$ $C_V$
 (95\% CI $[+0.012,+0.043]$, 9/10). A same-budget concatenated-field encoder provides a close
-reference, with mean differences of $+0.010$--$+0.029$ and mixed paired majorities. Title-only
+reference, with mean differences of $+0.010$--$+0.029$ and all six cells positive, locating
+most of the mean gain in the shared decoder; the value of the two-stream configuration lies in
+field-level posteriors and native missing-field inference rather than in a large average
+difference. Title-only
 routing reaches 0.664 accuracy on the evaluated 15-topic subset. The field-relation measurements
 and occlusion diagnostics separate changes in topic coherence from changes in posterior structure
 and word-level prediction. The protocol, the trained model and the per-seed results are released
