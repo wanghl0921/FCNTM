@@ -125,9 +125,11 @@ benchmarking --- and is what makes the reported comparisons interpretable.
 task.} Ten-seed paired comparisons show reproducible gains on the civil engineering
 corpus ($+0.049$ for the class TF--IDF read-out and $+0.061$ for the $\beta$ read-out; 10/10
 seeds) and on GitHub issues ($+0.028$; 9/10 seeds), but not on AG News ($-0.009$; 3/10 seeds).
-A same-budget concatenated-field control locates most of the mean-coherence gain in the shared
-decoder, leaving field-level posteriors and native missing-field inference as the specific
-contributions of the two-stream configuration. A title-only routing experiment
+A same-budget concatenated-field control attributes little of the mean-coherence gain to the
+two-stream structure: relative to the classical and neural baselines, most of the gain is
+already obtained by a single encoder that shares the same decoder and budget, and the
+two-stream structure adds $+0.010$--$+0.029$ on top, while field-level posteriors and native
+missing-field inference remain exclusive to the complete configuration. A title-only routing experiment
 on the civil corpus (0.664 accuracy on the evaluated subset) shows how the trained model can
 screen engineering records from titles alone.
 \end{enumerate}
@@ -984,9 +986,11 @@ zeroing the background half of the input. What it does not provide are two separ
 posteriors: the per-field posteriors, the fused mixture and the consistency diagnostics of
 the preceding subsections are defined only for a two-stream configuration, and its
 missing-background path is an input-level emulation rather than a trained field-level
-operation. The comparison therefore locates most of the mean coherence gain in the shared
-decoder and the training budget rather than in the two-stream structure; the additional
-structure buys field attribution and native missing-field handling, not a large average gain.
+operation. The comparison therefore attributes little of the mean coherence gain to the
+two-stream structure itself: relative to the classical and neural baselines, most of the gain
+is already obtained by a single encoder with the same decoder and budget, and the two-stream
+structure adds $+0.010$--$+0.029$ on top. What the additional structure buys is field
+attribution and native missing-field handling, not a large average gain.
 
 \subsection{Title-only routing on the civil corpus}
 When the abstract of a record is missing, can its title still be routed to an interpretable
@@ -1059,9 +1063,11 @@ Field cooperation therefore does not hold universally: its benefits are confined
 corpora and particular read-outs.
 
 The concatenated-field control narrows the average coherence gap to $+0.010$--$+0.029$ with
-all six cells positive. This is itself informative: most of the mean-coherence gain comes from
-the shared decoder and the training budget, and a practitioner who only needs topic words can
-approach \fcntm{} with a single encoder. The case for the two-stream configuration is
+all six cells positive. This is itself informative: relative to the classical and neural
+baselines, a single encoder with the same decoder and budget already obtains most of the
+mean-coherence gain, and the two-stream structure adds $+0.010$--$+0.029$ on top; a
+practitioner who only needs topic words can therefore approach \fcntm{} with a single
+encoder. The case for the two-stream configuration is
 functional rather than a large average gain --- separate field posteriors, a trained
 missing-field path and the consistency diagnostics that the read-out protocol relies on exist
 only in the complete configuration. Relative degradation, absolute NLL and topic agreement
@@ -1100,10 +1106,10 @@ the settings in which each read-out produces measurable differences. The largest
 civil-corpus differences are $+0.049$ $C_V$ for class TF--IDF and $+0.061$ for the $\beta$ read-out
 (10/10 seeds). Under the matched class TF--IDF read-out, the GitHub difference is $+0.028$ $C_V$
 (95\% CI $[+0.012,+0.043]$, 9/10). A same-budget concatenated-field encoder provides a close
-reference, with mean differences of $+0.010$--$+0.029$ and all six cells positive, locating
-most of the mean gain in the shared decoder; the value of the two-stream configuration lies in
-field-level posteriors and native missing-field inference rather than in a large average
-difference. Title-only
+reference, with mean differences of $+0.010$--$+0.029$ and all six cells positive: the
+two-stream structure adds little average gain on top of a single encoder with the same decoder
+and budget, and its value lies in field-level posteriors and native missing-field inference
+rather than in a large average difference. Title-only
 routing reaches 0.664 accuracy on the evaluated 15-topic subset. The field-relation measurements
 and occlusion diagnostics separate changes in topic coherence from changes in posterior structure
 and word-level prediction. The protocol, the trained model and the per-seed results are released
