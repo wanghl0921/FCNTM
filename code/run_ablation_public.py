@@ -203,7 +203,9 @@ def train_model(train, K, seed, overrides, lr, max_epochs=cfg.PAPER_EPOCHS):
     model.eval()
     with torch.no_grad():
         theta, _ = model.encode_doc_theta(cause_norm, item_norm, has_cause)
-    return np.asarray(model.get_beta(), dtype=float), theta.numpy()
+        beta_bn = torch.softmax(model.decode(torch.eye(K)), dim=-1).numpy()
+    return (np.asarray(model.get_beta(), dtype=float), theta.numpy(),
+            np.asarray(beta_bn, dtype=float))
 
 
 def main() -> None:
@@ -361,15 +363,16 @@ def main() -> None:
                 if config_name == "full":
                     if seed not in reused:
                         print(f"  no reused beta for seed {seed}; training", flush=True)
-                        beta, theta = train_model(
+                        beta, theta, beta_bn = train_model(
                             train, args.k, seed, CONFIGS[config_name], args.lr,
                             args.max_epochs)
                         stored_hash, reuse_verified = None, "trained"
                     else:
                         beta, theta, stored_hash = reused[seed]
+                        beta_bn = None
                         reuse_verified = bool(stored_hash)
                 else:
-                    beta, theta = train_model(
+                    beta, theta, beta_bn = train_model(
                         train, args.k, seed, CONFIGS[config_name], args.lr,
                         args.max_epochs)
                     stored_hash, reuse_verified = None, "trained"
@@ -382,6 +385,8 @@ def main() -> None:
                 mats = [("beta", beta)]
                 if theta is not None:
                     mats.append(("cTFIDF", class_tfidf(theta.T @ doc_counts)))
+                if beta_bn is not None:
+                    mats.append(("beta_bn", beta_bn))
                 for readout, mat in mats:
                     ev = evaluate(top_words(mat, vocab), mat, test)
                     writer.writerow({

@@ -1,0 +1,4 @@
+﻿dataset,config,seed,K_used,readout,config_hash,reuse_verified,identity_id,epochs_budget,seconds,CV,CV_n,NPMI,NPMI_n,UCI,UCI_n,UMass,UMass_n,EXCL,EXCL_KADJ,IRBO
+civil,no-cross,11,30,beta,f7588e5b21a2,trained,70bf1eb9125d8e99,1,12.49,0.346799,30.0,-0.23049,30.0,-6.516278,30.0,-10.128686,30.0,0.034332,0.001033,0.996405
+civil,no-cross,11,30,cTFIDF,f7588e5b21a2,trained,70bf1eb9125d8e99,1,12.49,0.267817,30.0,-0.009675,30.0,-0.088309,30.0,-1.80633,30.0,0.033333,-0.0,0.0
+civil,no-cross,11,30,beta_bn,f7588e5b21a2,trained,70bf1eb9125d8e99,1,12.49,0.423266,27.0,-0.324013,27.0,-9.028738,27.0,-13.032005,30.0,0.566628,0.551684,0.994971

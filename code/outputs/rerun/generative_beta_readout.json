@@ -1,0 +1,68 @@
+{
+  "github": {
+    "mean_CV": 0.6190486691214623,
+    "mean_NPMI": 0.18532043084434893,
+    "mean_EXCL_KADJ": 0.5668489705677958,
+    "mean_IRBO": 0.9889046542137192,
+    "mean_UMass": -5.081316514385472,
+    "three_seed_mean_CV": 0.6246542015996925,
+    "three_seed_mean_NPMI": 0.19171774303524117,
+    "three_seed_mean_EXCL_KADJ": 0.5515279084285954,
+    "three_seed_mean_IRBO": 0.9879232641502682,
+    "paired_vs_BTM": {
+      "n": 10,
+      "mean": -0.09391720235604603,
+      "ci_low": -0.11234442545039383,
+      "ci_high": -0.07548997926169823,
+      "positive": 0,
+      "sign_p": 0.001953125,
+      "wilcoxon_p": 0.001953125
+    },
+    "BTM_mean_CV_3seed": 0.7124253496963107,
+    "BTM_mean_CV_10seed": 0.7129658714775085
+  },
+  "agnews": {
+    "mean_CV": 0.5363235553167727,
+    "mean_NPMI": 0.10656015799892504,
+    "mean_EXCL_KADJ": 0.8412750165165453,
+    "mean_IRBO": 0.9983967584390049,
+    "mean_UMass": -8.00040212552788,
+    "three_seed_mean_CV": 0.5413651956887006,
+    "three_seed_mean_NPMI": 0.10018825913020007,
+    "three_seed_mean_EXCL_KADJ": 0.8513389163026003,
+    "three_seed_mean_IRBO": 0.9986452274965517,
+    "paired_vs_BTM": {
+      "n": 10,
+      "mean": -0.07280123181220924,
+      "ci_low": -0.09183055012589761,
+      "ci_high": -0.05377191349852086,
+      "positive": 0,
+      "sign_p": 0.001953125,
+      "wilcoxon_p": 0.001953125
+    },
+    "BTM_mean_CV_3seed": 0.5998608701980387,
+    "BTM_mean_CV_10seed": 0.6091247871289819
+  },
+  "civil": {
+    "mean_CV": 0.5739245685363039,
+    "mean_NPMI": 0.11051601166507022,
+    "mean_EXCL_KADJ": 0.7479382971664549,
+    "mean_IRBO": 0.9977140761947684,
+    "mean_UMass": -5.582267971148831,
+    "three_seed_mean_CV": 0.5838940667448144,
+    "three_seed_mean_NPMI": 0.11814871984820215,
+    "three_seed_mean_EXCL_KADJ": 0.7439398502650231,
+    "three_seed_mean_IRBO": 0.9982562382418719,
+    "paired_vs_BTM": {
+      "n": 10,
+      "mean": 0.0035039992293141586,
+      "ci_low": -0.016450273905220948,
+      "ci_high": 0.023458272363849265,
+      "positive": 6,
+      "sign_p": 0.75390625,
+      "wilcoxon_p": 0.6953125
+    },
+    "BTM_mean_CV_3seed": 0.5832680426669055,
+    "BTM_mean_CV_10seed": 0.5704205693069897
+  }
+}

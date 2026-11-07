@@ -13,20 +13,6 @@ abstract is missing at inference time.
 
 ![Overview of FC-NTM](docs/figures/fig_architecture_en.png)
 
-## What's new (November 2026)
-
-- The whole-field occlusion extension now covers **ten seeds for every
-  baseline**: ETM, NMF and ProdLDA were re-run for seeds 53/71/89/101/113/127/139
-  on all three corpora (`code/outputs/rerun/occlusion_robustness_*_etmnmfprod_seed*.csv`),
-  so the cross-corpus occlusion comparison in the manuscript uses ten seeds
-  for all six models.
-- `docs/figures/` was refreshed with the final journal-quality versions of
-  the figures (10-seed paired comparison, occlusion curves, architecture).
-- The supplementary material of the Applied Intelligence submission is
-  distributed under `paper/applied_intelligence/` (`supplementary_ApplInt.pdf`).
-  The anonymized manuscript itself is not hosted in the repository; it is
-  submitted through the journal system.
-
 ## Results at a glance
 
 Ten-seed paired comparison of FC-NTM and BTM on the civil corpus: the class
@@ -49,16 +35,13 @@ Behaviour when the background field is progressively occluded:
 | Path | Contents |
 |---|---|
 | `code/` | training and evaluation entry points, corpus loaders, baselines, metrics, result CSVs under `code/outputs/`, the frozen splits under `code/data/`, regression tests and the two number checkers |
-| `paper/` | LaTeX source of the original ASCE manuscript (`main_asce.tex`, `main_asce.bib`), the official ASCE class files and the three figure PDFs it includes. The supplementary material of the Applied Intelligence submission (`supplementary_ApplInt.pdf`) ships under `paper/applied_intelligence/`; the manuscript itself is submitted through the journal system and is not hosted here. |
+| `paper/` | LaTeX source of the ASCE manuscript (`main_asce.tex`, `main_asce.bib`), the official ASCE class files and the three figure PDFs it includes. The submitted PDF/Word files and the supplementary PDF are not distributed. |
 | `docs/figures/` | rendered figures and diagrams used by this README |
 
 Model checkpoints (11 files, 49 model states) and the large per-seed detail
-dumps are published as **Release assets** rather than in the repository
-itself: `FCNTM_checkpoints_20261014.zip` and
-`FCNTM_release_details_20261016.zip` on release `v1.0.0`. The ten-seed
-occlusion extension adds seven more large artifacts (the three
-`fcntm_main_state_*.pt` re-runs, `civil_missing_state.pt`, and the three
-`fcntm_*_seed53plus_details.json` per-seed dumps) — see release `v1.1.0`.
+dumps are published as **Release assets** of `v1.0.0` rather than in the
+repository itself: `FCNTM_checkpoints_20261014.zip` and
+`FCNTM_release_details_20261016.zip`.
 
 ## Reproducing the paper's numbers
 
@@ -84,11 +67,7 @@ and then cached by `huggingface_hub`; set `FCNTM_HF_OFFLINE=1` to force the
 cached copy on a machine without network access.
 
 The number checkers read `paper/` directly and the archived result CSVs from
-`code/outputs/`, so a fresh clone needs no external path. The supplementary
-material of the Applied Intelligence submission under
-`paper/applied_intelligence/` contains the tables whose numbers were verified
-against the same CSVs.
-Because the legacy `main_asce.tex`
+`code/outputs/`, so a fresh clone needs no external path. Because `paper/`
 ships the ASCE source only, `check_english_numbers.py` verifies the tables
 that this source contains (civil-corpus quality and the ten-seed paired table)
 against the per-seed CSVs and prints a skip line for the tables that are in
@@ -124,8 +103,6 @@ Citation information will be added once the paper is published.
 ## 中文说明
 
 本仓库是论文投稿前的开源整理版：`code/` 为复现实验代码与结果产物，
-`docs/figures/` 为渲染好的图表；Applied Intelligence 投稿的补充材料发布于
-`paper/applied_intelligence/`（主稿经期刊系统提交，不放在仓库中），
-旧版 ASCE 稿源
-保留在 `paper/` 根目录，模型检查点与逐种子明细通过 Release 附件发布。代码采用 MIT 许可证
+`docs/figures/` 为渲染好的图表；论文与投稿文件不随本仓库发布，
+模型检查点与逐种子明细通过 Release 附件发布。代码采用 MIT 许可证
 （见 `LICENSE`）；论文录用后请补充引用信息。

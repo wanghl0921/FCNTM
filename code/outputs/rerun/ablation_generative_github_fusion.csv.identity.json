@@ -1,0 +1,37 @@
+{
+ "id": "5002f816a0696538",
+ "payload": {
+  "script": "run_ablation_public.main",
+  "dataset": "github",
+  "abstract_words": 0,
+  "k": 30,
+  "lr": 0.0005,
+  "max_epochs": 700,
+  "seeds": [
+   11,
+   23,
+   37
+  ],
+  "configs": [
+   "fused-mean",
+   "gate-w0p25",
+   "gate-w1p0",
+   "no-fusion"
+  ],
+  "full_config": {
+   "consistency_weight": 0.5,
+   "cross_reconstruction": true,
+   "cause_dropout": 0.3,
+   "item_dropout": 0.4,
+   "exclusivity_weight": 0.0,
+   "field_dropout": 0.5,
+   "fusion_mode": "gate",
+   "fused_recon": true,
+   "fused_recon_norm": "balanced",
+   "fused_recon_weight": 0.5
+  },
+  "code": "d09e6b98a890fa71",
+  "data": "8e81f48948b088ee",
+  "fields": "ca2e62c5f2e630de"
+ }
+}

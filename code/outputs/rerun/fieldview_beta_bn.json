@@ -1,0 +1,152 @@
+{
+  "github": [
+    {
+      "dataset": "github",
+      "seed": 11,
+      "view": "background",
+      "CV": 0.6509955001041967,
+      "NPMI": 0.21751449433106965,
+      "CV_n": 29
+    },
+    {
+      "dataset": "github",
+      "seed": 11,
+      "view": "summary",
+      "CV": 0.444390042083998,
+      "NPMI": -0.33894488700406605,
+      "CV_n": 14
+    },
+    {
+      "dataset": "github",
+      "seed": 23,
+      "view": "background",
+      "CV": 0.621511503863523,
+      "NPMI": 0.2055415609347527,
+      "CV_n": 29
+    },
+    {
+      "dataset": "github",
+      "seed": 23,
+      "view": "summary",
+      "CV": 0.4794829574539748,
+      "NPMI": -0.3798287305616042,
+      "CV_n": 13
+    },
+    {
+      "dataset": "github",
+      "seed": 37,
+      "view": "background",
+      "CV": 0.5968092975651629,
+      "NPMI": 0.1458757067485204,
+      "CV_n": 28
+    },
+    {
+      "dataset": "github",
+      "seed": 37,
+      "view": "summary",
+      "CV": 0.4438775950117462,
+      "NPMI": -0.3427621612286613,
+      "CV_n": 10
+    }
+  ],
+  "agnews": [
+    {
+      "dataset": "agnews",
+      "seed": 11,
+      "view": "background",
+      "CV": 0.5542994140461436,
+      "NPMI": 0.13001784394967356,
+      "CV_n": 30
+    },
+    {
+      "dataset": "agnews",
+      "seed": 11,
+      "view": "summary",
+      "CV": 0.3966022923530383,
+      "NPMI": -0.26185965647548765,
+      "CV_n": 27
+    },
+    {
+      "dataset": "agnews",
+      "seed": 23,
+      "view": "background",
+      "CV": 0.5190448194866035,
+      "NPMI": 0.07537385192306156,
+      "CV_n": 30
+    },
+    {
+      "dataset": "agnews",
+      "seed": 23,
+      "view": "summary",
+      "CV": 0.4012446901654841,
+      "NPMI": -0.27517111282965695,
+      "CV_n": 24
+    },
+    {
+      "dataset": "agnews",
+      "seed": 37,
+      "view": "background",
+      "CV": 0.48262747037361053,
+      "NPMI": 0.037901030019691785,
+      "CV_n": 30
+    },
+    {
+      "dataset": "agnews",
+      "seed": 37,
+      "view": "summary",
+      "CV": 0.39120332718454764,
+      "NPMI": -0.2686686462890647,
+      "CV_n": 25
+    }
+  ],
+  "civil": [
+    {
+      "dataset": "civil",
+      "seed": 11,
+      "view": "background",
+      "CV": 0.5574460853250488,
+      "NPMI": 0.0920413143168996,
+      "CV_n": 29
+    },
+    {
+      "dataset": "civil",
+      "seed": 11,
+      "view": "summary",
+      "CV": 0.42970389566090433,
+      "NPMI": -0.16111453272912749,
+      "CV_n": 20
+    },
+    {
+      "dataset": "civil",
+      "seed": 23,
+      "view": "background",
+      "CV": 0.6063112339787403,
+      "NPMI": 0.12797982626076757,
+      "CV_n": 29
+    },
+    {
+      "dataset": "civil",
+      "seed": 23,
+      "view": "summary",
+      "CV": 0.4242622656583323,
+      "NPMI": -0.14243828992973803,
+      "CV_n": 24
+    },
+    {
+      "dataset": "civil",
+      "seed": 37,
+      "view": "background",
+      "CV": 0.6041699039466559,
+      "NPMI": 0.14298330434361148,
+      "CV_n": 29
+    },
+    {
+      "dataset": "civil",
+      "seed": 37,
+      "view": "summary",
+      "CV": 0.42583007759098895,
+      "NPMI": -0.16722044586197968,
+      "CV_n": 22
+    }
+  ]
+}

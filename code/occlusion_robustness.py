@@ -554,7 +554,15 @@ def main() -> None:
             adapter = LDAAdapter(train, args.k, args.seed)
             adapter.dictionary = test["dictionary"]
         elif name == "BTM":
-            adapter = BTMAdapter(train, args.k, args.seed)
+            fit = OUT_DIR / "rerun" / f"btm_fit_{args.corpus}_seed{args.seed}.npz"
+            rec = None
+            if fit.exists():
+                z = np.load(fit)
+                rec = {k: z[k] for k in (
+                    "beta", "n_bz", "n_wz", "alpha", "beta_prior",
+                    "window", "max_pairs")}
+                print(f"  loaded saved BTM fit {fit.name}", flush=True)
+            adapter = BTMAdapter(train, args.k, args.seed, rec=rec)
             adapter.dictionary = train["dictionary"]
         elif name == "NMF":
             adapter = NMFAdapter(train, args.k, args.seed)
